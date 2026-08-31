@@ -6,7 +6,7 @@ This is the clean, Cloudflare-native NASAQ deployment package. It contains one b
 
 - Rebuilt as plain HTML, CSS, and JavaScript so it is easy to edit online.
 - Removed the previous graph, point numbering, and technical tags.
-- Replaced the graph with a full planning visual and a calm, unnumbered decision ribbon.
+- Replaced the graph with one focused consultancy visual combining stainless-steel fabrication and an engineering layout.
 - Added the dedicated villas and palaces service-trolley visual.
 - Arabic is the default; English is a complete LTR alternative.
 - The enquiry form posts to `/api/contact` and never opens the visitor's email application.
@@ -24,7 +24,8 @@ This is the clean, Cloudflare-native NASAQ deployment package. It contains one b
 | `worker/index.js` | Cloudflare EmailMessage runtime adapter |
 | `worker/runtime.js` | Form validation, MIME email, security, and asset serving |
 | `wrangler.jsonc` | Worker, static assets, and email binding configuration |
-| `.github/workflows/validate.yml` | GitHub validation workflow |
+| `.github/workflows/validate.yml` | Automatic GitHub validation on every push and pull request |
+| `.github/workflows/deploy.yml` | Optional manual deployment from GitHub Actions |
 | `tests/worker.test.mjs` | Functional Worker tests |
 | `scripts/check-source.mjs` | Content and packaging safety checks |
 
