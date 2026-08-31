@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "nasaq-coming-soon",
+  "compatibility_date": "2026-08-30",
+  "main": "./worker/index.js",
+  "workers_dev": true,
+  "preview_urls": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "none"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "send_email": [
+    {
+      "name": "EMAIL",
+      "destination_address": "growth@nasaqfb.com",
+      "allowed_sender_addresses": ["website@nasaqfb.com"]
+    }
+  ]
+}
