@@ -8,7 +8,7 @@ const required = [
   "styles.css",
   "app.js",
   "favicon.svg",
-  "nasaq-foodservice-planning-hero.webp",
+  "nasaq-design-consultancy-hero.webp",
   "nasaq-villa-service-trolley-layout.webp",
   "robots.txt",
   "sitemap.xml",
@@ -30,7 +30,7 @@ const worker = `${workerEntry}\n${workerRuntime}`;
 const checks = [
   [html.includes('<html lang="ar" dir="rtl">'), "Arabic must be the default document language and direction"],
   [html.includes('action="/api/contact"'), "Form must submit to the Worker endpoint"],
-  [html.includes("nasaq-foodservice-planning-hero.webp"), "Hero planning visual must be present"],
+  [html.includes("nasaq-design-consultancy-hero.webp"), "Hero consultancy visual must be present"],
   [html.includes("nasaq-villa-service-trolley-layout.webp"), "Villa service-trolley visual must be present"],
   [!/mailto:/i.test(`${html}\n${client}`), "No mailto fallback may remain"],
   [!/(decision-orbit|operation map|operational map|<svg[^>]*graph)/i.test(html), "The former graph must not remain"],
