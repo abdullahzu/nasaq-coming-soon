@@ -14,15 +14,16 @@ const copy = {
     status: "قريباً، منصة نَسَق الرقمية",
     hero: {
       kicker: "تصميم واستشارات مرافق الأغذية والمشروبات",
-      titleA: "نصمّم التشغيل",
-      titleB: "قبل أن نصمّم المساحة.",
+      slogan: "التدفق قبل المساحة",
+      titleA: "نخطّط لمنظومة الحركة والتشغيل،",
+      titleB: "ثم نصمّم المساحة حولها.",
       body: "نحوّل المنيو وطريقة التشغيل إلى تدفق واضح، تخطيط مدروس، متطلبات هندسية دقيقة، ونطاق يمكن تنفيذه وتسعيره.",
       primary: "ابدأ مناقشة المشروع",
       secondary: "اكتشف منهج نَسَق",
       audience: "للمستثمرين، المشغلين، المطورين، مجموعات الضيافة، والاستشاريين.",
-      visualTitle: "من المخطط إلى واقع قابل للتنفيذ",
-      visualNote: "قرار تشغيلي، فني، وتجاري ضمن تصور واحد",
-      visualAlt: "نموذج واقعي لطاولة عمل من الستانلس ستيل تحمل مخططاً هندسياً لمرفق أغذية ومشروبات",
+      visualTitle: "منظومة تشغيل متكاملة",
+      visualNote: "كاونتر كامل، مخطط مدروس، ومسار خدمة واضح",
+      visualAlt: "كاونتر تجهيز احترافي كامل من الستانلس ستيل مع مخطط هندسي وعربة خدمة",
     },
     flow: { aria: "رحلة القرار", label: "من الفكرة إلى نطاق واضح", menu: "المنيو", model: "نموذج التشغيل", workflow: "تدفق العمل", space: "المساحة", equipment: "المعدات", engineering: "الخدمات الهندسية", cost: "التكلفة", scope: "النطاق" },
     approach: {
@@ -68,10 +69,10 @@ const copy = {
     discuss: "Discuss Your Project",
     status: "The NASAQ digital platform is coming soon",
     hero: {
-      kicker: "Foodservice Design & Advisory", titleA: "We design the operation", titleB: "before we design the space.",
+      kicker: "Foodservice Design & Advisory", slogan: "Flow Before Space", titleA: "We plan the operational flow,", titleB: "then design the space around it.",
       body: "We turn the menu and operating model into clear flow, considered planning, coordinated engineering requirements, and an actionable scope.",
       primary: "Start the Project Conversation", secondary: "Explore the NASAQ Approach", audience: "For investors, operators, developers, hospitality groups, and consultants.",
-      visualTitle: "From drawing to buildable reality", visualNote: "Operational, technical, and commercial decisions in one view", visualAlt: "A realistic stainless-steel worktable carrying a professional foodservice facility layout drawing",
+      visualTitle: "A complete operating system", visualNote: "A full counter, considered layout, and clear service route", visualAlt: "A complete professional stainless-steel preparation counter with an engineering layout and service trolley",
     },
     flow: { aria: "Decision journey", label: "From early idea to clear scope", menu: "Menu", model: "Operating model", workflow: "Workflow", space: "Space", equipment: "Equipment", engineering: "Engineering", cost: "Cost", scope: "Scope" },
     approach: {
@@ -147,6 +148,7 @@ function setLanguage(nextLanguage) {
     element.dir = isArabic ? "ltr" : "rtl";
   });
   document.querySelectorAll("[data-direction-arrow]").forEach((element) => { element.textContent = isArabic ? "↖" : "↗"; });
+  document.querySelector(".hero-brand-line").dir = isArabic ? "rtl" : "ltr";
 
   const switcher = document.querySelector("#language-switch");
   switcher.textContent = selected.switchText;
