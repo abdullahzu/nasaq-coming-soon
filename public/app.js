@@ -20,9 +20,9 @@ const copy = {
       primary: "ابدأ مناقشة المشروع",
       secondary: "اكتشف منهج نَسَق",
       audience: "للمستثمرين، المشغلين، المطورين، مجموعات الضيافة، والاستشاريين.",
-      visualTitle: "التشغيل كمنظومة واحدة",
-      visualNote: "تخطيط، معدات، ومسار خدمة ضمن تصور متكامل",
-      visualAlt: "تصور واقعي لتخطيط مرفق أغذية ومشروبات يجمع مخطط المساحة ومعدات الستانلس ستيل وعربة الخدمة",
+      visualTitle: "من المخطط إلى واقع قابل للتنفيذ",
+      visualNote: "قرار تشغيلي، فني، وتجاري ضمن تصور واحد",
+      visualAlt: "نموذج واقعي لطاولة عمل من الستانلس ستيل تحمل مخططاً هندسياً لمرفق أغذية ومشروبات",
     },
     flow: { aria: "رحلة القرار", label: "من الفكرة إلى نطاق واضح", menu: "المنيو", model: "نموذج التشغيل", workflow: "تدفق العمل", space: "المساحة", equipment: "المعدات", engineering: "الخدمات الهندسية", cost: "التكلفة", scope: "النطاق" },
     approach: {
@@ -71,7 +71,7 @@ const copy = {
       kicker: "Foodservice Design & Advisory", titleA: "We design the operation", titleB: "before we design the space.",
       body: "We turn the menu and operating model into clear flow, considered planning, coordinated engineering requirements, and an actionable scope.",
       primary: "Start the Project Conversation", secondary: "Explore the NASAQ Approach", audience: "For investors, operators, developers, hospitality groups, and consultants.",
-      visualTitle: "The operation, designed as one system", visualNote: "Layout, equipment, and service flow in one considered concept", visualAlt: "A realistic foodservice planning model combining a spatial layout, stainless-steel equipment, and a service trolley",
+      visualTitle: "From drawing to buildable reality", visualNote: "Operational, technical, and commercial decisions in one view", visualAlt: "A realistic stainless-steel worktable carrying a professional foodservice facility layout drawing",
     },
     flow: { aria: "Decision journey", label: "From early idea to clear scope", menu: "Menu", model: "Operating model", workflow: "Workflow", space: "Space", equipment: "Equipment", engineering: "Engineering", cost: "Cost", scope: "Scope" },
     approach: {
