@@ -2,6 +2,9 @@ name: Deploy NASAQ to Cloudflare
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.deploy-now]
 
 permissions:
   contents: read
