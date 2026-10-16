@@ -1,11 +1,14 @@
 name: Validate NASAQ website
 
 on:
+  push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
+  checks: read
 
 jobs:
   validate:
@@ -19,3 +22,11 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npm run verify
+      - name: Wait for the connected Cloudflare build
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: node scripts/check-cloudflare-release.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Verify the official website and its client assets
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: node scripts/check-live.mjs https://nasaqfb.com

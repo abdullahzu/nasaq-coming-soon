@@ -23,16 +23,18 @@ Verification checks the page inventory, TypeScript, production build, rendered r
 
 ## GitHub to Cloudflare
 
-A push to `main` or a manual run of **Deploy NASAQ to Cloudflare** builds, tests and deploys the same verified output. Pull requests run validation only.
+A push to `main` is deployed by the existing **Cloudflare Workers Builds** GitHub integration for `nasaq-coming-soon`. The validation workflow builds and runs all 22 tests, waits for that commit's Cloudflare build to succeed, then checks the official pages and client assets. Pull requests run validation only.
 
-Configure these repository secrets under **Settings > Secrets and variables > Actions**:
+The separate **Manual NASAQ deployment to Cloudflare** workflow is an optional fallback. It is manual-only to avoid two deployment systems publishing the same commit concurrently. The connected Cloudflare build does not need Cloudflare credentials stored in GitHub.
+
+For the optional manual fallback, configure these repository secrets under **Settings > Secrets and variables > Actions**:
 
 - `CLOUDFLARE_API_TOKEN`: a Cloudflare API token authorized to edit the existing Worker.
 - `CLOUDFLARE_ACCOUNT_ID`: the account containing `nasaq-coming-soon`.
 
 The deployment target is the existing Worker. This repository does not change DNS or detach domains. If `nasaqfb.com` remains attached to that Worker, it receives the new website on a successful deployment. If the domain has been moved since the previous screenshot, review its current routing before claiming it serves this deployment.
 
-The deploy workflow verifies current-release markers on the official domain after publishing. A successful upload alone is not treated as proof that the domain serves the right website.
+The validation workflow verifies current-release markers and real stylesheet/JavaScript responses on the official domain after Cloudflare reports success. A successful upload alone is not treated as proof that the domain serves the right website.
 
 For a local authenticated deployment:
 

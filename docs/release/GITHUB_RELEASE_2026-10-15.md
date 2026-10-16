@@ -6,13 +6,13 @@ Replaces the obsolete single-page GitHub source with the latest complete bilingu
 
 The build runs directly on GitHub/Cloudflare using the pinned Vinext, Vite and Cloudflare plugin versions. Sites-specific build metadata is excluded from this standalone deployment. The target Worker remains `nasaq-coming-soon`, matching the domain binding shown in the user's Cloudflare screenshot.
 
-The deploy workflow now runs on each push to main, verifies the build before publishing, checks required Cloudflare secrets without printing their values, and verifies current-release markers on the official domain after deployment.
+The existing Cloudflare Workers Builds integration automatically builds and deploys main. After detecting and confirming that integration, the GitHub validation workflow was configured to build and test each main push, await the corresponding Cloudflare check, and verify the official domain. The separate deployment workflow is manual-only and requires repository secrets for that optional fallback.
 
 The Worker explicitly serves Vite's hashed client bundles through the asset binding. This fixes stylesheet and JavaScript 404s when worker-first routing is enabled. Local verification passed all 22 tests, including requests for the actual homepage styles, scripts and images through the built Worker.
 
 ## Verification boundary
 
-Local rendered-route, form and source checks are run before the GitHub branch is updated. The GitHub workflow result is the authority for actual Cloudflare deployment. A missing token/account ID is a deployment blocker, not a source-build failure. The email tests are mocked and do not prove inbox delivery.
+Local rendered-route, form and source checks are run before the GitHub branch is updated. The Cloudflare integration check and the subsequent official-domain smoke test establish deployment and serving status. Missing token/account ID secrets block only the optional manual fallback. The email tests are mocked and do not prove inbox delivery.
 
 ## Historical notes
 
