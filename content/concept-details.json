@@ -1,0 +1,770 @@
+{
+  "C01": {
+    "intro": {
+      "ar": "قهوة مختصة ومخبوزات طازجة في مساحة ضيافة دافئة، مع حركة واضحة للتحضير والطلب والاستلام.",
+      "en": "Specialty coffee and fresh bakery production in a warm hospitality setting, with clear preparation, ordering and collection flows."
+    },
+    "scope": [
+      {
+        "ar": "نطوّر مفهوم القهوة والمخبز من منظور تشغيلي وتجاري متكامل.",
+        "en": "Develop the concept around operating and commercial needs."
+      },
+      {
+        "ar": "نربط رحلة الضيف والطلب والاستلام بمناطق التحضير والعرض والجلوس.",
+        "en": "Link the guest journey with ordering, collection, preparation, display and seating."
+      },
+      {
+        "ar": "يهدف التخطيط إلى تحسين الكفاءة وإبراز هوية العلامة ودعم تجربة الزائر.",
+        "en": "Plan for efficiency, brand identity and the guest experience."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "كيف يتوزع الطلب بين المشروبات والمخبوزات؟",
+        "en": "How is demand split between drinks and bakery products?"
+      },
+      {
+        "ar": "أين تتقاطع حركة الفريق مع استلام الضيف؟",
+        "en": "Where does staff movement meet guest collection?"
+      },
+      {
+        "ar": "ما الذي يُنتج في الموقع وما الذي يصل جاهزاً؟",
+        "en": "What is produced on site and what arrives ready?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "قائمة المشروبات والمخبوزات ونمط الإنتاج.",
+        "en": "Drink and bakery menu and the production model."
+      },
+      {
+        "ar": "توقعات الذروة وعدد نقاط الخدمة والمساحة.",
+        "en": "Peak-demand assumptions, service points and available space."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "الطلب",
+        "en": "Ordering"
+      },
+      {
+        "ar": "التحضير",
+        "en": "Preparation"
+      },
+      {
+        "ar": "العرض",
+        "en": "Display"
+      },
+      {
+        "ar": "الاستلام",
+        "en": "Collection"
+      }
+    ],
+    "related": [
+      "S03",
+      "S05",
+      "S07"
+    ],
+    "image": "coffee"
+  },
+  "C02": {
+    "intro": {
+      "ar": "مفاهيم سريعة الإيقاع تربط وضوح الحركة وسرعة الخدمة بكفاءة خطوط الإنتاج الأمامية والخلفية.",
+      "en": "Fast-paced concepts that connect clear movement and quick service with efficient production at the front and back of house."
+    },
+    "scope": [
+      {
+        "ar": "نوازن بين سرعة التشغيل وسلاسة الخدمة والحضور البصري للعلامة.",
+        "en": "Balance operating speed, smooth service and the brand's visual presence."
+      },
+      {
+        "ar": "ننظّم تدفق الطلبات والإنتاج والتسليم بين المناطق الأمامية والخلفية.",
+        "en": "Coordinate orders, production and handover across front and back of house."
+      },
+      {
+        "ar": "يهدف التخطيط إلى الحد من الازدحام ودعم الطاقة التشغيلية.",
+        "en": "Plan to limit congestion and support operating capacity."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "كيف تتوزع الطلبات بين الصالة والتوصيل؟",
+        "en": "How are orders split between dine-in and delivery?"
+      },
+      {
+        "ar": "ما المحطات التي تحدد القدرة وقت الذروة؟",
+        "en": "Which stations constrain peak capacity?"
+      },
+      {
+        "ar": "أين يُسلّم الطلب دون تعطيل الإنتاج؟",
+        "en": "Where can orders be handed over without disrupting production?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "قائمة المنتجات وطرق التحضير والطهي.",
+        "en": "Product menu and preparation and cooking methods."
+      },
+      {
+        "ar": "نمط الطلب والتوصيل وأرقام السعة الافتراضية.",
+        "en": "Ordering and delivery model and capacity assumptions."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "التحضير",
+        "en": "Preparation"
+      },
+      {
+        "ar": "الطهي",
+        "en": "Cooking"
+      },
+      {
+        "ar": "التجميع",
+        "en": "Assembly"
+      },
+      {
+        "ar": "التعبئة",
+        "en": "Packing"
+      },
+      {
+        "ar": "التسليم",
+        "en": "Handover"
+      }
+    ],
+    "related": [
+      "S03",
+      "S05",
+      "S06"
+    ],
+    "image": ""
+  },
+  "C03": {
+    "intro": {
+      "ar": "مفهوم حديث يربط العرض الحي بمناطق التحضير وسرعة التقديم، مع إبراز المنتج في تجربة واضحة.",
+      "en": "A contemporary concept connecting live product display, preparation and fast service in a clear customer experience."
+    },
+    "scope": [
+      {
+        "ar": "نبرز المنتج والعرض الحي ضمن مفهوم عصري متكامل.",
+        "en": "Give the product and live preparation a clear place in the concept."
+      },
+      {
+        "ar": "ننسّق مناطق الشواء والتجهيز والتجميع والتسليم لتوضيح الحركة.",
+        "en": "Coordinate grilling, preparation, assembly and handover to clarify movement."
+      },
+      {
+        "ar": "ندرس كفاءة التشغيل وتميّز تجربة العلامة وقابلية النموذج للتوسّع.",
+        "en": "Consider efficiency, brand experience and the potential for expansion."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "كيف يرتبط العرض الحي بمنطقة التجميع؟",
+        "en": "How does live preparation connect to assembly?"
+      },
+      {
+        "ar": "ما العلاقة بين التجهيز الخلفي والكاونتر؟",
+        "en": "How does back preparation connect to the counter?"
+      },
+      {
+        "ar": "كيف تصل المواد إلى المحطة أثناء الخدمة؟",
+        "en": "How are stations replenished during service?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "قائمة المنتجات والإضافات وطريقة التقديم.",
+        "en": "Products, accompaniments and serving style."
+      },
+      {
+        "ar": "المساحة ومواقع العرض والاستلام المقترحة.",
+        "en": "Space and proposed display and collection points."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "التجهيز",
+        "en": "Preparation"
+      },
+      {
+        "ar": "الشواء",
+        "en": "Grilling"
+      },
+      {
+        "ar": "التجميع",
+        "en": "Assembly"
+      },
+      {
+        "ar": "التقديم",
+        "en": "Service"
+      }
+    ],
+    "related": [
+      "S03",
+      "S05",
+      "S07"
+    ],
+    "image": ""
+  },
+  "C04": {
+    "intro": {
+      "ar": "مفاهيم صحية خفيفة وسريعة تبرز الأكل الطازج والوضوح البصري والانضباط التشغيلي.",
+      "en": "Light, quick healthy-food concepts that highlight fresh food, visual clarity and disciplined operations."
+    },
+    "scope": [
+      {
+        "ar": "نطوّر مفاهيم الأكل الصحي الطازج حول سرعة الخدمة والوضوح.",
+        "en": "Develop fresh, healthy-food concepts around quick service and clarity."
+      },
+      {
+        "ar": "نوزّع محطات التحضير البارد والعرض والتعبئة والاستلام.",
+        "en": "Plan cold-preparation, display, packing and collection stations."
+      },
+      {
+        "ar": "ندعم سهولة التجربة بما يعكس رسالة العلامة المرتبطة بالصحة والتوازن.",
+        "en": "Reflect the brand’s health and balance message in a simple experience."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "هل الوجبة تُجمع حسب الطلب أم تجهز مسبقاً؟",
+        "en": "Are meals assembled to order or prepared in advance?"
+      },
+      {
+        "ar": "كيف ترتبط محطات البارد والساخن بالتعبئة؟",
+        "en": "How do cold and hot stations connect to packing?"
+      },
+      {
+        "ar": "ما التنوع المتوقع في المكونات والطلبات؟",
+        "en": "What ingredient and order variety is expected?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "فئات الوجبات والمكونات ونمط التحضير.",
+        "en": "Meal categories, ingredients and preparation model."
+      },
+      {
+        "ar": "قنوات البيع وافتراضات السعة والتخزين.",
+        "en": "Sales channels and capacity and storage assumptions."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "تحضير المكونات",
+        "en": "Ingredient preparation"
+      },
+      {
+        "ar": "الحفظ",
+        "en": "Holding"
+      },
+      {
+        "ar": "التجميع",
+        "en": "Assembly"
+      },
+      {
+        "ar": "التعبئة",
+        "en": "Packing"
+      },
+      {
+        "ar": "الاستلام",
+        "en": "Collection"
+      }
+    ],
+    "related": [
+      "S03",
+      "S05",
+      "S06"
+    ],
+    "image": ""
+  },
+  "C05": {
+    "intro": {
+      "ar": "تشغيل عدة علامات من مطبخ واحد، مع فصل واضح للمناطق وتكامل في استخدام الموارد.",
+      "en": "Several brands operating from one kitchen, with clearly separated zones and coordinated use of shared resources."
+    },
+    "scope": [
+      {
+        "ar": "نخطط للاستفادة من الموارد المشتركة مع الحفاظ على هوية كل علامة.",
+        "en": "Plan shared resources while preserving each brand's identity."
+      },
+      {
+        "ar": "ننظّم تدفق الطلبات ومناطق الإنتاج بما يوضح اختصاص كل منطقة.",
+        "en": "Organize order flow and production areas with a clear role for each zone."
+      },
+      {
+        "ar": "ننسّق التعبئة وتسليم المناديب بهدف دعم كفاءة التشغيل.",
+        "en": "Coordinate packing and courier handover to support efficiency."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "ما الوظائف المشتركة وما الذي يحتاج إلى فصل؟",
+        "en": "Which functions are shared and which need separation?"
+      },
+      {
+        "ar": "كيف تتزامن طلبات العلامات في التعبئة؟",
+        "en": "How do brand orders converge at packing?"
+      },
+      {
+        "ar": "أين يستلم المندوب دون دخول مناطق الإنتاج؟",
+        "en": "Where can couriers collect without entering production areas?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "قوائم العلامات ونمط الإنتاج المشترك.",
+        "en": "Brand menus and the shared production model."
+      },
+      {
+        "ar": "توقعات الطلبات وأوقات الذروة ومساحة الإرسال.",
+        "en": "Order assumptions, peak periods and dispatch space."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "طلبات العلامات",
+        "en": "Brand orders"
+      },
+      {
+        "ar": "الإنتاج",
+        "en": "Production"
+      },
+      {
+        "ar": "التعبئة",
+        "en": "Packing"
+      },
+      {
+        "ar": "التحقق",
+        "en": "Order check"
+      },
+      {
+        "ar": "التسليم",
+        "en": "Dispatch"
+      }
+    ],
+    "related": [
+      "S03",
+      "S05",
+      "S06"
+    ],
+    "image": ""
+  },
+  "C06": {
+    "intro": {
+      "ar": "تجربة جلوس مريحة بهوية دافئة، تربط احتياجات الضيف بانسيابية التشغيل والخدمة.",
+      "en": "Comfortable dining with a warm identity, connecting guest needs with the flow of operations and service."
+    },
+    "scope": [
+      {
+        "ar": "نقدّم التصميم والدراسة بما يوائم تجربة الضيف مع احتياجات التشغيل.",
+        "en": "Align the design study, guest experience and operating needs."
+      },
+      {
+        "ar": "ننسّق تخطيط الصالة والمطبخ ونقاط الخدمة والتقديم.",
+        "en": "Coordinate the dining room, kitchen, service stations and serving points."
+      },
+      {
+        "ar": "يهدف التصميم إلى تجربة متماسكة يمكن تطويرها مع نمو المشروع.",
+        "en": "Develop a coherent experience that can evolve as the project grows."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "كيف تتجمع أطباق المحطات في نقطة التقديم؟",
+        "en": "How do dishes from different stations reach the pass?"
+      },
+      {
+        "ar": "كيف تتصل الصالة بنقاط الخدمة؟",
+        "en": "How does the dining room connect with service stations?"
+      },
+      {
+        "ar": "ما العلاقة بين تنوع المنيو وسعة المطبخ؟",
+        "en": "How does menu variety relate to kitchen capacity?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "قائمة الطعام وعدد المقاعد ونمط الخدمة.",
+        "en": "Menu, seat count and service style."
+      },
+      {
+        "ar": "مخطط الصالة والمطبخ وعلاقات الحركة.",
+        "en": "Dining-room and kitchen layout and movement relationships."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "استلام الطلب",
+        "en": "Order receipt"
+      },
+      {
+        "ar": "محطات التحضير",
+        "en": "Preparation stations"
+      },
+      {
+        "ar": "التنسيق والتقديم",
+        "en": "Pass coordination"
+      },
+      {
+        "ar": "الخدمة",
+        "en": "Service"
+      }
+    ],
+    "related": [
+      "S03",
+      "S05",
+      "S10"
+    ],
+    "image": ""
+  },
+  "C07": {
+    "intro": {
+      "ar": "مساحة مشرقة ومرحّبة للجلسات الطويلة والتجربة الاجتماعية، مع تشغيل يدعم الخدمة طوال اليوم.",
+      "en": "A bright, welcoming setting for longer visits and social dining, with operations that support all-day service."
+    },
+    "scope": [
+      {
+        "ar": "نوازن بين راحة الجلسات وفعالية الخدمة في مفهوم الإفطار والبرانش.",
+        "en": "Balance comfortable seating and effective service."
+      },
+      {
+        "ar": "نوزّع مناطق التحضير الساخن والمشروبات والقهوة والعرض.",
+        "en": "Plan the hot-preparation, beverage, coffee and display areas."
+      },
+      {
+        "ar": "يهدف التخطيط إلى تجربة صباحية مرنة تستمر طوال اليوم.",
+        "en": "Plan a flexible morning experience that continues throughout the day."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "كيف يتغير الطلب خلال ساعات اليوم؟",
+        "en": "How does demand change through the day?"
+      },
+      {
+        "ar": "كيف تتزامن المشروبات والأطباق؟",
+        "en": "How are beverages and dishes coordinated?"
+      },
+      {
+        "ar": "هل تدعم المحطات تنوع التحضير والعرض؟",
+        "en": "Do stations support the intended preparation and display variety?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "قائمة الإفطار والمشروبات وفترات الخدمة.",
+        "en": "Breakfast and beverage menu and service periods."
+      },
+      {
+        "ar": "السعة ومساحة الجلوس والمطبخ.",
+        "en": "Capacity, seating area and kitchen space."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "المشروبات",
+        "en": "Beverages"
+      },
+      {
+        "ar": "التحضير الساخن",
+        "en": "Hot preparation"
+      },
+      {
+        "ar": "التنسيق",
+        "en": "Coordination"
+      },
+      {
+        "ar": "التقديم",
+        "en": "Service"
+      }
+    ],
+    "related": [
+      "S03",
+      "S05",
+      "S07"
+    ],
+    "image": "coffee"
+  },
+  "C08": {
+    "intro": {
+      "ar": "مفهوم راقٍ يبرز الحرفة وجاذبية المنتج، مع علاقة واضحة بين الإنتاج والعرض.",
+      "en": "A refined concept that highlights craftsmanship and product appeal, with a clear relationship between production and display."
+    },
+    "scope": [
+      {
+        "ar": "نطوّر مفهوم المخبز والباتيسري والحلويات حول جاذبية المنتج.",
+        "en": "Develop the concept around product appeal."
+      },
+      {
+        "ar": "نربط الإنتاج الخلفي بالعرض الأمامي لدعم انسيابية التشغيل.",
+        "en": "Link back-of-house production with front-of-house display."
+      },
+      {
+        "ar": "نبرز تفاصيل الحرفة والعرض بما يدعم هوية العلامة وقيمتها.",
+        "en": "Use craftsmanship and display to support brand identity and value."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "ما الذي يُنتج في الموقع أو في منشأة أخرى؟",
+        "en": "What is produced on site or at another facility?"
+      },
+      {
+        "ar": "كيف يرتبط الإنتاج بالعرض والتجديد؟",
+        "en": "How does production connect to display and replenishment?"
+      },
+      {
+        "ar": "أين تُحفظ المنتجات قبل العرض أو التسليم؟",
+        "en": "Where are products held before display or collection?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "فئات المنتجات ومراحل الإنتاج.",
+        "en": "Product categories and production stages."
+      },
+      {
+        "ar": "متطلبات العرض والتخزين والكميات المتوقعة.",
+        "en": "Display and storage requirements and expected volumes."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "الإنتاج",
+        "en": "Production"
+      },
+      {
+        "ar": "التبريد والتشطيب",
+        "en": "Cooling and finishing"
+      },
+      {
+        "ar": "العرض",
+        "en": "Display"
+      },
+      {
+        "ar": "التعبئة",
+        "en": "Packing"
+      }
+    ],
+    "related": [
+      "S05",
+      "S06",
+      "S07"
+    ],
+    "image": "coffee"
+  },
+  "C09": {
+    "intro": {
+      "ar": "منشأة إنتاجية تدعم اتساق الجودة والتوسّع عبر شبكة فروع أو خدمات متعددة.",
+      "en": "A production facility supporting consistent quality and expansion across a branch network or multiple services."
+    },
+    "scope": [
+      {
+        "ar": "نربط الاستلام والتخزين بالتحضير والإنتاج والتعبئة والإرسال.",
+        "en": "Connect receiving and storage with preparation, production, packing and dispatch."
+      },
+      {
+        "ar": "نراجع العلاقات بين السعة والمعدات والمرافق.",
+        "en": "Review relationships between capacity, equipment and utilities."
+      },
+      {
+        "ar": "يهدف التخطيط إلى دعم اتساق الإنتاج وكفاءة الموارد.",
+        "en": "Plan to support consistent production and efficient resource use."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "ما عدد الجهات أو الفروع التي يخدمها المطبخ؟",
+        "en": "How many outlets or destinations will the kitchen serve?"
+      },
+      {
+        "ar": "كيف يرتبط حجم الدفعات بالتعبئة والإرسال؟",
+        "en": "How do batch sizes connect to packing and dispatch?"
+      },
+      {
+        "ar": "ما الموارد والمرافق المطلوبة لكل مرحلة؟",
+        "en": "Which resources and utilities does each stage require?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "فئات الإنتاج والكميات وجدول الإرسال.",
+        "en": "Production categories, volumes and dispatch schedule."
+      },
+      {
+        "ar": "الموقع والتخزين واحتياجات الفروع.",
+        "en": "Site, storage and outlet requirements."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "الاستلام",
+        "en": "Receiving"
+      },
+      {
+        "ar": "التخزين",
+        "en": "Storage"
+      },
+      {
+        "ar": "التحضير",
+        "en": "Preparation"
+      },
+      {
+        "ar": "الإنتاج",
+        "en": "Production"
+      },
+      {
+        "ar": "التعبئة",
+        "en": "Packing"
+      },
+      {
+        "ar": "الإرسال",
+        "en": "Dispatch"
+      }
+    ],
+    "related": [
+      "S05",
+      "S06",
+      "S08"
+    ],
+    "image": "central"
+  },
+  "C10": {
+    "intro": {
+      "ar": "مقصد ضيافة يجمع تجارب متنوعة في مساحة واحدة، مع وضوح الحركة وهوية مكانية جذابة.",
+      "en": "A hospitality destination combining varied experiences in one space, with clear movement and a distinctive sense of place."
+    },
+    "scope": [
+      {
+        "ar": "نطوّر قاعة الطعام من منظور تجربة الزائر ومتطلبات التشغيل معًا.",
+        "en": "Plan the visitor experience alongside operating requirements."
+      },
+      {
+        "ar": "نخطط حركة الزوار والإرشاد وتوزيع المفاهيم والخدمات المشتركة.",
+        "en": "Plan visitor flow, wayfinding, concept locations and shared services."
+      },
+      {
+        "ar": "ننسّق الخدمات الخلفية لدعم الوضوح والجاذبية والمرونة التجارية.",
+        "en": "Coordinate back-of-house support for clarity, appeal and commercial flexibility."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "أين تنتهي مسؤولية الوحدة وتبدأ الخدمات المشتركة؟",
+        "en": "Where does unit scope end and shared-services scope begin?"
+      },
+      {
+        "ar": "كيف تتحرك المواد خلف مناطق الزوار؟",
+        "en": "How do supplies move behind visitor areas?"
+      },
+      {
+        "ar": "كيف تتوزع نقاط الطلب والاستلام؟",
+        "en": "How are ordering and collection points distributed?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "مزيج المفاهيم وحدود الوحدات المتاحة.",
+        "en": "Concept mix and available unit boundaries."
+      },
+      {
+        "ar": "الخدمات المشتركة وعلاقات الحركة الخلفية.",
+        "en": "Shared services and back-of-house circulation."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "المفاهيم",
+        "en": "Concepts"
+      },
+      {
+        "ar": "الخدمات المشتركة",
+        "en": "Shared services"
+      },
+      {
+        "ar": "حركة الزوار",
+        "en": "Visitor flow"
+      },
+      {
+        "ar": "الاستلام والجلوس",
+        "en": "Collection and seating"
+      }
+    ],
+    "related": [
+      "S03",
+      "S06",
+      "S10"
+    ],
+    "image": ""
+  },
+  "C11": {
+    "intro": {
+      "ar": "مطبخ إضافي للعزائم والضيافة المكثّفة، منفصل عن الاستخدام العائلي اليومي.",
+      "en": "An additional kitchen for gatherings and larger hospitality requirements, separate from daily family use."
+    },
+    "scope": [
+      {
+        "ar": "نخطط لضيافة العزائم والتجهيزات المساندة في مطبخ خدمة إضافي.",
+        "en": "Plan an additional kitchen for gatherings and supporting equipment."
+      },
+      {
+        "ar": "نفصل التشغيل الخدمي عن المطبخ العائلي والاستخدام اليومي.",
+        "en": "Separate service operations from the family kitchen and everyday use."
+      },
+      {
+        "ar": "يهدف التنظيم إلى دعم الخصوصية وسهولة الخدمة وكفاءة التشغيل.",
+        "en": "Plan for privacy, ease of service and operating efficiency."
+      }
+    ],
+    "questions": [
+      {
+        "ar": "كيف ينفصل مطبخ الخدمة عن الاستخدام العائلي؟",
+        "en": "How is the service kitchen separated from family use?"
+      },
+      {
+        "ar": "كيف تصل الخدمة إلى مناطق الضيافة بهدوء؟",
+        "en": "How does service reach hospitality areas discreetly?"
+      },
+      {
+        "ar": "ما حجم العزائم ومتطلبات التجهيز المساندة؟",
+        "en": "What gathering sizes and supporting equipment are anticipated?"
+      }
+    ],
+    "inputs": [
+      {
+        "ar": "وصف عام للضيافة ونمط الخدمة المطلوب.",
+        "en": "A general description of hospitality and service needs."
+      },
+      {
+        "ar": "المرحلة الحالية واحتياجات التنسيق المعماري.",
+        "en": "Current stage and architectural coordination needs."
+      }
+    ],
+    "sequence": [
+      {
+        "ar": "التخزين",
+        "en": "Storage"
+      },
+      {
+        "ar": "التحضير",
+        "en": "Preparation"
+      },
+      {
+        "ar": "التجهيز للخدمة",
+        "en": "Service preparation"
+      },
+      {
+        "ar": "الضيافة",
+        "en": "Hospitality"
+      }
+    ],
+    "related": [
+      "S09",
+      "S05",
+      "S07"
+    ],
+    "image": "villa"
+  }
+}

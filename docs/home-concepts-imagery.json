@@ -1,0 +1,49 @@
+{
+  "asset": "NASAQ homepage concepts teaser",
+  "saved_original_path": "/workspace/scratch/00e5364a7d4f/home-concepts-teaser/teaser.png",
+  "generation_original_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-dbf3267a-ee94-4650-a6f6-44095e5ab99f.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "aspect_ratio": "3:2",
+  "format": "PNG",
+  "color_mode": "RGB",
+  "bytes": 2887137,
+  "sha256": "3fd4e4b4fcab3143b8fc281ab4e1bd17842e7e1cc1ba4faf049a399ae69c4a70",
+  "exact_prompt": "Use case: photorealistic-natural\nAsset type: landscape homepage teaser for NASAQ Foodservice Design & Advisory, 1536 x 1024 pixels, 3:2 aspect ratio.\nPrimary request: One original, cohesive photorealistic architectural editorial photograph of a bright, full-scale multi-concept food hall integrated with a professional open kitchen. This single real interior should suggest expert foodservice planning and a variety of restaurant concepts: burger and fried-chicken QSR, shawarma, healthy bowls, cloud kitchen, casual dining, breakfast and brunch, patisserie and desserts, central production kitchen, and food hall. Evoke this variety naturally, without trying to present nine separate items.\nScene: Human eye-level view into an expansive, elegant food hall. A handsome light stone serving counter in the foreground displays a beautifully plated colourful healthy bowl, an appetizing burger and small fried-chicken portion, and a restrained arrangement of pastries. Distinctive deep teal upholstered dining chairs and banquettes create welcoming casual seating through the middle of the space. Behind the serving counter, a plausible professional stainless-steel open kitchen includes a clearly recognizable upright shawarma rotisserie, cooking equipment under extraction hoods, preparation benches, and a clean production and takeaway packing area in the background.\nStyle: Architectural magazine photography, refined realistic hospitality interior, physically plausible equipment and human-scale furnishings, crisp natural materials, appetizing food, subtle signs of daily use.\nComposition: Landscape 3:2, spacious layered depth, balanced architectural lines, human eye-level camera, moderately wide natural lens with straight verticals. The important food, seating and open-kitchen subjects are spread across the middle of the frame and remain usable for responsive cropping. Make it one continuous actual interior, never a collage.\nLighting and palette: Luminous morning daylight from large windows, soft believable shadows, fresh inviting atmosphere. White and light natural stone, brushed stainless steel, warm neutral detailing, rich deep teal #0D5B63 accents.\nConstraints: No people, no text, no signage, no labels, no logos, no watermark, no border, no montage grid, no interface, no technical drawing or diagram, no floor plan, no miniatures, no tabletop model, no dollhouse, no cutaway. Full-scale interior only. Opaque background. Generate exactly one image.",
+  "provenance": {
+    "source": "Original AI-generated image",
+    "tool": "image_gen__imagegen",
+    "execution_mode": "built-in",
+    "generation_calls": 1,
+    "input_images": [],
+    "transparent_background": false,
+    "postprocessing": "None; copied the generated PNG without modification.",
+    "model": "Not reported by tool"
+  },
+  "inspection": {
+    "inspected_with": "view_image",
+    "verified": [
+      "1536 by 1024 landscape composition",
+      "Single continuous full-scale food hall interior viewed at human eye level",
+      "Deep teal seating, light stone, stainless-steel open kitchen, and morning daylight",
+      "Healthy bowl, burger, fried chicken, pastries, and shawarma rotisserie visible",
+      "No people, text, signage, logos, borders, or montage grid"
+    ],
+    "note": "Production kitchen is visible; a distinct takeaway packing station is less explicit. No retry or variant was generated."
+  },
+  "web_assets": [
+    {
+      "file": "public/images/pages/home-concepts-teaser-768.webp",
+      "bytes": 109798,
+      "sha256": "c1965de3855d0ddd0ad4e7b68c1a0c69f9d7f1f08edd053483461d3eaa46aff1"
+    },
+    {
+      "file": "public/images/pages/home-concepts-teaser-1536.webp",
+      "bytes": 321912,
+      "sha256": "a83dbc5f4e03ecfbe84e42f022f5a3c7d4bc500820d1a2f60376aa9eff643391"
+    }
+  ],
+  "placement": "Homepage only, one shared image introducing the nine concepts beyond the existing coffee and villa features."
+}

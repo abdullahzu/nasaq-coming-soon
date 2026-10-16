@@ -1,0 +1,30 @@
+{
+  "tool": "image_gen.imagegen",
+  "mode": "built-in generation",
+  "date": "2026-09-26",
+  "note": "Original AI-generated illustrative concepts; no real NASAQ project provenance claimed. One generation per asset, no variants or edits.",
+  "assets": [
+    {
+      "id": "A3",
+      "name": "coffee-bakery-counter",
+      "path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-d6307c0c-2036-4e59-8ebf-6cd84fd8bee0.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2373066,
+      "sha256": "47ac0cd57a6be29e62f951641fb100613574f5192fdd73569dac276a05a0457d",
+      "prompt": "Use case: photorealistic-natural\nAsset type: landscape website concept image, ideally 1536x1024.\nPrimary request: calm premium architectural editorial photo of a complete specialty-coffee and bakery counter, shown from a three-quarter operational viewpoint.\nScene/backdrop: a contemporary specialty-coffee and bakery interior with a complete practical counter arrangement: espresso preparation station, bakery display, continuous usable work surface, clear customer handover section, and credible working aisle behind the counter.\nStyle/medium: high-quality natural architectural editorial photography, realistic scale and buildable spatial relationships.\nComposition/framing: landscape 3:2; eye-level natural perspective, full counter visible in one coherent scene, equipment and circulation understandable.\nLighting/mood: warm neutral daylight, calm and restrained.\nColor palette: warm pale neutral surfaces, brushed stainless steel, restrained deep teal #0D5B63 accents.\nMaterials/textures: believable brushed steel, pale durable counters and subtle architectural surfaces.\nConstraints: generic unbranded equipment; an illustrative design concept only, not documentation of a real branded project.\nAvoid: all people, any text, logos, labels, numbers, watermarks, arrows, collage, distorted counters, theatrical lighting, and exaggerated machinery."
+    },
+    {
+      "id": "A4",
+      "name": "central-production-kitchen",
+      "path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-7e566e8d-6a95-4db7-963c-1840453f7365.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2591656,
+      "sha256": "4463bcbde8871b379e35605936961004bd8a32c270d724ab41f3413727dd0d4e",
+      "prompt": "Use case: photorealistic-natural\nAsset type: landscape website concept image, ideally 1536x1024.\nPrimary request: softly lit architectural editorial photo of a complete central production kitchen with full stainless preparation benches, credible storage, and an orderly packing and dispatch area.\nScene/backdrop: contemporary commercial production kitchen, clear usable work surfaces, sensible storage relationships and a distinct practical packing/dispatch area with realistic circulation.\nStyle/medium: high-quality natural architectural editorial photography, realistic scale and buildable spatial relationships.\nComposition/framing: landscape 3:2; gently elevated three-quarter viewpoint that reveals the full preparation benches and orderly functional relationships in one coherent scene.\nLighting/mood: soft neutral daylight, calm premium restrained architectural atmosphere.\nColor palette: pale warm neutral surfaces and brushed stainless steel, understated deep teal #0D5B63 accents.\nMaterials/textures: believable brushed steel, pale durable surfaces, restrained architectural finish.\nConstraints: generic unbranded equipment; an illustrative design concept only, not documentation of a real branded project. Match a cohesive visual series of warm-neutral premium coffee-counter architectural photography.\nAvoid: all staff or people, any words, brands, logos, labels, numbers, watermarks, arrows, collage, exaggerated machinery, distorted benches, and theatrical lighting."
+    }
+  ]
+}

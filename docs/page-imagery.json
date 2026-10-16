@@ -1,0 +1,1151 @@
+{
+  "date": "2026-09-28",
+  "request": "Unique bright in-page photography for each secondary page; no image repeated across logical pages. Language counterparts intentionally share their photograph.",
+  "generated_count": 29,
+  "tool": "image_gen.imagegen, built-in mode",
+  "scope": "Conceptual imagery, not evidence of actual completed client projects.",
+  "assets": [
+    {
+      "key": "about",
+      "file": "core-about",
+      "ar": "استوديو تصميم مرافق أغذية ومشروبات مضيء مع مكتبة خامات وجزيرة عمل.",
+      "en": "A bright foodservice design studio with a material library and working island.",
+      "generation": {
+        "key": "about",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/core/about.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: original editorial website image for a premium hospitality and foodservice design consultancy.\nFormat: one landscape photograph, 3:2 aspect ratio, ideally 1536 by 1024 pixels.\nStyle: bright, beautiful, high-end architectural editorial photography with authentic real materials and convincing full-scale space, airy, confident and refined.\nLighting and palette: strong clean daylight, luminous whites and pale natural stone, silver stainless steel, restrained saturated deep teal #0D5B63 accents. Bright exposure with crisp depth and no gloom.\nPrimary request: a luminous full-scale foodservice design studio interior. A beautiful tall arched window admits generous daylight; full-height built-in shelves hold large unbranded architectural material sample boards; a clean substantial collaborative work island stands at the center, empty of papers and models. Distinct composition: calm eye-level architectural interior photograph with the window and studio volume as the main visual interest. Materials include white stone, brushed metal, pale timber and a restrained teal shelf recess. The scene is a real premium design studio, not a kitchen miniature.\nConstraints: no people, no logos, no readable text or numbers, no signage, no UI, no screens, no charts, no diagrams, no graphics overlaid on the image, no watermarks, no miniature models, no scale models, no tabletop engineering plans, no drawings or loose papers. Avoid any miniature counter or model standing on a desk. Everything architectural must look realistically full-scale.",
+        "provenance": {
+          "mode": "built-in image_gen",
+          "sourcePath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-501e791d-4397-4d41-a901-68cd65140a12.png",
+          "original": true,
+          "callsForAsset": 1
+        },
+        "SHA256": "3b96d6cd8cce8a5ac6754c954dbca6bd0640fefcedf659f37eeabe42e62f6565",
+        "inspection": "Viewed generated output; distinct scene, full-scale where architectural, no visible text, logos, people, models or diagrams."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/core-about-768.webp",
+          "bytes": 71590,
+          "sha256": "dcd38503b5606da104e154a58b8766d1f5f6e132909dd9e2645023eb50fd2d32"
+        },
+        {
+          "file": "public/images/pages/core-about-1536.webp",
+          "bytes": 207000,
+          "sha256": "6a7a6640604cadfe9ae2cfd655fd19f7a1aaa858ae3b6cf1e165d7786a1d4ff0"
+        }
+      ]
+    },
+    {
+      "key": "approach",
+      "file": "core-approach",
+      "ar": "منظور مرتفع لمطبخ احترافي يوضح علاقات التحضير والطهي والخدمة والحركة.",
+      "en": "An elevated view of a professional kitchen showing preparation, cooking, service and circulation relationships.",
+      "generation": {
+        "key": "approach",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/core/approach.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: original editorial website image for a premium hospitality and foodservice design consultancy.\nFormat: one landscape photograph, 3:2 aspect ratio, ideally 1536 by 1024 pixels.\nStyle: bright, beautiful, high-end architectural editorial photography with authentic real materials and convincing full-scale space, airy, confident and refined.\nLighting and palette: strong clean daylight, luminous whites and pale natural stone, silver stainless steel, restrained saturated deep teal #0D5B63 accents. Bright exposure with crisp depth and no gloom.\nPrimary request: an elevated architectural view across a sleek, complete, real professional kitchen. Show the preparation island, cooking wall, service pass, and spacious circulation as one coherent full-scale interior, so their practical relationships are visible naturally through architecture. Distinct composition: camera from an elevated corner near ceiling height, looking diagonally across the whole kitchen; real room perspective, not isometric, not cutaway. Clean silver stainless equipment, pale stone surfaces, white walls, a restrained teal panel at the service pass. Beautiful daylight throughout, no arrows or annotations.\nConstraints: no people, no logos, no readable text or numbers, no signage, no UI, no screens, no charts, no diagrams, no graphics overlaid on the image, no watermarks, no miniature models, no scale models, no tabletop engineering plans, no drawings or loose papers. Avoid any miniature counter or model standing on a desk. Everything architectural must look realistically full-scale.",
+        "provenance": {
+          "mode": "built-in image_gen",
+          "sourcePath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-8df95e81-f44c-4e01-a5ae-cfe2158ad67f.png",
+          "original": true,
+          "callsForAsset": 1
+        },
+        "SHA256": "fa962541ed8cc16828e88acdf0c0451c8739c6c55515d97f5b7a6853d0995dba",
+        "inspection": "Viewed generated output; distinct scene, full-scale where architectural, no visible text, logos, people, models or diagrams."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/core-approach-768.webp",
+          "bytes": 71570,
+          "sha256": "c1c84510558db454980f5751095299fe618e1aafb9aec13ac3b9a85035c7e3d7"
+        },
+        {
+          "file": "public/images/pages/core-approach-1536.webp",
+          "bytes": 216122,
+          "sha256": "234a2a818d8592dc131b8a5e7d6ca056a822d1e201050ff88f23a5f74beec270"
+        }
+      ]
+    },
+    {
+      "key": "services",
+      "file": "core-services",
+      "ar": "معرض تصميم وتجهيز ضيافة يجمع الاستانلس والحجر داخل إطار معماري أخضر بترولي.",
+      "en": "A hospitality design and equipment gallery combining stainless steel and stone within a teal architectural frame.",
+      "generation": {
+        "key": "services",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/core/services.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: original editorial website image for a premium hospitality and foodservice design consultancy.\nFormat: one landscape photograph, 3:2 aspect ratio, ideally 1536 by 1024 pixels.\nStyle: bright, beautiful, high-end architectural editorial photography with authentic real materials and convincing full-scale space, airy, confident and refined.\nLighting and palette: strong clean daylight, luminous whites and pale natural stone, silver stainless steel, restrained saturated deep teal #0D5B63 accents. Bright exposure with crisp depth and no gloom.\nPrimary request: an impressive bright hospitality equipment and design gallery. A full-scale stainless steel and pale stone demonstration kitchen is framed by a large sculptural deep teal architectural portal. Distinct composition: strong diagonal editorial architecture photograph from a low normal human eye-level perspective; portal and demonstration kitchen create bold architectural depth. Generous airy white gallery space, carefully composed professional equipment, excellent daylight and realistic polished material texture. No miniature presentation model.\nConstraints: no people, no logos, no readable text or numbers, no signage, no UI, no screens, no charts, no diagrams, no graphics overlaid on the image, no watermarks, no miniature models, no scale models, no tabletop engineering plans, no drawings or loose papers. Avoid any miniature counter or model standing on a desk. Everything architectural must look realistically full-scale.",
+        "provenance": {
+          "mode": "built-in image_gen",
+          "sourcePath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-ee12560d-9e1c-4ce8-8687-60f5d9b0c5f3.png",
+          "original": true,
+          "callsForAsset": 1
+        },
+        "SHA256": "951916d762e97ed6b290c8d35799179164dc0af8d46c4280efa5ca1fa002381a",
+        "inspection": "Viewed generated output; distinct scene, full-scale where architectural, no visible text, logos, people, models or diagrams."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/core-services-768.webp",
+          "bytes": 56744,
+          "sha256": "ddc619b5495f865b37e7446ddbdb7879fd5deb5bb7e4594ac685045278a57cd2"
+        },
+        {
+          "file": "public/images/pages/core-services-1536.webp",
+          "bytes": 167284,
+          "sha256": "b658b2f35798c7beab0008565ab741ea29a9373e097039e49d408ef0f5e52589"
+        }
+      ]
+    },
+    {
+      "key": "concepts",
+      "file": "core-concepts",
+      "ar": "قهوة وطبق صحي وحلوى على كاونتر مضيء تعبر عن تنوع مفاهيم الضيافة.",
+      "en": "Coffee, a healthy bowl and a dessert on a bright counter expressing different hospitality concepts.",
+      "generation": {
+        "key": "concepts",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/core/concepts.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: original editorial website image for a premium hospitality and foodservice design consultancy.\nFormat: one landscape photograph, 3:2 aspect ratio, ideally 1536 by 1024 pixels.\nStyle: bright, beautiful, high-end architectural editorial photography with authentic real materials and convincing full-scale space, airy, confident and refined.\nLighting and palette: strong clean daylight, luminous whites and pale natural stone, silver stainless steel, restrained saturated deep teal #0D5B63 accents. Bright exposure with crisp depth and no gloom.\nPrimary request: a bright close editorial photograph of exactly three elegant real serving vessels arranged with generous breathing room across an expansive pale counter: an elegant coffee cup filled with coffee, a ceramic healthy food bowl with beautiful fresh colorful food, and a refined fine-dining dessert on a small elegant plate. Hospitality versatility in a single cohesive photographic scene, not a collage. Distinct composition: close horizontal food-service still life with shallow depth of field, the three real dishes cleanly visible and an airy full-scale professional kitchen softly blurred in the background. A tasteful teal glaze on the bowl provides the main restrained teal accent. Fresh, beautiful, appetizing and premium.\nConstraints: no people, no logos, no readable text or numbers, no signage, no UI, no screens, no charts, no diagrams, no graphics overlaid on the image, no watermarks, no miniature models, no scale models, no tabletop engineering plans, no drawings or loose papers. Avoid any miniature counter or model standing on a desk. Everything architectural must look realistically full-scale.",
+        "provenance": {
+          "mode": "built-in image_gen",
+          "sourcePath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-09369460-5ab2-40e7-800f-6ba5e8b6eac9.png",
+          "original": true,
+          "callsForAsset": 1
+        },
+        "SHA256": "a8d79cd3decf2d600380a1941376189c880df82c63a7cd09105e90447b818593",
+        "inspection": "Viewed generated output; distinct scene, full-scale where architectural, no visible text, logos, people, models or diagrams."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/core-concepts-768.webp",
+          "bytes": 55294,
+          "sha256": "9f7aee0ee7f8531c4fcd2d2807d5bfce9c10261817025181f5b0b1b27caed61b"
+        },
+        {
+          "file": "public/images/pages/core-concepts-1536.webp",
+          "bytes": 136828,
+          "sha256": "f513b99d6441cebf54dead3995cc554efe65b666a598a405b01cbd34bccf8c2f"
+        }
+      ]
+    },
+    {
+      "key": "engagements",
+      "file": "core-engagements",
+      "ar": "غرفة نقاش مشاريع مضيئة بطاولة منحنية وخامات وملفات عمل مغلقة.",
+      "en": "A bright project discussion room with a curved table, material samples and closed work folders.",
+      "generation": {
+        "key": "engagements",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/core/engagements.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: original editorial website image for a premium hospitality and foodservice design consultancy.\nFormat: one landscape photograph, 3:2 aspect ratio, ideally 1536 by 1024 pixels.\nStyle: bright, beautiful, high-end editorial photography with authentic real materials, airy, confident and refined.\nLighting and palette: strong clean daylight, luminous whites and pale natural stone, silver stainless steel, restrained saturated deep teal #0D5B63 accents. Bright exposure with crisp depth and no gloom.\nPrimary request: a beautiful light-filled project meeting room, photographed as a real full-scale architectural space. An elegant curved white meeting table is surrounded by refined comfortable chairs. On it are only a few large full-scale architectural material samples and two closed plain teal folders, with nothing printed or written on their covers. An expansive window fills the room with clean daylight. Distinct composition: a wide editorial room portrait emphasizing the soft curve of the table, the large window and welcoming chairs. Pale stone, white, brushed metal and restrained deep teal. The samples are simple slabs, not tiny models, and there are no drawings.\nConstraints: no people, no logos, no readable text or numbers, no signage, no UI, no screens, no tables or charts printed on anything, no diagrams, no graphics overlaid on the image, no watermarks, no miniature models, no scale models, no tabletop engineering plans, no drawings or loose printed papers. Avoid any miniature counter or model standing on a desk. Everything architectural must look realistically full-scale.",
+        "provenance": {
+          "mode": "built-in image_gen",
+          "sourcePath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-c0cff625-a3fb-4bf5-9b5c-8d123652dd3c.png",
+          "original": true,
+          "callsForAsset": 1
+        },
+        "SHA256": "f34b1009a663eacaf1ee88436cfee62c153f0575e79cb6f1abe0281a64b822a5",
+        "inspection": "Viewed generated output; distinct scene, full-scale where architectural, no readable text, logos, people, models or diagrams."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/core-engagements-768.webp",
+          "bytes": 56250,
+          "sha256": "57420a8e4c314fb6d124eef8f69208e3b15a57c9f87eeffd1a8d414b36fb1bf1"
+        },
+        {
+          "file": "public/images/pages/core-engagements-1536.webp",
+          "bytes": 174568,
+          "sha256": "6bad231ffe8229b74b7258be43697877aa8a80c29a742e89bc42001c079c1fba"
+        }
+      ]
+    },
+    {
+      "key": "deliverables",
+      "file": "core-deliverables",
+      "ar": "تكوين تحريري لملفات عرض بيضاء بحواف خضراء بترولية وعينة استانلس.",
+      "en": "An editorial arrangement of white presentation folios with teal edges and a stainless-steel sample.",
+      "generation": {
+        "key": "deliverables",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/core/deliverables.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: original editorial website image for a premium hospitality and foodservice design consultancy.\nFormat: one landscape photograph, 3:2 aspect ratio, ideally 1536 by 1024 pixels.\nStyle: bright, beautiful, high-end editorial photography with authentic real materials, airy, confident and refined.\nLighting and palette: strong clean daylight, luminous whites and pale natural stone, silver stainless steel, restrained saturated deep teal #0D5B63 accents. Bright exposure with crisp depth and no gloom.\nPrimary request: expressive premium physical presentation portfolio composition, a sculptural editorial still life that is photorealistic and high-key. Several upright, completely unmarked white document folios of varying sizes with deep teal binding edges are arranged as elegant geometric forms. Include a single closed architectural portfolio lying horizontally and one brushed stainless steel material strip. Distinct composition: close, carefully balanced sculptural still life against an expansive seamless luminous white and pale stone setting, subtle crisp daylight shadows, premium white paperboard texture and rich restrained teal edges. All document covers and visible surfaces must be entirely blank. Absolutely no visible text, letters, numbers, tables, charts, diagrams, printed sample documents, mockup pages, screens or miniature models.\nConstraints: no people, no logos, no readable text or numbers, no signage, no UI, no screens, no tables or charts printed on anything, no diagrams, no graphics overlaid on the image, no watermarks, no miniature models, no scale models, no tabletop engineering plans, no drawings or loose printed papers. Avoid any miniature counter or model standing on a desk. Everything architectural must look realistically full-scale.",
+        "provenance": {
+          "mode": "built-in image_gen",
+          "sourcePath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-84986746-44c6-4694-8cd4-a05681949852.png",
+          "original": true,
+          "callsForAsset": 1
+        },
+        "SHA256": "a9c93bb62e8e5c215644aee85ed329d2087a75d73797fe2ec882befd9733b9a0",
+        "inspection": "Viewed generated output; distinct scene, full-scale where architectural, no readable text, logos, people, models or diagrams."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/core-deliverables-768.webp",
+          "bytes": 33578,
+          "sha256": "7ee81962a16afb248fa46d9d1b4fba69e6d205530b3a17bae4d36dc945ae45c1"
+        },
+        {
+          "file": "public/images/pages/core-deliverables-1536.webp",
+          "bytes": 94280,
+          "sha256": "825f5c915a0dabcc8c77405e498e2ec1ac2121601a3314956526069f403bb1c4"
+        }
+      ]
+    },
+    {
+      "key": "contact",
+      "file": "core-contact",
+      "ar": "استقبال استوديو استشاري مضيء بسطح حجري أبيض وزجاج أخضر بترولي.",
+      "en": "A bright advisory studio reception with a white stone counter and teal glass.",
+      "generation": {
+        "key": "contact",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/core/contact.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: original editorial website image for a premium hospitality and foodservice design consultancy.\nFormat: one landscape photograph, 3:2 aspect ratio, ideally 1536 by 1024 pixels.\nStyle: bright, beautiful, high-end editorial photography with authentic real materials, airy, confident and refined.\nLighting and palette: strong clean daylight, luminous whites and pale natural stone, silver stainless steel, restrained saturated deep teal #0D5B63 accents. Bright exposure with crisp depth and no gloom.\nPrimary request: a welcoming bright architectural consultancy reception, a real full-scale interior. A crisp white stone reception counter sits before a beautiful teal glass feature wall, with one tall green plant and plentiful daylight from a generous window. Distinct composition: an inviting eye-level frontal architectural photograph with elegant asymmetrical balance, the white stone counter and luminous glass as the focus. The counter top is beautifully clean. Quiet premium hospitality, airy generous space, subtle realistic glass reflections. Absolutely no signage, branding or lettering anywhere.\nConstraints: no people, no logos, no readable text or numbers, no signage, no UI, no screens, no tables or charts printed on anything, no diagrams, no graphics overlaid on the image, no watermarks, no miniature models, no scale models, no tabletop engineering plans, no drawings or loose printed papers. Avoid any miniature counter or model standing on a desk. Everything architectural must look realistically full-scale.",
+        "provenance": {
+          "mode": "built-in image_gen",
+          "sourcePath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-69a8aeb0-6f5d-4b77-bcc6-011f8b9da7d3.png",
+          "original": true,
+          "callsForAsset": 2,
+          "successfulCallsForAsset": 1,
+          "status": "complete",
+          "completedDate": "2026-09-28",
+          "priorAttempt": {
+            "date": "2026-09-27",
+            "status": "failed",
+            "error": "HTTP 429 usage_limit_reached"
+          },
+          "resumeReason": "Authorized continuation after quota reset using exact original brief",
+          "variants": 0,
+          "fallbackAttempted": false
+        },
+        "SHA256": "87e3485343127c52f4571307de2296d6aba22a016503d9dcb4708a27f3817560",
+        "inspection": "Viewed generated output; bright distinct composition with no visible readable text, logos, people, models, charts or diagrams. Reception is full-scale; privacy is layered architectural glass."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/core-contact-768.webp",
+          "bytes": 51320,
+          "sha256": "fc9544e4e037cd18be8a4bd18021db0383799a4c37fb7cc667f14138ed304e3d"
+        },
+        {
+          "file": "public/images/pages/core-contact-1536.webp",
+          "bytes": 155264,
+          "sha256": "4c7cac542fcdaddb561ba4620550b101ab47af3e937e0c03d18c23737b744743"
+        }
+      ]
+    },
+    {
+      "key": "privacy",
+      "file": "core-privacy",
+      "ar": "تكوين معماري من طبقات زجاج مصنفر وأخضر بترولي يمر بينها ضوء الصباح.",
+      "en": "An architectural composition of frosted and teal glass layers catching morning light.",
+      "generation": {
+        "key": "privacy",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/core/privacy.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: original editorial website image for a premium hospitality and foodservice design consultancy.\nFormat: one landscape photograph, 3:2 aspect ratio, ideally 1536 by 1024 pixels.\nStyle: bright, beautiful, high-end editorial photography with authentic real materials, airy, confident and refined.\nLighting and palette: strong clean daylight, luminous whites and pale natural stone, silver stainless steel, restrained saturated deep teal #0D5B63 accents. Bright exposure with crisp depth and no gloom.\nPrimary request: elegant close architectural art made from layered translucent frosted glass planes and a single saturated deep teal glass panel catching controlled morning sunlight. Convey quiet separation and privacy through the materials themselves. Distinct composition: an abstract yet photorealistic sculptural architectural photograph, close view of overlapping upright glass planes with beautiful layered translucency, luminous white space and refined elongated soft-edged shadows. Tactile etched glass and polished edges, strong visual simplicity and depth, a premium art photograph. Absolutely no lock shapes, icons, symbols, text, screens, furniture miniatures or models.\nConstraints: no people, no logos, no readable text or numbers, no signage, no UI, no screens, no tables or charts printed on anything, no diagrams, no graphics overlaid on the image, no watermarks, no miniature models, no scale models, no tabletop engineering plans, no drawings or loose printed papers. Avoid any miniature counter or model standing on a desk. Everything architectural must look realistically full-scale.",
+        "provenance": {
+          "mode": "built-in image_gen",
+          "sourcePath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-01c1f60d-2c55-4efa-9764-2341e65c67b5.png",
+          "original": true,
+          "callsForAsset": 2,
+          "successfulCallsForAsset": 1,
+          "status": "complete",
+          "completedDate": "2026-09-28",
+          "priorAttempt": {
+            "date": "2026-09-27",
+            "status": "failed",
+            "error": "HTTP 429 usage_limit_reached"
+          },
+          "resumeReason": "Authorized continuation after quota reset using exact original brief",
+          "variants": 0,
+          "fallbackAttempted": false
+        },
+        "SHA256": "4f2c055ea6c329c6e480a043e6f8af3cd6c5d5568f574979dbcd40970c16e8b3",
+        "inspection": "Viewed generated output; bright distinct composition with no visible readable text, logos, people, models, charts or diagrams. Reception is full-scale; privacy is layered architectural glass."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/core-privacy-768.webp",
+          "bytes": 39996,
+          "sha256": "d23339a3c1bb21bf224c1b46c6c9e53f1cc2910c0f8b4ebbaf9129ba113a2453"
+        },
+        {
+          "file": "public/images/pages/core-privacy-1536.webp",
+          "bytes": 153038,
+          "sha256": "83461e047b0298683069abe4adc3b0a233f5fcb1edb3c90f93d11c83690c3880"
+        }
+      ]
+    },
+    {
+      "key": "S01",
+      "file": "service-s01",
+      "ar": "مساحة مقهى مضيئة قبل التجهيز، بواجهات زجاجية واسعة وعينات تشطيبات كاملة الحجم.",
+      "en": "A bright café space before fit-out, with wide glazing and full-size finish samples.",
+      "generation": {
+        "key": "S01",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S01-future-cafe-tenancy.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: a bright vacant future café tenancy, conveying early commitment and possibility. Expansive floor-to-ceiling glazing floods an open unfurnished commercial space with daylight. A clean pale stone floor and tall white plaster walls are the main event. Several genuine full-scale unbranded material sample panels—brushed steel, pale stone, warm light wood and deep teal tile—lean naturally against one wall, tall enough to be architectural finish panels. Composition: wide architectural corner perspective from human eye height, generous empty floor in foreground, glazing carrying light through the space. No installed kitchen counter, no furniture vignette.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-e268bc78-a45d-4486-9f3b-442df585385c.png",
+          "generation": "original generation; no edits, variants or retries"
+        },
+        "sha256": "275309c8065b6318512d3cd90658878f7398657798b1851e6ff90b826a0fff83",
+        "visual_inspection": "Visually inspected: vacant daylit full-scale tenancy, expansive glazing, tall finish panels; distinct architectural scene."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s01-768.webp",
+          "bytes": 58464,
+          "sha256": "7b3acab9251e5323f4465a06c47009210654fac9439e37e49cfbf7886d39bf79"
+        },
+        {
+          "file": "public/images/pages/service-s01-1536.webp",
+          "bytes": 194032,
+          "sha256": "c74f78f44f0cc2be7cec1b6503167de912e96e5b27e6da75ce8281615edd7b69"
+        }
+      ]
+    },
+    {
+      "key": "S02",
+      "file": "service-s02",
+      "ar": "تصور لمقهى ومخبز مدمج، يوضح علاقة كاونتر الخدمة بمساحة التشغيل.",
+      "en": "A compact café and bakery concept showing the relationship between the service counter and operating space.",
+      "generation": {
+        "key": "S02",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S02-bakery-cafe-prototype.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: a luminous compact bakery-café prototype interior, conveying feasibility in an efficient modest footprint. View from the entrance threshold into a complete small café: a beautiful full-size pale stone front counter with deep teal lower cabinetry, a small unbranded coffee station, a simple display of golden baked bread, compact back work area, a few neatly arranged customer seats and abundant daylight. Composition: carefully framed human-height view revealing how the entire small interior fits together, intimacy and practical efficiency with beautiful scale. Bright white walls, brushed silver details, pale oak and soft natural shadows. No oversized luxury hall.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-0104e417-9ce4-4c2f-b6b1-b353cbe9a303.png",
+          "generation": "original generation; no edits, variants or retries"
+        },
+        "sha256": "3133cf295caa20fa6aff0e384052475e38df187b1bbf1b4161e3d3cda5b29f64",
+        "visual_inspection": "Visually inspected: complete compact bakery-cafe viewed from threshold, teal counter and bread display; distinct interior scene."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s02-768.webp",
+          "bytes": 81596,
+          "sha256": "ee79d7664996807dea0347432112324ca46118a0c8e2c3b573ec2d48f920ba4a"
+        },
+        {
+          "file": "public/images/pages/service-s02-1536.webp",
+          "bytes": 224242,
+          "sha256": "aed02550e81c8f469026b508e0aad4d62da76e72de28eda1c523f8752bfbb677"
+        }
+      ]
+    },
+    {
+      "key": "S03",
+      "file": "service-s03",
+      "ar": "منظر علوي لجزيرة تحضير بمكونات طازجة ومساحات عمل واضحة لقائمة الطعام.",
+      "en": "An overhead view of a preparation island with fresh ingredients and clearly arranged menu workspaces.",
+      "generation": {
+        "key": "S03",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S03-menu-space-fit.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: overhead view of a full-scale professional preparation island, expressing how menu components fit clear workspace zones. The real broad brushed-stainless working surface has separate, orderly groups of colorful fresh ingredients: ripe tomatoes and herbs, citrus, greens and vegetables, neatly arranged bread and a bowl of grains. Several clean white ceramic vessels and practical chopping boards define different prep activities with spacious clear gaps and an uncluttered central workspace. The ingredients feel fresh and edible, naturally colored. Composition: true directly overhead architectural food editorial photograph with the edges of the large island and pale stone kitchen floor visible to establish real scale; deep teal cabinet faces or nearby tile visible at the margins. No letters, signage or visual zone dividers, no human hands.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-d62b675f-cf59-4a93-93ea-aacf4ea28442.png",
+          "generation": "original generation; no edits, variants or retries"
+        },
+        "sha256": "e897500497b6f92cb9aaa78aaad03e59f007d1dd83d1d626afa5ab0fac6af1c4",
+        "visual_inspection": "Visually inspected: true overhead full-size prep island, separated colorful ingredients and generous clear workspace."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s03-768.webp",
+          "bytes": 84158,
+          "sha256": "12868784c3c0d38b96e7514e7aca23620915d79c6a6701dbe84a83851ee33046"
+        },
+        {
+          "file": "public/images/pages/service-s03-1536.webp",
+          "bytes": 258910,
+          "sha256": "4036aeb2ac81f283c5e03131178bdb53b7491dedb9ab7df13f9e089bddd98610"
+        }
+      ]
+    },
+    {
+      "key": "S04",
+      "file": "service-s04",
+      "ar": "معدات مطبخ احترافية معروضة بشكل مستقل لدراسة الخيارات ومقارنتها.",
+      "en": "Professional kitchen equipment presented separately for considering and comparing options.",
+      "generation": {
+        "key": "S04",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S04-equipment-comparison.png",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: a dedicated bright commercial equipment showroom with THREE clearly different genuine full-size unbranded units, displayed apart for thoughtful comparison. One upright stainless commercial refrigerator, one full-size floor-standing planetary mixer, and one convection oven on its proper full-height stand. Each stands on its own very low broad white display plinth, with generous space separating the three installations. All equipment is convincingly real and usable at restaurant scale, and each unit's silhouette is visibly different. Composition: frontal architectural wide view in a tall white daylit showroom with a pale stone floor and a restrained deep teal rear wall inset. Crisp daylight, beautifully resolved brushed metal. No repeated units, no rows of tiny models, no display placards.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-f111dfa8-42e6-4703-ae16-43056de1dd87.png",
+          "generation": "original generation; no edits, variants or retries"
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "sha256": "7b6aa52a03d9e4401d1ad72f11667f3487165bc91723db08da2487af8868a981",
+        "visual_inspection": "Visually inspected: three different full-size commercial units separated on individual low plinths in a bright showroom."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s04-768.webp",
+          "bytes": 44652,
+          "sha256": "cdefbf3c2d96eca906b665210b5dfe7524ff4c77234c0463fea77dde0cb4e8df"
+        },
+        {
+          "file": "public/images/pages/service-s04-1536.webp",
+          "bytes": 120838,
+          "sha256": "919a835da42241d6b87236e8a2b8af46c4829a50110a1a3b5975cb181426c9d0"
+        }
+      ]
+    },
+    {
+      "key": "S05",
+      "file": "service-s05",
+      "ar": "توزيع معدات احترافية حول جزيرة تحضير، يتضمن تبريداً وفرناً وخلاطاً كبيراً.",
+      "en": "Professional equipment arranged around a preparation island, including refrigeration, an oven and a large mixer.",
+      "generation": {
+        "key": "S05",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S05-equipment-planning.png",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: an expansive professional kitchen focused on precise equipment arrangement. A genuine full-height stainless refrigerator, a substantial floor-standing commercial mixer, a full-size convection oven, and a broad central stainless workstation occupy thoughtfully spaced positions in a generous bright kitchen. Each is clearly visible and properly installed with believable access and working clearances. Composition: elevated but natural architectural corner view across the broad central workstation toward the main equipment wall, conveying order, space and practical flow. Tall windows bring crisp daylight onto pale stone flooring, white walls and restrained deep teal lower cabinetry. Airy, premium real hospitality interior, not a showroom and not a miniature.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-a946ce1b-59d7-44fe-939c-7e2c7a2fe29e.png",
+          "generation": "original generation; no edits, variants or retries"
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "sha256": "3324d3389d0cb6249311474940595b25b400cae0bc7cc5fa8a46f9ae1fa08b0b",
+        "visual_inspection": "Visually inspected: substantial equipment arranged around a full-scale working island with bright windows and teal cabinetry."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s05-768.webp",
+          "bytes": 61812,
+          "sha256": "aab42e06d52e82d4a8d0f939589e9836d575c82ad4b3dbbbafbc7c64f69f7a00"
+        },
+        {
+          "file": "public/images/pages/service-s05-1536.webp",
+          "bytes": 180452,
+          "sha256": "cbecf523786f1271bafaf2394f2aaef884fe51615504ea9597ee096a10f1915a"
+        }
+      ]
+    },
+    {
+      "key": "S06",
+      "file": "service-s06",
+      "ar": "جدار تجهيز مطبخ مع مظلة شفط استانلس ومرافق مدمجة ضمن التكوين المعماري.",
+      "en": "A kitchen equipment wall with a stainless extraction canopy and services integrated into the architecture.",
+      "generation": {
+        "key": "S06",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S06-service-wall-canopy.png",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: a striking architectural kitchen service wall showcasing one graceful broad stainless extraction canopy over complete installed commercial cooking equipment, with neatly integrated credible utility connections. The elegant canopy is the main sculptural feature; its stainless folded geometry, baffle filters and clean connection to a concealed ceiling route are carefully resolved. A full-size range and cooking line beneath it are installed against a luminous white and deep teal tiled backsplash. Visible service connections are restrained, tidy and believable, with no exposed wire tangles or unconnected pipes. Composition: near-frontal low eye-level wide architectural view, crisp daylight glancing across brushed metal, pale stone floor, bright safe premium working kitchen. No utility diagrams or callouts.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-33c3851a-449a-4e9a-8ae5-e77c73706af8.png",
+          "generation": "original generation; no edits, variants or retries"
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "sha256": "ddb24687149d5a6d70790c56e904afded533535c875dcc4babb51a6cb6cdd1c1",
+        "visual_inspection": "Visually inspected: installed cooking line and prominent extraction canopy, teal tiled service wall and convincing full-scale materials."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s06-768.webp",
+          "bytes": 75798,
+          "sha256": "13a9b4c73bf23c4ab6fdc998f806fe86a59083fabf0b1257345e0988daf00183"
+        },
+        {
+          "file": "public/images/pages/service-s06-1536.webp",
+          "bytes": 202414,
+          "sha256": "164a284111b51e7105599b1c29cc45a43ace7cb6270678baf9e5a02dc7d38ca2"
+        }
+      ]
+    },
+    {
+      "key": "S07",
+      "file": "service-s07",
+      "ar": "تفاصيل تصنيع كاونتر خدمة استانلس كامل، مع خزائن ورفوف وخلفية بلون أخضر بترولي.",
+      "en": "A fully fabricated stainless service counter with cabinets, shelves and a deep teal backdrop.",
+      "generation": {
+        "key": "S07",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S07-stainless-fabrication.png",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: close architectural view of a beautifully fabricated full-size stainless pass counter. The long working counter has precise folded edges, beautifully joined corners, lower stainless cupboards with simple real handles, and gracefully integrated upper pass shelving. It belongs to a real professional kitchen and fills the frame as a substantial material object. Composition: a close three-quarter view along the counter at normal standing height, showing the brushed stainless highlights and the craftsmanship of folded edges in crisp focus, with a deep teal tiled background and soft bright daylight. The counter's base, cupboard doors and floor contact remain visible to establish full scale. Restrained, refined, tactile and materially sophisticated. No food props, no plans, no display pedestal, no miniature.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-6a348260-f39f-4f5f-9c55-7f7556f57326.png",
+          "generation": "original generation; no edits, variants or retries"
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "sha256": "c68847b701814a7f52bd5d1e3a0ce74d40a0e8637d3c61682e0d4dc29f5dfb13",
+        "visual_inspection": "Visually inspected: close full-size stainless pass counter with folded edges, lower cupboards, integrated shelving and teal tile."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s07-768.webp",
+          "bytes": 51464,
+          "sha256": "ff9d872103aa68b9980e6d31c3aa3604ea2dd86baedb81d169a0848f01519a8b"
+        },
+        {
+          "file": "public/images/pages/service-s07-1536.webp",
+          "bytes": 130916,
+          "sha256": "5db2f9763dcd0cb7111a7fca9f1b3b63c2071b053f5bfa064d4cf7df3c5be9a0"
+        }
+      ]
+    },
+    {
+      "key": "S08",
+      "file": "service-s08",
+      "ar": "خامات استانلس وسيراميك وملفات مواصفات مغلقة تدعم تصور نطاق التجهيز.",
+      "en": "Stainless and ceramic materials with closed specification folders expressing the fit-out scope.",
+      "generation": {
+        "key": "S08",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S08-scope-material-selection.png",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: refined overhead physical selection of real unbranded full-scale material samples that suggests budgeting and scope through tangible specification choices. On a broad clean light-stone surface lie a few substantial brushed stainless finish panels with subtly differing textures, two CLOSED dark-teal specification binders with completely blank spines and covers, and a generous clean white ceramic slab. Carefully spaced, overlapping only where natural, with precise edges and gentle directional daylight revealing thickness and texture. Composition: directly overhead premium editorial still life; bold disciplined material arrangement, abundant pale negative space, impressive physical scale, crisp deep teal accents. No open pages, no paper documents, no writing, no charts, no grid, no money, no numbers, no tiny kitchen equipment, no models.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-8e5d84f8-063c-494e-8ca2-2cd22a518d0e.png",
+          "generation": "original generation; no edits or variants; one successful resumed call on 2026-09-28 after the initial 2026-09-27 call failed with quota exhaustion and produced no image"
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "sha256": "d38a4e80bc4797dae466ac05c3e3e01163cfc2a76ad3d3887aa0a1fba5afe928",
+        "visual_inspection": "Visually inspected: overhead metal finish panels, two blank closed teal binders and pale ceramic slab; no papers or miniature equipment."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s08-768.webp",
+          "bytes": 45412,
+          "sha256": "f5c5b103097436133ce6f7b2ec89361e0af42bfbc865db181cba458052a34231"
+        },
+        {
+          "file": "public/images/pages/service-s08-1536.webp",
+          "bytes": 186978,
+          "sha256": "16991a8fea05f5582e92c014ecce8f2b655780688d9d06ecdedcd2f01ad3bb73"
+        }
+      ]
+    },
+    {
+      "key": "S09",
+      "file": "service-s09",
+      "ar": "مطبخ ضيافة خاص مضيء خلف أبواب زجاجية مصنفرة بتفاصيل هادئة.",
+      "en": "A bright private hospitality pantry behind frosted glass doors with calm architectural details.",
+      "generation": {
+        "key": "S09",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S09-private-hospitality-pantry.png",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: luminous private hospitality pantry revealed behind two open sculptural frosted glass doors. The elegant doors frame a tranquil high-end full-scale pantry interior with pale stone surfaces, beautifully integrated deep teal cabinetry, discreet stainless work fittings, refined open shelving and a simple unbranded coffee setup. A bright window or concealed daylight source fills the room with soft natural light. Composition: symmetric yet natural view from a quiet adjoining corridor through the open frosted doors into the pantry; the sculptural translucent door edges in the foreground create a feeling of privacy, exclusivity and calm function. Full-height interior, credible scale, sophisticated architectural photograph. No trolley as subject, no hotel logos, no people, no flowers as main subject.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-f5d4d26f-7776-41ae-8ed9-e9ac04ade7f3.png",
+          "generation": "original generation; no edits or variants; one successful resumed call on 2026-09-28 after the initial 2026-09-27 call failed with quota exhaustion and produced no image"
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "sha256": "1a3a049feb99260cff68af4072f147f183bd3f464516dc69076a8de9140e4ef1",
+        "visual_inspection": "Visually inspected: private pantry framed by open translucent sculptural doors; full-height teal cabinetry and pale stone surfaces."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s09-768.webp",
+          "bytes": 55124,
+          "sha256": "d8426d08f787a0c957d8a36ea22155144524cbd3089df63dee479fa80fcfe526"
+        },
+        {
+          "file": "public/images/pages/service-s09-1536.webp",
+          "bytes": 161942,
+          "sha256": "b20c00439b824056088af09da4ee30bd6d906b993a5d453c18fd3a31d88aa6cc"
+        }
+      ]
+    },
+    {
+      "key": "S10",
+      "file": "service-s10",
+      "ar": "مطبخ عرض متكامل يفتح على منطقة الطعام، مع جزيرة تشغيل رئيسية.",
+      "en": "A complete show kitchen opening toward a dining area around a central working island.",
+      "generation": {
+        "key": "S10",
+        "localpath": "/workspace/scratch/00e5364a7d4f/unique-visuals/services/S10-owner-site-review.png",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: distinctive NASAQ hospitality-consultancy service page image.\nFormat: ONE landscape photograph, aspect ratio 3:2, 1536 x 1024.\nStyle: premium bright architectural/editorial photography, convincingly real full-scale architecture and real materials; crisp luminous daylight, clean whites and pale natural stone, silver stainless steel, sophisticated deep teal #0D5B63 accents. Clean, sophisticated, distinctive visual storytelling.\nConstraints: expressive photographic concept, not an engineering diagram. Everything is full-size, physically believable. No people, no readable text, no letters, no numbers, no labels, no logos, no watermarks, no charts, no data tables, no screens or screen UI, no plans or drawings laid on a desk, no miniature models, no small countertop sitting on a desktop.\nPrimary request: wide bright owner-side advisory site-review setting inside a completed restaurant show kitchen. A substantial full-size pale-stone and brushed-stainless island is the architectural focal point, with a clear sightline past it into a beautifully coordinated luminous dining area with elegant timber chairs and deep teal upholstered seating. The finished show kitchen's work zone, service opening and dining room align with clear calm sightlines, conveying architectural coordination and a ready-to-use space. Composition: sophisticated wide human-height architectural photograph from an oblique corner, island in the foreground, dining vista in the background; crisp daylight, white walls, silver, pale stone and restrained deep teal. No people, no papers, no plans, no clipboards, no tablet devices, no miniature.",
+        "provenance": {
+          "tool": "built-in image_gen.imagegen",
+          "sourcepath": "/workspace/scratch/00e5364a7d4f/generated_images/exec-2d5b70f0-e054-49c1-8b17-6f78e63ebe3e.png",
+          "generation": "original generation; no edits or variants; one successful resumed call on 2026-09-28 after the initial 2026-09-27 call failed with quota exhaustion and produced no image"
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024
+        },
+        "sha256": "a8e5d18ab66c4a84e1034797879b6f6ae96be945b94c56d8a08628e4cd57e3ba",
+        "visual_inspection": "Visually inspected: bright completed show kitchen with large island and clear sightline to dining area; no people or papers."
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/service-s10-768.webp",
+          "bytes": 73118,
+          "sha256": "fd374d7f1d582c0ab277f5baa6bf0ed23256613d37986c2b49b27250cef3e86e"
+        },
+        {
+          "file": "public/images/pages/service-s10-1536.webp",
+          "bytes": 220598,
+          "sha256": "be0f0f30957f0e0026014f0a555929d0d95598b8d3545289b94ac2b6347403dd"
+        }
+      ]
+    },
+    {
+      "key": "C01",
+      "file": "concept-c01",
+      "ar": "بار قهوة مختصة بكاونتر أبيض منحوت، ماكينة قهوة خضراء بترولية وعرض مخبوزات.",
+      "en": "A specialty coffee bar with a sculpted white counter, teal espresso machine and bakery display.",
+      "generation": {
+        "key": "C01",
+        "slug": "specialty-coffee",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A beautiful full-scale specialty coffee bar with a dramatic sculpted white solid-surface counter, an elegant deep teal professional espresso machine, and a generous glass bakery display showing fresh croissants and pastries.\nArchitecture and composition: an oblique eye-level view down the sweeping sculptural counter toward tall windows; the white counter itself is the defining organic architectural gesture. Full-height space and actual floor clearly visible. Beautiful side daylight creates long soft-edged shapes; polished espresso tools and a few cups make it operational. Pale limestone flooring and subtle white walls. This is a completely new coffee bar image, not a tabletop miniature and not a repeated existing coffee scene.",
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-b3e3e314-9539-4dc9-8e37-d3d4cdfc0358.png",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C01-specialty-coffee.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-b3e3e314-9539-4dc9-8e37-d3d4cdfc0358.png",
+          "generated_date": "2026-09-27",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "0fac10320ddeefd4c4663b400b7694ba1396c93019197406e0c842f3a2125b50",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Sculpted full-size white counter, teal espresso machine, pastry display and luminous side daylight; visually distinct coffee-bar architecture. Tiny unreadable pseudo-label on espresso machine is visible at full resolution."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c01-768.webp",
+          "bytes": 75022,
+          "sha256": "a81e3797f205cdd0ead1bfd1561dd3ac3df924af4a6b424fb147cc27c3414772"
+        },
+        {
+          "file": "public/images/pages/concept-c01-1536.webp",
+          "bytes": 201374,
+          "sha256": "2d98317a9bd579f580b9373426f83724946ddc308705f54b8547057d15e8006f"
+        }
+      ]
+    },
+    {
+      "key": "C02",
+      "file": "concept-c02",
+      "ar": "كاونتر مطعم برجر ودجاج سريع مع منطقة شوي وقلي وتجهيز طلبات.",
+      "en": "A burger and fried-chicken service counter with grilling, frying and order preparation areas.",
+      "generation": {
+        "key": "C02",
+        "slug": "burger-chicken",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A premium burger and fried-chicken restaurant open service counter. Behind a clean polished pass are a genuine stainless commercial grill and twin fry station under a fitted extraction hood. On the pass, several elegant plain burger boxes without any marks, with a beautiful burger and crisp golden chicken in one open box.\nArchitecture and composition: lively low oblique view across the full-length rectilinear service pass, showing a substantial full-scale room beyond, square pale stone counter front, teal vertical wall panels, clean stainless equipment. Energetic natural coral tomato and sauce accents balance the deep teal. Bright side windows and a vibrant, polished contemporary quick-service atmosphere.",
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-93b2474d-1788-4c03-9033-a5b1441d5b91.png",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C02-burger-chicken.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-93b2474d-1788-4c03-9033-a5b1441d5b91.png",
+          "generated_date": "2026-09-27",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "218b881e1e6e3cb819dd2a8819d9af2317272307507cdf8a995b2a236c0a93f9",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Full-size burger and chicken pass with grill, fry baskets, plain boxes and vibrant food accents; bright window light and teal walls."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c02-768.webp",
+          "bytes": 80296,
+          "sha256": "6befb73c1bbbdd177deea552b6134278a5534daf9e8ce84565aaa9a8f9689ecc"
+        },
+        {
+          "file": "public/images/pages/concept-c02-1536.webp",
+          "bytes": 227110,
+          "sha256": "1985b33a27a681a9ebf68a37b8efd0b096d4e9d89fbbc56435f560ba2c4a65dc"
+        }
+      ]
+    },
+    {
+      "key": "C03",
+      "file": "concept-c03",
+      "ar": "مفهوم شاورما مع شوايات رأسية وكاونتر تحضير وواجهة خدمة حجرية.",
+      "en": "A shawarma concept with vertical rotisseries, a preparation counter and stone service frontage.",
+      "generation": {
+        "key": "C03",
+        "slug": "shawarma",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A contemporary premium shawarma restaurant with exactly two prominent full-size vertical rotisserie units holding golden roasting shawarma, visible clean food preparation counter with orderly ingredients, elegant ribbed pale stone serving front, and rich deep teal tile behind.\nArchitecture and composition: distinctive wide frontal, near-symmetrical architectural photograph of the entire broad serving counter and both rotisseries, the floor and full-height interior clearly visible; precise verticals and strong horizontal composition. Bright daylight falls in from a large side opening, brushed stainless working surfaces, appetizing and immaculately maintained, welcoming full-scale restaurant.",
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-4077757c-5c74-4c24-86e0-19147641fc25.png",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C03-shawarma.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-4077757c-5c74-4c24-86e0-19147641fc25.png",
+          "generated_date": "2026-09-27",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "6efdb476775f30770264c42443829b465318519d8776e54d8bc1e752cbe23f21",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Wide frontal serving counter, exactly two prominent rotisseries, ribbed stone front and teal tiles; full interior scale."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c03-768.webp",
+          "bytes": 81724,
+          "sha256": "a2d7e1de0201a316c102a89385043e01c932acefd2df3ee52848bdae54046b6c"
+        },
+        {
+          "file": "public/images/pages/concept-c03-1536.webp",
+          "bytes": 253866,
+          "sha256": "e31898442fc7bd23987d3bcbf982225926a4c9e63dc11b18aea3aefe90fea047"
+        }
+      ]
+    },
+    {
+      "key": "C04",
+      "file": "concept-c04",
+      "ar": "كاونتر أغذية صحية بأطباق وخضروات ملونة ضمن مساحة تحضير مضيئة.",
+      "en": "A healthy-food counter with colourful bowls and vegetables in a bright preparation space.",
+      "generation": {
+        "key": "C04",
+        "slug": "healthy-bowls",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A healthy bowls, salad and protein kitchen counter, with a small varied arrangement of colorful finished bowls, fresh greens and neatly displayed vegetables, an immaculate chilled ingredient station and a clean open preparation area.\nArchitecture and composition: airy high-ceiling interior with bright overhead clerestory sunlight, white tiled and white stone surfaces, fresh leafy green palette and a modest deep teal structural accent. Eye-level diagonal architectural view along a broad counter, visible full-size kitchen appliances beyond, and a floor-to-ceiling opening toward greenery. Natural vivid vegetables are the focal color, unprocessed and realistic.",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C04-healthy-bowls.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-7500f937-04b8-4c8c-a8ba-d0399b67a789.png",
+          "generated_date": "2026-09-27",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-7500f937-04b8-4c8c-a8ba-d0399b67a789.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "203b99718405fd2b2a86e613b2268b809fe22a1662d2053d13b15e56281e09f6",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Colorful healthy bowls and orderly ingredients along a bright open kitchen counter, greenery and tall windows."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c04-768.webp",
+          "bytes": 111232,
+          "sha256": "5165bc8e590f5837b4a5357089b0f625064e14fc1cf8d251bd6d6ac375d7ec51"
+        },
+        {
+          "file": "public/images/pages/concept-c04-1536.webp",
+          "bytes": 297698,
+          "sha256": "6cf5abe0289e6f225b9226c1a6cb6c8991db805287d2d183dc074efe44aa5bed"
+        }
+      ]
+    },
+    {
+      "key": "C05",
+      "file": "concept-c05",
+      "ar": "مطبخ سحابي بمناطق إنتاج مستقلة ومساحة منظمة لتعبئة الطلبات.",
+      "en": "A cloud kitchen with separate production bays and an organised order-packing area.",
+      "generation": {
+        "key": "C05",
+        "slug": "cloud-kitchen",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A premium multi-brand cloud kitchen, showing several distinct connected stainless production bays with different installed cooking equipment and a highly organized packing area with plain unmarked takeaway boxes, neat shelves and clear working circulation.\nArchitecture and composition: wide diagonal eye-level view from one corner deep through connected full-scale production zones, strong receding geometry, teal door frames separating white rooms, daylight through tall industrial windows. Stainless prep counters, extraction hoods, convection ovens and an orderly dispatch pass make the different operational bays clear without any branding. Bright, clean, efficient and architecturally attractive.",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C05-cloud-kitchen.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-16d014e4-c162-4667-9e1a-97db7970eaa6.png",
+          "generated_date": "2026-09-27",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-16d014e4-c162-4667-9e1a-97db7970eaa6.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "6140ec6ecac56c124eb57eba8e7dd4ae0527281e42dc86ad905eac60691851eb",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Connected full-scale stainless production bays and organized packing area; teal door frames create clear diagonal depth."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c05-768.webp",
+          "bytes": 79072,
+          "sha256": "443884a96bdb6da5fcf582cabca21b7de31cea98593ce9d7754dc43e25a2a6fd"
+        },
+        {
+          "file": "public/images/pages/concept-c05-1536.webp",
+          "bytes": 218234,
+          "sha256": "e96e76f54fdde92a5e6f5ba30d7693f153a421d4e5fce213c2e72f7daa087603"
+        }
+      ]
+    },
+    {
+      "key": "C06",
+      "file": "concept-c06",
+      "ar": "مطعم عالمي غير رسمي بأقواس مضيئة ومطبخ مفتوح ضمن المشهد.",
+      "en": "An international casual-dining restaurant with sunlit arches and an open kitchen.",
+      "generation": {
+        "key": "C06",
+        "slug": "casual-dining",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A sophisticated international casual dining room in contemporary Saudi hospitality, with warmly sunlit textured white arches and a glimpse through one arch of a polished operational open kitchen.\nArchitecture and composition: wide eye-level view across elegantly spaced dining tables and comfortable upholstered chairs, tall sculpted plaster arches providing layered depth, pale limestone floor, subtle deep teal upholstery accents, warm but bright midday sunlight, restrained ceramic objects and rich natural textures. The dining room is the main subject; refined cultural warmth without themed décor, no people, a genuinely spacious full-scale restaurant interior.",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C06-casual-dining.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-2a6498f8-a283-470e-bdeb-fd0ea6d94d50.png",
+          "generated_date": "2026-09-27",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-2a6498f8-a283-470e-bdeb-fd0ea6d94d50.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "c7e5541ffe1b7d7b4004325bf84149348bc1c01d964db42bae8573f9114f19f1",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Sunlit textured white arches, spacious Saudi-inspired contemporary dining and visible polished open kitchen."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c06-768.webp",
+          "bytes": 81396,
+          "sha256": "02ab4efcffb9a66b483a2e7604a7fba4f121dd9db5190b0a7ca43feafedf413a"
+        },
+        {
+          "file": "public/images/pages/concept-c06-1536.webp",
+          "bytes": 258304,
+          "sha256": "ac60ae3c7d04075d3ad7c273c0fb54a490e2dba4ab524b1da3155c4dcc435414"
+        }
+      ]
+    },
+    {
+      "key": "C07",
+      "file": "concept-c07",
+      "ar": "مساحة فطور وبرنش بضوء النهار، وطاولة تضم أطباق فطور وقهوة.",
+      "en": "A daylit breakfast and brunch space with breakfast dishes and coffee on a communal table.",
+      "generation": {
+        "key": "C07",
+        "slug": "brunch",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A beautiful all-day breakfast and brunch space, with a full-size sunlit communal table in the foreground set with a restrained editorial arrangement of plated eggs, pancakes and coffee, and an inviting operational open preparation counter beyond.\nArchitecture and composition: inviting oblique eye-level interior photograph that shows the full communal table, its chairs and the expansive room; linen, pale ash wood and white stone, a few restrained deep teal details, generous full-height windows and lovely morning sunlight. Food should look natural, fresh and appetizing. Spacious architecture and hospitality atmosphere dominate, not a food close-up and not a miniature.",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C07-brunch.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "prior_failed_attempt": {
+            "date": "2026-09-27",
+            "error": "HTTP 429 usage_limit_reached",
+            "output_generated": false
+          },
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-52180a34-f76c-4c14-80b8-46a4fc1232fe.png",
+          "generated_date": "2026-09-28",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-52180a34-f76c-4c14-80b8-46a4fc1232fe.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "eb11e8a3525ffe5c423ca53f6b8b8807ae5f3dacd41640c77a2629a289994401",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Full-size communal brunch table with eggs, pancakes and cups, bright open prep counter and expansive windows."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c07-768.webp",
+          "bytes": 104942,
+          "sha256": "3206fd5034237a5a0ac6203cb82dc4a3c32530b7037edcd64a383fd852bb7f7c"
+        },
+        {
+          "file": "public/images/pages/concept-c07-1536.webp",
+          "bytes": 308182,
+          "sha256": "0fb272291db80b96a1a47a7a61d9b131aad8ffa8ca6e85a471e3f4d43a4409cc"
+        }
+      ]
+    },
+    {
+      "key": "C08",
+      "file": "concept-c08",
+      "ar": "مخبز وحلويات بواجهة عرض زجاجية منحنية وتفاصيل حجرية مشرقة.",
+      "en": "A bakery and patisserie with a curved glass display and bright stone finishes.",
+      "generation": {
+        "key": "C08",
+        "slug": "patisserie",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A jewel-like bright bakery and patisserie boutique with a prominent long curved glass display holding a curated variety of colorful delicate desserts and pastries, full-height white stone counterwork and luminous deep teal glass details.\nArchitecture and composition: elegant frontal three-quarter wide view embracing the entire sweeping display counter and boutique interior, polished pale floor, crisp reflective curved glass, softly rounded white stone walls, sculptural ambient fixtures and generous daylight. Distinct jewel-toned natural fruit desserts delicately populate the display. Luxurious but welcoming, clear life-size interior scale.",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C08-patisserie.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-4a87f89e-df6b-4e6e-a9af-c0295cdfd3f5.png",
+          "generated_date": "2026-09-28",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-4a87f89e-df6b-4e6e-a9af-c0295cdfd3f5.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "9e4d3ae16ee769f613a082b1b53fcff4460a96a81c3e053469b0eb4cd6ea4a12",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Jewel-like pastry boutique with curved glass dessert display, white stone and luminous teal glass backdrop."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c08-768.webp",
+          "bytes": 92756,
+          "sha256": "ca5397748af1550d68fba18511875b92fecf5f56314ff8ff7097fc4d1ad81da2"
+        },
+        {
+          "file": "public/images/pages/concept-c08-1536.webp",
+          "bytes": 250888,
+          "sha256": "66d8447bc571de531a793c573842c1300693704849b659d386afefbe864091a8"
+        }
+      ]
+    },
+    {
+      "key": "C09",
+      "file": "concept-c09",
+      "ar": "مطبخ مركزي واسع بجزر تحضير وأفران إنتاج ومسارات حركة منظمة.",
+      "en": "A spacious central kitchen with preparation islands, production ovens and organised circulation.",
+      "generation": {
+        "key": "C09",
+        "slug": "central-kitchen",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: An immaculate large central production kitchen, high ceilings, multiple large stainless preparation islands, a bank of commercial rack ovens and organized physically clear production routes.\nArchitecture and composition: an expansive deep wide architectural photograph from human standing height, tall bright daylit industrial architecture with large clerestory windows and exposed white structural beams. Stainless islands recede in orderly rows, substantial rack ovens visibly installed at the rear, a few restrained teal structural accents, bright clean white and silver palette. Spacious working kitchen at real industrial scale, no small café counter, no people.",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C09-central-kitchen.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-d988ccdc-3701-4c92-babb-216cf22c5117.png",
+          "generated_date": "2026-09-28",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-d988ccdc-3701-4c92-babb-216cf22c5117.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "44515d6417c4f48b8259fb568b95f56bf610f8749be49e1ab037b6c6dc0605af",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Large high-ceiling industrial central kitchen with stainless prep islands, rack ovens and wide orderly circulation."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c09-768.webp",
+          "bytes": 80090,
+          "sha256": "1924ff28cc65a704edceafeeb72d38bfa26857110e689b2dfbf8c9079e53c6b1"
+        },
+        {
+          "file": "public/images/pages/concept-c09-1536.webp",
+          "bytes": 230842,
+          "sha256": "6b97ccc297a61ed9d9d14a2e6adc948f523358b6d0eb20fcbe0196790a1a0290"
+        }
+      ]
+    },
+    {
+      "key": "C10",
+      "file": "concept-c10",
+      "ar": "قاعة طعام متعددة المفاهيم بأكشاك مستقلة وجلسات مشتركة تحت إضاءة علوية.",
+      "en": "A multi-concept food hall with individual kiosks and communal seating beneath a skylight.",
+      "generation": {
+        "key": "C10",
+        "slug": "food-hall",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A contemporary multi-concept food hall with multiple visibly varied full-scale food kiosks around central communal seating, plentiful plants, a vast skylight and striking deep teal architectural accents.\nArchitecture and composition: wide eye-level interior view through the central seating area toward kiosks of distinct stone, wood and steel construction, a generous atrium volume, skylight daylight washing the whole space, teal overhead architectural beams and railings. Beautifully spaced tables and benches establish life-size scale. Food equipment and small displays distinguish kiosks while every fascia remains entirely plain, with no signage, branding, letters or numerals.",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C10-food-hall.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-5756dd8e-e104-4a6c-a9fa-8b8b5fd75611.png",
+          "generated_date": "2026-09-28",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-5756dd8e-e104-4a6c-a9fa-8b8b5fd75611.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "74c7b019d13b68cb83f23249a6d6bf3078b0902e5a8a6c9bdc703703bf18bee6",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Full-scale food hall with varied kiosks, communal seating, plants, broad skylight and teal structure; plain fascias."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c10-768.webp",
+          "bytes": 117268,
+          "sha256": "c72e6e302da1286ca13bcbecd2815d2c20f937f229538086e1ddb6a1565e9dbd"
+        },
+        {
+          "file": "public/images/pages/concept-c10-1536.webp",
+          "bytes": 361038,
+          "sha256": "c52fc4bff7bf53892ce4feda3458327c065c645504ce3f75b540370e6378df12"
+        }
+      ]
+    },
+    {
+      "key": "C11",
+      "file": "concept-c11",
+      "ar": "مطبخ خدمة لفيلا أو قصر بجزيرة استانلس ومسار ضيافة إلى غرفة الطعام.",
+      "en": "A villa or palace service kitchen with a stainless island and a hospitality route to the dining room.",
+      "generation": {
+        "key": "C11",
+        "slug": "villa-service-kitchen",
+        "exactprompt": "Use case: photorealistic-natural.\nAsset type: premium website editorial image.\nOutput: ONE landscape photograph, exact 3:2 aspect ratio, preferably 1536 by 1024 pixels.\nStyle: premium luminous architectural and editorial hospitality photography; believable full-scale working interior; crisp, clean natural daylight; realistic rich materials, natural food color, restrained deep teal #0D5B63 accents with white, stone and polished steel.\nConstraints: no people, no readable text, no letters, no numbers, no logos, no watermark, no signage or menu boards, no diagrams, no tables of information, no arrows. An actual life-size architectural interior photographed at human eye level with ample visible room depth, never a miniature, dollhouse, maquette, counter on a desk, flat lay, showroom model or collage. All equipment is installed and physically plausible.\nPrimary request: A refined full-scale service kitchen for an elegant villa or palace, with a spacious pantry, warm white cabinetry, a large polished stainless island and a discreet path through a tall doorway to an elegant dining room.\nArchitecture and composition: quiet luxurious daylight architectural photograph from the kitchen corner, the island grounded on the floor in the foreground, full-height warm-white cabinets and pantry shelving on one side, a tall framed doorway beyond revealing a softly sunlit formal dining space. Pale stone walls, calm restrained deep teal details, an installed professional range and integrated refrigeration. Immaculate, substantial domestic service architecture, no trolley composition and no miniature.",
+        "path": "/workspace/scratch/00e5364a7d4f/unique-visuals/concepts/C11-villa-service-kitchen.png",
+        "provenance": {
+          "generator": "image_gen__imagegen",
+          "mode": "built-in",
+          "generations": 1,
+          "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-123750b4-c667-42bc-adfb-09c1ab2c35e8.png",
+          "generated_date": "2026-09-28",
+          "successful_generations": 1,
+          "variants_created": 0
+        },
+        "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-123750b4-c667-42bc-adfb-09c1ab2c35e8.png",
+        "dimensions": {
+          "width": 1536,
+          "height": 1024,
+          "aspect_ratio": "3:2"
+        },
+        "SHA256": "4debcc0f4a7f4f8f41e124d6b0dec1f0bb932c402c84a3dfa9aae88dc88cb33d",
+        "visual_inspection": {
+          "inspected": true,
+          "method": "direct visual inspection of generated output",
+          "observations": "Refined villa service kitchen with stainless island, warm white cabinetry, pantry and tall doorway to elegant dining; no trolley composition."
+        }
+      },
+      "web_assets": [
+        {
+          "file": "public/images/pages/concept-c11-768.webp",
+          "bytes": 69608,
+          "sha256": "af35511394cbb96880ad76fc8e89002a0159868a839551c1a15d59726837bc7c"
+        },
+        {
+          "file": "public/images/pages/concept-c11-1536.webp",
+          "bytes": 207650,
+          "sha256": "e9d33274982f90b54a13c327436e1ed56b1e6a2e0ccc4c3044582799de04bd2c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "date": "2026-09-27",
+  "assets": [
+    {
+      "file": "public/nasaq-full-counter-hero-v2.webp",
+      "bytes": 70312,
+      "sha256": "bbefc4d9b95113db92c18e7407d92069bfc019b38abd9c8e90e093a745200f22"
+    },
+    {
+      "file": "public/nasaq-villa-service-trolley-layout.webp",
+      "bytes": 140260,
+      "sha256": "3c2d5e150598566428acb9506cfaedbd40ee971b590cf46762cb68622f159a9f"
+    },
+    {
+      "file": "public/images/central-1536.webp",
+      "bytes": 230332,
+      "sha256": "f0a1ffc97ac529f913710fe0699b806d26b3eee5bd2f7ccf0442af3031be7b14"
+    },
+    {
+      "file": "public/images/central-768.webp",
+      "bytes": 78712,
+      "sha256": "bfaac1cdf84dfa8eac2f58ebae38c2b9debe6a9f8eb258b4124ac93ad36e9f6c"
+    },
+    {
+      "file": "public/images/coffee-1536.webp",
+      "bytes": 194856,
+      "sha256": "34bb30f1090795585c7d8f42cf78854e3c76ce64d5d062393e6791d7ae4d2e7b"
+    },
+    {
+      "file": "public/images/coffee-768.webp",
+      "bytes": 66898,
+      "sha256": "47f636d4b99c75ac11f000c95b39d98c302499ce3a95bb1ab7ecae656d6c42fa"
+    },
+    {
+      "file": "public/brand/nasaq-horizontal.webp",
+      "bytes": 26572,
+      "sha256": "17dfc6c7f51ab97b97efe1fb98cef3aa972f2f2e7faff99582e9961f02768c49"
+    },
+    {
+      "file": "public/brand/NASAQ_symbol_white_source.png",
+      "bytes": 18545,
+      "sha256": "c63e38c4f8b7ef6b1020391514dcec8ffbae4864e834bc90438f5b9b86f9caa3"
+    },
+    {
+      "file": "public/fonts/NotoSans-Bold.woff",
+      "bytes": 63288,
+      "sha256": "0266f1eb685b2b19c1819bb99f0d3f6bbf416033ae5feb9be54e280ef14f9de8"
+    },
+    {
+      "file": "public/fonts/NotoSans-Regular.woff",
+      "bytes": 61856,
+      "sha256": "8fc26fd512b6d65bc8e636aaa36f9a044c65b664a1bccc719947ec9e5dea5a28"
+    },
+    {
+      "file": "public/fonts/NotoSansArabic-Bold.woff",
+      "bytes": 111504,
+      "sha256": "8e1ac5462ec30d48bbb813a29e3c63c35ddc52933eae1af7220c221d3c189682"
+    },
+    {
+      "file": "public/fonts/NotoSansArabic-Regular.woff",
+      "bytes": 107580,
+      "sha256": "41454f64ecaab930e6ec358989498de2f0f9ebcd6cdb665365f5ce9f182fe3f7"
+    },
+    {
+      "file": "public/images/advisory-1536.webp",
+      "bytes": 79138,
+      "sha256": "b96cf6cd1125f915c3e96f999b36d4f40339dc9daba93b606130b0481d449cec"
+    },
+    {
+      "file": "public/images/advisory-768.webp",
+      "bytes": 29578,
+      "sha256": "9be5bb8be8285c13d99f3ace9660afebff81a859814472be8e0457e070e11883"
+    },
+    {
+      "file": "public/images/coordination-1536.webp",
+      "bytes": 161220,
+      "sha256": "f0f1a0f7d7ef90d9c5da6b3525d1b422de590ac59348b50c45dd95de76d73b29"
+    },
+    {
+      "file": "public/images/coordination-768.webp",
+      "bytes": 54680,
+      "sha256": "955ead6e3ad39c032bf34c2e14803487682eed8f7e72bed33c21b61660cf5600"
+    },
+    {
+      "file": "public/images/materials-1536.webp",
+      "bytes": 96906,
+      "sha256": "a48fd617196356b56d8c522f688294a235f8aeb2c92846853e12e326d63d2d42"
+    },
+    {
+      "file": "public/images/materials-768.webp",
+      "bytes": 30876,
+      "sha256": "af7ce9a66d5a93f81eb6546274c2168e48c247d6812723a1b7a02cccc7d85000"
+    }
+  ],
+  "provenance": {
+    "hero_and_villa": "Previously approved original website illustrations, retained without creative changes.",
+    "coffee_and_central": "New AI-generated conceptual images. Exact briefs and source hashes are in docs/generated-assets.json. Responsive derivatives retain full 3:2 composition.",
+    "brand": "Canonical PNG assets recovered from supplied NASAQ Stage1 brand package. Original files retained. Header/footer WebP is a lossless web-size derivative with unchanged geometry and colours. Favicon embeds the original white symbol on approved teal.",
+    "fonts": "Noto Sans and Noto Sans Arabic from the supplied package. SIL Open Font License included. English font files subset to Latin and punctuation; Arabic shaping features retained.",
+    "diagrams": "Original semantic HTML examples. No client project data or certification claims.",
+    "service_visuals": "Three original AI-generated editorial concepts: advisory, engineering coordination and stainless-steel materials. Exact prompts and source hashes are in docs/service-visual-provenance.json. Full 3:2 compositions retained as responsive 768/1536px WebP derivatives. Images express subject matter and do not claim to show completed NASAQ projects."
+  }
+}

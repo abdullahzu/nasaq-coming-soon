@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-28",
+  "request": "Simplify only the homepage project-concepts image.",
+  "tool": "image_gen__imagegen",
+  "mode": "built-in",
+  "generation_calls": 1,
+  "execution_note": "Owner synchronous generation after the asset agent failed with a response-context 504 before returning an asset.",
+  "source_path": "/workspace/scratch/00e5364a7d4f/generated_images/exec-23b26d39-3167-4713-bed5-aa199dcc0333.png",
+  "saved_original_path": "/workspace/scratch/00e5364a7d4f/home-concepts-simple/teaser-v2.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "source_sha256": "db778093ea0ddd165369002c5815b04a7dff083fcadf12eccbebf12779b23667",
+  "exact_prompt": "Use case: photorealistic-natural. Create exactly ONE clean, minimal editorial photograph for the NASAQ website project-concepts section. Landscape 1536 x 1024, 3:2. A simple professional brushed stainless-steel counter seen from a slightly elevated natural camera angle. ONLY THREE separated food arrangements: one small deep-teal ceramic bowl of fresh colourful healthy food; one burger on a simple white plate; one croissant on a small white plate. Each item is clear and substantial enough to read at mobile size, with generous empty space around the group. Very quiet white architectural background, interrupted by only one plain deep-teal panel (#0D5B63). Soft bright daylight, gentle natural shadows, restrained premium food and product photography. Counter front edge visible. One cohesive real-scale photograph, no collage. Avoid restaurant panoramas, chairs, dining tables, kitchen appliances, extraction canopies, shelving, background products, decorative plants, excess props, cups, cutlery, people, text, logos, labels, signage, watermark, technical drawings, floor plans, miniature models. The visual must feel substantially simpler and less busy than a restaurant interior. Opaque background.",
+  "inspection": "Three clearly separated food items on a clean stainless counter, quiet white and teal background, no text, people or restaurant clutter.",
+  "web_assets": [
+    {
+      "file": "public/images/pages/home-concepts-simple-v2-768.webp",
+      "bytes": 26494,
+      "sha256": "d6276e0d73e557143d887729222fcc244196851175dce3e203efd1affa9598a0"
+    },
+    {
+      "file": "public/images/pages/home-concepts-simple-v2-1536.webp",
+      "bytes": 74920,
+      "sha256": "4f73d746ce41d35dd466d628ef84a52056f0fc8f7cb8dc359ee44768019b1a9b"
+    }
+  ]
+}

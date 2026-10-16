@@ -1,0 +1,325 @@
+{
+  "services": [
+    {
+      "id": "S01",
+      "slug": "pre-contract-clarity",
+      "name": {
+        "ar": "وضوح ما قبل التعاقد",
+        "en": "Pre-contract clarity"
+      },
+      "outputs": [
+        {
+          "ar": "وضوح النطاق قبل مخاطبة الموردين",
+          "en": "Scope clarity before supplier engagement"
+        },
+        {
+          "ar": "قراءة مبكرة للمخاطر والميزانية",
+          "en": "Early risk and budget review"
+        },
+        {
+          "ar": "دعم القرار قبل الالتزام",
+          "en": "Decision support before commitment"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "slug": "feasibility-support",
+      "name": {
+        "ar": "دعم الجدوى الأولية",
+        "en": "Feasibility support"
+      },
+      "outputs": [
+        {
+          "ar": "تقييم ملاءمة الفكرة والافتراضات الأولية",
+          "en": "Concept fit and initial assumptions"
+        },
+        {
+          "ar": "تصوّر أولي للمعدات ومتطلبات المرافق",
+          "en": "Preliminary equipment and MEP overview"
+        },
+        {
+          "ar": "توجيه عملي لقرار الاستثمار",
+          "en": "Practical guidance for the investment decision"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "slug": "menu-space-validation",
+      "name": {
+        "ar": "مواءمة قائمة الطعام والمساحة",
+        "en": "Menu and space validation"
+      },
+      "outputs": [
+        {
+          "ar": "فحص ملاءمة قائمة الطعام للمساحة",
+          "en": "Menu-to-space fit assessment"
+        },
+        {
+          "ar": "مراجعة حركة التشغيل",
+          "en": "Operational movement review"
+        },
+        {
+          "ar": "تقييم السعة وتدفق الخدمة",
+          "en": "Capacity and service flow assessment"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "slug": "supplier-offer-comparison",
+      "name": {
+        "ar": "مقارنة عروض الموردين",
+        "en": "Supplier offer comparison"
+      },
+      "outputs": [
+        {
+          "ar": "مقارنة العروض بما يتجاوز السعر",
+          "en": "Offer comparison beyond price"
+        },
+        {
+          "ar": "كشف الاستثناءات وفروقات المواصفات",
+          "en": "Exceptions and specification gaps"
+        },
+        {
+          "ar": "مصفوفة قرار تدعم المالك",
+          "en": "A decision matrix for the owner"
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "slug": "equipment-planning",
+      "name": {
+        "ar": "تخطيط المعدات",
+        "en": "Equipment planning"
+      },
+      "outputs": [
+        {
+          "ar": "قائمة معدات مرتبطة بقائمة الطعام",
+          "en": "Equipment list aligned with the menu"
+        },
+        {
+          "ar": "منطق واضح لتوزيع المعدات والحركة",
+          "en": "Equipment placement and circulation logic"
+        },
+        {
+          "ar": "فحص السعة والحيّز ومتطلبات المرافق",
+          "en": "Capacity, footprint and utility checks"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "slug": "mep-requirements",
+      "name": {
+        "ar": "متطلبات الأعمال الكهروميكانيكية",
+        "en": "MEP requirements"
+      },
+      "outputs": [
+        {
+          "ar": "متطلبات الكهرباء والمياه والصرف والغاز والتهوية",
+          "en": "Electrical, water, drainage, gas and ventilation"
+        },
+        {
+          "ar": "جدول مبدئي لمتطلبات المرافق",
+          "en": "Preliminary utility schedule"
+        },
+        {
+          "ar": "مدخلات التنسيق قبل التنفيذ",
+          "en": "Coordination inputs before execution"
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "slug": "stainless-steel-scope",
+      "name": {
+        "ar": "نطاق أعمال الاستانلس ستيل",
+        "en": "Stainless steel scope"
+      },
+      "outputs": [
+        {
+          "ar": "نطاق تصنيع واضح وقابل للتسعير",
+          "en": "A fabrication scope that suppliers can price"
+        },
+        {
+          "ar": "كاونترات وأحواض ورفوف وعناصر خاصة",
+          "en": "Counters, sinks, shelves and custom items"
+        },
+        {
+          "ar": "أساس واضح لجدول كميات الاستانلس ستيل",
+          "en": "Clear basis for the stainless steel BOQ"
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "slug": "capex-estimate",
+      "name": {
+        "ar": "تقدير التكلفة الرأسمالية",
+        "en": "CAPEX estimate"
+      },
+      "outputs": [
+        {
+          "ar": "نطاقات ميزانية تقديرية غير نهائية",
+          "en": "Indicative budget ranges, subject to refinement"
+        },
+        {
+          "ar": "منطق التكلفة بحسب فئات النطاق",
+          "en": "Cost basis by scope category"
+        },
+        {
+          "ar": "رؤية استثمارية قبل اختيار المورد",
+          "en": "Investment view before supplier selection"
+        }
+      ]
+    },
+    {
+      "id": "S09",
+      "slug": "confidential-project-support",
+      "name": {
+        "ar": "دعم المشاريع الخاصة",
+        "en": "Confidential project support"
+      },
+      "outputs": [
+        {
+          "ar": "دراسات مبكرة مع الحفاظ على السرية",
+          "en": "Confidential early-stage studies"
+        },
+        {
+          "ar": "حماية معلومات المفاهيم ومشاريع القصور",
+          "en": "Protected concept and palace project information"
+        },
+        {
+          "ar": "حصر مشاركة التفاصيل الضرورية مع الموردين",
+          "en": "Only necessary details shared with suppliers"
+        }
+      ]
+    },
+    {
+      "id": "S10",
+      "slug": "client-side-kitchen-advisory",
+      "name": {
+        "ar": "استشارات المطبخ من طرف المالك",
+        "en": "Client-side kitchen advisory"
+      },
+      "outputs": [
+        {
+          "ar": "استشارة مستقلة قبل الشراء",
+          "en": "Independent advice before purchase"
+        },
+        {
+          "ar": "وضوح النطاق والقرار من طرف المالك",
+          "en": "Scope and decision clarity for the owner"
+        },
+        {
+          "ar": "دون بيع أو انحياز تنفيذي",
+          "en": "No selling or execution bias"
+        }
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "C01",
+      "name": {
+        "ar": "قهوة مختصة ومخبز فاخر",
+        "en": "Specialty coffee and bakery café"
+      },
+      "slug": "specialty-coffee-bakery",
+      "angle": "Coffee preparation, bakery production/display, peak handover, and work behind the counter."
+    },
+    {
+      "id": "C02",
+      "name": {
+        "ar": "برجر فاخر ودجاج مقلي ووجبات سريعة",
+        "en": "Premium burger / fried chicken QSR"
+      },
+      "slug": "burger-fried-chicken-qsr",
+      "angle": "Preparation, cooking, assembly, packing, and order collection at busy periods."
+    },
+    {
+      "id": "C03",
+      "name": {
+        "ar": "مفهوم الشاورما",
+        "en": "Shawarma concept"
+      },
+      "slug": "shawarma",
+      "angle": "Preparation, cooking/holding assumptions, assembly, and service-counter relationships."
+    },
+    {
+      "id": "C04",
+      "name": {
+        "ar": "أطباق صحية وسلطات ووجبات بروتين",
+        "en": "Healthy bowls, salads and protein meals"
+      },
+      "slug": "healthy-bowls-salads-protein",
+      "angle": "Ingredient preparation, holding, portioning, assembly, and pickup."
+    },
+    {
+      "id": "C05",
+      "name": {
+        "ar": "مطبخ سحابي متعدد العلامات",
+        "en": "Multi-brand cloud kitchen"
+      },
+      "slug": "multi-brand-cloud-kitchen",
+      "angle": "Shared versus distinct production needs, packing, dispatch, and capacity assumptions."
+    },
+    {
+      "id": "C06",
+      "name": {
+        "ar": "مطاعم الكاجوال العالمية",
+        "en": "International casual dining"
+      },
+      "slug": "international-casual-dining",
+      "angle": "Several menu stations, coordination at the pass, and front/back-of-house relationships."
+    },
+    {
+      "id": "C07",
+      "name": {
+        "ar": "إفطار وبرانش طوال اليوم",
+        "en": "All-day breakfast and brunch"
+      },
+      "slug": "all-day-breakfast-brunch",
+      "angle": "Hot/cold stations, drinks, changing demand through the day, and service coordination."
+    },
+    {
+      "id": "C08",
+      "name": {
+        "ar": "مخبز وباتيسري ومتجر حلويات",
+        "en": "Bakery, patisserie and dessert shop"
+      },
+      "slug": "bakery-patisserie-dessert",
+      "angle": "Production stages, cooling/finishing, storage, display, and collection."
+    },
+    {
+      "id": "C09",
+      "name": {
+        "ar": "مطبخ مركزي",
+        "en": "Central kitchen"
+      },
+      "slug": "central-kitchen",
+      "angle": "Receiving, storage, batch production, packing, dispatch, and utility coordination."
+    },
+    {
+      "id": "C10",
+      "name": {
+        "ar": "قاعة طعام متعددة المفاهيم",
+        "en": "Multi-concept food hall"
+      },
+      "slug": "multi-concept-food-hall",
+      "angle": "Shared infrastructure, unit boundaries, back-of-house circulation, and handover points."
+    },
+    {
+      "id": "C11",
+      "name": {
+        "ar": "مطبخ خدمة للفلل والقصور",
+        "en": "Service kitchen for villas and palaces"
+      },
+      "slug": "villas-palaces-service-kitchen",
+      "angle": "Daily service, hospitality occasions, discreet staff movement, storage, and architectural integration."
+    }
+  ]
+}
