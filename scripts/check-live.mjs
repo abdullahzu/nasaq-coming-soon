@@ -22,3 +22,14 @@ for (const path of assets) {
   await response.arrayBuffer();
   console.log('OK '+path);
 }
+
+// Verify the requested investor route on the official hostname after deployment.
+const investor = await fetch(new URL('/FOH', origin), {headers:{'Cache-Control':'no-cache'}, signal:AbortSignal.timeout(30000)});
+assert.equal(investor.status, 200, 'FOH investor route');
+const investorHtml = await investor.text();
+assert.match(investorHtml, /<title>FOH Counter Partnership \| NASAQ<\/title>/);
+for (const marker of ['105,000', '55,500', '52.9%', 'NASAQ_FOH_Partnership_Introduction.pdf', 'NASAQ_FOH_Partnership_Introduction.pptx']) {
+  assert.ok(investorHtml.includes(marker), `FOH release missing ${marker}`);
+}
+assert.ok(investorHtml.includes('https://nasaqfb.com/FOH'), 'FOH canonical address');
+console.log('OK /FOH, revised investor economics and presentation links');

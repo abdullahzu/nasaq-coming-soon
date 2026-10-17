@@ -26,9 +26,11 @@ The matching public page is `https://nasaq-coming-soon.abdullah-zu.chatgpt.site/
 
 ## Deployment
 
-The repository's existing deployment workflow is manual. In GitHub Settings > Secrets and variables > Actions, configure `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`, then run the existing **Manual NASAQ deployment to Cloudflare** workflow on `main`.
+Pushing `main` triggers the connected Cloudflare Workers build and the GitHub **Validate NASAQ website** workflow. The validation workflow checks source/types/build/tests, waits for Cloudflare, then verifies the official domain. Check both results before declaring the official page live.
 
-The last inspected official-domain deployment failed at the credential check, before deployment. A GitHub source commit alone does not publish the official domain. Do not paste credentials into the page, repository or conversation.
+A separate fallback workflow, **Manual NASAQ deployment to Cloudflare**, requires `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` in GitHub Settings > Secrets and variables > Actions. Its last inspected run failed because both were missing. That manual-workflow failure does not determine the outcome of the connected Cloudflare build.
+
+Do not paste deployment credentials into the page, repository or conversation.
 
 ## Verification
 
