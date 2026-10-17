@@ -29,9 +29,19 @@ for (const path of ['/FOH', '/FOH?_rsc=security-check', '/foh/NASAQ_FOH_Partners
     const response=await fetch(new URL(path,origin),{headers:{Authorization:authorization,'Cache-Control':'no-cache'},signal:AbortSignal.timeout(30000)});
     assert.equal(response.status,401,path);
     assert.equal(response.headers.get('www-authenticate'),null,'No browser credential popup');
+    assert.equal(response.headers.get('referrer-policy'),'same-origin','Form login must preserve the browser Origin');
     assert.match(response.headers.get('cache-control')||'',/no-store/);
     assert.match(response.headers.get('x-robots-tag')||'',/noindex/);
     const loginHtml=await response.text();assert.doesNotMatch(loginHtml,/105,000|55,500|52.9%/);assert.ok(loginHtml.includes('value="Investor" readonly'));assert.ok(loginHtml.includes('action="/FOH/access"'));assert.doesNotMatch(loginHtml, /name="password"[^>]*value=/);
   }
   console.log('Protected '+path);
+}
+
+// Reproduce HTML form navigation with privacy-hidden Origin, without using a real password.
+for(const [site,expected] of [['same-origin',401],['cross-site',400]]) {
+ const response=await fetch(new URL('/FOH/access',origin),{method:'POST',redirect:'manual',headers:{Origin:'null','Sec-Fetch-Site':site,'Sec-Fetch-Mode':'navigate','Sec-Fetch-Dest':'document','Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({username:'Investor',password:'invalid-release-check'}),signal:AbortSignal.timeout(30000)});
+ assert.equal(response.status,expected,site+' form validation');
+ if(site==='same-origin')assert.match(await response.text(),/Incorrect password/);
+ else await response.body?.cancel();
+ console.log('Browser form '+site+' validated');
 }

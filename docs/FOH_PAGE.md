@@ -26,6 +26,8 @@ Investor responses have `Cache-Control: private, no-store`, `Vary: Authorization
 
 The sign-in form prefills the read-only username `Investor`. The password field stays empty and supports the browser password manager. Successful sign-in creates an eight-hour, signed, host-only cookie with `Secure`, `HttpOnly`, and `SameSite=Lax`. No password is stored in that cookie or the page source. The previous browser credential popup has been removed.
 
+The login form uses `Referrer-Policy: same-origin`, so browser form navigation retains its origin. Previously loaded forms or privacy-restricted browsers may submit a hidden origin. Those requests are accepted only when the browser reports `Sec-Fetch-Site: same-origin` and the destination is an approved NASAQ origin. Cross-site, ambiguous and unknown-origin requests remain blocked. The relay forwards the validated origin to the asset host. Protected investor content retains `no-referrer`. Regression coverage includes the formerly failing browser-form headers and their cross-site rejection.
+
 The private asset host owns three runtime secrets: `FOH_PASSWORD_SALT`, `FOH_PASSWORD_HASH` (PBKDF2-SHA256, 100,000 iterations), and `FOH_SESSION_SECRET` (random HMAC key). The official-domain Worker relays form submissions to the fixed asset-host origin and checks sessions through its `/_foh-session` endpoint. It forwards only the investor cookie or explicit Basic credentials to that host. Missing configuration, invalid cookies and network failures deny access.
 
 To rotate the password, update the password salt/hash and session signing key in the asset host's runtime secrets, then deploy its saved version. This revokes existing sessions. Keep passwords and signing keys out of repository files and links.

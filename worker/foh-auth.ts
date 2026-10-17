@@ -59,10 +59,19 @@ export async function authenticatedRemoteFoh(request:Request):Promise<boolean> {
   catch{return false;}
 }
 
+function trustedLoginOrigin(request:Request):string|null {
+  const allowed=["https://nasaqfb.com",AUTH_ORIGIN];
+  const origin=request.headers.get("Origin");
+  if(origin && origin!=="null")return allowed.includes(origin)?origin:null;
+  // Privacy policies can hide Origin on normal browser form submissions.
+  // Only browser-confirmed same-origin requests may use this fallback.
+  const targetOrigin=new URL(request.url).origin;
+  return request.headers.get("Sec-Fetch-Site")==="same-origin" && allowed.includes(targetOrigin)?targetOrigin:null;
+}
+
 async function readLoginBody(request:Request):Promise<string|null> {
   if(request.method!=="POST" || !(request.headers.get("Content-Type")||"").startsWith("application/x-www-form-urlencoded"))return null;
-  const origin=request.headers.get("Origin");
-  if(!origin || !["https://nasaqfb.com",AUTH_ORIGIN].includes(origin))return null;
+  if(!trustedLoginOrigin(request))return null;
   const reader=request.body?.getReader();if(!reader)return null;
   const chunks:Uint8Array[]=[];let size=0;
   while(true){const {done,value}=await reader.read();if(done)break;size+=value.byteLength;if(size>2048){await reader.cancel();return null;}chunks.push(value);}
@@ -86,7 +95,7 @@ export async function relayFohLogin(request:Request):Promise<Response> {
   const body=await readLoginBody(request);
   if(body===null)return privateFohResponse(new Response("Invalid sign-in request",{status:400}));
   try {
-    const r=await fetch(AUTH_ORIGIN+"/FOH/access",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded","Origin":request.headers.get("Origin")!},body,redirect:"manual",signal:AbortSignal.timeout(15000)});
+    const r=await fetch(AUTH_ORIGIN+"/FOH/access",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded","Origin":trustedLoginOrigin(request)!},body,redirect:"manual",signal:AbortSignal.timeout(15000)});
     if(r.status===401){await r.body?.cancel();return requireFohLogin(request,true);}
     if(r.status!==303){await r.body?.cancel();return privateFohResponse(new Response("Sign-in temporarily unavailable. Please retry.",{status:503}));}
     const token=(r.headers.get("Set-Cookie")||"").match(/__Host-nasaq_foh=(\d{13}\.[a-f0-9]{32}\.[a-f0-9]{64})/)?.[1];
@@ -98,7 +107,7 @@ export async function relayFohLogin(request:Request):Promise<Response> {
 
 export function requireFohLogin(request:Request,incorrect=false):Response {
   const body=request.method==="HEAD"?null:`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Investor access | NASAQ</title><style>*{box-sizing:border-box}body{margin:0;background:#132923;color:#f3eee4;font:17px/1.6 system-ui,sans-serif;display:grid;place-items:center;min-height:100svh}main{padding:40px 28px;max-width:510px;width:100%}small{letter-spacing:.18em;color:#c5a879}h1{font-size:38px;line-height:1.2;margin:20px 0}label{display:block;margin-top:18px;font-size:14px}input,button{width:100%;padding:14px;border-radius:6px;font:inherit}input{margin-top:6px;border:1px solid #71857a;background:#fff;color:#172e26}input[readonly]{background:#243d33;color:#e5e8df;border-color:#52695c}button{margin:24px 0 18px;border:0;background:#c5a879;color:#132923;font-weight:650;cursor:pointer}input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #e9d5ac;outline-offset:3px}a{color:#c5a879}p{color:#d2dcd5}.error{color:#ffd1c5;margin-bottom:0}.note{font-size:13px}</style></head><body><main><small>NASAQ · INVESTOR ACCESS</small><h1>A private partnership conversation.</h1><p>Your username is already filled in. Enter your password to view the proposal.</p><form method="post" action="/FOH/access"><label for="username">Username<input id="username" name="username" value="Investor" readonly autocomplete="username"></label><label for="password">Password<input id="password" name="password" type="password" required maxlength="256" autocomplete="current-password" autofocus ${incorrect?'aria-invalid="true" aria-describedby="login-error"':''}></label>${incorrect?'<p class="error" id="login-error" role="alert">Incorrect password. Please try again.</p>':''}<button type="submit">View the proposal</button></form><p class="note" dir="rtl">اسم المستخدم محفوظ. أدخل كلمة المرور لعرض مقترح الشراكة.</p><a href="/en">Return to NASAQ</a></main></body></html>`;
-  return privateFohResponse(new Response(body,{status:401,headers:{"Content-Type":"text/html; charset=utf-8","Content-Security-Policy":"default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"}}));
+  return privateFohResponse(new Response(body,{status:401,headers:{"Content-Type":"text/html; charset=utf-8","Referrer-Policy":"same-origin","Content-Security-Policy":"default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"}}));
 }
 
 export function protectedFohPath(path: string): boolean {
@@ -130,7 +139,7 @@ export function privateFohResponse(response: Response): Response {
   headers.set("Expires", "0");
   headers.set("Vary", [...new Set((headers.get("Vary") || "").split(",").map(s => s.trim()).filter(Boolean).concat("Authorization", "Cookie"))].join(", "));
   headers.set("X-Robots-Tag", "noindex, nofollow, noarchive");
-  headers.set("Referrer-Policy", "no-referrer");
+  if(!headers.has("Referrer-Policy"))headers.set("Referrer-Policy", "no-referrer");
   headers.set("X-Content-Type-Options", "nosniff");
   return new Response(response.body, {status: response.status, statusText: response.statusText, headers});
 }

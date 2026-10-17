@@ -56,3 +56,12 @@ test('prefilled form login returns a cookie that opens the investor page',async(
  const cookie=r.headers.get('set-cookie');assert.ok(cookie);assert.match(cookie,/HttpOnly/)
  const page=await get('/FOH',{Cookie:cookie.split(';')[0]});assert.equal(page.status,200);assert.ok((await page.text()).includes('105,000'))
 })
+
+test('browser form with a privacy-hidden Origin signs in through the remote relay',async()=>{
+ const response=await mf.dispatchFetch('https://nasaqfb.com/FOH/access',{method:'POST',redirect:'manual',headers:{Origin:'null','Sec-Fetch-Site':'same-origin','Sec-Fetch-Mode':'navigate','Sec-Fetch-Dest':'document','Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({username:'Investor',password:fohPassword}).toString()})
+ assert.equal(response.status,303)
+ const cookie=response.headers.get('set-cookie').split(';')[0]
+ const page=await get('/FOH',{Cookie:cookie})
+ assert.equal(page.status,200)
+ assert.ok((await page.text()).includes('105,000'))
+})
