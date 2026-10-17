@@ -78,12 +78,12 @@ test('all 60 bilingual pages render with unique titles, metadata, correct direct
  assert.equal(pageImages.ar.size,33);assert.equal(pageImages.en.size,33);assert.equal(imageHashes.size,33)
 })
 test('unknown page returns a real 404',async()=>assert.equal((await get('/en/not-a-page')).status,404))
-test('sitemap includes 60 bilingual pages and the FOH investor page',async()=>{const r=await get('/sitemap.xml');assert.equal(r.status,200);const xml=await r.text();assert.equal((xml.match(/<loc>/g)||[]).length,61);assert.match(xml,/https:\/\/nasaqfb\.com\/FOH/);assert.match(xml,/hreflang="ar"/);assert.match(xml,/hreflang="en"/)})
+test('sitemap includes the 60 public pages and excludes investor content',async()=>{const r=await get('/sitemap.xml');assert.equal(r.status,200);const xml=await r.text();assert.equal((xml.match(/<loc>/g)||[]).length,60);assert.doesNotMatch(xml,/https:\/\/nasaqfb\.com\/FOH/);assert.match(xml,/hreflang="ar"/);assert.match(xml,/hreflang="en"/)})
 test('robots allows content and excludes API',async()=>{const r=await get('/robots.txt');assert.equal(r.status,200);assert.match(await r.text(),/Disallow: \/api\//)})
 
 // The investor page is a separate route with a source-linked planning case.
-test('FOH investor page renders its financial case, configurations and deck',async()=>{
- const response=await get('/FOH'),html=await response.text()
+test('FOH investor page renders after authentication', {skip: !process.env.FOH_TEST_PASSWORD}, async()=>{
+ const response=await mf.dispatchFetch('https://nasaqfb.com/FOH',{headers:{Authorization:'Basic '+Buffer.from('investor:'+process.env.FOH_TEST_PASSWORD).toString('base64')}}),html=await response.text()
  assert.equal(response.status,200)
  assert.match(html,/<title>FOH Counter Partnership \| NASAQ<\/title>/)
  assert.ok(html.includes('href="https://nasaqfb.com/FOH"'))
@@ -91,7 +91,7 @@ test('FOH investor page renders its financial case, configurations and deck',asy
  for(const value of ['105,000','49,500','55,500','52.9%','R1500','Ø3000','SAR 350k','SAR 450k','SAR 400k'])assert.ok(html.includes(value),value)
  assert.ok(html.includes('NASAQ_FOH_Partnership_Introduction.pdf'))
  assert.ok(html.includes('NASAQ_FOH_Partnership_Introduction.pptx'))
- assert.ok(html.includes('https://nasaq-coming-soon.abdullah-zu.chatgpt.site/foh/'))
+ assert.ok(html.includes('href="/foh/NASAQ_FOH_Partnership_Introduction.pdf"'));assert.doesNotMatch(html,/https:\/\/nasaq-coming-soon[^" ]*\/foh\//)
  assert.ok(html.includes('aria-label="Financial scenario"'))
  assert.ok(html.includes('mailto:growth@nasaqfb.com'))
  assert.ok(!html.includes('Runtime Error'))

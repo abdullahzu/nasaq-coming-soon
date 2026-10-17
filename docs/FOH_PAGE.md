@@ -20,9 +20,13 @@ The base, downside and expansion cases reconcile to the feasibility model. These
 
 ## Presentation assets
 
-This official-domain page uses images and presentation downloads from the existing public NASAQ Site at `https://nasaq-coming-soon.abdullah-zu.chatgpt.site/foh/`. This avoids duplicating large presentation binaries in this GitHub repository. Assets are public and contain only the investor presentation, not the detailed feasibility workbook or Word report.
+The page, financial client bundle, slide images, PDF and PowerPoint downloads require the shared investor HTTP Basic login. The main website remains public. Both published origins enforce the password on the server before serving content. The official domain proxies `/foh/` assets to the existing NASAQ Site with the authenticated request header; redirects are not followed. This keeps one login on the official domain.
 
-The matching public page is `https://nasaq-coming-soon.abdullah-zu.chatgpt.site/FOH`. Keep its page, assets, downloadable deck and financial snapshot consistent when revising the proposal.
+Investor responses have `Cache-Control: private, no-store`, `Vary: Authorization`, and `X-Robots-Tag: noindex, nofollow, noarchive`. The route is excluded from the sitemap. The image optimizer checks the source URL before accessing investor images.
+
+`worker/foh-auth.ts` contains only a salted PBKDF2-SHA256 verifier (100,000 iterations), never a plaintext password. A cryptographically generated high-entropy password was delivered privately to the owner. Use HTTPS. To rotate access, generate a new strong password and salt, update the verifier on both deployments, and redeploy both. Do not commit the password or put it in links. The browser retains Basic credentials for its session; close the private browsing session to clear investor access.
+
+This access gate controls current hosted copies. It does not revoke presentations already downloaded, previous browser caches, or material previously published in Git history.
 
 ## Deployment
 
@@ -35,3 +39,7 @@ Do not paste deployment credentials into the page, repository or conversation.
 ## Verification
 
 Type checking and production builds cover the route and assets. Financial checks reconcile all 108 monthly scenario rows, annual revenue/direct cost/gross profit/EBIT and reserve headroom. The PowerPoint contains editable tables and a native cash-flow chart. All 15 PDF pages were visually reviewed. Interactive browser QA was unavailable in the authoring environment.
+
+## Access verification
+
+`tests/foh-access.test.mjs` checks anonymous and malformed/wrong credentials, encoded and case-variant routes, RSC requests, HEAD requests, downloads, image optimization, and actual financial client chunks. Authorized page checks use `FOH_TEST_PASSWORD` supplied only in the test environment; the actual password is never stored in tests. `scripts/check-live.mjs` verifies that the official published page and downloads challenge unauthenticated visitors. Browser UI QA is unavailable in the managed authoring environment.
