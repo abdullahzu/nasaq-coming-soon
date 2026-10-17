@@ -1,3 +1,4 @@
+import {bindings as fohBindings, password as fohPassword, authService} from './foh-auth-fixture.mjs'
 import assert from 'node:assert/strict'
 import test, {after} from 'node:test'
 import {readFile} from 'node:fs/promises'
@@ -6,7 +7,7 @@ import {Miniflare} from 'miniflare'
 const catalogue=JSON.parse(await readFile(new URL('../content/catalogue.json',import.meta.url),'utf8'))
 const paths=['','about','approach','services','engagements','concepts','deliverables','contact','privacy',...catalogue.services.map(x=>'services/'+x.slug),...catalogue.concepts.map(x=>'concepts/'+x.slug)]
 const {workerPath,assetsPath}=await (await import('../scripts/deployment-config.mjs')).deploymentConfig()
-const mf=new Miniflare({modules:true,scriptPath:workerPath,modulesRules:[{type:'ESModule',include:['**/*.js','**/*.mjs']}],compatibilityDate:'2026-05-15',compatibilityFlags:['nodejs_compat'],assets:{directory:assetsPath,binding:'ASSETS',routerConfig:{has_user_worker:true,invoke_user_worker_ahead_of_assets:true}}})
+const mf=new Miniflare({bindings:fohBindings,outboundService:authService,modules:true,scriptPath:workerPath,modulesRules:[{type:'ESModule',include:['**/*.js','**/*.mjs']}],compatibilityDate:'2026-05-15',compatibilityFlags:['nodejs_compat'],assets:{directory:assetsPath,binding:'ASSETS',routerConfig:{has_user_worker:true,invoke_user_worker_ahead_of_assets:true}}})
 after(()=>mf.dispose())
 const get=path=>mf.dispatchFetch('https://nasaqfb.com'+path,{redirect:'manual',headers:{accept:'text/html'}})
 test('root permanently redirects to the Arabic homepage',async()=>{const r=await get('/');assert.equal(r.status,308);assert.ok(r.headers.get('location').endsWith('/ar'))})
@@ -82,8 +83,8 @@ test('sitemap includes the 60 public pages and excludes investor content',async(
 test('robots allows content and excludes API',async()=>{const r=await get('/robots.txt');assert.equal(r.status,200);assert.match(await r.text(),/Disallow: \/api\//)})
 
 // The investor page is a separate route with a source-linked planning case.
-test('FOH investor page renders after authentication', {skip: !process.env.FOH_TEST_PASSWORD}, async()=>{
- const response=await mf.dispatchFetch('https://nasaqfb.com/FOH',{headers:{Authorization:'Basic '+Buffer.from('investor:'+process.env.FOH_TEST_PASSWORD).toString('base64')}}),html=await response.text()
+test('FOH investor page renders after authentication', {skip: !fohPassword}, async()=>{
+ const response=await mf.dispatchFetch('https://nasaqfb.com/FOH',{headers:{Authorization:'Basic '+Buffer.from('Investor:'+fohPassword).toString('base64')}}),html=await response.text()
  assert.equal(response.status,200)
  assert.match(html,/<title>FOH Counter Partnership \| NASAQ<\/title>/)
  assert.ok(html.includes('href="https://nasaqfb.com/FOH"'))

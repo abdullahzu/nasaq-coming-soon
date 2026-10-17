@@ -25,13 +25,13 @@ for (const path of assets) {
 
 // The investor page and files must refuse anonymous and incorrect credentials.
 for (const path of ['/FOH', '/FOH?_rsc=security-check', '/foh/NASAQ_FOH_Partnership_Introduction.pdf', '/foh/NASAQ_FOH_Partnership_Introduction.pptx', '/foh/slides/slide-01.webp']) {
-  for (const authorization of ['', 'Basic '+Buffer.from('investor:incorrect').toString('base64')]) {
+  for (const authorization of ['', 'Basic '+Buffer.from('Investor:incorrect').toString('base64')]) {
     const response=await fetch(new URL(path,origin),{headers:{Authorization:authorization,'Cache-Control':'no-cache'},signal:AbortSignal.timeout(30000)});
     assert.equal(response.status,401,path);
-    assert.match(response.headers.get('www-authenticate')||'',/Basic realm="NASAQ Investor"/);
+    assert.equal(response.headers.get('www-authenticate'),null,'No browser credential popup');
     assert.match(response.headers.get('cache-control')||'',/no-store/);
     assert.match(response.headers.get('x-robots-tag')||'',/noindex/);
-    assert.doesNotMatch(await response.text(),/105,000|55,500|52.9%/);
+    const loginHtml=await response.text();assert.doesNotMatch(loginHtml,/105,000|55,500|52.9%/);assert.ok(loginHtml.includes('value="Investor" readonly'));assert.ok(loginHtml.includes('action="/FOH/access"'));assert.doesNotMatch(loginHtml, /name="password"[^>]*value=/);
   }
   console.log('Protected '+path);
 }

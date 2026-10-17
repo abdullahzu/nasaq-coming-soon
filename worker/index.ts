@@ -1,7 +1,7 @@
 /** Cloudflare Worker entry point for the NASAQ website. */
 import { handleImageOptimization, DEFAULT_DEVICE_SIZES, DEFAULT_IMAGE_SIZES } from "vinext/server/image-optimization";
 import handler from "vinext/server/app-router-entry";
-import { authenticatedFoh, isFohRequest, privateFohResponse, requireFohLogin } from "./foh-auth";
+import { authenticatedRemoteFoh, relayFohLogin, fohForwardHeaders, isFohRequest, privateFohResponse, requireFohLogin } from "./foh-auth";
 
 interface Env {
   ASSETS: { fetch(request: Request): Promise<Response> };
@@ -28,8 +28,9 @@ interface ExecutionContext {
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const url = new URL(request.url);
+    if (url.pathname === "/FOH/access") return request.method === "POST" ? relayFohLogin(request) : requireFohLogin(request);
     const protectedRequest = isFohRequest(request);
-    if (protectedRequest && !(await authenticatedFoh(request))) return requireFohLogin(request);
+    if (protectedRequest && !(await authenticatedRemoteFoh(request))) return requireFohLogin(request);
     const finish = (response: Response) => protectedRequest ? privateFohResponse(response) : response;
 
     // Serve the investor's assets through this origin so the browser's same
@@ -37,7 +38,7 @@ const worker = {
     if (url.pathname.startsWith("/foh/")) {
       if (request.method !== "GET" && request.method !== "HEAD") return finish(new Response("Method not allowed", {status:405, headers:{Allow:"GET, HEAD"}}));
       const upstream = new URL(url.pathname, "https://nasaq-coming-soon.abdullah-zu.chatgpt.site");
-      const headers = new Headers({Authorization: request.headers.get("Authorization") || ""});
+      const headers = fohForwardHeaders(request);
       for (const name of ["Range", "If-Range", "Accept"]) { const value = request.headers.get(name); if (value) headers.set(name, value); }
       try {
         const response = await fetch(upstream, {method:request.method, headers, redirect:"manual", signal:AbortSignal.timeout(30000)});

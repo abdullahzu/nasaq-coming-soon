@@ -20,11 +20,15 @@ The base, downside and expansion cases reconcile to the feasibility model. These
 
 ## Presentation assets
 
-The page, financial client bundle, slide images, PDF and PowerPoint downloads require the shared investor HTTP Basic login. The main website remains public. Both published origins enforce the password on the server before serving content. The official domain proxies `/foh/` assets to the existing NASAQ Site with the authenticated request header; redirects are not followed. This keeps one login on the official domain.
+The page, financial client bundle, slide images, PDF and PowerPoint downloads require the shared investor sign-in. The main website remains public. Both published origins enforce the password on the server before serving content. The official domain proxies `/foh/` assets to the existing NASAQ Site with the authenticated session cookie; redirects are not followed. This keeps one login on the official domain.
 
-Investor responses have `Cache-Control: private, no-store`, `Vary: Authorization`, and `X-Robots-Tag: noindex, nofollow, noarchive`. The route is excluded from the sitemap. The image optimizer checks the source URL before accessing investor images.
+Investor responses have `Cache-Control: private, no-store`, `Vary: Authorization, Cookie`, and `X-Robots-Tag: noindex, nofollow, noarchive`. The route is excluded from the sitemap. The image optimizer checks the source URL before accessing investor images.
 
-`worker/foh-auth.ts` contains only a salted PBKDF2-SHA256 verifier (100,000 iterations), never a plaintext password. A cryptographically generated high-entropy password was delivered privately to the owner. Use HTTPS. To rotate access, generate a new strong password and salt, update the verifier on both deployments, and redeploy both. Do not commit the password or put it in links. The browser retains Basic credentials for its session; close the private browsing session to clear investor access.
+The sign-in form prefills the read-only username `Investor`. The password field stays empty and supports the browser password manager. Successful sign-in creates an eight-hour, signed, host-only cookie with `Secure`, `HttpOnly`, and `SameSite=Lax`. No password is stored in that cookie or the page source. The previous browser credential popup has been removed.
+
+The private asset host owns three runtime secrets: `FOH_PASSWORD_SALT`, `FOH_PASSWORD_HASH` (PBKDF2-SHA256, 100,000 iterations), and `FOH_SESSION_SECRET` (random HMAC key). The official-domain Worker relays form submissions to the fixed asset-host origin and checks sessions through its `/_foh-session` endpoint. It forwards only the investor cookie or explicit Basic credentials to that host. Missing configuration, invalid cookies and network failures deny access.
+
+To rotate the password, update the password salt/hash and session signing key in the asset host's runtime secrets, then deploy its saved version. This revokes existing sessions. Keep passwords and signing keys out of repository files and links.
 
 This access gate controls current hosted copies. It does not revoke presentations already downloaded, previous browser caches, or material previously published in Git history.
 
@@ -42,4 +46,4 @@ Type checking and production builds cover the route and assets. Financial checks
 
 ## Access verification
 
-`tests/foh-access.test.mjs` checks anonymous and malformed/wrong credentials, encoded and case-variant routes, RSC requests, HEAD requests, downloads, image optimization, and actual financial client chunks. Authorized page checks use `FOH_TEST_PASSWORD` supplied only in the test environment; the actual password is never stored in tests. `scripts/check-live.mjs` verifies that the official published page and downloads challenge unauthenticated visitors. Browser UI QA is unavailable in the managed authoring environment.
+`tests/foh-access.test.mjs` checks anonymous and malformed/wrong credentials, encoded and case-variant routes, RSC requests, HEAD requests, downloads, image optimization, and actual financial client chunks. Authorized page and cookie checks use isolated test credentials, never production secrets. `tests/foh-login.test.mjs` verifies the prefilled username, successful login, incorrect credentials, CSRF rejection, cookie attributes, and tampered/expired/revoked sessions. `scripts/check-live.mjs` verifies that the official published page and downloads challenge unauthenticated visitors. Browser UI QA is unavailable in the managed authoring environment.
