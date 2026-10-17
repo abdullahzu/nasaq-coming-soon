@@ -1,0 +1,1048 @@
+{
+  "asOf": "16 October 2026",
+  "currency": "SAR",
+  "startYear": 2027,
+  "modelVersion": 1,
+  "funding": [
+    {
+      "month": 1,
+      "value": 350000
+    },
+    {
+      "month": 4,
+      "value": 450000
+    },
+    {
+      "month": 7,
+      "value": 400000
+    }
+  ],
+  "cases": [
+    {
+      "name": "Base",
+      "annual": [
+        {
+          "units": 24,
+          "revenue": 2520000,
+          "direct": 1188000,
+          "contrib": 1332000,
+          "fixed": 624000,
+          "startup": 320000,
+          "ebitda": 388000,
+          "recurring": 708000.0000000001,
+          "da": 23888.88888888889,
+          "ebit": 364111.11111111124,
+          "cf": 337071.92307692295,
+          "cash": 1537071.923076923,
+          "breakEven": 12,
+          "fullBreakEven": 18,
+          "counterPriceFloor": 39828.70370370371,
+          "equipmentRevenue": 960000,
+          "equipmentCost": 624000,
+          "designRevenue": 240000,
+          "designCost": 84000,
+          "futureRevenue": 0,
+          "futureCost": 0
+        },
+        {
+          "units": 48,
+          "revenue": 5040000,
+          "direct": 2376000,
+          "contrib": 2664000,
+          "fixed": 840000,
+          "startup": 0,
+          "ebitda": 1824000,
+          "recurring": 1824000,
+          "da": 41333.333333333336,
+          "ebit": 1782666.6666666663,
+          "cf": 1877611.5769230768,
+          "cash": 3414683.5,
+          "breakEven": 16,
+          "fullBreakEven": 16,
+          "counterPriceFloor": 17861.111111111113,
+          "equipmentRevenue": 1920000,
+          "equipmentCost": 1248000,
+          "designRevenue": 480000,
+          "designCost": 168000,
+          "futureRevenue": 0,
+          "futureCost": 0
+        },
+        {
+          "units": 72,
+          "revenue": 7560000,
+          "direct": 3564000,
+          "contrib": 3996000,
+          "fixed": 1080000,
+          "startup": 0,
+          "ebitda": 2916000,
+          "recurring": 2916000,
+          "da": 41333.333333333336,
+          "ebit": 2874666.6666666665,
+          "cf": 2957334,
+          "cash": 6372017.5,
+          "breakEven": 20,
+          "fullBreakEven": 21,
+          "counterPriceFloor": 15074.07407407407,
+          "equipmentRevenue": 2880000,
+          "equipmentCost": 1872000,
+          "designRevenue": 720000,
+          "designCost": 252000,
+          "futureRevenue": 0,
+          "futureCost": 0
+        }
+      ],
+      "capital": 608938.4871794871,
+      "originalGap": 18227.76923076925,
+      "headroom": 31772.23076923075,
+      "recovery": 11,
+      "months": [
+        {
+          "month": 1,
+          "cash": 260048.07692307694,
+          "cashBeforeFunding": -89951.92307692308,
+          "reserve": 25000,
+          "cashflow": -89951.92307692308
+        },
+        {
+          "month": 2,
+          "cash": 147096.15384615384,
+          "cashBeforeFunding": -202903.84615384616,
+          "reserve": 25000,
+          "cashflow": -112951.92307692308
+        },
+        {
+          "month": 3,
+          "cash": 56772.23076923075,
+          "cashBeforeFunding": -293227.76923076925,
+          "reserve": 25000,
+          "cashflow": -90323.92307692306
+        },
+        {
+          "month": 4,
+          "cash": 328315.3717948718,
+          "cashBeforeFunding": -471684.6282051282,
+          "reserve": 120000,
+          "cashflow": -178456.85897435894
+        },
+        {
+          "month": 5,
+          "cash": 311061.5128205129,
+          "cashBeforeFunding": -488938.4871794871,
+          "reserve": 120000,
+          "cashflow": -17253.85897435897
+        },
+        {
+          "month": 6,
+          "cash": 329377.1538461539,
+          "cashBeforeFunding": -470622.8461538461,
+          "reserve": 120000,
+          "cashflow": 18315.641025641
+        },
+        {
+          "month": 7,
+          "cash": 811893.2948717949,
+          "cashBeforeFunding": -388106.7051282051,
+          "reserve": 120000,
+          "cashflow": 82516.14102564103
+        },
+        {
+          "month": 8,
+          "cash": 837978.9358974359,
+          "cashBeforeFunding": -362021.0641025641,
+          "reserve": 120000,
+          "cashflow": 26085.641025641
+        },
+        {
+          "month": 9,
+          "cash": 985765.0769230769,
+          "cashBeforeFunding": -214234.92307692312,
+          "reserve": 120000,
+          "cashflow": 147786.141025641
+        },
+        {
+          "month": 10,
+          "cash": 1146210.641025641,
+          "cashBeforeFunding": -53789.35897435906,
+          "reserve": 120000,
+          "cashflow": 160445.56410256407
+        },
+        {
+          "month": 11,
+          "cash": 1341641.282051282,
+          "cashBeforeFunding": 141641.28205128195,
+          "reserve": 120000,
+          "cashflow": 195430.641025641
+        },
+        {
+          "month": 12,
+          "cash": 1537071.923076923,
+          "cashBeforeFunding": 337071.92307692295,
+          "reserve": 120000,
+          "cashflow": 195430.641025641
+        },
+        {
+          "month": 13,
+          "cash": 1626197.4999999998,
+          "cashBeforeFunding": 426197.4999999998,
+          "reserve": 120000,
+          "cashflow": 89125.57692307688
+        },
+        {
+          "month": 14,
+          "cash": 1814014.9999999998,
+          "cashBeforeFunding": 614014.9999999998,
+          "reserve": 120000,
+          "cashflow": 187817.49999999994
+        },
+        {
+          "month": 15,
+          "cash": 2001832.4999999998,
+          "cashBeforeFunding": 801832.4999999998,
+          "reserve": 120000,
+          "cashflow": 187817.49999999994
+        },
+        {
+          "month": 16,
+          "cash": 2090997.4999999998,
+          "cashBeforeFunding": 890997.4999999998,
+          "reserve": 120000,
+          "cashflow": 89164.99999999994
+        },
+        {
+          "month": 17,
+          "cash": 2278015,
+          "cashBeforeFunding": 1078014.9999999998,
+          "reserve": 120000,
+          "cashflow": 187017.49999999994
+        },
+        {
+          "month": 18,
+          "cash": 2464232.5,
+          "cashBeforeFunding": 1264232.4999999998,
+          "reserve": 120000,
+          "cashflow": 186217.49999999994
+        },
+        {
+          "month": 19,
+          "cash": 2552597.5,
+          "cashBeforeFunding": 1352597.4999999998,
+          "reserve": 120000,
+          "cashflow": 88364.99999999994
+        },
+        {
+          "month": 20,
+          "cash": 2738015,
+          "cashBeforeFunding": 1538014.9999999998,
+          "reserve": 120000,
+          "cashflow": 185417.49999999994
+        },
+        {
+          "month": 21,
+          "cash": 2923432.5,
+          "cashBeforeFunding": 1723432.4999999998,
+          "reserve": 120000,
+          "cashflow": 185417.49999999994
+        },
+        {
+          "month": 22,
+          "cash": 3010197.5,
+          "cashBeforeFunding": 1810197.4999999998,
+          "reserve": 120000,
+          "cashflow": 86764.99999999994
+        },
+        {
+          "month": 23,
+          "cash": 3194815,
+          "cashBeforeFunding": 1994814.9999999998,
+          "reserve": 120000,
+          "cashflow": 184617.49999999994
+        },
+        {
+          "month": 24,
+          "cash": 3414683.5,
+          "cashBeforeFunding": 2214683.5,
+          "reserve": 120000,
+          "cashflow": 219868.5
+        },
+        {
+          "month": 25,
+          "cash": 3581652.5,
+          "cashBeforeFunding": 2381652.5,
+          "reserve": 120000,
+          "cashflow": 166969
+        },
+        {
+          "month": 26,
+          "cash": 3876135,
+          "cashBeforeFunding": 2676135,
+          "reserve": 120000,
+          "cashflow": 294482.5
+        },
+        {
+          "month": 27,
+          "cash": 4170617.5,
+          "cashBeforeFunding": 2970617.5,
+          "reserve": 120000,
+          "cashflow": 294482.5
+        },
+        {
+          "month": 28,
+          "cash": 4315452.5,
+          "cashBeforeFunding": 3115452.5,
+          "reserve": 120000,
+          "cashflow": 144835
+        },
+        {
+          "month": 29,
+          "cash": 4609935,
+          "cashBeforeFunding": 3409935,
+          "reserve": 120000,
+          "cashflow": 294482.5
+        },
+        {
+          "month": 30,
+          "cash": 4904417.5,
+          "cashBeforeFunding": 3704417.5,
+          "reserve": 120000,
+          "cashflow": 294482.5
+        },
+        {
+          "month": 31,
+          "cash": 5049252.5,
+          "cashBeforeFunding": 3849252.5,
+          "reserve": 120000,
+          "cashflow": 144835
+        },
+        {
+          "month": 32,
+          "cash": 5343735,
+          "cashBeforeFunding": 4143735,
+          "reserve": 120000,
+          "cashflow": 294482.5
+        },
+        {
+          "month": 33,
+          "cash": 5638217.5,
+          "cashBeforeFunding": 4438217.5,
+          "reserve": 120000,
+          "cashflow": 294482.5
+        },
+        {
+          "month": 34,
+          "cash": 5783052.5,
+          "cashBeforeFunding": 4583052.5,
+          "reserve": 120000,
+          "cashflow": 144835
+        },
+        {
+          "month": 35,
+          "cash": 6077535,
+          "cashBeforeFunding": 4877535,
+          "reserve": 120000,
+          "cashflow": 294482.5
+        },
+        {
+          "month": 36,
+          "cash": 6372017.5,
+          "cashBeforeFunding": 5172017.5,
+          "reserve": 120000,
+          "cashflow": 294482.5
+        }
+      ],
+      "assumptions": {
+        "price": 55000,
+        "cost": 20000,
+        "equipmentPrice": 40000,
+        "equipmentGP": 0.35,
+        "equipmentUptake": 1,
+        "designPrice": 10000,
+        "designCost": 3500,
+        "designUptake": 1
+      }
+    },
+    {
+      "name": "Downside",
+      "annual": [
+        {
+          "units": 12,
+          "revenue": 894000,
+          "direct": 492000,
+          "contrib": 402000,
+          "fixed": 624000,
+          "startup": 320000,
+          "ebitda": -541999.9999999998,
+          "recurring": -221999.9999999999,
+          "da": 23888.88888888889,
+          "ebit": -565888.8888888889,
+          "cf": -745742.5000000002,
+          "cash": 454257.49999999977,
+          "breakEven": 19,
+          "fullBreakEven": 29,
+          "counterPriceFloor": 96657.40740740742,
+          "equipmentRevenue": 240000,
+          "equipmentCost": 168000,
+          "designRevenue": 60000,
+          "designCost": 24000,
+          "futureRevenue": 0,
+          "futureCost": 0
+        },
+        {
+          "units": 30,
+          "revenue": 2235000,
+          "direct": 1230000,
+          "contrib": 1005000,
+          "fixed": 840000,
+          "startup": 0,
+          "ebitda": 165000,
+          "recurring": 165000,
+          "da": 41333.333333333336,
+          "ebit": 123666.66666666669,
+          "cf": 255039.99999999965,
+          "cash": 709297.4999999998,
+          "breakEven": 26,
+          "fullBreakEven": 27,
+          "counterPriceFloor": 45377.77777777778,
+          "equipmentRevenue": 600000,
+          "equipmentCost": 420000,
+          "designRevenue": 150000,
+          "designCost": 60000,
+          "futureRevenue": 0,
+          "futureCost": 0
+        },
+        {
+          "units": 48,
+          "revenue": 3576000,
+          "direct": 1968000,
+          "contrib": 1608000,
+          "fixed": 1080000,
+          "startup": 0,
+          "ebitda": 528000,
+          "recurring": 528000,
+          "da": 41333.333333333336,
+          "ebit": 486666.6666666667,
+          "cf": 551920,
+          "cash": 1261217.4999999998,
+          "breakEven": 33,
+          "fullBreakEven": 34,
+          "counterPriceFloor": 39361.11111111112,
+          "equipmentRevenue": 960000,
+          "equipmentCost": 672000,
+          "designRevenue": 240000,
+          "designCost": 96000,
+          "futureRevenue": 0,
+          "futureCost": 0
+        }
+      ],
+      "capital": 921175.0641025642,
+      "originalGap": 60298.20512820524,
+      "headroom": 9144.230769230751,
+      "recovery": 36,
+      "months": [
+        {
+          "month": 1,
+          "cash": 260048.07692307694,
+          "cashBeforeFunding": -89951.92307692308,
+          "reserve": 25000,
+          "cashflow": -89951.92307692308
+        },
+        {
+          "month": 2,
+          "cash": 147096.15384615384,
+          "cashBeforeFunding": -202903.84615384616,
+          "reserve": 25000,
+          "cashflow": -112951.92307692308
+        },
+        {
+          "month": 3,
+          "cash": 34144.23076923075,
+          "cashBeforeFunding": -315855.76923076925,
+          "reserve": 25000,
+          "cashflow": -112951.92307692308
+        },
+        {
+          "month": 4,
+          "cash": 264292.37179487175,
+          "cashBeforeFunding": -535707.6282051282,
+          "reserve": 120000,
+          "cashflow": -219851.85897435894
+        },
+        {
+          "month": 5,
+          "cash": 195550.51282051275,
+          "cashBeforeFunding": -604449.4871794872,
+          "reserve": 120000,
+          "cashflow": -68741.85897435897
+        },
+        {
+          "month": 6,
+          "cash": 135376.15384615376,
+          "cashBeforeFunding": -664623.8461538462,
+          "reserve": 120000,
+          "cashflow": -60174.35897435897
+        },
+        {
+          "month": 7,
+          "cash": 509701.79487179476,
+          "cashBeforeFunding": -690298.2051282052,
+          "reserve": 120000,
+          "cashflow": -25674.35897435897
+        },
+        {
+          "month": 8,
+          "cash": 398824.93589743576,
+          "cashBeforeFunding": -801175.0641025642,
+          "reserve": 120000,
+          "cashflow": -110876.85897435898
+        },
+        {
+          "month": 9,
+          "cash": 404558.07692307676,
+          "cashBeforeFunding": -795441.9230769232,
+          "reserve": 120000,
+          "cashflow": 5733.141025641031
+        },
+        {
+          "month": 10,
+          "cash": 418858.71794871776,
+          "cashBeforeFunding": -781141.2820512822,
+          "reserve": 120000,
+          "cashflow": 14300.64102564103
+        },
+        {
+          "month": 11,
+          "cash": 433159.35897435877,
+          "cashBeforeFunding": -766840.6410256412,
+          "reserve": 120000,
+          "cashflow": 14300.64102564103
+        },
+        {
+          "month": 12,
+          "cash": 454257.49999999977,
+          "cashBeforeFunding": -745742.5000000002,
+          "reserve": 120000,
+          "cashflow": 21098.141025641
+        },
+        {
+          "month": 13,
+          "cash": 485554.99999999977,
+          "cashBeforeFunding": -714445.0000000002,
+          "reserve": 120000,
+          "cashflow": 31297.49999999997
+        },
+        {
+          "month": 14,
+          "cash": 507607.49999999977,
+          "cashBeforeFunding": -692392.5000000002,
+          "reserve": 120000,
+          "cashflow": 22052.49999999997
+        },
+        {
+          "month": 15,
+          "cash": 538904.9999999998,
+          "cashBeforeFunding": -661095.0000000002,
+          "reserve": 120000,
+          "cashflow": 31297.49999999997
+        },
+        {
+          "month": 16,
+          "cash": 560957.4999999998,
+          "cashBeforeFunding": -639042.5000000002,
+          "reserve": 120000,
+          "cashflow": 22052.49999999997
+        },
+        {
+          "month": 17,
+          "cash": 591254.9999999998,
+          "cashBeforeFunding": -608745.0000000002,
+          "reserve": 120000,
+          "cashflow": 30297.49999999997
+        },
+        {
+          "month": 18,
+          "cash": 612307.4999999998,
+          "cashBeforeFunding": -587692.5000000002,
+          "reserve": 120000,
+          "cashflow": 21052.49999999997
+        },
+        {
+          "month": 19,
+          "cash": 615612.4999999998,
+          "cashBeforeFunding": -584387.5000000002,
+          "reserve": 120000,
+          "cashflow": 3304.999999999942
+        },
+        {
+          "month": 20,
+          "cash": 636664.9999999998,
+          "cashBeforeFunding": -563335.0000000002,
+          "reserve": 120000,
+          "cashflow": 21052.49999999997
+        },
+        {
+          "month": 21,
+          "cash": 665962.4999999998,
+          "cashBeforeFunding": -534037.5000000002,
+          "reserve": 120000,
+          "cashflow": 29297.49999999997
+        },
+        {
+          "month": 22,
+          "cash": 653149.9999999998,
+          "cashBeforeFunding": -546850.0000000002,
+          "reserve": 120000,
+          "cashflow": -12812.50000000003
+        },
+        {
+          "month": 23,
+          "cash": 682447.4999999998,
+          "cashBeforeFunding": -517552.50000000023,
+          "reserve": 120000,
+          "cashflow": 29297.49999999997
+        },
+        {
+          "month": 24,
+          "cash": 709297.4999999998,
+          "cashBeforeFunding": -490702.50000000023,
+          "reserve": 120000,
+          "cashflow": 26850
+        },
+        {
+          "month": 25,
+          "cash": 724292.4999999998,
+          "cashBeforeFunding": -475707.50000000023,
+          "reserve": 120000,
+          "cashflow": 14995
+        },
+        {
+          "month": 26,
+          "cash": 788254.9999999998,
+          "cashBeforeFunding": -411745.00000000023,
+          "reserve": 120000,
+          "cashflow": 63962.5
+        },
+        {
+          "month": 27,
+          "cash": 851217.4999999998,
+          "cashBeforeFunding": -348782.50000000023,
+          "reserve": 120000,
+          "cashflow": 62962.5
+        },
+        {
+          "month": 28,
+          "cash": 861292.4999999998,
+          "cashBeforeFunding": -338707.50000000023,
+          "reserve": 120000,
+          "cashflow": 10075
+        },
+        {
+          "month": 29,
+          "cash": 924254.9999999998,
+          "cashBeforeFunding": -275745.00000000023,
+          "reserve": 120000,
+          "cashflow": 62962.5
+        },
+        {
+          "month": 30,
+          "cash": 988217.4999999998,
+          "cashBeforeFunding": -211782.50000000023,
+          "reserve": 120000,
+          "cashflow": 63962.5
+        },
+        {
+          "month": 31,
+          "cash": 997292.4999999998,
+          "cashBeforeFunding": -202707.50000000023,
+          "reserve": 120000,
+          "cashflow": 9075
+        },
+        {
+          "month": 32,
+          "cash": 1061254.9999999998,
+          "cashBeforeFunding": -138745.00000000023,
+          "reserve": 120000,
+          "cashflow": 63962.5
+        },
+        {
+          "month": 33,
+          "cash": 1124217.4999999998,
+          "cashBeforeFunding": -75782.50000000023,
+          "reserve": 120000,
+          "cashflow": 62962.5
+        },
+        {
+          "month": 34,
+          "cash": 1134292.4999999998,
+          "cashBeforeFunding": -65707.50000000023,
+          "reserve": 120000,
+          "cashflow": 10075
+        },
+        {
+          "month": 35,
+          "cash": 1197254.9999999998,
+          "cashBeforeFunding": -2745.000000000233,
+          "reserve": 120000,
+          "cashflow": 62962.5
+        },
+        {
+          "month": 36,
+          "cash": 1261217.4999999998,
+          "cashBeforeFunding": 61217.49999999977,
+          "reserve": 120000,
+          "cashflow": 63962.5
+        }
+      ],
+      "assumptions": {
+        "price": 49500,
+        "cost": 25000,
+        "equipmentPrice": 40000,
+        "equipmentGP": 0.3,
+        "equipmentUptake": 0.5,
+        "designPrice": 10000,
+        "designCost": 4000,
+        "designUptake": 0.5
+      }
+    },
+    {
+      "name": "Expansion",
+      "annual": [
+        {
+          "units": 30,
+          "revenue": 3150000,
+          "direct": 1485000,
+          "contrib": 1665000,
+          "fixed": 624000,
+          "startup": 320000,
+          "ebitda": 721000,
+          "recurring": 1041000.0000000002,
+          "da": 23888.88888888889,
+          "ebit": 697111.1111111112,
+          "cf": 698362.4230769228,
+          "cash": 1898362.4230769228,
+          "breakEven": 12,
+          "fullBreakEven": 18,
+          "counterPriceFloor": 31762.962962962967,
+          "equipmentRevenue": 1200000,
+          "equipmentCost": 780000,
+          "designRevenue": 300000,
+          "designCost": 105000,
+          "futureRevenue": 0,
+          "futureCost": 0
+        },
+        {
+          "units": 60,
+          "revenue": 6300000,
+          "direct": 2970000,
+          "contrib": 3330000,
+          "fixed": 840000,
+          "startup": 0,
+          "ebitda": 2490000,
+          "recurring": 2490000,
+          "da": 41333.333333333336,
+          "ebit": 2448666.6666666665,
+          "cf": 2554626.076923077,
+          "cash": 4452988.5,
+          "breakEven": 16,
+          "fullBreakEven": 16,
+          "counterPriceFloor": 14188.888888888892,
+          "equipmentRevenue": 2400000,
+          "equipmentCost": 1560000,
+          "designRevenue": 600000,
+          "designCost": 210000,
+          "futureRevenue": 0,
+          "futureCost": 0
+        },
+        {
+          "units": 84,
+          "revenue": 8820000,
+          "direct": 4158000,
+          "contrib": 4662000,
+          "fixed": 1080000,
+          "startup": 0,
+          "ebitda": 3582000,
+          "recurring": 3582000,
+          "da": 41333.333333333336,
+          "ebit": 3540666.6666666665,
+          "cf": 3623333.9999999995,
+          "cash": 8076322.5,
+          "breakEven": 20,
+          "fullBreakEven": 21,
+          "counterPriceFloor": 12849.206349206346,
+          "equipmentRevenue": 3360000,
+          "equipmentCost": 2184000,
+          "designRevenue": 840000,
+          "designCost": 294000,
+          "futureRevenue": 0,
+          "futureCost": 0
+        }
+      ],
+      "capital": 574059.1282051282,
+      "originalGap": 18227.76923076925,
+      "headroom": 31772.23076923075,
+      "recovery": 9,
+      "months": [
+        {
+          "month": 1,
+          "cash": 260048.07692307694,
+          "cashBeforeFunding": -89951.92307692308,
+          "reserve": 25000,
+          "cashflow": -89951.92307692308
+        },
+        {
+          "month": 2,
+          "cash": 147096.15384615384,
+          "cashBeforeFunding": -202903.84615384616,
+          "reserve": 25000,
+          "cashflow": -112951.92307692308
+        },
+        {
+          "month": 3,
+          "cash": 56772.23076923075,
+          "cashBeforeFunding": -293227.76923076925,
+          "reserve": 25000,
+          "cashflow": -90323.92307692306
+        },
+        {
+          "month": 4,
+          "cash": 345940.87179487175,
+          "cashBeforeFunding": -454059.12820512825,
+          "reserve": 120000,
+          "cashflow": -160831.358974359
+        },
+        {
+          "month": 5,
+          "cash": 364256.51282051275,
+          "cashBeforeFunding": -435743.48717948725,
+          "reserve": 120000,
+          "cashflow": 18315.641025641
+        },
+        {
+          "month": 6,
+          "cash": 412272.65384615376,
+          "cashBeforeFunding": -387727.34615384624,
+          "reserve": 120000,
+          "cashflow": 48016.14102564103
+        },
+        {
+          "month": 7,
+          "cash": 947983.7948717948,
+          "cashBeforeFunding": -252016.20512820524,
+          "reserve": 120000,
+          "cashflow": 135711.141025641
+        },
+        {
+          "month": 8,
+          "cash": 1039339.4358974358,
+          "cashBeforeFunding": -160660.5641025643,
+          "reserve": 120000,
+          "cashflow": 91355.64102564094
+        },
+        {
+          "month": 9,
+          "cash": 1234770.0769230768,
+          "cashBeforeFunding": 34770.076923076704,
+          "reserve": 120000,
+          "cashflow": 195430.641025641
+        },
+        {
+          "month": 10,
+          "cash": 1389036.1410256408,
+          "cashBeforeFunding": 189036.14102564077,
+          "reserve": 120000,
+          "cashflow": 154266.06410256407
+        },
+        {
+          "month": 11,
+          "cash": 1637661.7820512818,
+          "cashBeforeFunding": 437661.78205128177,
+          "reserve": 120000,
+          "cashflow": 248625.641025641
+        },
+        {
+          "month": 12,
+          "cash": 1898362.4230769228,
+          "cashBeforeFunding": 698362.4230769228,
+          "reserve": 120000,
+          "cashflow": 260700.641025641
+        },
+        {
+          "month": 13,
+          "cash": 2032062.4999999998,
+          "cashBeforeFunding": 832062.4999999998,
+          "reserve": 120000,
+          "cashflow": 133700.07692307694
+        },
+        {
+          "month": 14,
+          "cash": 2285150,
+          "cashBeforeFunding": 1085149.9999999998,
+          "reserve": 120000,
+          "cashflow": 253087.5
+        },
+        {
+          "month": 15,
+          "cash": 2538237.5,
+          "cashBeforeFunding": 1338237.4999999998,
+          "reserve": 120000,
+          "cashflow": 253087.5
+        },
+        {
+          "month": 16,
+          "cash": 2665762.5,
+          "cashBeforeFunding": 1465762.4999999998,
+          "reserve": 120000,
+          "cashflow": 127525
+        },
+        {
+          "month": 17,
+          "cash": 2917250,
+          "cashBeforeFunding": 1717249.9999999998,
+          "reserve": 120000,
+          "cashflow": 251487.5
+        },
+        {
+          "month": 18,
+          "cash": 3168737.5,
+          "cashBeforeFunding": 1968737.4999999998,
+          "reserve": 120000,
+          "cashflow": 251487.5
+        },
+        {
+          "month": 19,
+          "cash": 3294662.5,
+          "cashBeforeFunding": 2094662.4999999998,
+          "reserve": 120000,
+          "cashflow": 125925
+        },
+        {
+          "month": 20,
+          "cash": 3544550,
+          "cashBeforeFunding": 2344550,
+          "reserve": 120000,
+          "cashflow": 249887.5
+        },
+        {
+          "month": 21,
+          "cash": 3794437.5,
+          "cashBeforeFunding": 2594437.5,
+          "reserve": 120000,
+          "cashflow": 249887.5
+        },
+        {
+          "month": 22,
+          "cash": 3919562.5,
+          "cashBeforeFunding": 2719562.5,
+          "reserve": 120000,
+          "cashflow": 125125
+        },
+        {
+          "month": 23,
+          "cash": 4168650,
+          "cashBeforeFunding": 2968650,
+          "reserve": 120000,
+          "cashflow": 249087.5
+        },
+        {
+          "month": 24,
+          "cash": 4452988.5,
+          "cashBeforeFunding": 3252988.5,
+          "reserve": 120000,
+          "cashflow": 284338.5
+        },
+        {
+          "month": 25,
+          "cash": 4657517.5,
+          "cashBeforeFunding": 3457517.5,
+          "reserve": 120000,
+          "cashflow": 204528.99999999988
+        },
+        {
+          "month": 26,
+          "cash": 5016470,
+          "cashBeforeFunding": 3816470,
+          "reserve": 120000,
+          "cashflow": 358952.4999999999
+        },
+        {
+          "month": 27,
+          "cash": 5375422.5,
+          "cashBeforeFunding": 4175422.5,
+          "reserve": 120000,
+          "cashflow": 358952.4999999999
+        },
+        {
+          "month": 28,
+          "cash": 5557817.5,
+          "cashBeforeFunding": 4357817.5,
+          "reserve": 120000,
+          "cashflow": 182394.99999999988
+        },
+        {
+          "month": 29,
+          "cash": 5916770,
+          "cashBeforeFunding": 4716770,
+          "reserve": 120000,
+          "cashflow": 358952.4999999999
+        },
+        {
+          "month": 30,
+          "cash": 6275722.5,
+          "cashBeforeFunding": 5075722.5,
+          "reserve": 120000,
+          "cashflow": 358952.4999999999
+        },
+        {
+          "month": 31,
+          "cash": 6458117.5,
+          "cashBeforeFunding": 5258117.5,
+          "reserve": 120000,
+          "cashflow": 182394.99999999988
+        },
+        {
+          "month": 32,
+          "cash": 6817070,
+          "cashBeforeFunding": 5617070,
+          "reserve": 120000,
+          "cashflow": 358952.4999999999
+        },
+        {
+          "month": 33,
+          "cash": 7176022.5,
+          "cashBeforeFunding": 5976022.5,
+          "reserve": 120000,
+          "cashflow": 358952.4999999999
+        },
+        {
+          "month": 34,
+          "cash": 7358417.5,
+          "cashBeforeFunding": 6158417.5,
+          "reserve": 120000,
+          "cashflow": 182394.99999999988
+        },
+        {
+          "month": 35,
+          "cash": 7717370,
+          "cashBeforeFunding": 6517370,
+          "reserve": 120000,
+          "cashflow": 358952.4999999999
+        },
+        {
+          "month": 36,
+          "cash": 8076322.5,
+          "cashBeforeFunding": 6876322.5,
+          "reserve": 120000,
+          "cashflow": 358952.4999999999
+        }
+      ],
+      "assumptions": {
+        "price": 55000,
+        "cost": 20000,
+        "equipmentPrice": 40000,
+        "equipmentGP": 0.35,
+        "equipmentUptake": 1,
+        "designPrice": 10000,
+        "designCost": 3500,
+        "designUptake": 1
+      }
+    }
+  ]
+}
