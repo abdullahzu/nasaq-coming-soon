@@ -21,6 +21,8 @@
   pointer-events: none;
   background: linear-gradient(180deg, rgba(246,245,237,.12), rgba(246,245,237,.28) 68%, var(--ivory)), url('/images/prototype3/architecture-md.webp') center top / cover no-repeat;
 }
+/* Keep the quiet wall behind the heading in both reading directions. */
+html[lang=en] .home-shell::before { transform: scaleX(-1); }
 .nasaq-shell main:focus { outline: none; }
 .nasaq-shell .site-header {
   position: relative;
