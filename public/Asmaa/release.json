@@ -1,8 +1,10 @@
 {
-  "release": "v8.3-web-preview",
+  "release": "v8.4-preview-monitoring",
   "date": "2026-10-29",
   "source": "v7.4 unchanged",
   "sha256": "7660cbcda36050c00d7a157a4b4d5e17d0725a184ca44938ac913cf3341633a3",
   "scholarlyApproved": false,
-  "containsCMS": false
+  "containsCMS": false,
+  "previewOnly": true,
+  "monitoring": "client-side-on-demand"
 }

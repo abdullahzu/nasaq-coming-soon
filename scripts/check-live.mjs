@@ -45,3 +45,33 @@ for(const [site,expected] of [['same-origin',401],['cross-site',400]]) {
  else await response.body?.cancel();
  console.log('Browser form '+site+' validated');
 }
+
+
+// ASMAA v8.4: Public preview is a separate release surface. The NASAQ homepage
+// checks above must not be treated as evidence that /Asmaa itself is deployed.
+const {createHash}=await import('node:crypto')
+const previewPaths=['/Asmaa','/Asmaa/updates','/Asmaa/health.html']
+for(const path of previewPaths){
+  const response=await fetch(new URL(path,origin),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(30000)})
+  assert.equal(response.status,200,path)
+  assert.match(response.headers.get('content-type')||'',/text\/html/i,path)
+  const page=await response.text()
+  assert.ok(page.toLowerCase().includes('noindex'),path+' must be preview-only')
+  if(path==='/Asmaa')assert.ok(page.includes('/Asmaa/experience.html'),'The preview iframe is absent')
+  if(path.endsWith('/updates'))assert.ok(page.includes('سجل تطوير'),'The public change log is absent')
+  console.log('ASMAA OK '+path)
+}
+const manifestResponse=await fetch(new URL('/Asmaa/release.json',origin),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(30000)})
+assert.equal(manifestResponse.status,200,'/Asmaa/release.json')
+const release=await manifestResponse.json()
+assert.equal(release.release,'v8.4-preview-monitoring','The official site has an outdated /Asmaa release')
+assert.equal(release.scholarlyApproved,false)
+assert.equal(release.containsCMS,false)
+assert.match(release.sha256,/^[a-f0-9]{64}$/)
+const experienceResponse=await fetch(new URL('/Asmaa/experience.html',origin),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(30000)})
+assert.equal(experienceResponse.status,200,'/Asmaa/experience.html')
+assert.match(experienceResponse.headers.get('content-type')||'',/text\/html/i)
+const experienceBytes=Buffer.from(await experienceResponse.arrayBuffer())
+assert.ok(experienceBytes.length>100000,'Truncated Asmaa interactive HTML')
+assert.equal(createHash('sha256').update(experienceBytes).digest('hex'),release.sha256,'Public preview differs from approved source')
+console.log('ASMAA release and byte-level integrity verified: '+release.release)
