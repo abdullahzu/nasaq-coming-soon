@@ -76,7 +76,7 @@ test('all 60 bilingual pages render with unique titles, metadata, correct direct
   assert.ok(!html.includes('Runtime Error'),url)
  }
  assert.equal(titles.size,60)
- assert.equal(pageImages.ar.size,33);assert.equal(pageImages.en.size,33);assert.equal(imageHashes.size,33)
+ assert.equal(pageImages.ar.size,38);assert.equal(pageImages.en.size,38);assert.equal(imageHashes.size,38)
 })
 test('unknown page returns a real 404',async()=>assert.equal((await get('/en/not-a-page')).status,404))
 test('sitemap includes the 60 public pages and excludes investor content',async()=>{const r=await get('/sitemap.xml');assert.equal(r.status,200);const xml=await r.text();assert.equal((xml.match(/<loc>/g)||[]).length,60);assert.doesNotMatch(xml,/https:\/\/nasaqfb\.com\/FOH/);assert.match(xml,/hreflang="ar"/);assert.match(xml,/hreflang="en"/)})

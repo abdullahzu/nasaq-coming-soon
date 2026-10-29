@@ -16,7 +16,8 @@
     "verify": "npm run check:source && npm run check:types && npm run build && npm test && npm run check:worker",
     "deploy": "npm run verify && npm run deploy:built",
     "deploy:built": "node scripts/deploy-cloudflare.mjs",
-    "export:copy": "node scripts/export-copy.mjs"
+    "export:copy": "node scripts/export-copy.mjs",
+    "test:browsers": "playwright test"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -45,7 +46,9 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
     "@cloudflare/vite-plugin": "1.37.1",
+    "@playwright/test": "1.64.1",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
