@@ -76,8 +76,8 @@ html[lang=ar] .nasaq-shell .architectural-hero h1 { max-width: 470px; line-heigh
 .window-mep { background: rgba(239,241,233,.92); }
 .window-supplier { background: rgba(239,235,228,.92); }
 .service-window[aria-pressed=true] { outline: 2px solid var(--teal); background: #dce8dc; }
-.window-title { font-size: 17px; font-weight: 700; line-height: 1.6; }
-.window-translation { color: var(--muted); font-size: 12px; line-height: 1.5; display: block; margin-top: 3px; }
+.window-title { font-size: 17px; font-weight: 700; line-height: 1.6; overflow-wrap: anywhere; }
+.window-translation { color: var(--muted); font-size: 12px; line-height: 1.5; display: block; margin-top: 3px; overflow-wrap: anywhere; }
 .window-image { display: block; position: relative; border-radius: 9px; overflow: hidden; flex: 1; min-height: 130px; margin-top: 13px; background: var(--sage); }
 .window-image img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; transition: transform .35s ease; }
 .window-arrow { position: absolute; inset-inline-end: 9px; bottom: 9px; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: #fafcf8; color: var(--teal); font-size: 23px; box-shadow: 0 3px 10px #173b411a; }

@@ -97,7 +97,8 @@ for(const lang of ['ar','en']) {
     }
     await page.goto(`/${lang}`)
     await page.evaluate(()=>document.fonts.ready)
-    await page.screenshot({path:testInfo.outputPath(`homepage-${lang}.png`),fullPage:true})
+    // CSS-pixel output avoids WebKit's 32767px limit at mobile deviceScaleFactor=3.
+    await page.screenshot({path:testInfo.outputPath(`homepage-${lang}.png`),fullPage:true,scale:'css'})
   })
 
   test(`${lang}: accessibility and reduced motion`,async({page})=>{
