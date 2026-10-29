@@ -97,6 +97,12 @@ for(const lang of ['ar','en']) {
     }
     await page.goto(`/${lang}`)
     await page.evaluate(()=>document.fonts.ready)
+    // Visit lazy media before capturing the complete page, as a reader would.
+    for(const image of await page.locator('main img').all()) {
+      await image.scrollIntoViewIfNeeded()
+      await expect.poll(()=>image.evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>0)).toBe(true)
+    }
+    await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}))
     // CSS-pixel output avoids WebKit's 32767px limit at mobile deviceScaleFactor=3.
     await page.screenshot({path:testInfo.outputPath(`homepage-${lang}.png`),fullPage:true,scale:'css'})
   })
