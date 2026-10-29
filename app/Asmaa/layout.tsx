@@ -1,0 +1,3 @@
+import type { Metadata } from 'next'
+export const metadata: Metadata = {title:'أسماء الله الحسنى | معاينة تصميمية',description:'معاينة تفاعلية؛ المادة العلمية غير معتمدة للنشر.',robots:{index:false,follow:false,noarchive:true}}
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="ar" dir="rtl"><body style={{margin:0,background:'#f5f3ec'}}>{children}</body></html>}

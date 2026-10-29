@@ -1,0 +1,1575 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#F4F2EA">
+<title>أسماء الله الحسنى | النوافذ التفاعلية V7.3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--ivory:#f5f3ec;--surface:#fffefa;--sage:#d7e4d6;--sky:#daeaf0;--stone:#e8e1d4;--ink:#294a44;--ink2:#536962;--muted:#6f7f78;--line:rgba(51,79,69,.14);--display:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;--card-display:'Aref Ruqaa Ink','Aref Ruqaa','Amiri','Noto Naskh Arabic','Traditional Arabic',serif;--sans:'Noto Sans Arabic','Noto Kufi Arabic',Tahoma,Arial,sans-serif;--shadow:0 14px 46px rgba(59,83,74,.12);--shadow2:0 28px 70px rgba(41,67,60,.21)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(ellipse 52% 38% at 5% 12%,#d5e6dd 0%,transparent 83%),radial-gradient(ellipse 50% 44% at 94% 45%,#d9ebf0 0%,transparent 75%),linear-gradient(145deg,#f9f8f3,#eeeee5 60%,#f8f6ef);min-height:100vh;overflow-x:hidden}
+button,input{font:inherit}
+button{cursor:pointer}
+a{color:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #2f8279;outline-offset:3px}
+.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.topbar{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:19px clamp(20px,4vw,70px);border-bottom:1px solid var(--line);background:rgba(251,250,246,.7);backdrop-filter:blur(14px)}
+.brand{display:flex;gap:13px;align-items:center;min-width:0}
+.brand-mark{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:linear-gradient(145deg,#d5e4d5,#f5f3ea);border:1px solid #c3d2c4;font-family:var(--display);font-size:29px}
+.brand-title{font-size:17px;font-weight:700;letter-spacing:-.5px;white-space:nowrap}
+.brand-sub{font-family:Georgia,serif;direction:ltr;color:var(--muted);font-size:10px;letter-spacing:2.1px;text-transform:uppercase;margin-top:2px}
+.top-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.soft-btn,.icon-btn{color:var(--ink);background:rgba(255,255,255,.62);border:1px solid rgba(57,86,75,.18);border-radius:999px;padding:9px 16px;font-size:12px;transition:.18s ease;white-space:nowrap}
+.soft-btn:hover,.icon-btn:hover{background:#e3ede4;transform:translateY(-1px)}
+.soft-btn.active{background:#d1e3d5;border-color:#93b5a5}
+.eyebrow{display:flex;align-items:center;gap:9px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#5b7e73;font-weight:700}
+.eyebrow::before{content:'';display:block;width:23px;height:1px;background:#9db9ad}
+.hero{max-width:1540px;margin:auto;padding:35px clamp(20px,4vw,70px) 20px;display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,330px);gap:40px;align-items:center}
+.hero h1{font-family:var(--display);font-weight:400;font-size:clamp(38px,5.1vw,74px);line-height:1.31;letter-spacing:-1.9px;margin:11px 0 10px;}
+.hero h1 em{font-style:normal;color:#7a9d91}
+.hero-desc{line-height:1.95;color:var(--ink2);max-width:670px;font-size:13px;margin:0}
+.hero-right{display:flex;align-items:center;justify-content:center;min-height:160px}
+.roundel{position:relative;width:156px;height:156px;border:1px solid #b6cac0;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#fafaf5,#e0ebe1);box-shadow:0 16px 58px #a9c2b44f, inset 0 0 0 10px #ffffff78}
+.roundel::after{content:'';position:absolute;inset:-15px;border:1px dashed #a7c0b1;border-radius:50%;opacity:.75}
+.roundel-inner{text-align:center}
+.roundel-number{font-family:Georgia,serif;font-size:73px;font-weight:400;color:#50776b;line-height:1}
+.roundel-label{font-size:10px;letter-spacing:1.5px;color:#647f74}
+.main-area{max-width:1540px;margin:auto;padding:9px clamp(20px,4vw,70px) 16px}
+.workbench{display:grid;grid-template-columns:262px minmax(0,1fr);gap:15px;direction:rtl;align-items:stretch}
+.navpane,.stage{border:1px solid rgba(57,83,73,.16);background:rgba(255,255,251,.69);box-shadow:0 15px 60px rgba(75,91,80,.05);border-radius:20px;overflow:hidden}
+.navpane{padding:22px 16px;min-height:600px}
+.navpane h2,.stage-title{margin:0;font-size:15px;font-weight:650}
+.small-kicker{font-size:10px;color:#6d8379;letter-spacing:1px;margin-top:6px;line-height:1.6}
+.search-wrap{position:relative;margin-top:22px}
+.search-wrap svg{position:absolute;inset-inline-start:13px;top:13px;opacity:.5}
+.search{width:100%;background:white;border:1px solid #cddcd3;border-radius:13px;padding:12px 38px 12px 12px;color:var(--ink);font-size:12px;outline-offset:2px}
+[dir=ltr] .search{padding:12px 12px 12px 38px}
+.search::placeholder{color:#94a49a}
+.number-row{display:flex;align-items:center;gap:7px;margin-top:11px}
+.number-input{height:39px;width:0;flex:1;min-width:0;border:1px solid #cddcd3;border-radius:12px;background:#fff;padding:0 12px;direction:ltr;text-align:center}
+.primary-btn{background:#315e52;border:1px solid #315e52;color:white;border-radius:12px;padding:10px 12px;min-width:65px;transition:.18s}
+.primary-btn:hover{background:#234c42}
+.navdivider{border:0;border-top:1px solid #dfe6df;margin:20px 0 14px}
+.index-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.index-head strong{font-size:12px}
+.index-head span{font-size:11px;color:#8a9b91;direction:ltr}
+.number-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;max-height:272px;overflow:auto;padding:2px}
+.num{min-width:0;height:30px;border:1px solid #dde6dc;background:#fafbf7;border-radius:7px;font-family:Georgia,serif;font-size:11px;color:#637e72;transition:background .18s}
+.num:hover{background:#dceade}.num.selected{color:#fff;background:#496f63;border-color:#496f63}.num.muted{opacity:.25}
+.navnote{font-size:10.5px;line-height:1.9;color:#73867b;background:#eaf0e9;border-radius:12px;padding:12px;margin-top:17px}
+.stage{min-height:600px;position:relative;}
+.stagebar{padding:16px 20px;min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:1px solid rgba(57,83,73,.12);background:#fbfbf7c9;position:relative;z-index:5}
+.stagebar .small-kicker{margin-top:1px}
+.stage-controls{display:flex;align-items:center;flex-wrap:wrap;gap:7px;justify-content:flex-end}
+.stage-controls .icon-btn{padding:7px 11px;border-radius:10px}
+.view-toggle{display:flex;gap:2px;background:#eaf0e9;padding:3px;border-radius:12px}
+.view-toggle button{background:transparent;border:0;color:#5e7a70;font-size:11px;padding:7px 10px;border-radius:9px}
+.view-toggle button.is-on{background:#fff;box-shadow:0 2px 8px #607b7030;color:#2d554a}
+.scene-viewport{position:relative;height:535px;overflow:hidden;touch-action:none;cursor:grab;background:radial-gradient(circle at 20% 18%,#ffffffa8,transparent 37%),radial-gradient(circle at 79% 80%,#e1edf0c8,transparent 35%),repeating-linear-gradient(0deg,transparent 0,transparent 48px,#9eb6a51a 49px),repeating-linear-gradient(90deg,transparent 0,transparent 48px,#9eb6a51a 49px)}
+.scene-viewport.panning,.scene-viewport.panning .name-window{cursor:grabbing}
+.scene-canvas{position:absolute;top:0;left:0;width:1880px;height:1200px;transform-origin:top left;will-change:transform}
+.name-window{width:243px;height:165px;position:absolute;display:flex;flex-direction:column;padding:0;background:#fffefa;border:1px solid #cbdad0;border-radius:12px;box-shadow:0 6px 14px #627a6b15,0 15px 26px #66857325;cursor:pointer;user-select:none;touch-action:none;transition:box-shadow .18s,border-color .18s,opacity .2s;transform:rotate(var(--r,0deg));transform-origin:center center;overflow:hidden}
+.name-window:nth-child(3n){background:#f1f6f1}.name-window:nth-child(5n){background:#ecf4f7}.name-window:nth-child(11n){background:#f8f4eb}
+.name-window.is-focused{border-color:#659c8b;box-shadow:var(--shadow2),0 0 0 5px #84bb9b39;z-index:300!important}
+.name-window:hover{box-shadow:var(--shadow2)}
+.name-window.filtered-out{opacity:.12;pointer-events:none}
+.window-top{height:33px;display:flex;justify-content:space-between;align-items:center;padding:0 12px;border-bottom:1px solid #d4e0d5;background:#ffffff64}
+.window-no{font-family:Georgia,serif;direction:ltr;letter-spacing:1px;font-size:12px;color:#547566}
+.window-dots{display:flex;gap:4px}.window-dots i{width:5px;height:5px;border-radius:50%;background:#9fbcaf}
+.window-inner{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:0;gap:2px;padding:2px 9px}
+.window-ar{font-family:var(--card-display);font-weight:700;font-size:calc(34px * var(--name-scale,1));line-height:1.48;letter-spacing:-.2px;color:#2f5648;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.window-ar.long{font-size:calc(24px * var(--name-scale,1));line-height:1.44}.window-en{font-family:Georgia,serif;font-size:calc(11px * var(--name-scale,1));letter-spacing:.3px;direction:ltr;color:#728b7d}
+.window-bottom{height:25px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;color:#8a9b92;font-size:10px;border-top:1px solid #e2e7e1}
+.scene-hint{position:absolute;inset-inline-start:20px;bottom:16px;background:#fffef5e6;backdrop-filter:blur(8px);border-radius:999px;box-shadow:0 5px 15px #486f6030;border:1px solid #dfebe0;font-size:10px;color:#5b7568;padding:9px 15px;pointer-events:none}
+.scene-count{position:absolute;inset-inline-end:18px;bottom:17px;font-size:10px;direction:ltr;color:#779084;background:#fbfffac7;padding:8px 12px;border-radius:8px}
+/* One simple interaction model: the whole canvas pans, individual names open only. */
+.stage-tools{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding:11px 19px;border-bottom:1px solid var(--line);background:#f9faf5d9;position:relative;z-index:4}
+.stage-tool-label{font-size:11px;font-weight:700;color:#526b60;white-space:nowrap}
+.stage-instruction{display:flex;align-items:center;gap:8px;color:#547267;font-size:11px;line-height:1.8}
+.stage-instruction .hint-icon{display:inline-grid;place-items:center;flex:none;border:1px solid #cbdcd0;border-radius:50%;width:25px;height:25px;background:#eff5ed;color:#658b78;font-size:14px}
+.size-controls{display:flex;gap:9px;align-items:center;min-width:0}
+.size-controls input{accent-color:#548774;width:clamp(104px,12vw,160px);cursor:pointer}
+.tool-value{min-width:48px;text-align:center;direction:ltr;font:12px Georgia,serif;color:#395e53;background:#ffffffac;border:1px solid #dfe8df;border-radius:8px;padding:7px 4px}
+.zoom-scale{direction:ltr;display:inline-block;font:11px Georgia,serif;color:#497163;min-width:45px;text-align:center}
+.stage-tools input:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:1150px){.stage-tools{gap:9px}.stage-tool-label{font-size:10px}}
+.list-view{display:none;height:535px;overflow:auto;padding:20px;background:linear-gradient(130deg,#f8faf7,#e9f1ef)}
+.list-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
+.list-card{display:flex;align-items:center;gap:10px;text-align:start;min-height:91px;min-width:0;background:#fffdf8;border:1px solid #d7e1d7;border-radius:12px;padding:12px;color:var(--ink);transition:.18s}
+.list-card:nth-child(5n){background:#f1f7f8}.list-card:nth-child(3n){background:#f3f7f1}.list-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.list-card .mini-no{font-family:Georgia,serif;font-size:12px;align-self:flex-start;color:#86a295}
+.list-ar{font-family:var(--card-display);font-weight:700;font-size:23px;line-height:1.48;letter-spacing:-.15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.list-en{font-family:Georgia,serif;font-size:10px;color:#789186;direction:ltr}
+.list-card[hidden]{display:none}
+.stagefoot{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding:12px 20px;background:#fdfcf8c9;font-size:10px;color:#809188}
+.below{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;max-width:1540px;margin:auto;padding:12px clamp(20px,4vw,70px) 40px;color:#70847a;font-size:11px;line-height:2}
+.below p{margin:0;max-width:800px}.below a{text-underline-offset:3px}
+.dialog{border:1px solid #d5e0d5;border-radius:24px;padding:0;width:min(670px,calc(100vw - 28px));max-height:min(90vh,840px);background:#fcfbf5;color:var(--ink);box-shadow:0 55px 150px #193e365c;overflow:auto}
+.dialog::backdrop{background:rgba(23,48,40,.42);backdrop-filter:blur(7px)}
+.dialog-head{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;border-bottom:1px solid #e0e8df}
+.dialog-head span{font-size:11px;color:#799086;letter-spacing:.7px}
+.close-btn{border:1px solid #dbe3d9;border-radius:10px;padding:7px 12px;background:#fff;font-size:16px;color:var(--ink)}
+.dialog-content{padding:16px 24px 18px;text-align:center}
+.detail-index{font-family:Georgia,serif;font-size:12px;letter-spacing:4px;color:#8ba79a}
+.detail-ar{font-family:var(--display);font-size:clamp(56px,7vw,87px);font-weight:400;line-height:1.65;margin:6px 0 -12px;color:#356356;white-space:normal}
+.detail-en{font-family:Georgia,serif;font-size:17px;color:#739183;direction:ltr;margin-bottom:24px}
+.placeholder{display:grid;grid-template-columns:1fr 1fr;gap:11px;text-align:start}
+.placeholder .cell{background:#f0f5ef;border:1px solid #dbe6d9;border-radius:14px;padding:18px}
+.placeholder .cell:nth-child(2){background:#edf5f7;border-color:#d9e7eb}
+.placeholder h3{font-size:13px;margin:0 0 8px;color:#496d5c}
+.placeholder p{font-size:12px;margin:0;color:#769084;line-height:1.9}
+.review{font-size:11px;line-height:2;background:#f8f2e5;border-radius:12px;color:#8c7550;padding:12px;margin:15px 0 0;text-align:start}
+.dialog-nav{border-top:1px solid #e0e8df;padding:15px 24px;display:flex;justify-content:space-between;gap:10px}
+.dialog-nav button{border:1px solid #cdddcf;background:#fff;padding:10px 16px;border-radius:11px;color:#3e6356;font-size:12px}
+.dialog-nav button:hover{background:#e5f0e5}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#315e52;color:white;border-radius:999px;padding:12px 20px;box-shadow:var(--shadow2);font-size:12px;z-index:99;pointer-events:none;display:none}
+.toast.show{display:block}
+@media (max-width:1150px){.workbench{grid-template-columns:220px minmax(0,1fr)}.navpane{padding:17px 12px}.list-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{grid-template-columns:minmax(0,1fr) 160px}.roundel{width:126px;height:126px}.roundel-number{font-size:58px}}
+@media (max-width:780px){.topbar{padding:14px 18px}.brand-title{font-size:14px}.brand-mark{width:40px;height:40px}.hero{padding:25px 20px;grid-template-columns:1fr}.hero-right{display:none}.hero h1{font-size:42px}.workbench{grid-template-columns:1fr}.navpane{min-height:0}.main-area{padding:0 12px 14px}.number-grid{grid-template-columns:repeat(11,minmax(0,1fr));max-height:104px}.navnote{display:none}.scene-viewport,.list-view{height:430px}.stage{min-height:0}.below{padding:10px 20px 35px}.list-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:500px){.stage-tools{padding:11px;gap:8px;flex-direction:column;align-items:stretch}.stage-instruction{font-size:10px}.size-controls{width:100%;justify-content:space-between}.size-controls input{width:min(40%,148px)}.stage-controls{gap:5px}.stage-controls .icon-btn{padding:7px 9px}.topbar{flex-wrap:wrap}.top-actions{width:100%;justify-content:flex-end}.hero h1{font-size:35px}.hero-desc{font-size:12px}.stagebar{flex-wrap:wrap;padding:12px}.stage-controls{width:100%;justify-content:space-between}.scene-viewport,.list-view{height:420px}.number-grid{grid-template-columns:repeat(11,minmax(0,1fr))}.num{height:27px;font-size:10px}.list-grid{grid-template-columns:1fr 1fr;gap:7px;padding:0}.list-card{padding:8px;min-height:77px}.list-ar{font-size:18px}.placeholder{grid-template-columns:1fr}.dialog-content{padding:12px 15px}.dialog-nav{padding:13px 15px}.below{flex-direction:column}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* V4: one full-screen spatial world above scrolled editorial chapters */
+:root{--v4-pine:#214a41;--v4-sand:#f2eee3}
+body{background:#f5f3ed}
+.immersive{position:relative;isolation:isolate;height:100svh;min-height:675px;display:flex;flex-direction:column;overflow:hidden;padding-bottom:36px;background:radial-gradient(ellipse 48% 65% at 5% 13%,rgba(212,230,224,.98),transparent 87%),radial-gradient(ellipse 50% 72% at 96% 28%,rgba(209,233,237,.95),transparent 83%),linear-gradient(115deg,#faf8f2 5%,#eef0e9 59%,#e8efec 100%)}
+.space-backdrop{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden;--offset:0px}
+.space-backdrop::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(248,247,241,.30),transparent 55%),linear-gradient(90deg,rgba(249,248,243,.17),transparent 40%);pointer-events:none}
+.space-halo{position:absolute;width:60vmax;height:60vmax;left:-26vmax;top:-26vmax;background:radial-gradient(circle,rgba(244,253,242,.94) 0%,rgba(216,236,219,.25) 42%,transparent 72%);filter:blur(25px)}
+.space-halo.halo-two{left:auto;right:-17vmax;top:3%;width:48vmax;height:48vmax;background:radial-gradient(circle,rgba(255,255,245,.93) 0%,rgba(185,224,229,.30) 46%,transparent 71%)}
+.architecture{position:absolute;border:1px solid rgba(131,172,158,.30);border-bottom:0;border-radius:45% 45% 0 0;box-shadow:inset 18px 0 40px rgba(255,255,255,.4),12px 0 48px rgba(109,160,146,.10);background:linear-gradient(90deg,rgba(255,255,255,.17),transparent 65%);transform-origin:bottom;transition:transform .1s linear}
+.arch-outer{width:68vw;height:112vh;left:-22vw;top:7vh;transform:perspective(1050px) rotateY(-27deg) translateY(calc(var(--offset)*.1));border-width:32px;border-color:rgba(230,238,231,.22)}
+.arch-middle{width:48vw;height:94vh;right:-11vw;top:6vh;transform:perspective(1050px) rotateY(27deg) translateY(calc(var(--offset)*.06));border-width:18px;border-color:rgba(221,235,226,.25)}
+.arch-inner{width:26vw;height:64vh;left:44%;top:15vh;border-width:4px;border-color:rgba(165,192,182,.17);filter:blur(.25px)}
+.light-column{position:absolute;top:3%;height:120%;width:70px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.44),rgba(201,225,215,.22),transparent);filter:blur(2px);transform:skewX(-8deg);box-shadow:30px 0 70px rgba(255,255,255,.23)}
+.column-one{left:18%}.column-two{right:13%;width:35px;opacity:.8}
+.depth-floor{position:absolute;left:-30%;width:160%;height:75%;top:43%;background:repeating-linear-gradient(0deg,transparent 0 66px,rgba(78,117,108,.12) 68px,transparent 70px),repeating-linear-gradient(90deg,transparent 0 89px,rgba(78,117,108,.10) 91px,transparent 93px);transform:perspective(720px) rotateX(66deg) scale(1.4);transform-origin:50% 100%;mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,.18) 20%,rgba(0,0,0,.46));opacity:.55}
+.light-ribbon{position:absolute;width:120%;height:230px;left:-8%;top:38%;transform:rotate(-8deg);background:linear-gradient(0deg,transparent,rgba(255,255,255,.23),transparent);filter:blur(23px)}
+.topbar{z-index:5;position:relative;flex:none;padding:10px clamp(20px,3.4vw,60px);background:rgba(252,252,247,.23);border-color:rgba(57,86,75,.10);backdrop-filter:blur(19px)}
+.brand-title{font-size:15px}.brand-mark{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#eef6ec,#d1e4db);border-color:#d6e3d7}
+.top-link{font-size:12px;color:#526f65;text-decoration:none;padding:8px 12px;white-space:nowrap}.top-link:hover{color:#204d43;text-decoration:underline;text-underline-offset:6px}
+.hero{width:100%;z-index:2;position:relative;flex:none;padding:clamp(12px,2vh,22px) clamp(20px,4vw,70px) clamp(8px,1.2vh,12px);gap:12px;grid-template-columns:minmax(0,1fr) 150px}
+.hero h1{font-size:clamp(36px,4.15vw,59px);line-height:1.18;margin:7px 0 7px;letter-spacing:-1px}.hero h1 br{display:none}.hero h1 em::before{content:'  '} .hero h1 em{color:#759a8b}
+.eyebrow{font-size:10px}.hero-desc{font-size:12px;max-width:760px;line-height:1.65}
+.hero-right{min-height:105px}.roundel{width:112px;height:112px;box-shadow:0 12px 50px rgba(87,143,123,.09),inset 0 0 0 9px #ffffff52;background:radial-gradient(circle,#fafbf4 0%,#dfece6 85%)}.roundel-number{font-size:52px}.roundel::after{inset:-9px}.roundel-label{font-size:9px}
+.main-area{z-index:3;flex:1;display:flex;flex-direction:column;width:100%;max-width:none;min-height:0;padding:0 clamp(15px,3.4vw,58px) 0}
+.workbench{flex:1;grid-template-columns:minmax(206px,242px) minmax(0,1fr);min-height:0;gap:12px;direction:rtl}
+.navpane,.stage{backdrop-filter:blur(15px);border:1px solid rgba(253,255,250,.86);box-shadow:0 18px 68px rgba(64,102,86,.12),inset 0 1px 1px #ffffffc7;background:rgba(255,255,249,.53);border-radius:21px}
+.navpane{min-height:0;padding:16px 15px;overflow:auto}.navpane h2{font-size:13px}.search-wrap{margin-top:15px}.navdivider{margin:14px 0 11px}.num{height:27px}.number-grid{max-height:min(29vh,260px)}.navnote{margin-top:11px;font-size:10px;padding:10px}
+.stage{min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.stagebar{padding:10px 15px;min-height:60px;background:rgba(255,255,250,.71);flex:none}
+.stage-tools{flex:none;padding:7px 14px;background:rgba(248,251,247,.57)}
+.stage-instruction{font-size:10px}.stage-tools .hint-icon{width:21px;height:21px}
+.scene-viewport,.list-view{flex:1;height:auto;min-height:0;position:relative;background:radial-gradient(circle at 15% 10%,rgba(255,255,255,.42),transparent 50%),radial-gradient(circle at 76% 70%,rgba(185,216,216,.12),transparent 65%);}
+.scene-viewport{overflow:hidden}.list-view{overflow:auto}
+.scene-viewport:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(92deg,rgba(255,255,255,.10),transparent 56%),linear-gradient(0deg,rgba(235,245,239,.11),transparent 75%)}
+.name-window{background:rgba(255,254,249,.94);box-shadow:0 5px 16px rgba(66,95,84,.1),0 17px 26px rgba(47,72,60,.15);border-color:rgba(186,208,195,.94)}
+.stagefoot{flex:none;background:rgba(250,252,247,.55);padding:9px 15px}
+.scroll-cue{z-index:4;position:absolute;bottom:7px;left:50%;transform:translateX(-50%);display:flex;gap:10px;align-items:center;text-decoration:none;color:#426c5e;font-size:11px;font-weight:600;letter-spacing:.1px;white-space:nowrap;padding:4px 12px}
+.scroll-cue:hover{color:#1c4a40}.scroll-cue-line{width:24px;height:1px;background:#87ab9d}.scroll-cue-arrow{font-size:19px;line-height:1}
+.below-world{position:relative;background:linear-gradient(158deg,#f4f2eb,#eaf0ec 52%,#f7f4ed);overflow:hidden}
+.story-section{position:relative;padding:clamp(75px,10vw,150px) clamp(24px,7vw,116px);margin:auto;max-width:1550px;min-height:74vh}
+.section-eyebrow{display:flex;align-items:center;gap:17px;color:#698a7b;font-family:var(--sans);font-size:12px;font-weight:650;margin-bottom:22px;letter-spacing:1px}.section-eyebrow span:first-child{direction:ltr;font:12px Georgia,serif;letter-spacing:2px;color:#94a99b}
+.section-headline{font-family:var(--display);font-size:clamp(37px,4.9vw,76px);font-weight:400;max-width:840px;color:#25483f;line-height:1.36;letter-spacing:-1.5px;margin:0 0 23px}
+.section-lead{font-size:clamp(13px,1.15vw,16px);line-height:2.1;color:#668076;max-width:650px;margin:0}
+.about-section{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:7%;min-height:90vh}
+.about-art{position:relative;min-height:430px;border-radius:50%;display:grid;place-items:center;isolation:isolate;background:radial-gradient(circle,rgba(255,255,254,.85),rgba(204,226,212,.34) 40%,transparent 73%)}
+.orbit{position:absolute;inset:8%;border-radius:50%;border:1px solid rgba(127,170,150,.24)}.orbit-two{inset:20%;border-style:dashed}.orbit-three{inset:33%;border-color:rgba(127,170,150,.45)}
+.art-center{font:96px var(--display);color:#86a797;opacity:.7}
+.about-art-card{position:absolute;width:150px;height:115px;display:flex;flex-direction:column;justify-content:space-between;padding:14px 17px;border:1px solid #ccdcd0;border-radius:14px;background:#fffefaec;box-shadow:0 20px 40px #557a6530;transform:rotate(var(--angle));color:#3c6453}
+.about-art-card span{font:12px Georgia,serif;color:#8ca99c;direction:ltr}.about-art-card b{font:normal 35px var(--display);white-space:nowrap;align-self:center}.c-one{--angle:-8deg;top:5%;left:13%}.c-two{--angle:10deg;right:3%;top:42%;background:#e8f1ed}.c-three{--angle:-7deg;bottom:2%;left:20%;background:#f4f8fa}
+.section-action{display:inline-flex;gap:14px;color:#265b4e;margin-top:32px;font-size:13px;text-underline-offset:7px}
+.explore-section{min-height:85vh;background:rgba(250,251,247,.45);max-width:none;padding-inline:max(24px,calc((100vw - 1330px)/2))}
+.split-head{display:flex;gap:9%;justify-content:space-between;align-items:start;margin-bottom:32px}.split-head .section-headline{flex:1}.split-head .section-lead{flex:0 1 400px}
+.featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.featured-card{background:rgba(255,254,249,.84);border:1px solid rgba(159,194,174,.5);border-radius:21px;min-height:340px;display:flex;flex-direction:column;align-items:stretch;text-align:inherit;color:var(--ink);padding:25px;transition:transform .3s,box-shadow .3s;box-shadow:0 16px 34px rgba(89,121,102,.06)}
+.featured-card:nth-child(2){background:#e9f3ed}.featured-card:nth-child(3){background:#eaf3f5}
+.featured-card:hover{transform:translateY(-9px);box-shadow:0 24px 50px rgba(60,98,82,.14)}
+.featured-meta{display:flex;align-items:center;justify-content:space-between;color:#698a7d;font:13px Georgia,serif;direction:ltr}.featured-meta span{font-size:9px;letter-spacing:2px}
+.featured-card strong{font:normal clamp(38px,4vw,65px) var(--display);margin:auto;align-self:center;color:#315d4d;white-space:nowrap}.featured-en{text-align:center;font:15px Georgia,serif;direction:ltr;color:#7a998b;margin-top:-32px}.featured-open{font-size:12px;color:#3a7562;text-decoration:underline;text-underline-offset:6px;margin-top:auto;direction:inherit}
+.guide-section{min-height:80vh}.guide-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:45px}
+.guide-item{padding:25px 13px 16px 10px;border-top:1px solid rgba(95,132,115,.35);position:relative}.guide-icon{font-size:30px;color:#7c9e8c;display:block;height:58px}.guide-num{font:12px Georgia,serif;color:#9cb6a7;direction:ltr}.guide-item h3{font-size:19px;margin:17px 0 12px;color:#325849}.guide-item p{font-size:13px;line-height:2.1;color:#6f8579}
+.principles-section{min-height:64vh;max-width:none;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(130deg,#cbded2,#dbe9e4 54%,#dcecef)}
+.source-panel{z-index:1;max-width:850px;text-align:center}.source-panel .section-eyebrow{justify-content:center}.source-panel .section-headline{font-size:clamp(34px,4vw,58px)}.source-panel .section-lead{margin:auto}.source-links{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px}.source-links a{font-size:12px;text-decoration:none;background:#fffcf8bc;border:1px solid #ffffffdc;border-radius:100px;padding:10px 17px;color:#426a5b}.source-links a:hover{background:white}.source-sigil{position:absolute;left:-90px;top:-150px;border:1px solid rgba(114,156,139,.15);border-radius:50%;width:450px;height:450px;display:grid;place-items:center;color:rgba(114,156,139,.14);font:300px var(--display)}
+.below{display:flex;max-width:none;background:#f5f4ed;align-items:center;padding:25px clamp(24px,7vw,116px);font-size:11px;gap:25px}.footer-brand{font-size:13px;white-space:nowrap;text-decoration:none;color:#31584a}.below p{max-width:800px}.footer-end{white-space:nowrap}
+@media(min-width:1100px) and (max-height:790px){.hero h1{font-size:39px}.hero{padding-top:8px;padding-bottom:7px}.hero-right{min-height:86px}.roundel{height:87px;width:87px}.roundel-number{font-size:38px}.roundel-label{font-size:8px}.roundel::after{inset:-7px}.topbar{padding-top:7px;padding-bottom:7px}.immersive{min-height:620px}.stage-tools{padding-block:5px}}
+@media(max-width:1000px){.top-link{display:none}.hero{grid-template-columns:1fr 100px}.roundel{width:87px;height:87px}.roundel-number{font-size:39px}.workbench{grid-template-columns:206px minmax(0,1fr)}.stagebar{flex-wrap:wrap;gap:6px}.stage-controls{justify-content:flex-start}.about-section{gap:0}}
+@media(max-width:780px){.immersive{height:auto;min-height:100svh;padding-bottom:30px;overflow:visible}.space-backdrop{overflow:hidden}.topbar{padding:10px 14px;gap:8px}.top-actions{width:auto;flex-wrap:nowrap}.soft-btn{padding:8px 10px;font-size:10px}.hero{display:block;padding:18px 23px 16px}.hero h1{font-size:clamp(31px,8vw,44px);line-height:1.4}.hero h1 br{display:none}.hero h1 em::before{content:' '}.hero-desc{line-height:1.8;font-size:11px}.hero-right{display:none}.main-area{padding:0 12px;min-height:0}.workbench{display:flex;flex-direction:column;gap:10px}.stage{order:1;height:clamp(480px,65svh,700px);min-height:0}.navpane{order:2;min-height:0;padding:15px}.number-grid{max-height:92px;grid-template-columns:repeat(11,minmax(0,1fr))}.navnote{display:none}.scene-viewport,.list-view{height:auto;min-height:0}.stagebar{min-height:0;padding:11px}.stage-tools{padding:9px 11px}.stage-controls{width:100%;gap:5px}.scene-hint{font-size:9px;padding:7px 10px;bottom:10px}.scroll-cue{position:relative;left:auto;bottom:auto;transform:none;margin:15px auto 0;align-self:center}.stagefoot{padding:8px}.about-section{grid-template-columns:1fr;min-height:0}.story-section{min-height:0;padding:75px 22px}.about-art{min-height:360px;margin-top:16px}.split-head{flex-direction:column;gap:2px}.featured-grid{grid-template-columns:1fr 1fr}.featured-card{min-height:245px}.featured-card:last-child{grid-column:span 2}.guide-grid{grid-template-columns:1fr 1fr}.below{align-items:flex-start;flex-wrap:wrap}}
+@media(max-width:500px){.top-actions{gap:5px}.top-actions #helpBtn{display:none}.brand-sub{font-size:8px}.brand-title{font-size:12px}.brand-mark{width:34px;height:34px;font-size:24px}.stagebar{flex-wrap:wrap}.stage-controls .icon-btn{padding:7px 9px}.stage-instruction{font-size:10px}.stage-instruction .hint-icon{display:none}.stage-tools{flex-direction:column;align-items:stretch;gap:6px}.size-controls{justify-content:space-between}.size-controls input{width:35%}.featured-grid{grid-template-columns:1fr}.featured-card,.featured-card:last-child{grid-column:span 1;min-height:235px}.featured-card strong{font-size:54px}.featured-en{margin-top:-22px}.guide-grid{gap:7px}.guide-item{padding:17px 7px 10px}.guide-item h3{font-size:15px}.guide-item p{font-size:12px}.about-art{min-height:290px}.about-art-card{width:118px;height:93px;padding:10px}.about-art-card b{font-size:26px}.about-art .art-center{font-size:72px}.section-headline{font-size:37px}.source-links{flex-direction:column}.source-sigil{display:none}.immersive{min-height:100svh}}
+@media(prefers-reduced-motion:reduce){.space-backdrop *{transition:none!important}.featured-card{transition:none!important}}
+
+/* V5: quiet, accessible multiple exploration paths. Spatial art is optional, content is not. */
+.immersive { min-height:100svh }
+.immersive:has(.gallery-view:not([hidden])){height:auto;min-height:100svh;overflow:visible}
+.stage:has(.gallery-view:not([hidden])){height:auto!important;min-height:780px;overflow:hidden}
+.quickbar{display:flex;align-items:center;flex-wrap:wrap;gap:7px;padding:10px 18px;border-bottom:1px solid var(--line);background:#f7faf6ed;position:relative;z-index:4}
+.quick-link{font-size:11px;border:1px solid #cbded1;background:#fffefa;color:#35584d;border-radius:999px;padding:7px 13px;min-height:34px}
+.quick-link:hover,.quick-link.active{background:#d6e6dd;border-color:#9cbdaf}
+.quick-flat{display:inline-flex;align-items:center;gap:7px;font-size:11px;color:#4f7164;padding:5px 8px;cursor:pointer;white-space:nowrap}
+.quick-flat input{accent-color:#436c5e;width:16px;height:16px}
+.quick-note{margin-inline-start:auto;font-size:10px;color:#7d9486;line-height:1.4}
+.gallery-view{display:none;background:radial-gradient(circle at 15% 20%,#ecf4eb,#fbf9f3 50%,#ecf3f5);min-height:530px;padding:20px 20px 17px;overflow:hidden}
+.gallery-view[hidden],.gallery-card[hidden],.list-card[hidden]{display:none!important}
+.gallery-head{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:18px}
+.gallery-head b{font-size:15px;color:#385b50}.gallery-head p{font-size:11px;color:#688379;line-height:1.8;margin:4px 0 0}
+.gallery-nav{display:flex;gap:8px;align-items:center;flex-shrink:0;direction:ltr}.gallery-nav strong{font:13px Georgia,serif;color:#5a7a6e;min-width:65px;text-align:center}
+.gallery-nav button{border:1px solid #c9d8d0;background:#fffdf7;color:#426657;width:38px;height:38px;border-radius:50%;font-size:18px;cursor:pointer}
+.gallery-nav button:hover{background:#dbe9dd}
+.gallery-track{display:flex;align-items:stretch;gap:16px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scroll-padding-inline:8px;scrollbar-color:#9fb8a9 #e5ede6;min-height:345px;padding:15px 8px 35px;direction:ltr}
+.gallery-card{scroll-snap-align:center;flex:0 0 clamp(220px,31%,330px);height:290px;position:relative;border:1px solid #c6d9ce;background:linear-gradient(160deg,#fffefa,#eaf3ed);box-shadow:0 13px 40px #62836b18;border-radius:22px;padding:20px;color:#355b4f;text-align:center;display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;cursor:pointer;direction:rtl;transition:transform .22s,box-shadow .22s}
+.gallery-card:nth-child(4n+2){background:linear-gradient(160deg,#fffefa,#e5eff3)}.gallery-card:nth-child(5n+3){background:linear-gradient(160deg,#fffefa,#f0ebe2)}
+.gallery-card:hover,.gallery-card.selected{transform:translateY(-5px);border-color:#669985;box-shadow:0 22px 52px #668c7841}
+.gallery-card .gallery-number{text-align:start;font:15px Georgia,serif;direction:ltr;color:#658678}
+.gallery-card .gallery-ar{font:700 clamp(37px,4vw,53px)/1.52 var(--card-display);letter-spacing:-.18px;color:#2f594b;white-space:normal;overflow-wrap:anywhere}
+.gallery-card .gallery-en{font:14px Georgia,serif;direction:ltr;color:#718e80}.gallery-card .gallery-cta{align-self:center;font-size:11px;color:#658877;border-top:1px solid #cfdfd3;padding-top:11px;width:100%}
+.gallery-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 4px}.gallery-bottom span{font-size:11px;color:#698476}
+.reading-utilities{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.bookmark-detail{border:1px solid #cbded0;border-radius:999px;background:#f7faf4;color:#3e6455;padding:8px 15px;font-size:12px}.bookmark-detail[aria-pressed=true]{background:#d6e7da;border-color:#86ad99}
+.chapters-section{max-width:none;padding-inline:max(22px,calc((100vw - 1340px)/2));background:linear-gradient(130deg,#f9f9f3,#e8f0e9)}
+.chapters-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:13px;margin-top:38px}
+.chapter{border:1px solid #d3e2d7;border-radius:17px;min-height:215px;padding:23px 17px;background:#fffef8a8;display:flex;flex-direction:column;box-shadow:0 16px 37px #4c745113}
+.chapter:nth-child(2n){background:#e9f3f3ac}.chapter>span{font:22px Georgia,serif;color:#82a194}.chapter h3{font:normal 22px/1.6 var(--display);margin:auto 0;color:#315c4d}.chapter small{font-size:10px;color:#819589;line-height:1.6}
+.flat-mode .architecture,.flat-mode .depth-floor,.flat-mode .light-column,.flat-mode .space-halo,.flat-mode .light-ribbon{display:none!important}
+.flat-mode .immersive{background:linear-gradient(155deg,#f8f8f2,#eef3ee)}.flat-mode .name-window{transform:none!important;box-shadow:0 5px 12px #5d796014}.flat-mode .space-backdrop{opacity:0!important}
+html:has(dialog[open]){scrollbar-gutter:stable}
+@media (max-width:980px){.chapters-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.gallery-card{flex-basis:280px}.quick-note{flex-basis:100%;margin:0}}
+@media (max-width:780px){.stage:has(.gallery-view:not([hidden])){min-height:690px}.quickbar{padding:7px 11px}.quick-link{font-size:10px;padding:7px 9px}.quick-note{display:none}.gallery-view{height:100%;min-height:350px;padding:13px 11px}.gallery-track{min-height:290px;padding:8px 4px 18px}.gallery-card{height:250px;flex-basis:76%;}.gallery-head{flex-wrap:wrap;gap:9px}.gallery-head b{font-size:12px}.gallery-head p{font-size:10px}.gallery-bottom span{font-size:10px}.chapters-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.chapter{min-height:150px;padding:15px}.chapter h3{font-size:18px}.scene-viewport{touch-action:pan-y}}
+@media (max-width:500px){.view-toggle{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.view-toggle button{font-size:10px;padding:8px 4px}.gallery-head{margin-bottom:2px}.gallery-nav{width:100%;justify-content:space-between}.gallery-track{min-height:260px}.gallery-card{flex-basis:85%;height:230px}.gallery-card .gallery-ar{font-size:40px}.gallery-view{min-height:360px}.gallery-bottom{flex-wrap:wrap}.chapters-grid{grid-template-columns:1fr 1fr}.chapter{min-height:135px;padding:13px}.chapter h3{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.gallery-track{scroll-behavior:auto}.gallery-card{transition:none!important}}
+
+/* V6.4: zoom buttons show hard limits, while all prior colors and card effects stay unchanged. */
+.stage-controls .icon-btn:disabled{opacity:.4;cursor:not-allowed}
+/* V6 · Seamless ivory papers, quieter editorial layout, and horizontal name rail. */
+:root{--ivory:#f5f3ec;--surface:#f5f3ec}
+.immersive{background:radial-gradient(ellipse 48% 65% at 5% 13%,rgba(212,230,224,.98),transparent 87%),radial-gradient(ellipse 50% 72% at 96% 28%,rgba(209,233,237,.95),transparent 83%),linear-gradient(115deg,#faf8f2 5%,#eef0e9 59%,#e8efec 100%)}
+/* The gallery is not boxed in: the page background passes cleanly between papers. */
+.workbench>.stage{background:none;border:0;box-shadow:none;backdrop-filter:none;border-radius:0;overflow:visible;min-width:0}
+.stage .stagebar,.stage .stage-tools,.stage .quickbar,.stage .stagefoot{background:transparent;border:0;box-shadow:none;backdrop-filter:none}
+.stage .stagebar{padding:10px 5px}.stage .stage-tools{padding:9px 4px}.stage .quickbar{padding:6px 3px}.stage .stagefoot{padding:6px 5px}
+.stage .scene-viewport,.stage .list-view,.stage .gallery-view{background:transparent!important;box-shadow:none!important;border:0!important}
+.stage .scene-viewport:before{display:none}
+.scene-viewport{isolation:isolate}
+.scene-canvas{width:2376px;height:1310px}
+.name-window,.name-window:nth-child(3n),.name-window:nth-child(5n),.name-window:nth-child(11n){width:222px;height:150px;background:var(--ivory);border:1px solid rgba(110,143,124,.27);border-radius:11px;box-shadow:0 4px 10px rgba(77,103,87,.10),0 11px 24px rgba(64,91,77,.11);transform:rotate(var(--r,0deg)) scale(1);transition:transform .35s cubic-bezier(.2,.68,.2,1),box-shadow .35s ease,border-color .25s ease,opacity .2s;transform-origin:center center;}
+.name-window:hover:not(.is-preview){transform:rotate(var(--r,0deg)) translateY(-2px)}
+.name-window.is-preview,.name-window.is-preview:hover{transform:rotate(var(--r,0deg)) scale(var(--preview-magnification,1.29));border-color:rgba(106,158,130,.56);box-shadow:0 20px 47px rgba(65,96,74,.24),0 0 0 5px rgba(225,240,227,.45);z-index:4000!important}
+.name-window .window-top{height:30px;background:transparent;border-bottom:1px solid rgba(95,139,110,.12)}
+.name-window .window-bottom{height:23px;border-color:rgba(95,139,110,.12)}
+.name-window .window-ar{font-size:calc(32px * var(--name-scale,1))}
+.name-window .window-ar.long{font-size:calc(22px * var(--name-scale,1))}
+.name-window .window-dots i{background:rgba(150,177,153,.62)}
+.name-window.is-focused{border-color:rgba(114,155,129,.55);box-shadow:0 7px 17px rgba(56,88,71,.16),0 0 0 2px rgba(145,184,153,.21)}
+.flat-mode .name-window{transform:none!important;box-shadow:0 4px 10px rgba(76,97,79,.10)}
+.flat-mode .name-window.is-preview{transform:scale(var(--preview-magnification,1.23))!important}
+/* V6.6: shared-card transition. The original paper stays in its matrix cell.
+   A matching visual paper travels from its true on-screen bounds to the reader,
+   and reverses along the same path when the reader closes. */
+.dialog.morph-active{background:transparent!important;border-color:transparent!important;box-shadow:none!important;overflow:visible!important}
+.dialog.morph-active > :not(.reading-flight){visibility:hidden}
+.dialog.morph-active::backdrop{background:rgba(23,48,40,.27);backdrop-filter:blur(4px)}
+.reading-flight{position:fixed;z-index:2147483640;pointer-events:none;box-sizing:border-box;overflow:hidden;isolation:isolate;display:block;direction:rtl;border:1px solid rgba(125,163,139,.47);border-radius:12px;box-shadow:0 24px 70px rgba(40,65,53,.25);background:#fffefa;will-change:left,top,width,height,border-radius,background-color,opacity}
+.reading-flight .flight-small,.reading-flight .flight-large{position:absolute;inset:0;overflow:hidden;box-sizing:border-box}
+.reading-flight .flight-small{display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:10px 13px;gap:2px}
+.reading-flight .flight-small-number{font:12px Georgia,serif;color:#628474;direction:ltr;align-self:flex-start}
+.reading-flight .flight-small-name{font-family:var(--card-display);font-weight:700;line-height:1.45;white-space:nowrap;color:var(--ink);max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.reading-flight .flight-small-en{font:11px Georgia,serif;color:#769084;direction:ltr}
+.reading-flight .flight-large{padding:clamp(22px,4vw,36px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px}
+.reading-flight .flight-large-number{font:13px Georgia,serif;color:#89a699;letter-spacing:3px;direction:ltr}
+.reading-flight .flight-large-name{font-family:var(--display);font-size:clamp(45px,7vw,87px);line-height:1.55;color:#356356}
+.reading-flight .flight-large-en{font:16px Georgia,serif;direction:ltr;color:#739183}
+@media(prefers-reduced-motion:reduce){.reading-flight{display:none}}
+/* Keep the horizontal access strip visually part of the same page. */
+.horizontal-shelf{padding:8px 0 5px;background:transparent;min-width:0;flex:none}
+.horizontal-shelf[hidden]{display:none!important}
+.shelf-heading{display:flex;justify-content:space-between;gap:12px;align-items:center;color:#456c5a;font-size:11px;font-weight:700;padding:3px 6px 8px}
+.shelf-info{font-size:10px;color:#718e7e;font-weight:400}
+.shelf-body{display:flex;align-items:center;gap:7px;min-width:0}
+.shelf-arrow{border:1px solid rgba(87,133,106,.24);color:#416a56;background:rgba(250,249,242,.58);border-radius:50%;height:32px;width:32px;flex:none;cursor:pointer}
+.shelf-arrow:hover{background:#e1ede1}
+.shelf-track{direction:ltr;display:flex;flex:1;gap:9px;overflow:auto hidden;scrollbar-width:thin;scrollbar-color:rgba(90,136,107,.40) transparent;scroll-snap-type:x proximity;padding:4px 3px 12px;cursor:grab;min-width:0;touch-action:pan-x;overscroll-behavior-inline:contain}
+.shelf-track.dragging{cursor:grabbing;scroll-snap-type:none}
+.shelf-item{flex:0 0 auto;min-width:134px;height:54px;display:flex;align-items:center;gap:10px;direction:rtl;text-align:right;padding:8px 11px;border:1px solid rgba(125,161,137,.35);background:var(--ivory);color:#315849;border-radius:9px;box-shadow:0 4px 11px rgba(68,105,81,.08);scroll-snap-align:start;user-select:none}
+.shelf-item:hover,.shelf-item.selected{background:var(--ivory);border-color:#739c82;box-shadow:0 5px 15px rgba(65,102,77,.13)}
+.shelf-item[hidden]{display:none!important}
+.shelf-num{font:12px Georgia,serif;color:#819988;direction:ltr}
+.shelf-name{font:700 20px/1.46 var(--card-display);letter-spacing:-.12px;white-space:nowrap}
+.gallery-card,.gallery-card:nth-child(4n+2),.gallery-card:nth-child(5n+3),.list-card,.list-card:nth-child(3n),.list-card:nth-child(5n){background:var(--ivory)}
+.gallery-view{min-height:0}
+.gallery-card{border-color:rgba(104,145,117,.29);box-shadow:0 10px 26px rgba(68,104,81,.10)}
+@media(max-width:780px){.workbench>.stage{overflow:visible}.horizontal-shelf{padding-block:6px}.shelf-info{display:none}.shelf-heading{font-size:10px;padding-bottom:5px}.shelf-item{min-width:112px;height:47px;padding:6px 8px}.shelf-name{font-size:17px}.shelf-track{gap:6px}.stage:has(.gallery-view:not([hidden])){min-height:640px}.scene-viewport{touch-action:pan-y}}
+@media(max-width:500px){.stage .stagebar{padding:10px 0}.shelf-arrow{width:29px;height:29px}.shelf-item{min-width:100px}.shelf-num{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.name-window,.gallery-card{transition:none!important}}
+
+/* Preserve a comfortable canvas on phones after adding the quick-swipe shelf. */
+@media(max-width:780px){.workbench>.stage{height:auto!important;min-height:770px!important;display:flex;flex-direction:column}.stage .scene-viewport{min-height:310px!important;flex:1 0 310px}.stage .horizontal-shelf{flex:none}.immersive{height:auto;min-height:100svh;overflow:visible}}
+@media(max-width:500px){.workbench>.stage{min-height:790px!important}.stage .scene-viewport{min-height:315px!important;flex:1 0 315px}}
+@media(max-width:780px){.stage .horizontal-shelf{order:1}.stage .scene-viewport,.stage .list-view,.stage .gallery-view{order:2}.stage .stagefoot{order:3}}
+
+/* V6.2 — Restore the original varied paper colors from V3–V5.
+   Keep the V6.1 environment, ivory/green/sky/stone ink, seamless gallery and interactions. */
+:root {
+  --ivory:#f5f3ec; --surface:#fffefa; --sage:#d7e4d6;
+  --sky:#daeaf0; --stone:#e8e1d4; --ink:#294a44;
+  --ink2:#536962; --muted:#6f7f78;
+  /* Quiet colorways on real paper; no color symbolism associated with any name. */
+  --paper-ivory:#fffefa;
+  --paper-sage:#f1f6f1;
+  --paper-sky:#ecf4f7;
+  --paper-sand:#f8f4eb;
+  --paper-lilac:#f4f0f8;
+}
+body { color:var(--ink); background:#f5f3ed; }
+/* The approved atmospheric background remains visible in the gaps. */
+.immersive {
+  background:
+    radial-gradient(ellipse 48% 65% at 5% 13%,rgba(212,230,224,.98),transparent 87%),
+    radial-gradient(ellipse 50% 72% at 96% 28%,rgba(209,233,237,.95),transparent 83%),
+    linear-gradient(115deg,#faf8f2 5%,#eef0e9 59%,#e8efec 100%);
+}
+/* A deliberate repeating rhythm. The same window keeps its color across all views. */
+:is(.name-window,.shelf-item,.gallery-card,.list-card){--paper-tone:var(--paper-ivory)}
+:is(.name-window,.shelf-item,.gallery-card,.list-card):nth-child(9n + 2),
+:is(.name-window,.shelf-item,.gallery-card,.list-card):nth-child(9n + 7){--paper-tone:var(--paper-sage)}
+:is(.name-window,.shelf-item,.gallery-card,.list-card):nth-child(9n + 3),
+:is(.name-window,.shelf-item,.gallery-card,.list-card):nth-child(9n + 8){--paper-tone:var(--paper-sky)}
+:is(.name-window,.shelf-item,.gallery-card,.list-card):nth-child(9n + 4){--paper-tone:var(--paper-sand)}
+:is(.name-window,.shelf-item,.gallery-card,.list-card):nth-child(9n + 6){--paper-tone:var(--paper-lilac)}
+/* Higher specificity resets the V6/V6.1 forced all-ivory fills without !important. */
+body .name-window:nth-child(n),
+body .shelf-item:nth-child(n),
+body .gallery-card:nth-child(n),
+body .list-card:nth-child(n),
+body .shelf-item:hover,
+body .shelf-item.selected { background:var(--paper-tone,var(--paper-ivory)); }
+.name-window .window-ar,.shelf-name,.gallery-card .gallery-ar {color:var(--ink)}
+.name-window.is-focused {border-color:rgba(114,155,129,.55);box-shadow:0 7px 17px rgba(56,88,71,.16),0 0 0 2px rgba(145,184,153,.21)}
+.shelf-item.selected {border-color:#739c82;box-shadow:0 5px 15px rgba(65,102,77,.13)}
+.shelf-arrow:hover {background:var(--sage)}
+::selection {background:var(--sky);color:var(--ink)}
+
+
+/* V6.8: restore the approved V6.6 Arabic name typeface. One typography family
+   for all 99 name cards, the horizontal rail, lists, and the reader.
+   Preserve the entire V6.7 cinematic motion and approved colors. */
+.detail-ar{font-family:var(--card-display);font-weight:700}
+.reading-flight .flight-large-name{font-family:var(--card-display);font-weight:700}
+.featured-card strong{font-family:var(--card-display);font-weight:700}
+/* V6.7: same card is hidden only while its visual copy travels in the top layer. */
+.flight-source{visibility:hidden!important}
+.reading-flight{backface-visibility:hidden;contain:layout style paint;transform:translateZ(0);filter:none}
+.dialog.morph-opening::backdrop{animation:cinemaBackdropIn .68s ease-out both}
+.dialog.morph-closing::backdrop{animation:cinemaBackdropOut .68s ease-in both}
+@keyframes cinemaBackdropIn{from{background:rgba(23,48,40,0);backdrop-filter:blur(0)}to{background:rgba(23,48,40,.27);backdrop-filter:blur(4px)}}
+@keyframes cinemaBackdropOut{from{background:rgba(23,48,40,.27);backdrop-filter:blur(4px)}to{background:rgba(23,48,40,0);backdrop-filter:blur(0)}}
+@media(max-width:780px){.shelf-name{font-size:22px}.list-ar{font-size:29px}.gallery-card .gallery-ar{font-size:51px}.detail-ar{font-size:clamp(66px,13vw,92px)}}
+@media(max-width:500px){.name-window .window-ar{font-size:calc(41px * var(--name-scale,1))}.name-window .window-ar.long{font-size:calc(30px * var(--name-scale,1))}}
+@media(prefers-reduced-motion:reduce){.dialog.morph-active::backdrop{animation:none!important}.reading-flight{display:none!important}}
+
+/* V6.9: the accepted V2.5-inspired horizontal gallery only. Matrix untouched. */
+#galleryView.gallery-v25{background:transparent!important;min-height:575px;padding:15px clamp(10px,2vw,30px) 22px;overflow:hidden}
+.gallery-v25 .gallery-head{margin-bottom:8px}
+.gallery-v25 .gallery-track{
+  position:relative;display:block;height:440px;min-height:440px;width:100%;
+  padding:0;overflow:hidden!important;scroll-snap-type:none!important;
+  scrollbar-width:none;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;
+  perspective:1150px;perspective-origin:50% 48%;isolation:isolate;background:transparent;
+}
+.gallery-v25 .gallery-track.dragging{cursor:grabbing}
+.gallery-v25 .gallery-track::before{
+ content:"";position:absolute;inset:30px 2% 65px;pointer-events:none;opacity:.64;
+ background:radial-gradient(ellipse 35% 55% at 50% 49%,rgba(255,255,255,.67),transparent 90%),
+ radial-gradient(ellipse 42% 40% at 10% 65%,rgba(195,220,207,.23),transparent 95%),
+ radial-gradient(ellipse 42% 40% at 90% 60%,rgba(206,229,237,.25),transparent 95%);
+}
+.gallery-v25 .gallery-track::after{
+ content:"";position:absolute;bottom:22px;left:14%;right:14%;height:1px;pointer-events:none;
+ background:linear-gradient(90deg,transparent,rgba(118,152,129,.36),transparent)
+}
+.gallery-v25 .gallery-card{
+ position:absolute!important;left:50%;top:49%;margin:0!important;width:min(300px,62vw);height:352px;
+ min-width:0;min-height:0;flex:none!important;scroll-snap-align:none;
+ padding:22px 21px;border-radius:15px;transform-origin:center;
+ transform:translate(-50%,-50%) translate3d(var(--gx,0px),var(--gy,0px),var(--gz,0px)) rotateY(var(--gt,0deg)) scale(var(--gs,1));
+ opacity:var(--go,1);visibility:hidden;backface-visibility:hidden;
+ border:1px solid rgba(124,161,137,.35);box-shadow:0 16px 35px rgba(62,92,76,.13),inset 0 0 0 5px rgba(255,255,255,.20);
+ transition:transform .54s cubic-bezier(.18,.78,.24,1),opacity .38s ease,box-shadow .4s ease,border-color .3s;
+ will-change:transform;overflow:hidden;
+}
+.gallery-v25 .gallery-card::before{content:"";position:absolute;inset:10px;border:1px solid rgba(107,145,118,.15);border-radius:9px;pointer-events:none}
+.gallery-v25 .gallery-card:not([hidden]):hover,.gallery-v25 .gallery-card.selected{
+ transform:translate(-50%,-50%) translate3d(var(--gx,0px),var(--gy,0px),var(--gz,0px)) rotateY(var(--gt,0deg)) scale(var(--gs,1));
+ border-color:rgba(99,150,122,.63);box-shadow:0 26px 65px rgba(57,94,75,.20),inset 0 0 0 5px rgba(255,255,255,.24);
+}
+.gallery-v25 .gallery-card.selected{outline:1px solid rgba(139,181,151,.37);outline-offset:5px}
+.gallery-v25 .gallery-track.dragging .gallery-card{transition:none!important}
+.gallery-v25 .gallery-card .gallery-number{font-size:13px;letter-spacing:1.6px}
+.gallery-v25 .gallery-card .gallery-ar{font-size:clamp(43px,5vw,62px);font-family:var(--card-display);font-weight:700;line-height:1.55}
+.gallery-v25 .gallery-card .gallery-en{font-size:13px}
+.gallery-v25 .gallery-card .gallery-cta{font-size:12px;padding-top:13px}
+.gallery-v25 .gallery-nav button:disabled{opacity:.35;cursor:not-allowed}
+.gallery-v25 .gallery-bottom{padding:12px 5px 0;gap:18px}
+.gallery-v25 .gallery-progress{height:3px;max-width:310px;min-width:100px;flex:1;border-radius:10px;background:rgba(115,155,130,.19);overflow:hidden;direction:ltr}
+.gallery-v25 .gallery-progress-fill{display:block;width:1.01%;height:100%;background:var(--ink);border-radius:10px;transition:width .5s ease}
+.gallery-v25 .gallery-empty{position:absolute;inset:0;display:grid;place-items:center;font-size:13px;color:var(--ink2);pointer-events:none}
+.gallery-v25 .gallery-empty[hidden]{display:none}
+.flat-mode .gallery-v25 .gallery-card{box-shadow:0 10px 26px rgba(61,91,76,.12)}
+@media(max-width:780px){
+ #galleryView.gallery-v25{min-height:470px!important;padding:12px 10px 15px}
+ .gallery-v25 .gallery-track{height:355px;min-height:355px;perspective:850px}
+ .gallery-v25 .gallery-card{width:min(265px,69vw);height:288px;padding:16px 15px}
+ .gallery-v25 .gallery-card .gallery-ar{font-size:clamp(39px,9vw,54px)}
+ .gallery-v25 .gallery-bottom{flex-wrap:wrap}
+ .gallery-v25 .gallery-progress{order:3;flex-basis:100%;max-width:none}
+}
+@media(max-width:390px){.gallery-v25 .gallery-track{height:330px;min-height:330px}.gallery-v25 .gallery-card{height:263px;width:min(230px,68vw)}}
+@media(prefers-reduced-motion:reduce){.gallery-v25 .gallery-card{transition:none!important}.gallery-v25 .gallery-progress-fill{transition:none!important}}
+
+
+html:has(dialog[open]) .chapter-journey-nav{visibility:hidden!important;pointer-events:none!important}
+/* V7.0 — spatial-to-editorial transition. Color and card definitions unchanged. */
+:root{--journey-ease:cubic-bezier(.22,.61,.36,1)}
+.immersive{--journey-p:0;--light-drift:0px;--floor-drift:0px;--ray-strength:.66}
+/* The architectural environment recedes rather than abruptly ending. */
+.space-backdrop{will-change:auto}
+.space-halo{transform:translate3d(0,calc(var(--light-drift)*-.48),0);opacity:calc(1 - var(--journey-p)*.24)}
+.space-halo.halo-two{transform:translate3d(calc(var(--light-drift)*.13),calc(var(--light-drift)*-.36),0)}
+.architecture{transition:none;opacity:calc(1 - var(--journey-p)*.43)}
+.arch-outer{transform:perspective(1050px) rotateY(-27deg) translate3d(0,calc(var(--light-drift)*-.13),0)}
+.arch-middle{transform:perspective(1050px) rotateY(27deg) translate3d(0,calc(var(--light-drift)*-.09),0)}
+.arch-inner{transform:translate3d(0,calc(var(--light-drift)*-.20),0)}
+.depth-floor{transform:perspective(720px) rotateX(66deg) scale(1.4) translateY(var(--floor-drift));opacity:calc(.55 - var(--journey-p)*.20)}
+.light-column{transform:skewX(-8deg) translate3d(0,calc(var(--light-drift)*-.34),0);opacity:var(--ray-strength)}
+.light-ribbon{transform:rotate(-8deg) translate3d(0,calc(var(--light-drift)*-.28),0)}
+/* A luminous gradient joins the two worlds. It is decoration and never blocks controls. */
+.journey-veil{position:absolute;inset:auto 0 0;z-index:1;height:clamp(55px,13vh,160px);pointer-events:none;background:linear-gradient(to bottom,rgba(244,242,235,0),rgba(245,243,237,.34) 50%,#f5f3ed 100%);opacity:calc(.65 + var(--journey-p)*.35)}
+.journey-veil::before{content:"";position:absolute;inset:auto 10% 6px;height:1px;background:linear-gradient(90deg,transparent,rgba(137,172,148,.20),rgba(255,255,255,.9),rgba(157,185,181,.20),transparent)}
+.below-world{isolation:isolate;--story-progress:0;--ambient-shift:0px;--ambient-glow:.58}
+.story-atmosphere{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden;contain:paint}
+.story-atmosphere .atmosphere-one,.story-atmosphere .atmosphere-two,.story-atmosphere .atmosphere-three{position:absolute;display:block;filter:blur(4px);border-radius:50%;transform:translate3d(0,var(--ambient-shift),0);transition:opacity .3s linear}
+.story-atmosphere .atmosphere-one{top:-260px;inset-inline-start:-24%;width:88vw;height:980px;opacity:calc(.35 + var(--ambient-glow)*.28);background:radial-gradient(ellipse,rgba(204,228,212,.40) 0,rgba(212,231,222,.15) 46%,transparent 72%)}
+.story-atmosphere .atmosphere-two{top:42%;inset-inline-end:-29%;width:92vw;height:850px;opacity:.65;background:radial-gradient(ellipse,rgba(207,229,238,.35),rgba(233,239,237,.12) 51%,transparent 74%)}
+.story-atmosphere .atmosphere-three{top:74%;inset-inline-start:-24%;width:86vw;height:900px;opacity:.57;background:radial-gradient(ellipse,rgba(222,232,214,.38),rgba(247,243,231,.09) 52%,transparent 75%)}
+.story-atmosphere::after{content:"";position:absolute;top:0;left:50%;width:min(88vw,1200px);height:190px;transform:translateX(-50%);background:radial-gradient(ellipse at top,rgba(255,255,255,.74),transparent 69%);opacity:.82}
+/* Fine continuity lines evoke the architecture without becoming new framing boxes. */
+.about-section::before,.guide-section::before,.principles-section::before{content:"";position:absolute;inset-inline-end:clamp(18px,7vw,116px);top:10%;width:1px;height:clamp(90px,13vh,160px);background:linear-gradient(to bottom,transparent,rgba(123,170,150,.22),transparent);pointer-events:none}
+.about-section .story-copy,.about-section .about-art,.story-section .section-eyebrow,.story-section .section-headline,.story-section .section-lead,.story-section .featured-grid,.story-section .guide-grid,.story-section .chapters-grid,.source-panel .source-links{transform:translate3d(0,0,0)}
+/* Reveal only once JS has opted in. Static content is always available without JS. */
+.motion-ready .story-section:not(.in-viewport) .section-eyebrow,
+.motion-ready .story-section:not(.in-viewport) .section-headline,
+.motion-ready .story-section:not(.in-viewport) .section-lead,
+.motion-ready .story-section:not(.in-viewport) .featured-grid,
+.motion-ready .story-section:not(.in-viewport) .guide-grid,
+.motion-ready .story-section:not(.in-viewport) .chapters-grid,
+.motion-ready .story-section:not(.in-viewport) .about-art,
+.motion-ready .story-section:not(.in-viewport) .source-links{opacity:.22;transform:translate3d(0,18px,0)}
+.motion-ready .story-section .section-eyebrow,
+.motion-ready .story-section .section-headline,
+.motion-ready .story-section .section-lead,
+.motion-ready .story-section .featured-grid,
+.motion-ready .story-section .guide-grid,
+.motion-ready .story-section .chapters-grid,
+.motion-ready .story-section .about-art,
+.motion-ready .story-section .source-links{transition:opacity .82s var(--journey-ease),transform .82s var(--journey-ease)}
+.motion-ready .story-section .section-headline{transition-delay:.06s}
+.motion-ready .story-section .section-lead{transition-delay:.11s}
+.motion-ready .story-section .featured-grid,.motion-ready .story-section .guide-grid,.motion-ready .story-section .chapters-grid{transition-delay:.14s}
+.motion-ready .story-section.in-viewport .section-eyebrow,.motion-ready .story-section.in-viewport .section-headline,.motion-ready .story-section.in-viewport .section-lead,.motion-ready .story-section.in-viewport .featured-grid,.motion-ready .story-section.in-viewport .guide-grid,.motion-ready .story-section.in-viewport .chapters-grid,.motion-ready .story-section.in-viewport .about-art,.motion-ready .story-section.in-viewport .source-links{opacity:1;transform:translate3d(0,0,0)}
+/* A restrained five-part progress navigator appears only within the editorial section. */
+.chapter-journey-nav{position:fixed;left:clamp(11px,1.5vw,27px);top:50%;transform:translateY(-50%) translateX(-9px);z-index:30;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;pointer-events:none;transition:opacity .35s var(--journey-ease),transform .35s var(--journey-ease)}
+.chapter-journey-nav.is-visible{opacity:1;transform:translateY(-50%) translateX(0);pointer-events:auto}
+.chapter-journey-nav::before{content:"";position:absolute;top:14px;bottom:14px;width:1px;background:linear-gradient(transparent,rgba(108,158,134,.30),transparent);z-index:-1}
+.chapter-journey-nav a{width:27px;height:27px;display:grid;place-items:center;border-radius:99px;background:rgba(251,250,245,.84);border:1px solid rgba(126,168,146,.32);box-shadow:0 3px 14px rgba(71,104,89,.07);font:10px Georgia,serif;text-decoration:none;color:#628275;transition:background .2s,transform .2s,border-color .2s}
+.chapter-journey-nav a[aria-current="location"]{background:#dce8dd;border-color:#84aa94;transform:scale(1.12);color:#264f41}
+.chapter-journey-nav a:hover{background:#eef3e9}
+@media(max-width:900px){.chapter-journey-nav{display:none}.story-atmosphere .atmosphere-one,.story-atmosphere .atmosphere-two,.story-atmosphere .atmosphere-three{filter:none}.journey-veil{height:85px}}
+@media(prefers-reduced-motion:reduce){.motion-ready .story-section:not(.in-viewport) .section-eyebrow,.motion-ready .story-section:not(.in-viewport) .section-headline,.motion-ready .story-section:not(.in-viewport) .section-lead,.motion-ready .story-section:not(.in-viewport) .featured-grid,.motion-ready .story-section:not(.in-viewport) .guide-grid,.motion-ready .story-section:not(.in-viewport) .chapters-grid,.motion-ready .story-section:not(.in-viewport) .about-art,.motion-ready .story-section:not(.in-viewport) .source-links{opacity:1!important;transform:none!important}.space-halo,.space-halo.halo-two,.architecture,.depth-floor,.light-column,.light-ribbon,.story-atmosphere>*{transform:none!important;opacity:initial!important}.chapter-journey-nav{transition:none}}
+
+
+/* V7.1 — The Light Passage: dimensional light, contact shadows, and scroll reveal.
+   No palette, Arabic typography, card colors, layout geometry, navigation, pan, or zoom changes. */
+.immersive {
+  --beam-travel:0px;
+  --beam-travel-x:0px;
+  --portal-brightness:.55;
+  --space-displace:0px;
+  --pointer-glow-x:0px;
+  --pointer-glow-y:0px;
+}
+/* Three soft, directional beams give the environment real spatial hierarchy. */
+.spatial-beams{position:absolute;inset:0;overflow:hidden;pointer-events:none;isolation:isolate;}
+.spatial-beams .beam{
+  position:absolute;display:block;transform-origin:50% 0;
+  transform:translate3d(var(--pointer-glow-x),calc(var(--beam-travel) * -1),0) rotate(var(--beam-angle));
+  mix-blend-mode:screen;filter:blur(12px);opacity:calc(.58 + var(--portal-brightness)*.32);
+}
+.spatial-beams .beam-a{--beam-angle:-16deg;width:clamp(100px,17vw,310px);height:160%;left:7%;top:-38%;background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.20) 17%,rgba(255,255,255,.79) 52%,rgba(234,249,239,.27) 80%,transparent 100%);clip-path:polygon(39% 0,61% 0,100% 100%,0 100%)}
+.spatial-beams .beam-b{--beam-angle:16deg;width:clamp(90px,14vw,250px);height:165%;right:9%;top:-35%;opacity:.6;background:linear-gradient(90deg,transparent,rgba(247,253,255,.66),rgba(207,237,238,.31),transparent);clip-path:polygon(38% 0,62% 0,100% 100%,0 100%)}
+.spatial-beams .beam-c{--beam-angle:0deg;width:clamp(150px,28vw,475px);height:120%;left:35%;top:-35%;opacity:.42;background:linear-gradient(90deg,transparent,rgba(255,255,250,.35),transparent)}
+/* An elliptical pool of shade is placed behind the gallery, with no enclosing frame. */
+.main-area::before{content:"";position:absolute;z-index:-1;inset:15% 4% 1%;pointer-events:none;background:radial-gradient(ellipse 46% 39% at 55% 60%,rgba(53,103,80,.15),rgba(71,119,98,.07) 48%,transparent 76%);filter:blur(31px);transform:translate3d(0,calc(var(--space-displace)*-.24),0)}
+.main-area{position:relative;isolation:isolate}
+/* Architectural inset shade strengthens the perceived gap between layers. */
+.arch-outer,.arch-middle,.arch-inner{
+  box-shadow:inset 25px 0 40px rgba(255,255,255,.72),inset -22px -12px 48px rgba(69,114,91,.12),18px 23px 62px rgba(51,98,74,.18),-7px 0 18px rgba(255,255,255,.31);
+}
+.arch-inner{box-shadow:inset 11px 0 18px rgba(255,255,255,.73),15px 15px 46px rgba(44,98,74,.20)}
+/* Keep every paper's approved tint, but show its physical elevation. */
+.scene-viewport .name-window{
+  box-shadow:0 2px 3px rgba(51,86,64,.09),0 12px 21px rgba(45,78,61,.15),0 29px 44px rgba(57,96,74,.18),inset 0 1px 0 rgba(255,255,255,.70);
+  transition:box-shadow .24s ease,border-color .22s ease,opacity .2s ease;
+}
+.scene-viewport .name-window:hover:not(.is-opening),
+.scene-viewport .name-window.is-focused:not(.is-opening){
+  box-shadow:0 3px 6px rgba(46,86,65,.10),0 16px 27px rgba(51,92,71,.19),0 37px 63px rgba(40,82,62,.22),0 0 0 2px rgba(173,207,184,.25);
+}
+.scene-viewport .name-window.is-preview:not(.is-opening){
+  box-shadow:0 5px 11px rgba(45,82,60,.13),0 25px 43px rgba(43,78,61,.23),0 52px 84px rgba(44,79,61,.24),0 0 0 3px rgba(219,237,224,.6)
+}
+/* Scroll-reactive luminous threshold. The oval is an atmosphere, not a panel. */
+.journey-veil{height:clamp(125px,23vh,280px);opacity:1;background:linear-gradient(0deg,#f5f3ed 0%,rgba(245,243,237,.77) 23%,rgba(244,249,239,.26) 57%,transparent 100%)}
+.light-threshold{position:absolute;inset:auto -15% -95px;z-index:2;height:270px;pointer-events:none;opacity:calc(.42 + var(--portal-brightness)*.48);transform:translate3d(0,calc(var(--beam-travel)*.24),0)}
+.light-threshold::before{content:"";position:absolute;left:17%;right:17%;bottom:0;height:180px;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,rgba(255,255,250,.91),rgba(218,235,225,.56) 35%,rgba(208,224,214,.13) 64%,transparent 78%);filter:blur(14px)}
+.light-threshold::after{content:"";position:absolute;left:22%;right:22%;bottom:43px;height:1px;background:linear-gradient(90deg,transparent,rgba(120,167,141,.37) 21%,rgba(255,255,255,.96) 50%,rgba(120,167,141,.37) 78%,transparent);box-shadow:0 -4px 25px rgba(255,255,255,.88),0 8px 31px rgba(109,153,130,.21)}
+/* Continue the exact same light as a bloom behind the opening editorial section. */
+.below-world::before{content:"";pointer-events:none;position:absolute;inset:-80px -18% auto;height:520px;z-index:0;opacity:var(--arrival-light,.72);background:radial-gradient(ellipse 42% 39% at 50% 2%,rgba(255,255,255,.89) 0%,rgba(217,239,227,.58) 37%,rgba(222,236,233,.19) 65%,transparent 81%);filter:blur(7px);transform:translate3d(0,var(--arrival-drift,0px),0)}
+.below-world>.story-section{z-index:1}
+.story-atmosphere .atmosphere-one{background:radial-gradient(ellipse,rgba(208,233,216,.59) 0,rgba(212,231,222,.20) 48%,transparent 75%);filter:blur(8px)}
+.story-atmosphere .atmosphere-two{background:radial-gradient(ellipse,rgba(200,230,240,.48),rgba(233,239,237,.15) 52%,transparent 76%)}
+/* The editorial pages inherit the same depth, with gentle lift on scroll. */
+.about-art{filter:drop-shadow(0 27px 32px rgba(61,106,84,.10));transform:translate3d(0,var(--art-shift,0px),0) scale(var(--art-scale,1));transition:filter .45s}
+.about-art-card{box-shadow:0 3px 7px rgba(54,91,68,.12),0 20px 35px rgba(70,104,83,.19),0 38px 60px rgba(69,111,88,.15);transform:rotate(var(--angle)) translateY(var(--paper-float,0px));transition:box-shadow .4s ease}
+.about-art-card.c-one{--paper-float:calc(var(--art-shift,0px)*-.26)}
+.about-art-card.c-two{--paper-float:calc(var(--art-shift,0px)*.3)}
+.about-art-card.c-three{--paper-float:calc(var(--art-shift,0px)*-.18)}
+.featured-card{box-shadow:0 3px 8px rgba(60,104,82,.07),0 19px 35px rgba(75,112,92,.12),0 43px 70px rgba(74,111,89,.10);translate:0 var(--card-rise,0px)}
+.featured-card:hover{box-shadow:0 7px 13px rgba(60,104,82,.1),0 26px 48px rgba(75,112,92,.19),0 52px 76px rgba(74,111,89,.15)}
+.guide-item{background:linear-gradient(150deg,rgba(255,255,255,.25),transparent 72%);box-shadow:0 19px 38px -34px rgba(60,100,75,.30)}
+.chapter{box-shadow:0 5px 11px rgba(66,101,81,.06),0 20px 41px rgba(70,110,83,.10)}
+.source-panel{filter:drop-shadow(0 13px 40px rgba(62,100,86,.10))}
+/* Small surface details shimmer but never continuously animate. */
+.scroll-cue{filter:drop-shadow(0 5px 14px rgba(72,119,93,.22))}
+@media(max-width:900px){
+ .spatial-beams .beam{filter:blur(7px);opacity:.48}
+ .light-threshold{height:175px;bottom:-80px;left:0;right:0}
+ .main-area::before{filter:blur(22px)}
+ .scene-viewport .name-window{box-shadow:0 4px 8px rgba(42,79,60,.12),0 17px 30px rgba(43,80,63,.20)}
+ .about-art{filter:none}
+}
+@media(prefers-reduced-motion:reduce){
+ .spatial-beams .beam,.light-threshold,.below-world::before,.about-art,.about-art-card{transform:none!important;transition:none!important}
+ .featured-card{translate:0 0!important}
+}
+.flat-mode .spatial-beams,.flat-mode .light-threshold{display:none!important}
+.flat-mode .below-world::before{opacity:.25!important}
+.flat-mode .scene-viewport .name-window{box-shadow:0 5px 13px rgba(55,86,68,.13)}
+
+
+/* V7.2: keep long atmospheric beams from creating horizontal page scroll when gallery is active. */
+html{overflow-x:clip}
+.immersive,.below-world{overflow-x:clip}
+/* V7.2 — V2.6-inspired paper interaction. Respect all approved palette and layout values. */
+.scene-viewport .name-window{
+ transition:transform .48s cubic-bezier(.2,.72,.22,1),box-shadow .42s ease,border-color .3s ease,opacity .22s ease!important;
+ backface-visibility:hidden;
+}
+.scene-viewport .name-window.is-neighbor:not(.is-opening):not(.is-preview){
+ transform:translate3d(var(--spread-x,0px),var(--spread-y,0px),0) rotate(var(--r,0deg))!important;
+}
+.scene-viewport .name-window.is-preview:not(.is-opening),
+.scene-viewport .name-window.is-preview:hover:not(.is-opening){
+ transform:rotate(var(--r,0deg)) scale(var(--preview-magnification,1.23))!important;
+ z-index:5000!important;
+ border-color:rgba(111,156,128,.67)!important;
+ box-shadow:0 6px 13px rgba(41,82,61,.14),0 30px 58px rgba(42,78,59,.22),0 54px 85px rgba(43,72,57,.17),0 0 0 2px rgba(255,255,255,.68)!important;
+}
+/* A single oblique paper glint, not a repeating glow or representation of meaning. */
+.scene-viewport .name-window::after{
+ content:"";position:absolute;inset:-30% auto -30% -65%;width:48%;pointer-events:none;z-index:3;
+ transform:translateX(-70%) skewX(-17deg);opacity:0;
+ background:linear-gradient(90deg,transparent,rgba(255,255,255,.14) 20%,rgba(255,255,255,.55) 53%,rgba(255,255,255,.12) 80%,transparent);
+ transition:transform .75s cubic-bezier(.15,.65,.25,1),opacity .3s ease;
+}
+.scene-viewport .name-window.is-preview::after{transform:translateX(560%) skewX(-17deg);opacity:.8}
+/* Existing cinematic reader flight always wins over hover. */
+.scene-viewport .name-window.is-opening,.scene-viewport .name-window.flight-source{transform:rotate(var(--r,0deg)) scale(1)!important}
+.flat-mode .scene-viewport .name-window.is-preview{transform:scale(var(--preview-magnification,1.23))!important}
+.flat-mode .scene-viewport .name-window.is-neighbor{transform:translate(var(--spread-x,0px),var(--spread-y,0px))!important}
+/* Gallery focus rises in scale as it comes to center and softly recedes at the edges. */
+.gallery-v25 .gallery-card{
+ transition:transform .72s cubic-bezier(.17,.78,.20,1),opacity .48s ease,box-shadow .55s ease,border-color .32s ease!important;
+ filter:saturate(calc(.95 + var(--sat,.05)));
+}
+.gallery-v25 .gallery-card.selected{
+ box-shadow:0 9px 20px rgba(46,88,66,.13),0 25px 52px rgba(45,91,66,.22),0 47px 80px rgba(45,78,60,.14),inset 0 0 0 5px rgba(255,255,255,.24)!important;
+}
+.gallery-v25 .gallery-track.dragging .gallery-card{transition:none!important}
+@media(prefers-reduced-motion:reduce){
+ .scene-viewport .name-window,.gallery-v25 .gallery-card{transition:none!important}
+ .scene-viewport .name-window::after{display:none!important}
+}
+@media(hover:none){.scene-viewport .name-window::after{display:none}}
+
+
+/* V7.3: Editorial alignment with Master Prompt 2.6. The matrix, gallery, hero and
+   existing typography/color tokens are deliberately not modified. */
+.chapters-grid{align-items:start}
+.chapter.chapter-fold{display:block;min-height:215px;transition:box-shadow .25s ease,border-color .25s ease;overflow:hidden}
+.chapter-fold summary{list-style:none;display:flex;flex-direction:column;align-items:stretch;min-height:168px;cursor:pointer;position:relative;outline-offset:5px}
+.chapter-fold summary::-webkit-details-marker{display:none}
+.chapter-fold summary:focus-visible{outline:3px solid #548a74;border-radius:8px}
+.chapter-fold summary .chapter-index{font:22px Georgia,serif;color:#82a194;direction:ltr;align-self:flex-start}
+.chapter-fold summary h3{margin:16px 0 auto;font:normal 22px/1.58 var(--display);color:#315c4d}
+.chapter-fold summary .chapter-meta{display:flex;align-items:end;justify-content:space-between;gap:8px;margin-top:14px}
+.chapter-fold summary small{font-size:10px;color:#819589;line-height:1.5}
+.chapter-fold .chapter-chevron{display:grid;place-items:center;width:27px;height:27px;flex:none;border-radius:50%;border:1px solid #c4d9cc;background:#f9fcf8;color:#47705b;font-size:19px;transition:transform .25s ease}
+.chapter-fold[open]{border-color:#a6c7b2;box-shadow:0 14px 34px rgba(66,101,81,.15);background:#f8faf5}
+.chapter-fold[open] .chapter-chevron{transform:rotate(45deg)}
+.chapter-fold .chapter-body{border-top:1px solid #d5e5db;padding-top:14px;margin-top:10px;animation:chapter-appear .24s ease-out both}
+.chapter-fold .chapter-body p{font-size:11.5px;line-height:1.9;color:#647d70;margin:0 0 13px}
+.chapter-fold .chapter-body ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.chapter-fold .chapter-body li{position:relative;padding-inline-start:15px;font-size:12px;color:#385e51;line-height:1.8}
+.chapter-fold .chapter-body li::before{content:'';position:absolute;inset-inline-start:0;top:10px;width:5px;height:5px;background:#b1cbbc;border-radius:50%}
+.chapter-fold .chapter-availability{display:block;border-top:1px solid #d8e6dc;margin-top:13px;padding-top:11px;font-size:10px;color:#788d7f}
+@keyframes chapter-appear{from{opacity:.4;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.source-panel .editorial-path{margin-top:27px;padding:19px 19px 23px;border:1px solid rgba(101,145,119,.27);border-radius:18px;background:linear-gradient(120deg,rgba(255,254,248,.76),rgba(225,239,230,.58));box-shadow:inset 0 1px rgba(255,255,255,.8)}
+.editorial-path h3{font:normal clamp(20px,2.1vw,28px)/1.65 var(--display);margin:0 0 7px;color:#315a4c}
+.editorial-path .path-caption{font-size:11px;color:#6f8779;line-height:1.8;margin:0 0 17px}
+.editorial-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.editorial-step{border-radius:12px;padding:12px 11px;min-height:100px;background:rgba(255,255,255,.6);border:1px solid rgba(117,155,131,.19)}
+.editorial-step:nth-child(2){background:rgba(230,241,230,.65)}.editorial-step:nth-child(3){background:rgba(230,241,247,.64)}
+.editorial-step span{display:block;color:#88a799;font:11px Georgia,serif;margin-bottom:11px;direction:ltr;text-align:start}
+.editorial-step strong{font-size:11.5px;line-height:1.8;font-weight:600;color:#365e50}
+.reading-outline{margin-top:12px;text-align:start;border:1px solid rgba(108,150,122,.29);background:linear-gradient(145deg,rgba(255,254,249,.9),rgba(234,243,235,.68));border-radius:13px;padding:0 15px}
+.reading-outline summary{cursor:pointer;list-style:none;padding:13px 0;color:#3d6858;font-size:12px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.reading-outline summary::-webkit-details-marker{display:none}
+.reading-outline summary::after{content:'+';font-size:19px;font-weight:400;line-height:1}
+.reading-outline[open] summary::after{content:'−'}
+.reading-outline summary:focus-visible{outline:3px solid #548a74;outline-offset:4px;border-radius:6px}
+.reading-outline .reading-outline-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:3px 0 15px}
+.reading-outline .reading-outline-grid span{font-size:11px;line-height:1.8;color:#58796a;background:rgba(255,255,255,.6);border:1px solid rgba(99,148,117,.16);border-radius:9px;padding:8px}
+@media(max-width:780px){.editorial-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.chapter-fold summary{min-height:115px}.chapter.chapter-fold{min-height:150px}.chapter-fold summary h3{font-size:18px}}
+@media(max-width:500px){.chapter-fold summary{min-height:99px}.chapter.chapter-fold{min-height:135px}.chapter-fold summary h3{font-size:16px}.chapter-fold .chapter-body li{font-size:11px}.editorial-path h3{font-size:22px}.editorial-step{min-height:84px}.reading-outline .reading-outline-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.chapter-fold .chapter-body{animation:none}.chapter-fold .chapter-chevron{transition:none}}
+
+
+/* V7.4 Editorial reading suite. Limited to reader and chapter content; gallery/matrix untouched. */
+.dialog{width:min(850px,calc(100vw - 24px));max-height:min(91dvh,920px);overscroll-behavior:contain}
+.dialog .dialog-head{position:sticky;top:0;z-index:5;background:rgba(252,251,245,.94);backdrop-filter:blur(14px)}
+.dialog .dialog-nav{position:sticky;bottom:0;z-index:5;background:rgba(252,251,245,.96);backdrop-filter:blur(12px)}
+.dialog .detail-ar{margin:3px 0 -10px}
+.dialog .detail-en{margin-bottom:12px}
+.reader-edition{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px;margin:0 0 20px;font-size:10px;color:#638274}
+.reader-edition b{border:1px solid rgba(110,155,127,.37);border-radius:99px;padding:5px 10px;background:rgba(236,245,237,.83);font-weight:600;color:#366754}
+.reader-edition span{direction:inherit}
+.reader-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:6px;margin:5px 0 17px;background:rgba(216,230,219,.42);border:1px solid rgba(105,145,122,.13);border-radius:15px}
+.reader-tab{border:0;border-radius:10px;color:#648073;background:transparent;min-height:43px;padding:8px 6px;font-size:11px;line-height:1.7;cursor:pointer;transition:background .2s,box-shadow .2s,color .2s}
+.reader-tab[aria-selected=true]{background:#fffefa;color:#285a49;box-shadow:0 3px 12px rgba(53,89,70,.13);font-weight:700}
+.reader-tab:focus-visible,.topic-list-button:focus-visible,.topic-tab:focus-visible{outline:3px solid #548a74;outline-offset:2px}
+.reader-panel{min-height:228px;text-align:start;padding:clamp(16px,2.7vw,27px);border:1px solid rgba(143,181,155,.4);border-radius:17px;background:linear-gradient(140deg,rgba(255,254,248,.98),rgba(238,246,238,.92));box-shadow:0 12px 27px rgba(66,98,74,.06)}
+.reader-panel[hidden],.topic-panel[hidden]{display:none!important}
+.reader-panel-kicker,.topic-kicker{display:flex;gap:10px;align-items:center;font:11px Georgia,serif;letter-spacing:2px;color:#839f91;direction:ltr;justify-content:flex-start;margin-bottom:9px}
+.reader-panel h3{font-family:var(--display);font-size:clamp(23px,3.4vw,32px);font-weight:400;line-height:1.5;color:#2b5648;margin:0 0 12px}
+.reader-panel p{color:#688073;font-size:12px;line-height:2.1;margin:0 0 13px}
+.reader-empty{border-inline-start:3px solid #b4d0be;padding-inline-start:14px;background:linear-gradient(90deg,rgba(231,241,232,.4),transparent);padding-block:8px}
+.reader-small{display:block;color:#7b9386;font-size:10px;line-height:1.8}
+.reader-two-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:14px}
+.reader-slot{border-radius:12px;border:1px solid #dbe6db;background:rgba(255,255,255,.64);padding:14px;min-height:94px}
+.reader-slot span{display:block;font-size:10px;color:#8aa196;margin-bottom:8px}
+.reader-slot b{font-size:12px;line-height:1.7;color:#486e5b;font-weight:600}
+.reader-source-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:14px 0 16px}
+.reader-source-fields div{border-bottom:1px solid #dce8dd;padding:9px 3px}
+.reader-source-fields dt{font-size:10px;color:#8a9f92;margin:0 0 6px}
+.reader-source-fields dd{font-size:12px;color:#607e6e;margin:0}
+.reader-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.reader-action{border:1px solid #bdd5c5;border-radius:10px;background:#fffefa;color:#386b54;padding:10px 15px;cursor:pointer;font-size:11px;min-height:40px}
+.reader-action:hover{background:#e9f3eb}
+.reader-statusline{font-size:10px;color:#799486;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:15px}
+.reader-statusline::before{content:'';display:block;width:6px;height:6px;border-radius:50%;background:#bdcfb3}
+.reader-utility-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:16px}
+.reader-utility-foot .review{margin:0;flex:1}
+.chapter-fold .chapter-body li::before{display:none}
+.chapter-fold .chapter-body li{padding:0}
+.chapter-fold .chapter-body ul{gap:5px}
+.chapter-fold .chapter-body:has(.topic-list-button) ul{max-height:320px;overflow-y:auto;padding-inline-end:3px;overscroll-behavior:contain}
+.topic-list-button{border:1px solid transparent;display:flex;align-items:flex-start;text-align:start;gap:7px;width:100%;padding:8px 7px;background:transparent;border-radius:9px;color:#355f4f;cursor:pointer;font-size:11px;line-height:1.7;min-height:34px}
+.topic-list-button:hover{background:rgba(255,255,255,.84);border-color:rgba(154,191,163,.42)}
+.topic-list-button .topic-list-num{direction:ltr;display:inline-block;flex:none;font:10px Georgia,serif;color:#86a497;padding-top:3px}
+.topic-list-button .topic-list-label{flex:1;overflow-wrap:anywhere}
+.topic-list-button .topic-list-end{flex:none;color:#87a593}
+.topic-sheet{border:1px solid #d6e3d6;border-radius:23px;padding:0;width:min(820px,calc(100vw - 24px));max-height:90dvh;background:#fcfbf5;color:var(--ink);box-shadow:0 55px 130px rgba(24,55,43,.34);overflow:auto;overscroll-behavior:contain}
+.topic-sheet::backdrop{background:rgba(26,52,42,.44);backdrop-filter:blur(6px)}
+.topic-sheet-head{position:sticky;top:0;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #dbe7dc;padding:14px clamp(17px,4vw,30px);background:rgba(252,251,245,.95);backdrop-filter:blur(10px)}
+.topic-sheet-head span{font-size:11px;color:#6b8d79}
+.topic-sheet-head button{border:1px solid #d6e4d7;border-radius:11px;background:#fffefa;color:#315f50;font-size:18px;width:35px;height:35px;cursor:pointer}
+.topic-sheet-content{padding:clamp(19px,3.8vw,37px)}
+.topic-breadcrumb{font-size:10px;letter-spacing:.1px;color:#81a08c;line-height:1.7;margin-bottom:12px}
+.topic-sheet h2{font:400 clamp(28px,4.2vw,45px)/1.55 var(--display);color:#2e5a4a;margin:4px 0 12px;overflow-wrap:anywhere}
+.topic-subhead{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:0 0 21px}
+.topic-status-pill{display:inline-block;color:#527763;background:#e7f0e7;border:1px solid #cbdccc;border-radius:99px;padding:6px 10px;font-size:10px}
+.topic-subhead small{font-size:10px;color:#93a69a}
+.topic-tabs{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid #d7e6d7;padding-bottom:8px;margin:0 0 22px}
+.topic-tab{border:0;border-radius:9px;padding:10px 14px;background:transparent;color:#718c7b;font-size:11px;cursor:pointer}
+.topic-tab[aria-selected=true]{background:#e7f0e8;color:#2d634e;font-weight:700}
+.topic-panel{min-height:230px;padding:18px 20px;border:1px solid rgba(141,181,155,.34);border-radius:15px;background:linear-gradient(137deg,#fffefa,#f2f7f0);text-align:start}
+.topic-panel h3{font:400 26px/1.5 var(--display);margin:0 0 12px;color:#315e4c}
+.topic-panel p{font-size:12px;color:#688576;line-height:2.1;margin:0 0 13px}
+.topic-sheet-footer{position:sticky;bottom:0;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;border-top:1px solid #dde7dc;background:rgba(252,251,245,.96);backdrop-filter:blur(10px);padding:13px clamp(18px,4vw,30px)}
+.topic-sheet-footer button{border:1px solid #cbdcca;background:#fffefa;color:#3c6b55;border-radius:10px;padding:10px 13px;font-size:11px;cursor:pointer;min-height:39px}
+.topic-sheet-footer button:disabled{opacity:.4;cursor:not-allowed}
+.topic-count{font:11px Georgia,serif;color:#779386;direction:ltr}
+@media(max-width:620px){.dialog .dialog-content{padding:10px 13px 16px}.dialog .detail-ar{font-size:clamp(56px,12vw,73px)}.reader-tabs{gap:1px;padding:4px}.reader-tab{padding:9px 3px;font-size:10px}.reader-panel{padding:15px;min-height:255px}.reader-two-cols,.reader-source-fields{grid-template-columns:1fr}.reader-slot{min-height:66px}.topic-sheet-content{padding:19px 16px}.topic-panel{padding:14px}.topic-sheet h2{font-size:30px}.topic-tab{padding:9px 10px}}
+@media(prefers-reduced-motion:reduce){.reader-tab{transition:none}}
+
+</style>
+</head>
+<body>
+<div class="immersive" id="top">
+  <div class="space-backdrop" aria-hidden="true">
+    <div class="space-halo"></div><div class="space-halo halo-two"></div>
+    <div class="architecture arch-outer"></div><div class="architecture arch-middle"></div><div class="architecture arch-inner"></div>
+    <div class="light-column column-one"></div><div class="light-column column-two"></div>
+    <div class="depth-floor"></div><div class="light-ribbon"></div>
+    <div class="spatial-beams"><span class="beam beam-a"></span><span class="beam beam-b"></span><span class="beam beam-c"></span></div>
+  </div>
+<header class="topbar">
+  <div class="brand"><div class="brand-mark" aria-hidden="true">۞</div><div><div class="brand-title" data-i18n="siteTitle">أسماء الله الحسنى</div><div class="brand-sub">THE MOST BEAUTIFUL NAMES</div></div></div>
+  <div class="top-actions"><a class="top-link" href="#about" data-i18n="aboutNav">عن التجربة</a><a class="top-link" href="#chapters" data-i18n="chaptersNav">أبواب المحتوى</a><a class="top-link" href="#guide" data-i18n="guideNav">دليل التصفح</a><button class="soft-btn" type="button" id="helpBtn" data-i18n="help">كيفية التصفح ؟</button><button class="soft-btn" type="button" id="langBtn" aria-label="Switch language">English / EN</button><button class="soft-btn active" type="button" id="indexTopBtn" data-i18n="explore">استكشف النوافذ</button></div>
+</header>
+<section class="hero" aria-labelledby="title">
+  <div><div class="eyebrow" data-i18n="eyebrow">مساحة للتأمل والمعرفة • معاينة تفاعلية</div><h1 id="title"><span data-i18n="titleA">لكلّ اسمٍ،</span><br><em data-i18n="titleB">نافذةٌ إلى المعرفة.</em></h1><p class="hero-desc" data-i18n="subtitle">تسع وتسعون نافذة في فضاءٍ هادئ. حرّك المجموعة كلها، وكبّر الأسماء، واضغط على أي نافذة لقراءتها. ويمكنك البحث أو الانتقال مباشرةً إلى أي رقم.</p></div>
+  <div class="hero-right"><div class="roundel"><div class="roundel-inner"><div class="roundel-number">99</div><div class="roundel-label" data-i18n="windows">نافذة معرفية</div></div></div></div>
+</section>
+<main class="main-area" id="experience">
+  <div class="workbench">
+    <aside class="navpane" aria-label="Navigation"><h2 data-i18n="navigation">دليل النوافذ</h2><div class="small-kicker" data-i18n="navDesc">من 01 إلى 99، بضغطة واحدة</div>
+      <div class="search-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg><input class="search" id="search" type="search" autocomplete="off" placeholder="ابحث عن اسم أو رقم" aria-label="بحث بالأسماء"></div>
+      <div class="number-row"><input class="number-input" type="number" min="1" max="99" id="jumpInput" placeholder="01 - 99" aria-label="Window number"><button type="button" class="primary-btn" id="jumpBtn" data-i18n="jump">انتقل</button></div>
+      <hr class="navdivider"><div class="index-head"><strong data-i18n="indexTitle">فهرس الأسماء</strong><span id="resultCount">99 / 99</span></div><div class="number-grid" id="numGrid" aria-label="Index of 99 names"></div>
+      <div class="navnote" data-i18n="navNote">يمكنك التنقل بين الأسماء دون المرور على النوافذ الوسيطة. الأسماء هنا لأغراض المعاينة، ويخضع المحتوى العلمي للمراجعة قبل النشر.</div>
+    </aside>
+    <section class="stage" aria-label="Interactive windows">
+      <div class="stagebar"><div><div class="stage-title" data-i18n="stageTitle">فضاء النوافذ</div><div class="small-kicker" data-i18n="stageSubtitle">99 نافذة في مشهد واحد · سحب وتكبير بسهولة</div></div>
+        <div class="stage-controls"><div class="view-toggle" role="group" aria-label="View mode"><button type="button" id="spatialBtn" class="is-on" aria-pressed="true" data-i18n="spatial">المصفوفة</button><button type="button" id="galleryBtn" aria-pressed="false" data-i18n="gallery">المعرض الأفقي</button><button type="button" id="listBtn" aria-pressed="false" data-i18n="list">القائمة</button></div>
+          <button class="icon-btn" id="zoomIn" title="تكبير حتى 200% / Zoom up to 200%" aria-label="تكبير المشهد / Zoom in">＋</button><span class="zoom-scale" id="sceneScale" aria-live="polite">100%</span><button class="icon-btn" id="zoomOut" title="تصغير حتى 25% / Zoom down to 25%" aria-label="تصغير المشهد / Zoom out">−</button><button class="icon-btn" id="fitBtn" data-i18n="fit">عرض الكل</button>
+        </div>
+      </div>
+      <div class="stage-tools" id="stageTools" aria-label="Display and reading controls">
+        <div class="stage-instruction"><span class="hint-icon" aria-hidden="true">✥</span><span data-i18n="simpleHint">اسحب المشهد كله للتجول، واضغط أي اسم لفتح نافذته. النوافذ لا تتحرك منفردة.</span></div>
+        <label class="size-controls"><span class="stage-tool-label" data-i18n="nameSizeLabel">حجم الأسماء</span><input type="range" id="nameSize" min="75" max="150" step="5" value="100" aria-label="حجم خط الأسماء"><output class="tool-value" id="nameSizeValue" for="nameSize">100%</output></label>
+      </div>
+      <div class="quickbar" aria-label="خيارات التصفح السريع">
+  <button class="quick-link" id="firstBtn" data-i18n="first">الأولى 01</button>
+  <button class="quick-link" id="lastBtn" data-i18n="last">الأخيرة 99</button>
+  <button class="quick-link" id="bookmarksBtn" data-i18n="saved">المحفوظة ☆</button>
+  <button class="quick-link" id="recentBtn" data-i18n="recent">آخر نافذة</button>
+  <label class="quick-flat"><input type="checkbox" id="flatBtn"><span data-i18n="flat">عرض مسطّح</span></label>
+  <span class="quick-note" data-i18n="zoomGuide">عجلة الفأرة فوق المصفوفة للتكبير والتصغير؛ خارجها لتمرير الصفحة</span>
+</div>
+<div class="scene-viewport" id="viewport" aria-label="Pan and zoom the collection of 99 names"><div class="scene-canvas" id="scene"></div><div class="scene-hint" id="sceneHint" data-i18n="hint">اسحب المشهد كاملاً · اضغط الاسم لفتحه</div><div class="scene-count">01 — 99</div></div>
+      <nav class="horizontal-shelf" id="horizontalShelf" aria-label="شريط التصفح الأفقي للأسماء">
+        <div class="shelf-heading"><span data-i18n="shelfTitle">شريط الأسماء · اسحب أفقياً</span><span class="shelf-info" data-i18n="shelfHint">اختر نافذة لتقريبها، وتعود الورقة لحجمها بعد ٧ ثوانٍ</span></div>
+        <div class="shelf-body"><button class="shelf-arrow" id="shelfPrev" aria-label="السابق" type="button">❯</button><div class="shelf-track" id="shelfTrack" tabindex="0" aria-label="قائمة الأسماء الأفقية"></div><button class="shelf-arrow" id="shelfNext" aria-label="التالي" type="button">❮</button></div>
+      </nav>
+      <div class="gallery-view gallery-v25" id="galleryView" hidden>
+  <div class="gallery-head"><div><b data-i18n="galleryTitle">تصفح متتابع بلا سحب معقد</b><p data-i18n="galleryGuide">حرّك البطاقات أفقياً، أو استخدم السابق والتالي. اضغط الاسم لفتح القراءة.</p></div>
+    <div class="gallery-nav"><button type="button" id="galleryPrev" aria-label="الاسم السابق">→</button><strong id="galleryPos">01 / 99</strong><button type="button" id="galleryNext" aria-label="الاسم التالي">←</button></div>
+  </div>
+  <div class="gallery-track" id="galleryTrack" tabindex="0" role="region" aria-roledescription="معرض أسماء قابل للسحب" aria-label="معرض أسماء الله الحسنى التفاعلي"><p class="gallery-empty" id="galleryEmpty" hidden>لا توجد نتائج</p></div>
+  <div class="gallery-bottom"><span data-i18n="galleryHint">اسحب لليمين أو اليسار، وستتمركز البطاقة تلقائياً</span><div class="gallery-progress" aria-hidden="true"><span class="gallery-progress-fill" id="galleryProgressFill"></span></div><button id="galleryOpen" class="primary-btn" data-i18n="readSelected">اقرأ المحدد</button></div>
+</div>
+<div class="list-view" id="listView"><div class="list-grid" id="listGrid"></div></div>
+      <div class="stagefoot"><span data-i18n="footerHint">التجربة تدعم العربية والإنجليزية، والبحث والانتقال السريع</span><span>SPATIAL EXPERIENCE / V6</span></div>
+    </section>
+  </div>
+</main>
+<a class="scroll-cue" href="#about" aria-label="الانتقال إلى باقي أقسام الموقع"><span class="scroll-cue-line"></span><span data-i18n="scrollCue">مرّر للأسفل لاكتشاف بقية الموقع</span><span class="scroll-cue-arrow">↓</span></a>
+<div class="journey-veil" aria-hidden="true"></div>
+<div class="light-threshold" aria-hidden="true"></div>
+</div><!-- immersive -->
+
+<div class="below-world">
+  <div class="story-atmosphere" aria-hidden="true"><span class="atmosphere-one"></span><span class="atmosphere-two"></span><span class="atmosphere-three"></span></div>
+  <section class="story-section about-section" id="about" aria-labelledby="aboutTitle">
+    <div class="story-copy"><div class="section-eyebrow"><span>01 / 05</span><span data-i18n="aboutLabel">عن التجربة</span></div>
+      <h2 class="section-headline" id="aboutTitle" data-i18n="aboutHeading">مساحة هادئة، تُفتح فيها المعرفة نافذةً بعد نافذة.</h2>
+      <p class="section-lead" data-i18n="aboutBody">فكرة بصرية تتيح استكشاف قائمة من تسعة وتسعين اسماً عبر مشهد مفتوح ومتداخل. اختر ما يلفت انتباهك، أو انتقل مباشرة إلى اسم محدد. هذا نموذج لتجربة التصفح، وليس مرجعاً علمياً معتمداً.</p>
+      <a class="section-action" href="#experience" data-i18n="backGallery">العودة إلى النوافذ <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="about-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="about-art-card c-one"><span>01</span><b>الرَّحْمَن</b></div><div class="about-art-card c-two"><span>33</span><b>الْعَظِيم</b></div><div class="about-art-card c-three"><span>99</span><b>الصَّبُور</b></div><div class="art-center">٩٩</div></div>
+  </section>
+  <section class="story-section explore-section" id="discover" aria-labelledby="discoverTitle">
+    <div class="section-eyebrow"><span>02 / 05</span><span data-i18n="discoverLabel">من الفضاء إلى المعنى</span></div>
+    <div class="split-head"><h2 class="section-headline" id="discoverTitle" data-i18n="discoverHeading">ابدأ من أيّ اسم.</h2><p class="section-lead" data-i18n="discoverBody">هذه ثلاث نقاط دخول سريعة إلى النوافذ. يمكنك فتح أي نافذة هنا، ثم الانتقال إلى السابقة أو التالية داخل تجربة القراءة.</p></div>
+    <div class="featured-grid">
+      <button type="button" class="featured-card" data-open-index="0"><span class="featured-meta">01 <span>THE NAMES</span></span><strong lang="ar" dir="rtl">الرَّحْمَن</strong><span class="featured-en">Ar-Rahman</span><span class="featured-open" data-i18n="openWindow">افتح النافذة ↗</span></button>
+      <button type="button" class="featured-card" data-open-index="32"><span class="featured-meta">33 <span>THE NAMES</span></span><strong lang="ar" dir="rtl">الْعَظِيم</strong><span class="featured-en">Al-Azim</span><span class="featured-open" data-i18n="openWindow">افتح النافذة ↗</span></button>
+      <button type="button" class="featured-card" data-open-index="98"><span class="featured-meta">99 <span>THE NAMES</span></span><strong lang="ar" dir="rtl">الصَّبُور</strong><span class="featured-en">As-Sabur</span><span class="featured-open" data-i18n="openWindow">افتح النافذة ↗</span></button>
+    </div>
+  </section>
+  <section class="story-section guide-section" id="guide" aria-labelledby="guideTitle">
+    <div class="section-eyebrow"><span>03 / 05</span><span data-i18n="guideLabel">كيف تستكشف؟</span></div>
+    <div class="split-head"><h2 class="section-headline" id="guideTitle" data-i18n="guideHeading">حركة بسيطة. تركيز أكبر.</h2><p class="section-lead" data-i18n="guideBody">أبقينا النوافذ في مواضعها، كي تصبح التجربة مريحة في التصفح والقراءة.</p></div>
+    <div class="guide-grid">
+      <div class="guide-item"><span class="guide-icon">✥</span><span class="guide-num">01</span><h3 data-i18n="guide1Title">حرّك الفضاء</h3><p data-i18n="guide1Body">اسحب أي مساحة من اللوحة لتحريك المجموعة كاملة، دون فصل النوافذ عن بعضها.</p></div>
+      <div class="guide-item"><span class="guide-icon">＋</span><span class="guide-num">02</span><h3 data-i18n="guide2Title">اقترب من الأسماء</h3><p data-i18n="guide2Body">استخدم عجلة الفأرة فوق المصفوفة للتكبير حول المؤشر، أو أزرار التكبير و«عرض الكل»، أو تحكم بحجم الأسماء.</p></div>
+      <div class="guide-item"><span class="guide-icon">⌕</span><span class="guide-num">03</span><h3 data-i18n="guide3Title">انتقل فوراً</h3><p data-i18n="guide3Body">ابحث عن الاسم أو اكتب رقمه لتصل مباشرة إلى النافذة المطلوبة.</p></div>
+      <div class="guide-item"><span class="guide-icon">↗</span><span class="guide-num">04</span><h3 data-i18n="guide4Title">اقرأ بتأنٍ</h3><p data-i18n="guide4Body">اضغط على الاسم لفتح نافذة مستقلة، ثم تنقّل إلى الاسم السابق أو التالي.</p></div>
+    </div>
+  </section>
+  <section id="chapters" class="story-section chapters-section" aria-labelledby="chaptersTitle">
+  <div class="section-eyebrow"><span>04 / 05</span><span data-i18n="chaptersKicker">أبواب المحتوى</span></div>
+  <div class="split-head"><h2 id="chaptersTitle" class="section-headline" data-i18n="chaptersTitle">مسارات متعددة للمعرفة</h2><p class="section-lead" data-i18n="chaptersIntro">إلى جانب النوافذ، تُنظّم مادة المشروع في خمسة أبواب. هذه مسارات تجريبية تمهيداً للمحتوى المحرر والمراجع.</p></div>
+  <div class="chapters-grid">
+    <details class="chapter chapter-fold"><summary><span class="chapter-index">01</span><h3 data-i18n="chapter1">شرح أسماء الله الحسنى</h3><span class="chapter-meta"><small data-i18n="chapterPending">قسم قيد الإعداد والمراجعة</small><span class="chapter-chevron" aria-hidden="true">+</span></span></summary><div class="chapter-body"><p data-i18n="chapter1Description">البنية التحريرية المتوقعة لصفحة الاسم، لا مادة علمية منشورة.</p><ul><li data-i18n="chapter1a">التعريف المختصر</li><li data-i18n="chapter1b">الشرح الموسع</li><li data-i18n="chapter1c">الدليل وموضع النقل</li><li data-i18n="chapter1d">المواد ذات الصلة</li></ul><span class="chapter-availability" data-i18n="chapterNoPublished">خريطة محتوى تجريبية، لا توجد مادة علمية منشورة هنا بعد.</span></div></details>
+    <details class="chapter chapter-fold"><summary><span class="chapter-index">02</span><h3 data-i18n="chapter2">فتاوى في الأسماء الحسنى</h3><span class="chapter-meta"><small data-i18n="chapterPending">قسم قيد الإعداد والمراجعة</small><span class="chapter-chevron" aria-hidden="true">+</span></span></summary><div class="chapter-body"><p data-i18n="chapter2Description">فتاوى مرتبطة بمصدرها وسياقها، لا إجابات مولدة.</p><ul><li data-i18n="chapter2a">السؤال بنصه وسياقه</li><li data-i18n="chapter2b">الجواب المنقول من مصدره</li><li data-i18n="chapter2c">الرابط والإحالة الدقيقة</li><li data-i18n="chapter2d">حالة مراجعة المادة</li></ul><span class="chapter-availability" data-i18n="chapterNoPublished">خريطة محتوى تجريبية، لا توجد مادة علمية منشورة هنا بعد.</span></div></details>
+    <details class="chapter chapter-fold"><summary><span class="chapter-index">03</span><h3 data-i18n="chapter3">حقيقة الإلحاد في أسماء الله تعالى</h3><span class="chapter-meta"><small data-i18n="chapterPending">قسم قيد الإعداد والمراجعة</small><span class="chapter-chevron" aria-hidden="true">+</span></span></summary><div class="chapter-body"><p data-i18n="chapter3Description">خريطة عرض للموضوع تتطلب تحريراً ومراجعة من المختص.</p><ul><li data-i18n="chapter3a">تعريف المفهوم وحدوده</li><li data-i18n="chapter3b">المباحث المرتبطة</li><li data-i18n="chapter3c">الشواهد الموثقة</li><li data-i18n="chapter3d">مراجعة المادة</li></ul><span class="chapter-availability" data-i18n="chapterNoPublished">خريطة محتوى تجريبية، لا توجد مادة علمية منشورة هنا بعد.</span></div></details>
+    <details class="chapter chapter-fold"><summary><span class="chapter-index">04</span><h3 data-i18n="chapter4">الأسماء الحسنى والجانب العملي والروحي</h3><span class="chapter-meta"><small data-i18n="chapterPending">قسم قيد الإعداد والمراجعة</small><span class="chapter-chevron" aria-hidden="true">+</span></span></summary><div class="chapter-body"><p data-i18n="chapter4Description">مسارات عملية مقترحة، دون أذكار أو فضائل غير موثقة.</p><ul><li data-i18n="chapter4a">الحفظ والتأمل</li><li data-i18n="chapter4b">الدعاء بالأسماء</li><li data-i18n="chapter4c">الذكر</li><li data-i18n="chapter4d">التفكر والتأمل</li></ul><span class="chapter-availability" data-i18n="chapterNoPublished">خريطة محتوى تجريبية، لا توجد مادة علمية منشورة هنا بعد.</span></div></details>
+    <details class="chapter chapter-fold"><summary><span class="chapter-index">05</span><h3 data-i18n="chapter5">مباحث عامة</h3><span class="chapter-meta"><small data-i18n="chapterPending">قسم قيد الإعداد والمراجعة</small><span class="chapter-chevron" aria-hidden="true">+</span></span></summary><div class="chapter-body"><p data-i18n="chapter5Description">عناوين المباحث كما وردت في الوثيقة الرئيسية، والمادة قيد الإعداد.</p><ul><li data-i18n="chapter5a">أسماء الله تعالى توقيفية</li><li data-i18n="chapter5b">أركان الإيمان بالأسماء الحُسنى</li><li data-i18n="chapter5c">دلالة الأسماء الحُسنى ثلاثة أنواع</li><li data-i18n="chapter5d">مراتب إحصاء الأسماء الحُسنى</li></ul><span class="chapter-availability" data-i18n="chapterNoPublished">خريطة محتوى تجريبية، لا توجد مادة علمية منشورة هنا بعد.</span></div></details>
+  </div>
+</section>
+<section class="story-section principles-section" id="sources" aria-labelledby="sourcesTitle">
+    <div class="source-panel"><div class="section-eyebrow"><span>05 / 05</span><span data-i18n="sourcesLabel">المنهج والمصادر</span></div>
+      <h2 class="section-headline" id="sourcesTitle" data-i18n="sourcesHeading">التصميم أولاً، والمحتوى العلمي يُراجع قبل النشر.</h2>
+      <p class="section-lead" data-i18n="sourcesBody">النصوص التفسيرية والأدلة والتوثيق المعرفي لا تزال مساحات مخصصة للمراجعة. اختيار هذه القائمة لا يعني أن أسماء الله تعالى محصورة في تسعة وتسعين اسماً أو أن ترتيبها محل اتفاق.</p>
+
+      <div class="editorial-path" aria-label="خارطة إعداد المحتوى">
+        <h3 data-i18n="editorialPathTitle">المعرفة تُنشر بعد التوثيق والمراجعة</h3>
+        <p class="path-caption" data-i18n="editorialPathIntro">مراحل تحريرية مستقبلية، لا تعني أن المحتوى الحالي قد اجتاز أي مرحلة اعتماد.</p>
+        <div class="editorial-steps">
+          <div class="editorial-step"><span>01</span><strong data-i18n="editorialStage1">جمع النص ومصدره</strong></div>
+          <div class="editorial-step"><span>02</span><strong data-i18n="editorialStage2">التحقق من الإحالة</strong></div>
+          <div class="editorial-step"><span>03</span><strong data-i18n="editorialStage3">المراجعة العلمية واللغوية</strong></div>
+          <div class="editorial-step"><span>04</span><strong data-i18n="editorialStage4">اعتماد الإصدار ونشره</strong></div>
+        </div>
+      </div>
+      <div class="source-links"><a href="https://sunnah.com/bukhari:2736" target="_blank" rel="noopener noreferrer">Sahih al-Bukhari 2736 ↗</a><a href="https://www.islamweb.net/ar/article/238009/" target="_blank" rel="noopener noreferrer">إسلام ويب ↗</a></div>
+    </div>
+    <div class="source-sigil" aria-hidden="true"><span>۞</span></div>
+  </section>
+</div>
+<nav class="chapter-journey-nav" id="chapterJourneyNav" aria-label="التنقل بين أقسام الموقع">
+  <a href="#about" aria-label="01: عن التجربة" title="01 · عن التجربة">01</a>
+  <a href="#discover" aria-label="02: استكشاف الأسماء" title="02 · استكشاف الأسماء">02</a>
+  <a href="#guide" aria-label="03: دليل التصفح" title="03 · دليل التصفح">03</a>
+  <a href="#chapters" aria-label="04: أبواب المحتوى" title="04 · أبواب المحتوى">04</a>
+  <a href="#sources" aria-label="05: المنهج والمصادر" title="05 · المنهج والمصادر">05</a>
+</nav>
+<footer class="below"><a class="footer-brand" href="#top" data-i18n="siteTitle">أسماء الله الحسنى</a><p data-i18n="disclosure">تنبيه علمي: هذه معاينة تصميمية غير منشورة. اختيار قائمة من 99 اسماً لا يعني حصر جميع أسماء الله تعالى فيها، كما أن تعيين الأسماء وترتيبها محل بحث عند العلماء. الشروح والأدلة والفتاوى تحتاج مراجعة وتوثيقاً قبل النشر.</p><div class="footer-end"><a href="#top" data-i18n="returnTop">↑ العودة إلى البداية</a></div></footer>
+<dialog id="detail" class="dialog" aria-labelledby="detailName"><div class="dialog-head"><span id="modalType">نافذة المعرفة · معاينة</span><button class="close-btn" type="button" id="closeDetail" aria-label="Close">×</button></div>
+  <div class="dialog-content"><div class="reading-utilities"><span class="detail-index" id="detailIndex">01 / 99</span><button type="button" id="bookmarkDetail" class="bookmark-detail" aria-pressed="false">☆ <span data-i18n="saveName">حفظ للاطلاع</span></button></div><h2 class="detail-ar" id="detailName">الرَّحْمَن</h2><div class="detail-en" id="detailEn">Ar-Rahman</div>
+    <div class="reader-edition"><b data-i18n="readerUnapproved">قيد المراجعة العلمية</b><span data-i18n="readerPrivate">نموذج واجهة غير منشور • لا نصوص معتمدة</span></div>
+    <div class="reader-tabs" role="tablist" aria-label="أقسام القراءة" id="nameReaderTabs">
+      <button type="button" class="reader-tab" id="nameTab-summary" data-reader-tab="summary" role="tab" aria-controls="readerPanel-summary" aria-selected="true" data-i18n="readerTabSummary">المدخل</button>
+      <button type="button" class="reader-tab" id="nameTab-explanation" data-reader-tab="explanation" role="tab" aria-controls="readerPanel-explanation" aria-selected="false" data-i18n="readerTabExplanation">الشرح</button>
+      <button type="button" class="reader-tab" id="nameTab-evidence" data-reader-tab="evidence" role="tab" aria-controls="readerPanel-evidence" aria-selected="false" data-i18n="readerTabEvidence">الدليل والمصادر</button>
+      <button type="button" class="reader-tab" id="nameTab-related" data-reader-tab="related" role="tab" aria-controls="readerPanel-related" aria-selected="false" data-i18n="readerTabRelated">مباحث مرتبطة</button>
+    </div>
+    <section class="reader-panel" id="readerPanel-summary" role="tabpanel" aria-labelledby="nameTab-summary" tabindex="0"><span class="reader-panel-kicker">01 / INTRODUCTION</span><h3 data-i18n="readerSummaryTitle">تعريف الاسم ومدخل القراءة</h3><p class="reader-empty" data-i18n="readerSummaryEmpty">يوضع هنا التعريف المختصر بعد توثيقه ومراجعته علمياً ولغوياً. لا يتوفر نص معتمد في هذه المعاينة.</p><div class="reader-two-cols"><div class="reader-slot"><span data-i18n="readerSlotForm">الصيغة المعتمدة</span><b data-i18n="readerSlotPending">بانتظار التحقق</b></div><div class="reader-slot"><span data-i18n="readerSlotTranslation">الترجمة ومراجعتها</span><b data-i18n="readerSlotPending">بانتظار التحقق</b></div></div><div class="reader-statusline" data-i18n="readerEditorialPending">لا توجد إحالة علمية مؤهلة للنشر لهذه العينة.</div></section>
+    <section class="reader-panel" id="readerPanel-explanation" role="tabpanel" aria-labelledby="nameTab-explanation" tabindex="0" hidden><span class="reader-panel-kicker">02 / EXPLANATION</span><h3 data-i18n="readerExplainTitle">الشرح الموسّع</h3><p class="reader-empty" data-i18n="readerExplainEmpty">يُحرر الشرح هنا بعد فحص النصوص وتحرير المعنى وتحديد مواضع الاقتباس والشرح. لا يُعرض تفسير تجريبي بوصفه حقيقة معتمدة.</p><div class="reader-two-cols"><div class="reader-slot"><span data-i18n="readerSlotLanguage">التحرير اللغوي</span><b data-i18n="readerSlotPending">بانتظار التحقق</b></div><div class="reader-slot"><span data-i18n="readerSlotScientific">المراجعة العلمية</span><b data-i18n="readerSlotPending">بانتظار التحقق</b></div></div></section>
+    <section class="reader-panel" id="readerPanel-evidence" role="tabpanel" aria-labelledby="nameTab-evidence" tabindex="0" hidden><span class="reader-panel-kicker">03 / SOURCES</span><h3 data-i18n="readerEvidenceTitle">الدليل والإحالة الدقيقة</h3><p class="reader-empty" data-i18n="readerEvidenceEmpty">لا توجد آية أو رواية أو فتوى مدرجة هنا قبل التحقق من النص وموضع الاستدلال وصحة نسبته إلى مصدره.</p><dl class="reader-source-fields"><div><dt data-i18n="readerFieldSource">الكتاب والمؤلف</dt><dd data-i18n="readerFieldNotEntered">لم يُضف بعد</dd></div><div><dt data-i18n="readerFieldEdition">الطبعة والمحقق</dt><dd data-i18n="readerFieldNotEntered">لم يُضف بعد</dd></div><div><dt data-i18n="readerFieldLocation">الجزء والصفحة</dt><dd data-i18n="readerFieldNotEntered">لم يُضف بعد</dd></div><div><dt data-i18n="readerFieldLink">رابط المصدر وتاريخ التحقق</dt><dd data-i18n="readerFieldNotEntered">لم يُضف بعد</dd></div></dl><span class="reader-small" data-i18n="readerEvidencePolicy">سيُفصل النص المنقول عن الشرح التحريري، مع ربط كل فقرة بمصدرها.</span></section>
+    <section class="reader-panel" id="readerPanel-related" role="tabpanel" aria-labelledby="nameTab-related" tabindex="0" hidden><span class="reader-panel-kicker">04 / READING PATHS</span><h3 data-i18n="readerRelatedTitle">مسارات ومباحث للاستكشاف</h3><p class="reader-empty" data-i18n="readerRelatedEmpty">المباحث العامة أدناه مداخل تنظيمية مستقلة، وليست ارتباطات علمية مؤكدة بهذا الاسم حتى تُراجع ويُثبت وجه الصلة.</p><div class="reader-actions"><button type="button" class="reader-action" id="exploreGeneralTopic" data-i18n="readerOpenTopic">معاينة قالب مبحث عام ↗</button><button type="button" class="reader-action" id="exploreAllChapters" data-i18n="readerAllChapters">عرض الأبواب الخمسة ↗</button></div><div class="reader-statusline" data-i18n="readerEditorialPending">لا توجد إحالة علمية مؤهلة للنشر لهذه العينة.</div></section>
+    <div class="reader-utility-foot"><p class="review" data-i18n="review">هذه معاينة تفاعلية لا تمثل اعتماداً علمياً لمحتوى الأسماء أو شروحها.</p></div>
+  </div><div class="dialog-nav"><button type="button" id="prev" data-i18n="prev">→ الاسم السابق</button><button type="button" id="next" data-i18n="next">الاسم التالي ←</button></div></dialog>
+<dialog class="topic-sheet" id="topicReader" aria-labelledby="topicTitle">
+  <div class="topic-sheet-head"><span id="topicSheetLabel" data-i18n="topicSheetLabel">مكتبة المباحث · معاينة تحريرية</span><button type="button" id="topicClose" aria-label="إغلاق المبحث">×</button></div>
+  <div class="topic-sheet-content"><div class="topic-breadcrumb" id="topicBreadcrumb">الأبواب / مباحث عامة</div><h2 id="topicTitle">عنوان المبحث</h2><div class="topic-subhead"><span class="topic-status-pill" data-i18n="topicStatus">لم تبدأ المراجعة العلمية</span><small data-i18n="topicNotPublished">مسودة هيكل، لا مقال منشور</small></div>
+    <div class="topic-tabs" id="topicTabs" role="tablist" aria-label="أقسام المبحث"><button type="button" id="topicTab-overview" class="topic-tab" data-topic-tab="overview" role="tab" aria-controls="topicPanel-overview" aria-selected="true" data-i18n="topicTabOverview">مخطط المبحث</button><button type="button" id="topicTab-references" class="topic-tab" data-topic-tab="references" role="tab" aria-controls="topicPanel-references" aria-selected="false" data-i18n="topicTabSources">المراجع</button><button type="button" id="topicTab-editorial" class="topic-tab" data-topic-tab="editorial" role="tab" aria-controls="topicPanel-editorial" aria-selected="false" data-i18n="topicTabEditorial">المراجعة والتحرير</button></div>
+    <section id="topicPanel-overview" class="topic-panel" role="tabpanel" aria-labelledby="topicTab-overview" tabindex="0"><span class="topic-kicker">01 / OUTLINE</span><h3 data-i18n="topicOverviewTitle">موضوع المبحث</h3><p data-i18n="topicOverviewEmpty">هذا عنوان مقرر في خريطة المشروع. ستظهر مادته العلمية بعد جمع النصوص والتحقق من المصادر وإتمام المراجعة، ولا يوجد شرح معتمد في هذه المعاينة.</p><div class="reader-two-cols"><div class="reader-slot"><span data-i18n="topicFieldAbstract">الملخص التحريري</span><b data-i18n="topicFieldEmpty">غير متوفر بعد</b></div><div class="reader-slot"><span data-i18n="topicFieldRelated">الروابط العلمية المرتبطة</span><b data-i18n="topicFieldEmpty">غير متوفر بعد</b></div></div></section>
+    <section id="topicPanel-references" class="topic-panel" role="tabpanel" aria-labelledby="topicTab-references" tabindex="0" hidden><span class="topic-kicker">02 / REFERENCES</span><h3 data-i18n="topicSourceTitle">بطاقة التوثيق</h3><p data-i18n="topicSourceEmpty">لا يوجد نقل أو مصدر معتمد مرتبط بهذا العنوان بعد. تُضاف بيانات الكتاب والمؤلف والطبعة والجزء والصفحة والرابط وموضع الاستشهاد بعد التحقق.</p><dl class="reader-source-fields"><div><dt data-i18n="readerFieldSource">الكتاب والمؤلف</dt><dd data-i18n="readerFieldNotEntered">لم يُضف بعد</dd></div><div><dt data-i18n="readerFieldEdition">الطبعة والمحقق</dt><dd data-i18n="readerFieldNotEntered">لم يُضف بعد</dd></div><div><dt data-i18n="readerFieldLocation">الجزء والصفحة</dt><dd data-i18n="readerFieldNotEntered">لم يُضف بعد</dd></div><div><dt data-i18n="readerFieldLink">رابط المصدر وتاريخ التحقق</dt><dd data-i18n="readerFieldNotEntered">لم يُضف بعد</dd></div></dl></section>
+    <section id="topicPanel-editorial" class="topic-panel" role="tabpanel" aria-labelledby="topicTab-editorial" tabindex="0" hidden><span class="topic-kicker">03 / EDITORIAL</span><h3 data-i18n="topicEditorialTitle">مسار الاعتماد</h3><p data-i18n="topicEditorialEmpty">مسودة ← تحقق من المصدر ← مراجعة علمية ← تحرير لغوي ← مراجعة الترجمة ← اعتماد للنشر. الحالة الحالية: في انتظار إعداد المادة وتعيين المراجعين.</p><div class="reader-two-cols"><div class="reader-slot"><span data-i18n="topicReviewerLabel">المراجع المختص</span><b data-i18n="topicReviewerEmpty">لم يُعيّن</b></div><div class="reader-slot"><span data-i18n="topicVersionLabel">الإصدار المعتمد</span><b data-i18n="topicVersionEmpty">لا يوجد</b></div></div></section>
+  </div><div class="topic-sheet-footer"><button id="topicPrev" type="button" data-i18n="topicPrev">→ المبحث السابق</button><span class="topic-count" id="topicCounter">01 / 13</span><button id="topicNext" type="button" data-i18n="topicNext">المبحث التالي ←</button></div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const names = [{"ar":"الرَّحْمَن","en":"Ar-Rahman","n":1},{"ar":"الرَّحِيم","en":"Ar-Rahim","n":2},{"ar":"الْمَلِك","en":"Al-Malik","n":3},{"ar":"الْقُدُّوس","en":"Al-Quddus","n":4},{"ar":"السَّلَام","en":"As-Salam","n":5},{"ar":"الْمُؤْمِن","en":"Al-Mu'min","n":6},{"ar":"الْمُهَيْمِن","en":"Al-Muhaymin","n":7},{"ar":"الْعَزِيز","en":"Al-Aziz","n":8},{"ar":"الْجَبَّار","en":"Al-Jabbar","n":9},{"ar":"الْمُتَكَبِّر","en":"Al-Mutakabbir","n":10},{"ar":"الْخَالِق","en":"Al-Khaliq","n":11},{"ar":"الْبَارِئ","en":"Al-Bari'","n":12},{"ar":"الْمُصَوِّر","en":"Al-Musawwir","n":13},{"ar":"الْغَفَّار","en":"Al-Ghaffar","n":14},{"ar":"الْقَهَّار","en":"Al-Qahhar","n":15},{"ar":"الْوَهَّاب","en":"Al-Wahhab","n":16},{"ar":"الرَّزَّاق","en":"Ar-Razzaq","n":17},{"ar":"الْفَتَّاح","en":"Al-Fattah","n":18},{"ar":"الْعَلِيم","en":"Al-Alim","n":19},{"ar":"الْقَابِض","en":"Al-Qabid","n":20},{"ar":"الْبَاسِط","en":"Al-Basit","n":21},{"ar":"الْخَافِض","en":"Al-Khafid","n":22},{"ar":"الرَّافِع","en":"Ar-Rafi'","n":23},{"ar":"الْمُعِزّ","en":"Al-Mu'izz","n":24},{"ar":"الْمُذِلّ","en":"Al-Mudhill","n":25},{"ar":"السَّمِيع","en":"As-Sami'","n":26},{"ar":"الْبَصِير","en":"Al-Basir","n":27},{"ar":"الْحَكَم","en":"Al-Hakam","n":28},{"ar":"الْعَدْل","en":"Al-Adl","n":29},{"ar":"اللَّطِيف","en":"Al-Latif","n":30},{"ar":"الْخَبِير","en":"Al-Khabir","n":31},{"ar":"الْحَلِيم","en":"Al-Halim","n":32},{"ar":"الْعَظِيم","en":"Al-Azim","n":33},{"ar":"الْغَفُور","en":"Al-Ghafur","n":34},{"ar":"الشَّكُور","en":"Ash-Shakur","n":35},{"ar":"الْعَلِيّ","en":"Al-Aliyy","n":36},{"ar":"الْكَبِير","en":"Al-Kabir","n":37},{"ar":"الْحَفِيظ","en":"Al-Hafiz","n":38},{"ar":"الْمُقِيت","en":"Al-Muqit","n":39},{"ar":"الْحَسِيب","en":"Al-Hasib","n":40},{"ar":"الْجَلِيل","en":"Al-Jalil","n":41},{"ar":"الْكَرِيم","en":"Al-Karim","n":42},{"ar":"الرَّقِيب","en":"Ar-Raqib","n":43},{"ar":"الْمُجِيب","en":"Al-Mujib","n":44},{"ar":"الْوَاسِع","en":"Al-Wasi'","n":45},{"ar":"الْحَكِيم","en":"Al-Hakim","n":46},{"ar":"الْوَدُود","en":"Al-Wadud","n":47},{"ar":"الْمَجِيد","en":"Al-Majid","n":48},{"ar":"الْبَاعِث","en":"Al-Ba'ith","n":49},{"ar":"الشَّهِيد","en":"Ash-Shahid","n":50},{"ar":"الْحَقّ","en":"Al-Haqq","n":51},{"ar":"الْوَكِيل","en":"Al-Wakil","n":52},{"ar":"الْقَوِيّ","en":"Al-Qawiyy","n":53},{"ar":"الْمَتِين","en":"Al-Matin","n":54},{"ar":"الْوَلِيّ","en":"Al-Waliyy","n":55},{"ar":"الْحَمِيد","en":"Al-Hamid","n":56},{"ar":"الْمُحْصِي","en":"Al-Muhsi","n":57},{"ar":"الْمُبْدِئ","en":"Al-Mubdi'","n":58},{"ar":"الْمُعِيد","en":"Al-Mu'id","n":59},{"ar":"الْمُحْيِي","en":"Al-Muhyi","n":60},{"ar":"الْمُمِيت","en":"Al-Mumit","n":61},{"ar":"الْحَيّ","en":"Al-Hayy","n":62},{"ar":"الْقَيُّوم","en":"Al-Qayyum","n":63},{"ar":"الْوَاجِد","en":"Al-Wajid","n":64},{"ar":"الْمَاجِد","en":"Al-Maajid","n":65},{"ar":"الْوَاحِد","en":"Al-Wahid","n":66},{"ar":"الْأَحَد","en":"Al-Ahad","n":67},{"ar":"الصَّمَد","en":"As-Samad","n":68},{"ar":"الْقَادِر","en":"Al-Qadir","n":69},{"ar":"الْمُقْتَدِر","en":"Al-Muqtadir","n":70},{"ar":"الْمُقَدِّم","en":"Al-Muqaddim","n":71},{"ar":"الْمُؤَخِّر","en":"Al-Mu'akhkhir","n":72},{"ar":"الْأَوَّل","en":"Al-Awwal","n":73},{"ar":"الْآخِر","en":"Al-Akhir","n":74},{"ar":"الظَّاهِر","en":"Az-Zahir","n":75},{"ar":"الْبَاطِن","en":"Al-Batin","n":76},{"ar":"الْوَالِي","en":"Al-Wali","n":77},{"ar":"الْمُتَعَالِي","en":"Al-Muta'ali","n":78},{"ar":"الْبَرّ","en":"Al-Barr","n":79},{"ar":"التَّوَّاب","en":"At-Tawwab","n":80},{"ar":"الْمُنْتَقِم","en":"Al-Muntaqim","n":81},{"ar":"الْعَفُوّ","en":"Al-Afuww","n":82},{"ar":"الرَّؤُوف","en":"Ar-Ra'uf","n":83},{"ar":"مَالِكُ الْمُلْك","en":"Malik al-Mulk","n":84},{"ar":"ذُو الْجَلَالِ وَالْإِكْرَام","en":"Dhul-Jalali wal-Ikram","n":85},{"ar":"الْمُقْسِط","en":"Al-Muqsit","n":86},{"ar":"الْجَامِع","en":"Al-Jami'","n":87},{"ar":"الْغَنِيّ","en":"Al-Ghaniyy","n":88},{"ar":"الْمُغْنِي","en":"Al-Mughni","n":89},{"ar":"الْمَانِع","en":"Al-Mani'","n":90},{"ar":"الضَّارّ","en":"Ad-Darr","n":91},{"ar":"النَّافِع","en":"An-Nafi'","n":92},{"ar":"النُّور","en":"An-Nur","n":93},{"ar":"الْهَادِي","en":"Al-Hadi","n":94},{"ar":"الْبَدِيع","en":"Al-Badi'","n":95},{"ar":"الْبَاقِي","en":"Al-Baqi","n":96},{"ar":"الْوَارِث","en":"Al-Warith","n":97},{"ar":"الرَّشِيد","en":"Ar-Rashid","n":98},{"ar":"الصَّبُور","en":"As-Sabur","n":99}];
+const messages={
+ ar:{siteTitle:'أسماء الله الحسنى',help:'كيفية التصفح ؟',explore:'استكشف النوافذ',eyebrow:'مساحة للتأمل والمعرفة • معاينة تفاعلية',titleA:'لكلّ اسمٍ،',titleB:'نافذةٌ إلى المعرفة.',subtitle:'تسع وتسعون نافذة في فضاءٍ هادئ. حرّك المجموعة كلها، وكبّر الأسماء، واضغط على أي نافذة لقراءتها. ويمكنك البحث أو الانتقال مباشرةً إلى أي رقم.',windows:'نافذة معرفية',navigation:'دليل النوافذ',navDesc:'من 01 إلى 99، بضغطة واحدة',jump:'انتقل',indexTitle:'فهرس الأسماء',navNote:'يمكنك التنقل بين الأسماء دون المرور على النوافذ الوسيطة. الأسماء هنا لأغراض المعاينة، ويخضع المحتوى العلمي للمراجعة قبل النشر.',stageTitle:'فضاء النوافذ',stageSubtitle:'99 نافذة في مشهد واحد · سحب وتكبير بسهولة',spatial:'المصفوفة',list:'القائمة',fit:'عرض الكل',hint:'اسحب المشهد كاملاً · اضغط الاسم لفتحه',simpleHint:'اسحب المشهد كاملاً ضمن حدوده، واستخدم الزووم من 25% إلى 200%. اضغط الاسم لفتح نافذته.',nameSizeLabel:'حجم الأسماء',footerHint:'التجربة تدعم العربية والإنجليزية، والبحث والانتقال السريع',disclosure:'تنبيه علمي: هذه معاينة تصميمية غير منشورة. اختيار قائمة من 99 اسماً لا يعني حصر جميع أسماء الله تعالى فيها، كما أن تعيين الأسماء وترتيبها محل بحث عند العلماء. الشروح والأدلة والفتاوى تحتاج مراجعة وتوثيقاً قبل النشر.',meaningTitle:'المعنى والتفسير',meaningBody:'مساحة مخصصة للشرح المعتمد والمعنى اللغوي بعد المراجعة العلمية.',evidenceTitle:'الدليل والمراجع',evidenceBody:'مساحة للآيات والأحاديث الصحيحة ومصادر التوثيق وروابط الفتاوى.',review:'هذه معاينة تفاعلية لا تمثل اعتماداً علمياً لمحتوى الأسماء أو شروحها.',prev:'→ الاسم السابق',next:'الاسم التالي ←',window:'النافذة',open:'افتح النافذة',search:'ابحث عن اسم أو رقم',wrongNum:'أدخل رقماً بين 1 و 99',helpMsg:'اسحب لتحريك المصفوفة كاملة، واستخدم عجلة الفأرة فوقها للتكبير والتصغير مباشرة حول المؤشر دون Ctrl. حرّك المؤشر خارج المصفوفة للتمرير إلى أقسام الموقع. ويمكنك استخدام + و − أو عرض الكل، والنقر لفتح الاسم، وCtrl+K للبحث.',modalType:'نافذة المعرفة · معاينة',empty:'لا توجد نتائج بحث'},
+ en:{siteTitle:'The Most Beautiful Names',help:'How to explore?',explore:'Explore windows',eyebrow:'A space for reflection and knowledge • Interactive preview',titleA:'Every name,',titleB:'a window to learning.',subtitle:'Ninety-nine windows in a calm spatial gallery. Drag windows, search by name or number, or jump directly to any window.',windows:'knowledge windows',navigation:'Window navigator',navDesc:'From 01 to 99, one click away',jump:'Go',indexTitle:'Name index',navNote:'Jump directly to any name. This is a design demonstration, and scholarly content needs review before publication.',stageTitle:'Window gallery',stageSubtitle:'Overlapping matrix · Draggable and zoomable',spatial:'Spatial',list:'List',fit:'Fit all',hint:'Pan all windows together · Click a name to open',simpleHint:'Drag the canvas within its boundaries. Zoom 25–200%; click any name to read.',nameSizeLabel:'Name size',footerHint:'Arabic / English, search and direct navigation supported',disclosure:'Scholarly note: This is an unpublished design preview. A selected list of 99 names does not mean Allah’s names are limited to that number. The selection and ordering of names are matters of scholarship. Explanations, evidence and fatwas require review before publishing.',meaningTitle:'Meaning and explanation',meaningBody:'Reserved for the approved meaning and language notes after scholarly review.',evidenceTitle:'Evidence and references',evidenceBody:'Reserved for verified Quran and hadith references and relevant scholarly sources.',review:'This interactive preview does not represent scholarly approval of names or explanations.',prev:'← Previous name',next:'Next name →',window:'Window',open:'Open window',search:'Search by name or number',wrongNum:'Enter a number from 1 to 99',helpMsg:'Drag to pan all windows. Mouse-wheel zoom works directly over the matrix, centered on the pointer, without Ctrl. Scroll outside the matrix to reach the rest of the page. Use +/−, Fit all, the name-size slider or Ctrl+K search as alternatives.',modalType:'Knowledge window · Preview',empty:'No search results'}
+};
+
+Object.assign(messages.ar,{
+ aboutNav:'عن التجربة',guideNav:'دليل التصفح',scrollCue:'مرّر للأسفل لاكتشاف بقية الموقع',aboutLabel:'عن التجربة',aboutHeading:'مساحة هادئة، تُفتح فيها المعرفة نافذةً بعد نافذة.',aboutBody:'فكرة بصرية تتيح استكشاف قائمة من تسعة وتسعين اسماً عبر مشهد مفتوح ومتداخل. اختر ما يلفت انتباهك، أو انتقل مباشرة إلى اسم محدد. هذا نموذج لتجربة التصفح، وليس مرجعاً علمياً معتمداً.',backGallery:'العودة إلى النوافذ ↗',discoverLabel:'من الفضاء إلى المعنى',discoverHeading:'ابدأ من أيّ اسم.',discoverBody:'هذه ثلاث نقاط دخول سريعة إلى النوافذ. يمكنك فتح أي نافذة هنا، ثم الانتقال إلى السابقة أو التالية داخل تجربة القراءة.',openWindow:'افتح النافذة ↗',guideLabel:'كيف تستكشف؟',guideHeading:'حركة بسيطة. تركيز أكبر.',guideBody:'أبقينا النوافذ في مواضعها، كي تصبح التجربة مريحة في التصفح والقراءة.',guide1Title:'حرّك الفضاء',guide1Body:'اسحب أي مساحة من اللوحة لتحريك المجموعة كاملة، دون فصل النوافذ عن بعضها.',guide2Title:'اقترب من الأسماء',guide2Body:'كبّر بعجلة الفأرة حول المؤشر بين 25% و200%، دون أن يختفي المشهد خارج حدوده، أو استخدم الأزرار.',guide3Title:'انتقل فوراً',guide3Body:'ابحث عن الاسم أو اكتب رقمه لتصل مباشرة إلى النافذة المطلوبة.',guide4Title:'اقرأ بتأنٍ',guide4Body:'اضغط على الاسم لفتح نافذة مستقلة، ثم تنقّل إلى الاسم السابق أو التالي.',sourcesLabel:'المنهج والمصادر',sourcesHeading:'التصميم أولاً، والمحتوى العلمي يُراجع قبل النشر.',sourcesBody:'النصوص التفسيرية والأدلة والتوثيق المعرفي لا تزال مساحات مخصصة للمراجعة. اختيار هذه القائمة لا يعني أن أسماء الله تعالى محصورة في تسعة وتسعين اسماً أو أن ترتيبها محل اتفاق.',returnTop:'↑ العودة إلى البداية'
+});
+Object.assign(messages.en,{
+ aboutNav:'About',guideNav:'Guide',scrollCue:'Scroll to discover the rest of the site',aboutLabel:'The concept',aboutHeading:'A calm space for discovery, one window at a time.',aboutBody:'Explore a selected collection of ninety-nine names through an open layered visual environment. Choose any name that catches your attention or jump straight to a number. This is an interaction prototype, not a verified scholarly reference.',backGallery:'Back to the windows ↗',discoverLabel:'From space to meaning',discoverHeading:'Start with any name.',discoverBody:'These are three starting points in the gallery. Open one, then move to the previous or next within the reading view.',openWindow:'Open window ↗',guideLabel:'How it works',guideHeading:'Simple gestures. More focus.',guideBody:'Every window stays in its relative position, making the experience calmer and easier to use.',guide1Title:'Move the space',guide1Body:'Drag the gallery to move all windows together without moving them individually.',guide2Title:'Look closer',guide2Body:'Zoom 25–200% around your pointer with the wheel, or use the zoom buttons. Dragging is constrained to the matrix edges.',guide3Title:'Jump instantly',guide3Body:'Search by name or type a number to jump straight to a window.',guide4Title:'Read thoughtfully',guide4Body:'Click a name to open the reading view, then move between names.',sourcesLabel:'Method & sources',sourcesHeading:'A design preview. Scholarly content requires review.',sourcesBody:'Interpretations, evidence and scholarly references remain placeholders pending verification. The selection of ninety-nine names does not imply that Allah’s names are limited to ninety-nine or that their enumeration is universally agreed.',returnTop:'↑ Back to top'
+});
+
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const state={lang:'ar',mode:'spatial',nameSize:100,scale:.7,x:0,y:0,selected:0,filter:'',z:1000};
+const stageSize={width:2376,height:1310};
+const cards=[],numbers=[],listCards=[],galleryCards=[],shelfCards=[];let bookmarks=new Set(),lastViewed=0,readingOrigin=null,insideHash=false;try{bookmarks=new Set(JSON.parse(localStorage.getItem('asma-preview-bookmarks-v5')||'[]'))}catch(e){};try{lastViewed=Number(localStorage.getItem('asma-preview-recent-v5')||0)}catch(e){}
+const pad=n=>String(n).padStart(2,'0');
+const toWestern=s=>String(s).replace(/[٠-٩]/g,c=>String(c.charCodeAt(0)-1632)).replace(/[۰-۹]/g,c=>String(c.charCodeAt(0)-1776));
+const norm=s=>toWestern(s).normalize('NFKD').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[إأآٱ]/g,'ا').replace(/ى/g,'ي').replace(/[^\p{L}\p{N}]+/gu,'').toLowerCase();
+const t=k=>messages[state.lang][k]||k;
+const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let positions=names.map((_,i)=>({left:46+(i%11)*206+(Math.floor(i/11)%2)*6+((i%3)-1)*2,top:43+Math.floor(i/11)*137+(i%2)*2,rotation:(((i*13)%9)-4)*.09}));
+/* V6.9 horizontal swipe mode from the accepted V2.5-style gallery.
+   Scope: #galleryView only. No camera changes or matrix event changes. */
+let galleryPointer=null,galleryRaf=0,gallerySuppressClick=false,gallerySuppressTimer=null;
+const galleryLimit=(v,a,b)=>Math.min(b,Math.max(a,v));
+function galleryOrder(){return galleryCards.map((c,i)=>c.hidden?-1:i).filter(i=>i!==-1)}
+function galleryStride(){const width=$('#galleryTrack').clientWidth;return width<=500?Math.max(136,width*.43):Math.min(330,Math.max(235,width*.32))}
+function galleryRender(position){
+ const track=$('#galleryTrack'),order=galleryOrder(),current=order.indexOf(state.selected),
+       pos=Number.isFinite(position)?position:Math.max(0,current),stride=galleryStride(),sign=state.lang==='ar'?-1:1,
+       reduced=prefersReducedMotion(),flat=document.documentElement.classList.contains('flat-mode');
+ galleryCards.forEach((card,i)=>{
+   const rank=order.indexOf(i), d=rank-pos,ad=Math.abs(d),visible=rank!==-1&&ad<3.15;
+   card.style.visibility=visible?'visible':'hidden';
+   card.style.pointerEvents=visible?'auto':'none';
+   card.style.setProperty('--gx',`${d*stride*sign}px`);
+   card.style.setProperty('--gy',`${flat?0:Math.min(ad,3)*17}px`);
+   card.style.setProperty('--gz',`${flat?0:-Math.min(ad,4)*116}px`);
+   card.style.setProperty('--gt',`${flat?0:-d*sign*12}deg`);
+   // Continuous interpolation means the main card grows naturally during a drag.
+   const centerScale=flat?1:1.10;
+   card.style.setProperty('--gs',String(Math.max(flat?.84:.76,centerScale-Math.min(ad,3.3)*(flat?.055:.12))));
+   card.style.setProperty('--sat',String(Math.max(0,.12-ad*.04)));
+   card.style.setProperty('--go',visible?String(Math.max(.22,1-Math.max(0,ad-1.1)*.29)):'0');
+   card.style.zIndex=String(Math.round(1000-ad*50));
+   card.setAttribute('aria-hidden',visible?'false':'true');
+   card.tabIndex=i===state.selected&&visible?0:-1;
+ });
+ const positionNumber=order.length?order.indexOf(state.selected)+1:0;
+ $('#galleryPos').textContent=`${pad(state.selected+1)} / 99`;
+ $('#galleryPrev').disabled=positionNumber<=1;
+ $('#galleryNext').disabled=positionNumber>=order.length;
+ $('#galleryOpen').disabled=!order.length;
+ $('#galleryProgressFill').style.width=order.length?`${positionNumber/order.length*100}%`:'0%';
+ const empty=$('#galleryEmpty');empty.hidden=order.length!==0;
+ if(!order.length)empty.textContent=state.lang==='ar'?'لا توجد نتائج للبحث':'No matching results';
+}
+function galleryGo(i,focus=false){
+ const order=galleryOrder();if(!order.includes(i))return;
+ select(i);galleryRender();
+ if(focus)galleryCards[i].focus({preventScroll:true});
+}
+function galleryStep(step){
+ const order=galleryOrder();if(!order.length)return;
+ const rank=galleryLimit(order.indexOf(state.selected),0,order.length-1);
+ galleryGo(order[galleryLimit(rank+step,0,order.length-1)]);
+}
+function galleryFinishGesture(e,cancel=false){
+ const p=galleryPointer;if(!p||p.id!==e.pointerId)return;
+ galleryPointer=null;const track=$('#galleryTrack');track.classList.remove('dragging');
+ if(galleryRaf){cancelAnimationFrame(galleryRaf);galleryRaf=0;}
+ if(track.hasPointerCapture(e.pointerId))track.releasePointerCapture(e.pointerId);
+ if(!p.moved){galleryRender();return;}
+ gallerySuppressClick=true;clearTimeout(gallerySuppressTimer);
+ gallerySuppressTimer=setTimeout(()=>gallerySuppressClick=false,380);
+ const order=galleryOrder(),sign=state.lang==='ar'?-1:1;
+ if(!order.length)return;
+ const recent=performance.now()-p.lastTime<100;
+ const inertia=(!cancel&&!prefersReducedMotion()&&recent)?galleryLimit(-p.velocity/sign*.23,-.7,.7):0;
+ const to=galleryLimit(Math.round(cancel?p.start:p.position+inertia),0,order.length-1);
+ galleryGo(order[to]);
+}
+function galleryBindDrag(){
+ const track=$('#galleryTrack');
+ track.addEventListener('pointerdown',e=>{
+   if(state.mode!=='gallery'||$('#detail').open||e.button!==0||!e.isPrimary)return;
+   const order=galleryOrder();if(!order.length)return;
+   galleryPointer={id:e.pointerId,x:e.clientX,y:e.clientY,start:Math.max(0,order.indexOf(state.selected)),position:Math.max(0,order.indexOf(state.selected)),lastX:e.clientX,lastTime:performance.now(),velocity:0,moved:false,cancelled:false};
+ });
+ track.addEventListener('pointermove',e=>{
+   const p=galleryPointer;if(!p||p.id!==e.pointerId)return;
+   const dx=e.clientX-p.x,dy=e.clientY-p.y;
+   if(!p.moved&&Math.abs(dy)>11&&Math.abs(dy)>Math.abs(dx)*1.2){p.cancelled=true;return;}
+   if(p.cancelled)return;
+   if(!p.moved){if(Math.abs(dx)<=8)return;p.moved=true;track.classList.add('dragging');track.setPointerCapture(e.pointerId);}
+   const now=performance.now(),duration=Math.max(1,now-p.lastTime);
+   p.velocity=(e.clientX-p.lastX)/duration;p.lastTime=now;p.lastX=e.clientX;
+   const order=galleryOrder(),sign=state.lang==='ar'?-1:1;
+   p.position=galleryLimit(p.start-dx/(galleryStride()*sign),0,Math.max(0,order.length-1));
+   if(!galleryRaf)galleryRaf=requestAnimationFrame(()=>{galleryRaf=0;if(galleryPointer?.moved)galleryRender(galleryPointer.position)});
+ });
+ track.addEventListener('pointerup',e=>galleryFinishGesture(e));
+ track.addEventListener('pointercancel',e=>galleryFinishGesture(e,true));
+ track.addEventListener('lostpointercapture',e=>{if(galleryPointer?.id===e.pointerId)galleryFinishGesture(e,true)});
+ track.addEventListener('click',e=>{if(gallerySuppressClick){e.preventDefault();e.stopPropagation();}},true);
+}
+function makeUI(){
+ const scene=$('#scene'),numberGrid=$('#numGrid'),listGrid=$('#listGrid');
+ names.forEach((name,i)=>{
+  const w=document.createElement('div');w.className='name-window';w.tabIndex=0;w.role='button';w.setAttribute('aria-label',`${pad(i+1)} ${name.ar}, ${name.en}`);w.dataset.index=i;w.style.cssText=`left:${positions[i].left}px;top:${positions[i].top}px;--r:${positions[i].rotation}deg;z-index:${i+1}`;
+  const arClass=name.ar.length>14?' long':'';
+  w.innerHTML=`<div class="window-top"><span class="window-no">${pad(i+1)} / 99</span><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span></div><div class="window-inner"><div class="window-ar${arClass}" lang="ar" dir="rtl">${escapeHtml(name.ar)}</div><div class="window-en">${escapeHtml(name.en)}</div></div><div class="window-bottom"><span class="small-window-label">${t('window')}</span><span>↗</span></div>`;
+  scene.appendChild(w);cards.push(w);
+  w.addEventListener('pointerdown',onWindowPointerDown);
+  w.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&state.mode==='spatial'&&!drag)hoverPaper(i)});
+  w.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse')leavePaper(i)});
+  w.addEventListener('focus',()=>{if(state.mode==='spatial'&&!suppressReturnPreview&&w.matches(':focus-visible'))hoverPaper(i)});
+  w.addEventListener('blur',()=>{if(previewed===i&&!w.matches(':hover'))leavePaper(i)});
+  w.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();animateAndOpen(i,w)}});
+  const b=document.createElement('button');b.className='num';b.type='button';b.textContent=pad(i+1);b.title=`${name.ar} | ${name.en}`;b.setAttribute('aria-label',`${pad(i+1)} ${name.ar}`);b.addEventListener('click',()=>focusWindow(i,true));numberGrid.appendChild(b);numbers.push(b);
+  const c=document.createElement('button');c.className='list-card';c.type='button';c.innerHTML=`<span class="mini-no">${pad(i+1)}</span><span style="min-width:0"><span class="list-ar" lang="ar" dir="rtl">${escapeHtml(name.ar)}</span><span class="list-en">${escapeHtml(name.en)}</span></span>`;c.addEventListener('click',()=>animateAndOpen(i,c));listGrid.appendChild(c);listCards.push(c);
+  const g=document.createElement('button');g.type='button';g.className='gallery-card';g.dataset.index=i;
+  g.innerHTML=`<span class="gallery-number">${pad(i+1)} / 99</span><span class="gallery-ar" lang="ar" dir="rtl">${escapeHtml(name.ar)}</span><span class="gallery-en">${escapeHtml(name.en)}</span><span class="gallery-cta">${t('readSelected')} ↗</span>`;
+  g.addEventListener('click',e=>{if(gallerySuppressClick){e.preventDefault();return;}if(state.selected!==i){galleryGo(i);return;}animateAndOpen(i,g);});$('#galleryTrack').appendChild(g);galleryCards.push(g);
+  const rail=document.createElement('button');rail.type='button';rail.className='shelf-item';rail.dataset.index=i;
+  rail.setAttribute('aria-label',`${pad(i+1)} ${name.ar}`);
+  rail.innerHTML=`<span class="shelf-num">${pad(i+1)}</span><span class="shelf-name" lang="ar" dir="rtl">${escapeHtml(name.ar)}</span>`;
+  rail.addEventListener('click',e=>{if(railIgnoreClicks)return;setMode('spatial');focusWindow(i,false);pulsePaper(i);});
+  $('#shelfTrack').appendChild(rail);shelfCards.push(rail);
+ });
+ select(0);
+}
+function select(i){
+ cards.forEach((card,j)=>card.classList.toggle('is-focused',j===i));
+ galleryCards.forEach((g,j)=>g.classList.toggle('selected',j===i));$('#galleryPos').textContent=`${pad(i+1)} / 99`;
+ shelfCards.forEach((item,j)=>{item.classList.toggle('selected',j===i);item.setAttribute('aria-current',j===i?'true':'false')});
+ numbers.forEach((b,j)=>{b.classList.toggle('selected',j===i);b.setAttribute('aria-current',j===i?'true':'false')});
+ state.selected=i;cards[i].style.zIndex=++state.z;
+}
+// Paper hover is held only while the cursor rests on it. All positions in the
+// actual matrix stay fixed; the temporary offsets are visual-only transforms.
+let paperTimer=null,previewed=-1,hoverPersistent=false,leaveTimer=null;
+function clearPaperPreview(){
+ if(paperTimer!==null){clearTimeout(paperTimer);paperTimer=null;}
+ if(leaveTimer!==null){clearTimeout(leaveTimer);leaveTimer=null;}
+ if(previewed>=0)cards[previewed]?.classList.remove('is-preview');
+ cards.forEach(c=>{if(c.classList.contains('is-neighbor')){c.classList.remove('is-neighbor');c.style.removeProperty('--spread-x');c.style.removeProperty('--spread-y');}});
+ previewed=-1;hoverPersistent=false;
+}
+function spaceNeighbors(i){
+ // Eight closest sheets move away by a small, direction-aware amount.
+ // Wider distances remain untouched to keep the matrix orderly.
+ const x=i%11,y=Math.floor(i/11);
+ for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){
+  if(!dx&&!dy)continue;
+  const cx=x+dx,cy=y+dy;if(cx<0||cx>=11||cy<0||cy>=9)continue;
+  const el=cards[cy*11+cx];if(!el)continue;
+  el.style.setProperty('--spread-x',`${dx*(dy?17:24)}px`);
+  el.style.setProperty('--spread-y',`${dy*(dx?12:19)}px`);
+  el.classList.add('is-neighbor');
+ }
+}
+function beginPaperPreview(i,persistent=false){
+ if(i<0||i>=cards.length||document.querySelector('#detail')?.open||state.mode!=='spatial')return;
+ if(previewed===i&&hoverPersistent===persistent)return;
+ clearPaperPreview();previewed=i;hoverPersistent=persistent;
+ cards[i].classList.add('is-preview');
+ if(!prefersReducedMotion()&&!document.documentElement.classList.contains('flat-mode'))spaceNeighbors(i);
+ if(!persistent)paperTimer=setTimeout(clearPaperPreview,7000);
+}
+function hoverPaper(i){beginPaperPreview(i,true)}
+function leavePaper(i){
+ if(previewed!==i||!hoverPersistent)return;
+ // A tiny grace period stops flicker while nearby papers spread.
+ leaveTimer=setTimeout(()=>{if(previewed===i&&hoverPersistent)clearPaperPreview()},95);
+}
+function pulsePaper(i){beginPaperPreview(i,false)}
+/* V6.4: camera has hard bounds. At 200%, the visible area is a crop of the
+   collection, never an empty region beyond its edges. At 25%, a smaller-than-
+   viewport collection is centered and locked on that axis. */
+const MIN_ZOOM=.25, MAX_ZOOM=2;
+const clamp=(v,lower,upper)=>Math.min(upper,Math.max(lower,v));
+function constrainCamera(){
+ const v=$('#viewport');
+ state.scale=clamp(state.scale,MIN_ZOOM,MAX_ZOOM);
+ const w=stageSize.width*state.scale, h=stageSize.height*state.scale;
+ const bound=(offset,extent,view)=>extent<=view
+   ?(view-extent)/2
+   :clamp(offset,view-extent,0);
+ state.x=bound(state.x,w,v.clientWidth);
+ state.y=bound(state.y,h,v.clientHeight);
+}
+function renderScene(){
+ constrainCamera();
+ $('#scene').style.transform=`translate3d(${state.x}px,${state.y}px,0) scale(${state.scale})`;
+ // Temporary hover/focus enlargement also respects the global 200% ceiling.
+ $('#scene').style.setProperty('--preview-magnification',Math.max(1,Math.min(1.29,MAX_ZOOM/state.scale)));
+ $('#sceneScale').textContent=Math.round(state.scale*100)+'%';
+ $('#zoomIn').disabled=state.mode!=='spatial'||state.scale>=MAX_ZOOM-1e-6;
+ $('#zoomOut').disabled=state.mode!=='spatial'||state.scale<=MIN_ZOOM+1e-6;
+}
+function updateFitLabel(){
+ const v=$('#viewport'),canShowAll=v.clientWidth>=stageSize.width*MIN_ZOOM+32&&v.clientHeight>=stageSize.height*MIN_ZOOM+34;
+ $('#fitBtn').textContent=canShowAll?t('fit'):(state.lang==='ar'?'توسيط المشهد':'Center view');
+ $('#fitBtn').title=canShowAll?'':(state.lang==='ar'?'في الشاشات الصغيرة يمنع حد 25% إظهار النوافذ كلها دفعة واحدة':'At the 25% minimum, all windows cannot fit at once on this screen');
+}
+function fitScene(){
+ const v=$('#viewport');
+ state.scale=clamp(Math.min((v.clientWidth-32)/stageSize.width,(v.clientHeight-34)/stageSize.height,.88),MIN_ZOOM,MAX_ZOOM);
+ state.x=(v.clientWidth-stageSize.width*state.scale)/2;
+ state.y=(v.clientHeight-stageSize.height*state.scale)/2;
+ renderScene();
+ updateFitLabel();
+}
+function zoom(factor,px=null,py=null){
+ const v=$('#viewport'),cx=px??v.clientWidth/2,cy=py??v.clientHeight/2;
+ const nx=(cx-state.x)/state.scale,ny=(cy-state.y)/state.scale;
+ state.scale=clamp(state.scale*factor,MIN_ZOOM,MAX_ZOOM);
+ state.x=cx-nx*state.scale;state.y=cy-ny*state.scale;
+ renderScene();
+}
+function focusWindow(i,open=false){
+ if(i<0||i>=99)return;
+ if(state.filter||savedOnly){state.filter='';savedOnly=false;$('#bookmarksBtn').classList.remove('active');$('#bookmarksBtn').setAttribute('aria-pressed','false');$('#search').value='';applySearch()}
+ select(i);
+ if(state.mode==='list'){listCards[i].scrollIntoView({block:'nearest',behavior:motionBehavior()});}
+ else if(state.mode==='gallery'){galleryRender();}
+ else {const v=$('#viewport'),pos=positions[i];state.scale=Math.min(1.15,Math.max(.77,state.scale));state.x=v.clientWidth/2-(pos.left+111)*state.scale;state.y=v.clientHeight/2-(pos.top+75)*state.scale;renderScene();pulsePaper(i)}
+ if(open)openName(i);
+}
+function motionBehavior(){return window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}
+function prefersReducedMotion(){return window.matchMedia('(prefers-reduced-motion: reduce)').matches}
+/* The card is never removed or repositioned: its original screen rectangle
+   and colors are used by the lightweight overlay in the dialog's top layer. */
+let flightOrigin=null, flightPhase='', flightPendingClose=false, suppressReturnPreview=false;
+const FLIGHT_MS=680;
+function visibleFlightRect(el){
+ if(!el?.isConnected)return null;
+ const r=el.getBoundingClientRect();
+ if(r.width<15||r.height<15||r.right<=0||r.bottom<=0||r.left>=innerWidth||r.top>=innerHeight)return null;
+ const clip=el.closest('.scene-viewport,.list-view,.gallery-track,.shelf-track');
+ if(clip){const v=clip.getBoundingClientRect();if(r.right<v.left+10||r.left>v.right-10||r.bottom<v.top+10||r.top>v.bottom-10)return null;}
+ return {left:r.left,top:r.top,width:r.width,height:r.height};
+}
+function sourceForCurrent(){
+ if(flightOrigin?.isConnected&&Number(flightOrigin.dataset.index)===state.selected&&visibleFlightRect(flightOrigin))return flightOrigin;
+ const list=state.mode==='gallery'?galleryCards:state.mode==='list'?listCards:cards;
+ const match=list[state.selected];return match&&visibleFlightRect(match)?match:null;
+}
+function buildFlight(i,source){
+ const name=names[i],el=document.createElement('div');
+ el.className='reading-flight';el.setAttribute('aria-hidden','true');el.style.opacity='0';
+ const small=document.createElement('div'),large=document.createElement('div');
+ small.className='flight-small';large.className='flight-large';
+ const num=document.createElement('span');num.className='flight-small-number';num.textContent=`${pad(i+1)} / 99`;
+ const ar=document.createElement('span');ar.className='flight-small-name';ar.lang='ar';ar.dir='rtl';ar.textContent=name.ar;
+ const en=document.createElement('span');en.className='flight-small-en';en.textContent=name.en;
+ small.append(num,ar,en);
+ const ln=document.createElement('span');ln.className='flight-large-number';ln.textContent=`${pad(i+1)} / 99`;
+ const la=document.createElement('span');la.className='flight-large-name';la.lang='ar';la.dir='rtl';la.textContent=name.ar;
+ const le=document.createElement('span');le.className='flight-large-en';le.textContent=name.en;
+ large.append(ln,la,le);el.append(small,large);
+ const sourceText=source.querySelector('.window-ar,.gallery-ar,.list-ar,.shelf-name,.featured-card strong')||source;
+ const sr=source.getBoundingClientRect(),textStyle=getComputedStyle(sourceText);
+ let size=parseFloat(textStyle.fontSize)||30;
+ // Canvas zoom affects the rendered font, but not the computed font size.
+ if(source.closest('#scene'))size*=sr.width/(source.offsetWidth||sr.width);
+ ar.style.fontSize=clamp(size,15,100)+'px';
+ return {el,small,large};
+}
+function flightFrame(rect,background,radius,opacity=1){return {left:rect.left+'px',top:rect.top+'px',width:rect.width+'px',height:rect.height+'px',borderRadius:radius,backgroundColor:background,opacity};}
+async function animateCardFlight(i,source,direction,fromRect){
+ const d=$('#detail'),target=d.getBoundingClientRect(),sourceRect=fromRect||visibleFlightRect(source);
+ if(!sourceRect||prefersReducedMotion())return;
+ const styles=getComputedStyle(source),dialogStyle=getComputedStyle(d);
+ const paperBg=styles.backgroundColor||'#fffefa',readerBg=dialogStyle.backgroundColor||'#fcfbf5';
+ const flight=buildFlight(i,source);
+ const small=flight.small,large=flight.large;
+ const destination={left:target.left,top:target.top,width:target.width,height:target.height};
+ const start=direction==='open'?sourceRect:destination;
+ const end=direction==='open'?destination:sourceRect;
+ const opening=direction==='open';
+ function tweenRect(t){return {left:start.left+(end.left-start.left)*t,top:start.top+(end.top-start.top)*t,width:start.width+(end.width-start.width)*t,height:start.height+(end.height-start.height)*t}}
+ const init=flightFrame(start,opening?paperBg:readerBg,opening?'11px':'24px');
+ const mid=tweenRect(.55);mid.top-=Math.min(26,innerHeight*.025);mid.width*=1.015;
+ const destinationFrame=flightFrame(end,opening?readerBg:paperBg,opening?'24px':'11px');
+ const tallShadow='0 34px 100px rgba(38,69,56,.29),0 8px 27px rgba(63,90,77,.11)';
+ const lowShadow='0 10px 28px rgba(65,94,77,.14)';
+ d.appendChild(flight.el);
+ source.classList.add('flight-source');
+ d.classList.add('morph-active',opening?'morph-opening':'morph-closing');
+ const options={duration:FLIGHT_MS,easing:'cubic-bezier(.20,.77,.22,1)',fill:'both'};
+ const paper=flight.el.animate([
+  {...init,offset:0,boxShadow:opening?lowShadow:tallShadow,transform:'scale(1)'},
+  {...flightFrame(mid,opening?paperBg:readerBg,'17px'),offset:.52,boxShadow:tallShadow,transform:'scale(1.012)'},
+  {...destinationFrame,offset:1,boxShadow:opening?tallShadow:lowShadow,transform:'scale(1)'}
+ ],options);
+ const smallEffect=small.animate(opening?[
+  {opacity:1,transform:'translateY(0)',offset:0},{opacity:1,transform:'translateY(0)',offset:.24},
+  {opacity:0,transform:'translateY(-12px)',offset:.56},{opacity:0,transform:'translateY(-12px)',offset:1}
+ ]:[
+  {opacity:0,transform:'translateY(-12px)',offset:0},{opacity:0,transform:'translateY(-12px)',offset:.42},
+  {opacity:1,transform:'translateY(0)',offset:.80},{opacity:1,transform:'translateY(0)',offset:1}
+ ],options);
+ const largeEffect=large.animate(opening?[
+  {opacity:0,transform:'translateY(22px) scale(.94)',offset:0},
+  {opacity:0,transform:'translateY(22px) scale(.94)',offset:.37},
+  {opacity:1,transform:'translateY(0) scale(1)',offset:.89},
+  {opacity:1,transform:'translateY(0) scale(1)',offset:1}
+ ]:[
+  {opacity:1,transform:'translateY(0) scale(1)',offset:0},
+  {opacity:1,transform:'translateY(0) scale(1)',offset:.22},
+  {opacity:0,transform:'translateY(16px) scale(.94)',offset:.66},
+  {opacity:0,transform:'translateY(16px) scale(.94)',offset:1}
+ ],options);
+ try{
+  await Promise.race([paper.finished.catch(()=>{}),new Promise(resolve=>setTimeout(resolve,FLIGHT_MS+300))]);
+ }finally{
+  for(const anim of [paper,smallEffect,largeEffect])anim.cancel();
+  flight.el.remove();source.classList.remove('flight-source');
+  d.classList.remove('morph-active','morph-opening','morph-closing');
+ }
+}
+function animateAndOpen(i,el){
+ i=(i+99)%99;
+ if(flightPhase)return;
+ if($('#detail').open){openName(i);return;}
+ flightOrigin=el?.isConnected?el:null;
+ const origin=flightOrigin?visibleFlightRect(flightOrigin):null;
+ openName(i); // open the real reader before measuring its final on-screen bounds
+ if(!origin||prefersReducedMotion())return;
+ flightPhase='opening';
+ animateCardFlight(i,flightOrigin,'open',origin).finally(()=>{
+   flightPhase='';if(flightPendingClose){flightPendingClose=false;closeReading()}
+ });
+}
+let savedOnly=false;function applySearch(){let count=0;const q=norm(state.filter);names.forEach((n,i)=>{const matched=(!savedOnly||bookmarks.has(i))&&(!q||norm(n.ar).includes(q)||norm(n.en).includes(q)||pad(i+1).includes(q)||String(i+1)===q);if(matched)count++;cards[i].classList.toggle('filtered-out',!matched);numbers[i].classList.toggle('muted',!matched);listCards[i].hidden=!matched;galleryCards[i].hidden=!matched;shelfCards[i].hidden=!matched;});$('#resultCount').textContent=`${count} / 99`;if(state.mode==='gallery'){const order=galleryOrder();if(order.length&&!order.includes(state.selected))select(order[0]);galleryRender();}}
+function openName(i,updateURL=true){
+ i=(i+99)%99;
+ const alreadyOpen=$('#detail').open;
+ if(!alreadyOpen)readingOrigin=document.activeElement;
+ select(i);
+ if(alreadyOpen&&flightOrigin?.dataset.index!==String(i))flightOrigin=sourceForCurrent();lastViewed=i;try{localStorage.setItem('asma-preview-recent-v5',String(i))}catch(e){}
+ if(readerLastName!==i){activateNameTab('summary');readerLastName=i;}
+ const n=names[i];$('#detailName').textContent=n.ar;$('#detailEn').textContent=n.en;$('#detailIndex').textContent=`${pad(i+1)} / 99`;$('#modalType').textContent=t('modalType');
+ const saved=bookmarks.has(i);$('#bookmarkDetail').setAttribute('aria-pressed',String(saved));$('#bookmarkDetail').innerHTML=saved?'★ <span>'+t('savedName')+'</span>':'☆ <span>'+t('saveName')+'</span>';
+ clearPaperPreview();const d=$('#detail');if(!d.open)d.showModal();
+ if(updateURL)history.replaceState(null,'',`#name-${pad(i+1)}`);
+}
+let drag=null;
+function startPan(e,el){drag={kind:'pan',el,id:e.pointerId,initialX:e.clientX,initialY:e.clientY,startX:state.x,startY:state.y,moved:false};$('#viewport').classList.add('panning');el.setPointerCapture(e.pointerId);}
+function movePan(e){if(!drag||drag.kind!=='pan'||drag.id!==e.pointerId)return;const dx=e.clientX-drag.initialX,dy=e.clientY-drag.initialY;if(Math.hypot(dx,dy)>8&&!drag.moved){drag.moved=true;clearPaperPreview();}if(drag.moved){state.x=drag.startX+dx;state.y=drag.startY+dy;renderScene();}}
+function onWindowPointerDown(e){
+ if(e.button!==0||$('#detail').open)return;
+ select(+e.currentTarget.dataset.index);
+ startPan(e,e.currentTarget);
+}
+function onWindowPointerMove(e){if(drag?.el===e.currentTarget)movePan(e);}
+function finishDrag(e){if(!drag||drag.id!==e.pointerId)return;const d=drag;drag=null;$('#viewport').classList.remove('panning');if(!d.moved&&d.el.classList?.contains('name-window'))animateAndOpen(+d.el.dataset.index,d.el);}
+function onWindowPointerUp(e){if(!drag||drag.el!==e.currentTarget)return;finishDrag(e);}
+function setMode(mode){
+ const previous=state.mode;state.mode=mode;
+ $('#viewport').style.display=mode==='spatial'?'block':'none';
+ $('#listView').style.display=mode==='list'?'block':'none';
+ $('#galleryView').hidden=mode!=='gallery';$('#galleryView').style.display=mode==='gallery'?'block':'none';
+ $('#horizontalShelf').hidden=mode!=='spatial';if(mode!=='spatial')clearPaperPreview();
+ for(const m of ['spatial','gallery','list']){$('#'+m+'Btn').classList.toggle('is-on',mode===m);$('#'+m+'Btn').setAttribute('aria-pressed',String(mode===m))}
+ for(const id of ['zoomIn','zoomOut','fitBtn','nameSize'])$('#'+id).disabled=mode!=='spatial';
+ if(mode==='spatial'&&previous!==mode)requestAnimationFrame(()=>{if(state.scale<MIN_ZOOM)fitScene();else renderScene()});
+ if(mode==='gallery')requestAnimationFrame(()=>{const order=galleryOrder();if(order.length&&!order.includes(state.selected))select(order[0]);galleryRender();});
+}
+function setLang(lang){state.lang=lang;document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';$$('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n));$('#langBtn').textContent=lang==='ar'?'English / EN':'العربية / AR';$('#search').placeholder=t('search');$$('.small-window-label').forEach(el=>el.textContent=t('window'));if($('#detail').open){$('#modalType').textContent=t('modalType');openName(state.selected,false)};galleryCards.forEach(g=>g.querySelector('.gallery-cta').textContent=t('readSelected')+' ↗');updateFitLabel();if(state.mode==='gallery')galleryRender();$('#galleryPrev').textContent=lang==='ar'?'→':'←';$('#galleryNext').textContent=lang==='ar'?'←':'→';updateReadingLocale();}
+function toast(message){const el=$('#toast');el.textContent=message;el.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.classList.remove('show'),4500)}
+function jump(){const n=Number(toWestern($('#jumpInput').value));if(!Number.isInteger(n)||n<1||n>99){toast(t('wrongNum'));return;}$('#search').value='';state.filter='';applySearch();focusWindow(n-1,false);}
+makeUI();
+galleryBindDrag();
+const vp=$('#viewport');
+vp.addEventListener('pointerdown',e=>{if(e.button!==0||e.target.closest('.name-window')||$('#detail').open)return;startPan(e,vp)});
+vp.addEventListener('pointermove',e=>{if(drag?.el===vp)movePan(e)});
+vp.addEventListener('pointerup',e=>{if(drag?.el===vp)finishDrag(e)});
+vp.addEventListener('pointercancel',e=>{if(drag?.id===e.pointerId){drag=null;vp.classList.remove('panning')}});
+cards.forEach(c=>{c.addEventListener('pointermove',onWindowPointerMove);c.addEventListener('pointerup',onWindowPointerUp);c.addEventListener('pointercancel',e=>{if(drag?.id===e.pointerId){drag=null;vp.classList.remove('panning')}})});
+// Wheel zoom is restricted to the matrix and stays within 25%–200%.
+// At either limit we consume the wheel event to avoid accidental page jumps;
+// outside this region the mouse wheel still scrolls down the site normally.
+vp.addEventListener('wheel',e=>{
+ if(state.mode!=='spatial'||$('#detail').open)return;
+ const r=vp.getBoundingClientRect();
+ const unit=e.deltaMode===1?16:e.deltaMode===2?r.height:1;
+ const delta=Math.max(-600,Math.min(600,e.deltaY*unit));
+ if(Math.abs(delta)<.01)return;
+ e.preventDefault();
+ const target=clamp(state.scale*Math.exp(-delta*.0013),MIN_ZOOM,MAX_ZOOM);
+ if(Math.abs(target-state.scale)<.00001)return;
+ zoom(target/state.scale,e.clientX-r.left,e.clientY-r.top);
+},{passive:false});
+$('#zoomIn').onclick=()=>zoom(1.25);$('#zoomOut').onclick=()=>zoom(.8);$('#fitBtn').onclick=fitScene;
+$('#nameSize').addEventListener('input',e=>{state.nameSize=+e.target.value;$('#nameSizeValue').textContent=state.nameSize+'%';$('#scene').style.setProperty('--name-scale',state.nameSize/100)});
+$('#spatialBtn').onclick=()=>setMode('spatial');$('#listBtn').onclick=()=>setMode('list');
+$('#jumpBtn').onclick=jump;$('#jumpInput').addEventListener('keydown',e=>{if(e.key==='Enter')jump()});
+$('#search').addEventListener('input',e=>{state.filter=e.target.value;applySearch()});
+$('#closeDetail').onclick=()=>$('#detail').close();$('#detail').addEventListener('click',e=>{if(e.target===$('#detail'))closeReading()});
+$('#prev').onclick=()=>openName(state.selected-1);$('#next').onclick=()=>openName(state.selected+1);
+$('#langBtn').onclick=()=>setLang(state.lang==='ar'?'en':'ar');$('#helpBtn').onclick=()=>toast(t('helpMsg'));$('#indexTopBtn').onclick=()=>$('#experience').scrollIntoView({behavior:'smooth'});
+$$('[data-open-index]').forEach(el=>el.addEventListener('click',()=>openName(Number(el.dataset.openIndex))));
+document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#search').focus();}if($('#topicReader').open)return;if($('#detail').open){if(e.key==='ArrowRight'){e.preventDefault();openName(state.selected+(state.lang==='ar'?-1:1))}if(e.key==='ArrowLeft'){e.preventDefault();openName(state.selected+(state.lang==='ar'?1:-1))}}});
+window.addEventListener('resize',()=>{if(state.mode==='spatial')fitScene();else if(state.mode==='gallery')galleryRender()});
+// Practical browsing: gallery, first/last, bookmarks, recently viewed, simple view.
+$('#galleryBtn').onclick=()=>setMode('gallery');
+$('#galleryPrev').onclick=()=>galleryStep(-1);
+$('#galleryNext').onclick=()=>galleryStep(1);
+$('#galleryOpen').onclick=()=>animateAndOpen(state.selected,galleryCards[state.selected]);
+$('#firstBtn').onclick=()=>focusWindow(0,false);
+$('#lastBtn').onclick=()=>focusWindow(98,false);
+$('#recentBtn').onclick=()=>{focusWindow(lastViewed,false);if(state.mode==='spatial')$('#viewport').scrollIntoView({block:'nearest',behavior:motionBehavior()})};
+$('#bookmarksBtn').onclick=()=>{savedOnly=!savedOnly;$('#bookmarksBtn').classList.toggle('active',savedOnly);$('#bookmarksBtn').setAttribute('aria-pressed',String(savedOnly));applySearch();if(savedOnly&&bookmarks.size===0)toast(t('noSaved'))};
+$('#bookmarkDetail').onclick=()=>{const i=state.selected;if(bookmarks.has(i))bookmarks.delete(i);else bookmarks.add(i);try{localStorage.setItem('asma-preview-bookmarks-v5',JSON.stringify([...bookmarks]))}catch(e){};openName(i,false);applySearch()};
+$('#flatBtn').onchange=e=>{document.documentElement.classList.toggle('flat-mode',e.target.checked);if(state.mode==='gallery')galleryRender()};
+$('#galleryTrack').addEventListener('keydown',e=>{
+ const dir=state.lang==='ar'?-1:1;
+ if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();e.stopPropagation();galleryStep(e.key==='ArrowLeft'?dir:-dir);}
+ if(e.key==='Home'||e.key==='End'){e.preventDefault();e.stopPropagation();const order=galleryOrder();if(order.length)galleryGo(e.key==='Home'?order[0]:order[order.length-1],true);}
+ if((e.key==='Enter'||e.key===' ')&&e.target===$('#galleryTrack')){e.preventDefault();const card=galleryCards[state.selected];if(card&&!card.hidden)animateAndOpen(state.selected,card);}
+});
+// Native swipe on touch, pointer drag on desktop, and arrows for accessible alternatives.
+const shelfTrack=$('#shelfTrack');let railDrag=null,railIgnoreClicks=false;
+shelfTrack.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0)return;
+ railDrag={id:e.pointerId,x:e.clientX,scroll:shelfTrack.scrollLeft,moved:false};
+});
+shelfTrack.addEventListener('pointermove',e=>{if(!railDrag||railDrag.id!==e.pointerId)return;
+ const dx=e.clientX-railDrag.x;if(Math.abs(dx)>7){railDrag.moved=true;railIgnoreClicks=true;shelfTrack.classList.add('dragging');shelfTrack.scrollLeft=railDrag.scroll-dx;}
+});
+function finishRailDrag(){if(!railDrag)return;const moved=railDrag.moved;railDrag=null;shelfTrack.classList.remove('dragging');if(moved)setTimeout(()=>{railIgnoreClicks=false},120);}
+shelfTrack.addEventListener('pointerup',finishRailDrag);shelfTrack.addEventListener('pointercancel',finishRailDrag);
+shelfTrack.addEventListener('pointerleave',e=>{if(railDrag&&e.buttons===0)finishRailDrag();});
+shelfTrack.addEventListener('click',e=>{if(railIgnoreClicks){e.preventDefault();e.stopPropagation();}},true);
+$('#shelfPrev').addEventListener('click',()=>shelfTrack.scrollBy({left:-310,behavior:motionBehavior()}));
+$('#shelfNext').addEventListener('click',()=>shelfTrack.scrollBy({left:310,behavior:motionBehavior()}));
+
+function finishReadingClose(){
+ if($('#detail').open)$('#detail').close();
+ if(location.hash.startsWith('#name-'))history.replaceState(null,'','#experience');
+ if(readingOrigin?.isConnected){suppressReturnPreview=true;readingOrigin.focus({preventScroll:true});suppressReturnPreview=false;}
+ clearPaperPreview();flightOrigin=null;
+}
+function closeReading(){
+ const d=$('#detail');if(!d.open)return;
+ if(flightPhase==='opening'){flightPendingClose=true;return}
+ if(flightPhase==='closing')return;
+ const el=sourceForCurrent(),r=el?visibleFlightRect(el):null;
+ if(!el||!r||prefersReducedMotion()){finishReadingClose();return}
+ flightPhase='closing';
+ animateCardFlight(state.selected,el,'close',r).finally(()=>{flightPhase='';finishReadingClose()});
+}
+$('#closeDetail').onclick=closeReading;
+// Escape must use the same reverse flight as the explicit close button.
+$('#detail').addEventListener('cancel',e=>{e.preventDefault();closeReading()});
+$('#detail').addEventListener('close',()=>{if(location.hash.startsWith('#name-'))history.replaceState(null,'','#experience')});
+function loadHash(){const t=location.hash.match(/^#topic-(\d)-(\d{1,2})$/);if(t){showTopic(Number(t[1]),Number(t[2])-1,false);return;}if($('#topicReader').open)closeTopic(false);const m=location.hash.match(/^#name-(\d{1,2})$/);if(m){const i=Number(m[1])-1;if(i>=0&&i<99)openName(i,false)}else if($('#detail').open)$('#detail').close()}
+window.addEventListener('hashchange',loadHash);
+window.addEventListener('popstate',loadHash);
+document.addEventListener('keydown',e=>{
+ if($('#detail').open||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName))return;
+ const focus=document.activeElement;
+ if(!(focus.closest?.('.stage')||focus.closest?.('.navpane')))return;
+ if(['ArrowRight','ArrowLeft','ArrowDown','ArrowUp','Home','End'].includes(e.key)){
+ e.preventDefault();const delta=e.key==='ArrowRight'?(state.lang==='ar'?-1:1):e.key==='ArrowLeft'?(state.lang==='ar'?1:-1):e.key==='ArrowDown'?11:e.key==='ArrowUp'?-11:0;
+ focusWindow(e.key==='Home'?0:e.key==='End'?98:Math.max(0,Math.min(98,state.selected+delta)),false)
+ }else if(e.key==='Enter'&&focus===vp){e.preventDefault();animateAndOpen(state.selected,cards[state.selected])}
+});
+Object.assign(messages.ar,{gallery:'المعرض الأفقي',galleryTitle:'تصفح متتابع بلا سحب معقد',galleryGuide:'حرّك البطاقات أفقياً، أو استخدم السابق والتالي. اضغط الاسم لفتح القراءة.',galleryHint:'اسحب أفقياً للانتقال، ثم اضغط البطاقة الوسطى لفتح القراءة',readSelected:'اقرأ المحدد',first:'الأولى 01',last:'الأخيرة 99',saved:'المحفوظة ☆',recent:'آخر نافذة',flat:'عرض مسطّح',zoomGuide:'عجلة الفأرة فوق المصفوفة للتكبير بين 25% و200%؛ وخارجها لتمرير الصفحة',saveName:'حفظ للاطلاع',savedName:'محفوظة ★',noSaved:'لم تحفظ أي نافذة بعد. افتح اسماً واضغط حفظ للاطلاع.',chaptersNav:'أبواب المحتوى',chaptersKicker:'أبواب المحتوى',chaptersTitle:'مسارات متعددة للمعرفة',chaptersIntro:'إلى جانب النوافذ، تُنظّم مادة المشروع في خمسة أبواب. هذه مسارات تجريبية تمهيداً للمحتوى المحرر والمراجع.',chapter1:'شرح أسماء الله الحسنى',chapter2:'فتاوى في الأسماء الحسنى',chapter3:'حقيقة الإلحاد في الأسماء',chapter4:'مباحث عملية وتأمل',chapter5:'مباحث عامة',chapterPending:'قسم قيد الإعداد والمراجعة'});
+Object.assign(messages.en,{gallery:'Horizontal',galleryTitle:'Sequential exploration without complex gestures',galleryGuide:'Swipe horizontally or use previous and next. Select any card to read.',galleryHint:'Drag to browse, then open the centered card to read',readSelected:'Read selected',first:'First 01',last:'Last 99',saved:'Saved ☆',recent:'Last opened',flat:'Flat view',zoomGuide:'Wheel zoom: 25–200% within the matrix; scroll outside to browse the rest of the page',saveName:'Save for later',savedName:'Saved ★',noSaved:'No saved windows yet. Open a name and choose Save for later.',chaptersNav:'Content chapters',chaptersKicker:'Content chapters',chaptersTitle:'Multiple paths to learning',chaptersIntro:'Beyond the windows, the project organizes knowledge into five chapters. All chapter content is pending editorial and scholarly review.',chapter1:'Explanations of the Names',chapter2:'Fatwas about the Names',chapter3:'Misinterpretation of the Names',chapter4:'Practice and reflection',chapter5:'General studies',chapterPending:'Content awaiting review'});
+Object.assign(messages.ar,{shelfTitle:'شريط الأسماء · اسحب أفقياً',shelfHint:'اضغط لتقريب الورقة، وتعود لحجمها بعد ٧ ثوانٍ',stageSubtitle:'مصفوفة منظمة بتداخل هادئ · 99 نافذة',simpleHint:'اسحب المصفوفة كاملة، واضغط لفتح القراءة. مرّر الشريط الأفقي للوصول السريع.'});
+Object.assign(messages.en,{shelfTitle:'Names rail · drag horizontally',shelfHint:'Select to magnify a paper; it resets after 7 seconds',stageSubtitle:'An orderly, gently overlapping matrix · 99 windows',simpleHint:'Pan the whole matrix and click to read. Drag the horizontal rail for quick access.'});
+/* V7.3 editorial labels from Master Prompt 2.6, without changes to spatial/gallery controllers. */
+Object.assign(messages.ar,{"chapter1":"شرح أسماء الله الحسنى","chapter2":"فتاوى في الأسماء الحسنى","chapter3":"حقيقة الإلحاد في أسماء الله تعالى","chapter4":"الأسماء الحسنى والجانب العملي والروحي","chapter5":"مباحث عامة","chapter1Description":"البنية التحريرية المتوقعة لصفحة الاسم، لا مادة علمية منشورة.","chapter2Description":"فتاوى مرتبطة بمصدرها وسياقها، لا إجابات مولدة.","chapter3Description":"خريطة عرض للموضوع تتطلب تحريراً ومراجعة من المختص.","chapter4Description":"مسارات عملية مقترحة، دون أذكار أو فضائل غير موثقة.","chapter5Description":"عناوين المباحث كما وردت في الوثيقة الرئيسية، والمادة قيد الإعداد.","chapterNoPublished":"خريطة محتوى تجريبية، لا توجد مادة علمية منشورة هنا بعد.","chapter1a":"التعريف المختصر","chapter1b":"الشرح الموسع","chapter1c":"الدليل وموضع النقل","chapter1d":"المواد ذات الصلة","chapter2a":"السؤال بنصه وسياقه","chapter2b":"الجواب المنقول من مصدره","chapter2c":"الرابط والإحالة الدقيقة","chapter2d":"حالة مراجعة المادة","chapter3a":"تعريف المفهوم وحدوده","chapter3b":"المباحث المرتبطة","chapter3c":"الشواهد الموثقة","chapter3d":"مراجعة المادة","chapter4a":"الحفظ والتأمل","chapter4b":"الدعاء بالأسماء","chapter4c":"الذكر","chapter4d":"التفكر والتأمل","chapter5a":"أسماء الله تعالى توقيفية","chapter5b":"أركان الإيمان بالأسماء الحُسنى","chapter5c":"دلالة الأسماء الحُسنى ثلاثة أنواع","chapter5d":"مراتب إحصاء الأسماء الحُسنى","editorialPathTitle":"المعرفة تُنشر بعد التوثيق والمراجعة","editorialPathIntro":"مراحل تحريرية مستقبلية، لا تعني أن المحتوى الحالي قد اجتاز أي مرحلة اعتماد.","editorialStage1":"جمع النص ومصدره","editorialStage2":"التحقق من الإحالة","editorialStage3":"المراجعة العلمية واللغوية","editorialStage4":"اعتماد الإصدار ونشره","readingStructureTitle":"ماذا ستتضمن صفحة الاسم بعد اعتماد مادتها؟","readingStructure1":"01 · تعريف مختصر محرر","readingStructure2":"02 · شرح موسع","readingStructure3":"03 · دليل موثق وإحالة دقيقة","readingStructure4":"04 · مواد مرتبطة وحالة المراجعة"});
+Object.assign(messages.en,{"chapter1":"Explanations of the Names","chapter2":"Fatwas about the Names","chapter3":"Misinterpretation of the Divine Names","chapter4":"Practice and spiritual reflection","chapter5":"General studies","chapter1Description":"Editorial outline for each Name page; no scholarly material is published here.","chapter2Description":"Fatwas must link to their full sources and context, not generated answers.","chapter3Description":"A topic outline awaiting subject-matter and editorial review.","chapter4Description":"Planned learning paths, without unverified prescriptions or merits.","chapter5Description":"Topics specified in the master brief; content remains in preparation.","chapterNoPublished":"Preview outline only. No approved scholarly article is published here.","chapter1a":"Concise introduction","chapter1b":"Extended explanation","chapter1c":"Evidence and exact source","chapter1d":"Related material","chapter2a":"Original question and context","chapter2b":"Answer attributed to its source","chapter2c":"Verified reference and link","chapter2d":"Review status","chapter3a":"Definition and boundaries","chapter3b":"Related studies","chapter3c":"Documented evidence","chapter3d":"Scholarly review","chapter4a":"Memorization and reflection","chapter4b":"Supplication with the Names","chapter4c":"Remembrance","chapter4d":"Contemplation and reflection","chapter5a":"The revealed basis of the Names","chapter5b":"Pillars of belief in the Names","chapter5c":"Three forms of indication by the Names","chapter5d":"Levels of enumerating the Names","editorialPathTitle":"Research, verification, review, then publication","editorialPathIntro":"This is a proposed editorial workflow, not a claim of approval for the current demo.","editorialStage1":"Collect text and sources","editorialStage2":"Verify source citations","editorialStage3":"Scholarly and language review","editorialStage4":"Approve and publish version","readingStructureTitle":"What will an approved Name page contain?","readingStructure1":"01 · Reviewed short definition","readingStructure2":"02 · Extended explanation","readingStructure3":"03 · Evidence and precise citation","readingStructure4":"04 · Related content and review status"});
+
+
+/* V7.4 — source-anchored reading structure, no scholarly body text. */
+Object.assign(messages.ar,{
+readerUnapproved:'قيد المراجعة العلمية',readerPrivate:'معاينة غير منشورة · محتوى غير معتمد',
+readerTabSummary:'المدخل',readerTabExplanation:'الشرح',readerTabEvidence:'الدليل والمصادر',readerTabRelated:'المباحث المرتبطة',
+readerSummaryTitle:'مدخل إلى قراءة الاسم',readerSummaryEmpty:'يُعرض هنا التعريف المختصر بعد مراجعته علمياً ولغوياً. لا توجد مادة علمية معتمدة لهذه العينة.',
+readerSlotForm:'الصيغة المعتمدة',readerSlotTranslation:'الترجمة ومراجعتها',readerSlotPending:'بانتظار التحقق',readerSlotLanguage:'التحرير اللغوي',readerSlotScientific:'المراجعة العلمية',
+readerEditorialPending:'لا توجد إحالة علمية مؤهلة للنشر لهذه العينة.',readerExplainTitle:'الشرح الموسّع',
+readerExplainEmpty:'يُكتب الشرح هنا بعد توثيق النصوص والتمييز بين الاقتباس والتحرير. لا نعرض تفسيراً غير مراجع على أنه حقيقة معتمدة.',
+readerEvidenceTitle:'الدليل والإحالة الدقيقة',readerEvidenceEmpty:'لا تُعرض آية أو رواية أو فتوى هنا قبل مراجعة النص وموضع الاستدلال وصحة نسبة النقل إلى مصدره.',
+readerFieldSource:'الكتاب والمؤلف',readerFieldEdition:'الطبعة والمحقق',readerFieldLocation:'الجزء والصفحة',readerFieldLink:'رابط المصدر وتاريخ التحقق',readerFieldNotEntered:'لم يُضف بعد',
+readerEvidencePolicy:'سيُفصل النص المنقول عن الشرح التحريري، مع ربط كل فقرة بمصدرها.',
+readerRelatedTitle:'مسارات ومباحث للاستكشاف',readerRelatedEmpty:'المباحث العامة مداخل تنظيمية مستقلة، وليست ارتباطات علمية مؤكدة بهذا الاسم حتى تُراجع ويُثبت وجه الصلة.',
+readerOpenTopic:'معاينة قالب مبحث عام ↗',readerAllChapters:'عرض الأبواب الخمسة ↗',
+topicSheetLabel:'مكتبة المباحث · معاينة تحريرية',topicStatus:'لم تبدأ المراجعة العلمية',topicNotPublished:'هيكل تجريبي · ليس مقالاً منشوراً',
+topicTabOverview:'مخطط المبحث',topicTabSources:'المراجع',topicTabEditorial:'المراجعة والتحرير',
+topicOverviewTitle:'موضوع المبحث',topicOverviewEmpty:'هذا عنوان وارد في خريطة المشروع. ستُضاف مادته بعد جمع النصوص والتحقق من المصادر وإتمام المراجعة. لا يتوفر شرح معتمد حالياً.',
+topicFieldAbstract:'الملخص التحريري',topicFieldRelated:'الروابط العلمية المرتبطة',topicFieldEmpty:'غير متوفر بعد',
+topicSourceTitle:'بطاقة التوثيق',topicSourceEmpty:'لا يوجد نقل أو مصدر معتمد مرتبط بهذا العنوان بعد. تُضاف بيانات الكتاب والمؤلف والطبعة والجزء والصفحة والرابط وموضع الاستشهاد بعد التحقق.',
+topicEditorialTitle:'مسار الاعتماد',topicEditorialEmpty:'مسودة ← تحقق من المصدر ← مراجعة علمية ← تحرير لغوي ← مراجعة الترجمة ← اعتماد للنشر. الحالة الحالية: بانتظار إعداد المادة وتعيين المراجعين.',
+topicReviewerLabel:'المراجع المختص',topicReviewerEmpty:'لم يُعيّن',topicVersionLabel:'الإصدار المعتمد',topicVersionEmpty:'لا يوجد',topicPrev:'→ المبحث السابق',topicNext:'المبحث التالي ←'
+});
+Object.assign(messages.en,{
+readerUnapproved:'Awaiting scholarly review',readerPrivate:'Unpublished preview · No approved content',
+readerTabSummary:'Introduction',readerTabExplanation:'Explanation',readerTabEvidence:'Evidence & sources',readerTabRelated:'Related studies',
+readerSummaryTitle:'Introduction to the Name',readerSummaryEmpty:'A reviewed brief description will appear here after scholarly and language verification. No approved content is available in this prototype.',
+readerSlotForm:'Verified Arabic form',readerSlotTranslation:'Translation & review',readerSlotPending:'Pending verification',readerSlotLanguage:'Language editing',readerSlotScientific:'Scholarly review',
+readerEditorialPending:'No scholarly reference has been cleared for publication in this preview.',readerExplainTitle:'Extended explanation',
+readerExplainEmpty:'The explanation will be edited here after source verification and separation of quotations from editorial explanation. No unreviewed interpretation is presented as fact.',
+readerEvidenceTitle:'Evidence and precise references',readerEvidenceEmpty:'No scripture, narration or fatwa is presented before verification of its text, source, and relevance.',
+readerFieldSource:'Book and author',readerFieldEdition:'Edition and editor',readerFieldLocation:'Volume and page',readerFieldLink:'Source link and verification date',readerFieldNotEntered:'Not yet entered',
+readerEvidencePolicy:'Verified quotes will be distinguished from editorial prose, with paragraph-level citations.',
+readerRelatedTitle:'Reading paths and studies',readerRelatedEmpty:'These general studies are independent organizational entries, not asserted scholarly relationships with this Name.',
+readerOpenTopic:'Preview a general study ↗',readerAllChapters:'Explore all five chapters ↗',
+topicSheetLabel:'Study library · Editorial preview',topicStatus:'Not yet reviewed',topicNotPublished:'Outline only · No published article',
+topicTabOverview:'Study outline',topicTabSources:'References',topicTabEditorial:'Review status',
+topicOverviewTitle:'About this study',topicOverviewEmpty:'This heading is part of the project outline. A verified and reviewed article will be added later; no approved exposition is present.',
+topicFieldAbstract:'Editorial abstract',topicFieldRelated:'Related studies',topicFieldEmpty:'Not available yet',
+topicSourceTitle:'Reference record',topicSourceEmpty:'No approved quotation or source is currently attached. Book, author, edition, volume, page, link, and exact quotation location will be added after verification.',
+topicEditorialTitle:'Approval process',topicEditorialEmpty:'Draft → source verification → scholarly review → language editing → translation review → publication approval. Current state: awaiting content and reviewer assignment.',
+topicReviewerLabel:'Scholarly reviewer',topicReviewerEmpty:'Not assigned',topicVersionLabel:'Approved edition',topicVersionEmpty:'None',topicPrev:'← Previous topic',topicNext:'Next topic →'
+});
+const generalStudyTitles={
+ ar:[
+ 'أسماء الله تعالى توقيفية','أركان الإيمان بالأسماء الحُسنى','أقسام ما يوصف به الله تعالى','دلالة الأسماء الحُسنى ثلاثة أنواع','إحصاء الأسماء الحُسنى أصلٌ للعلم','أسماء الله كلها حُسنى','أسماء الله تعالى منها ما يطلق عليه مفرداً ومقترناً بغيره ومنها ما لا يطلق عليه بمفرده بل مقروناً بمقابله','من أسماء الله الحُسنى ما يكون دالاً على عدة صفات','الأسماء الحُسنى التي ترجع إليها جميع الأسماء والصفات','أسماء الله وصفاته مختصة به، واتفاق الأسماء لا يوجب تماثل المسميات','أمور ينبغي أن تُعْلَم','مراتب إحصاء أسماء الله الحُسنى التي من أحصاها دخل الجنة','الأسماء الحسنى لا تُحدُّ بعدد'
+ ],
+ en:[
+ 'The Divine Names are established by revelation','Pillars of belief in the Most Beautiful Names','Categories of descriptions attributed to Allah','Three kinds of indication conveyed by the Names','Enumerating the Names as a basis for knowledge','All of Allah’s Names are Most Beautiful','Names used independently or only together with their counterparts','Names that indicate multiple attributes','The central Names to which other Names and attributes relate','The uniqueness of Allah’s Names and attributes despite shared wording','Matters to be understood','Levels of enumerating the Names mentioned in the relevant narration','The Divine Names are not confined to a number'
+ ]
+};
+let topicContext=null,topicReturnHash='',readerLastName=null;
+const readerKeys=['summary','explanation','evidence','related'];
+const topicKeys=['overview','references','editorial'];
+let activeNameTab='summary',activeTopicTab='overview';
+function switchTab(keys,selector,attr,active,initial=false){
+ for(const key of keys){
+  const button=document.querySelector(`${selector}[data-${attr}="${key}"]`);
+  const panel=document.getElementById(`${attr==='reader-tab'?'readerPanel':'topicPanel'}-${key}`);
+  if(!button||!panel)continue;
+  button.setAttribute('aria-selected',String(key===active));button.tabIndex=key===active?0:-1;panel.hidden=key!==active;
+ }
+}
+function activateNameTab(key){if(!readerKeys.includes(key))return;activeNameTab=key;switchTab(readerKeys,'.reader-tab','reader-tab',key);}
+function activateTopicTab(key){if(!topicKeys.includes(key))return;activeTopicTab=key;switchTab(topicKeys,'.topic-tab','topic-tab',key);}
+function bindTabKeyboard(container,keys,fn,attr){
+ document.querySelector(container).addEventListener('keydown',e=>{
+  if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;
+  const current=keys.indexOf(e.target.dataset[attr]);if(current<0)return;
+  e.preventDefault();let next=e.key==='Home'?0:e.key==='End'?keys.length-1:(current+(e.key==='ArrowRight'?(state.lang==='ar'?-1:1):(state.lang==='ar'?1:-1))+keys.length)%keys.length;
+  fn(keys[next]);e.target.parentElement.querySelector(`[data-${attr}="${keys[next]}"]`).focus();
+ });
+}
+document.querySelectorAll('.reader-tab').forEach(b=>b.addEventListener('click',()=>activateNameTab(b.dataset.readerTab)));
+document.querySelectorAll('.topic-tab').forEach(b=>b.addEventListener('click',()=>activateTopicTab(b.dataset.topicTab)));
+bindTabKeyboard('#nameReaderTabs',readerKeys,activateNameTab,'readerTab');
+bindTabKeyboard('#topicTabs',topicKeys,activateTopicTab,'topicTab');
+activateNameTab('summary');activateTopicTab('overview');
+function topicsForChapter(ch){
+ if(ch===5)return generalStudyTitles[state.lang];
+ return [1,2,3,4].map(n=>messages[state.lang][`chapter${ch}${'abcd'[n-1]}`]);
+}
+function syncChapterTopicButtons(){
+ document.querySelectorAll('.chapter-fold').forEach((section,chi)=>{
+  const ch=chi+1,ul=section.querySelector('.chapter-body ul');if(!ul)return;
+  const items=topicsForChapter(ch);
+  ul.replaceChildren(...items.map((label,index)=>{
+   const li=document.createElement('li'),b=document.createElement('button');b.type='button';b.className='topic-list-button';
+   b.innerHTML=`<span class="topic-list-num">${pad(index+1)}</span><span class="topic-list-label"></span><span class="topic-list-end" aria-hidden="true">↗</span>`;
+   b.querySelector('.topic-list-label').textContent=label;
+   b.setAttribute('aria-label',`${messages[state.lang][`chapter${ch}`]}: ${label}`);
+   b.addEventListener('click',()=>showTopic(ch,index));li.appendChild(b);return li;
+  }));
+ });
+}
+function updateTopicText(){
+ if(!topicContext)return;
+ const {chapter,index}=topicContext,items=topicsForChapter(chapter);
+ document.getElementById('topicTitle').textContent=items[index]||'';
+ document.getElementById('topicBreadcrumb').textContent=(state.lang==='ar'?'الأبواب / ':'Chapters / ')+messages[state.lang][`chapter${chapter}`];
+ document.getElementById('topicCounter').textContent=`${pad(index+1)} / ${pad(items.length)}`;
+ document.getElementById('topicPrev').disabled=index<=0;
+ document.getElementById('topicNext').disabled=index>=items.length-1;
+ document.querySelector('#topicClose').setAttribute('aria-label',state.lang==='ar'?'إغلاق المبحث':'Close study');
+}
+function showTopic(ch,index,updateURL=true){
+ ch=Number(ch);const items=topicsForChapter(ch);index=Number(index);
+ if(ch<1||ch>5||!Number.isInteger(index)||index<0||index>=items.length)return;
+ const dialog=document.getElementById('topicReader');
+ if(!dialog.open)topicReturnHash=document.getElementById('detail').open?(location.hash||`#name-${pad(state.selected+1)}`):'#chapters';
+ topicContext={chapter:ch,index};updateTopicText();activateTopicTab('overview');
+ if(!dialog.open)dialog.showModal();
+ dialog.scrollTop=0;
+ if(updateURL)history.replaceState(null,'',`#topic-${ch}-${pad(index+1)}`);
+}
+function closeTopic(updateURL=true){
+ const dialog=document.getElementById('topicReader');if(!dialog.open)return;
+ dialog.close();
+ if(updateURL)history.replaceState(null,'',topicReturnHash||'#chapters');
+ topicContext=null;
+}
+document.getElementById('topicClose').addEventListener('click',()=>closeTopic());
+document.getElementById('topicReader').addEventListener('cancel',e=>{e.preventDefault();closeTopic()});
+document.getElementById('topicPrev').addEventListener('click',()=>{if(topicContext)showTopic(topicContext.chapter,topicContext.index-1)});
+document.getElementById('topicNext').addEventListener('click',()=>{if(topicContext)showTopic(topicContext.chapter,topicContext.index+1)});
+document.getElementById('exploreGeneralTopic').addEventListener('click',()=>showTopic(5,0));
+document.getElementById('exploreAllChapters').addEventListener('click',()=>{
+ // Close via the original reader transition; scroll after it finishes, preserving the gallery camera.
+ const target=document.getElementById('chapters');closeReading();
+ const complete=()=>{if(!document.getElementById('detail').open){target.scrollIntoView({behavior:motionBehavior(),block:'start'});return true}return false};
+ if(!complete())setTimeout(complete,830);
+});
+function updateReadingLocale(){syncChapterTopicButtons();updateTopicText()}
+
+syncChapterTopicButtons();
+setLang(state.lang);
+requestAnimationFrame(()=>{fitScene();if(window.innerWidth>780)focusWindow(49,false); if(window.matchMedia('(max-width: 780px)').matches){const v=$('#viewport');state.scale=Math.max(MIN_ZOOM,state.scale);state.x=v.clientWidth/2-(positions[3].left+110)*state.scale;state.y=v.clientHeight/2-(positions[3].top+65)*state.scale;renderScene()}loadHash()});
+/* V7.0: scroll-linked light and architectural depth, independent of the matrix camera. */
+(function initSpatialJourney(){
+ const hero=document.querySelector('.immersive');
+ const backdrop=document.querySelector('.space-backdrop');
+ const below=document.querySelector('.below-world');
+ const sections=[...below.querySelectorAll(':scope > .story-section')];
+ const nav=document.querySelector('#chapterJourneyNav');
+ const dots=[...nav.querySelectorAll('a')];
+ const calm=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const clamp01=n=>Math.min(1,Math.max(0,n));
+ let queued=false, lastActive=-1;
+ function refresh(){
+  queued=false;
+  const heroBox=hero.getBoundingClientRect();
+  const bottom=heroBox.bottom;
+  const viewportH=Math.max(1,window.innerHeight);
+  const distance=Math.max(heroBox.height,viewportH);
+  const p=calm.matches?0:clamp01(-heroBox.top / distance);
+  hero.style.setProperty('--journey-p',p.toFixed(3));
+  /* Readable, noticeably layered parallax without changing the gallery camera. */
+  const eased=p*p*(3-2*p);
+  hero.style.setProperty('--beam-travel',`${Math.round(eased*165)}px`);
+  hero.style.setProperty('--portal-brightness',String(.52+Math.sin(p*Math.PI)*.45));
+  hero.style.setProperty('--space-displace',`${Math.round(eased*66)}px`);
+
+  hero.style.setProperty('--light-drift',`${Math.round(p*108)}px`);
+  hero.style.setProperty('--floor-drift',`${Math.round(p*12)}px`);
+  hero.style.setProperty('--ray-strength',String(.66-p*.2));
+  /* Preserve the previous background variable for compatibility. */
+  backdrop.style.setProperty('--offset',`${Math.min(window.scrollY,900)}px`);
+  const belowBox=below.getBoundingClientRect();
+  const beyond=clamp01((viewportH-belowBox.top)/(viewportH*1.7));
+  below.style.setProperty('--ambient-shift',`${calm.matches?0:Math.round(beyond*-65)}px`);
+  below.style.setProperty('--ambient-glow',String(.48+beyond*.36));
+  below.style.setProperty('--arrival-light',String(.58+(1-beyond)*.33));
+  below.style.setProperty('--arrival-drift',`${calm.matches?0:Math.round(beyond*-100)}px`);
+  for(const s of sections){
+   const rect=s.getBoundingClientRect();
+   if(rect.bottom<0||rect.top>viewportH*1.55)continue;
+   const local=clamp01((viewportH-rect.top)/(viewportH+rect.height));
+   const displacement=calm.matches?0:Math.round((.5-local)*37);
+   s.style.setProperty('--art-shift',`${displacement}px`);
+   s.style.setProperty('--art-scale',String(calm.matches?1:(1.015+Math.sin(local*Math.PI)*.028).toFixed(3)));
+   s.style.setProperty('--card-rise',`${calm.matches?0:Math.round((.5-local)*13)}px`);
+  }
+
+  const inChapters=bottom<viewportH*.43 && belowBox.bottom>viewportH*.35 && window.innerWidth>900;
+  nav.classList.toggle('is-visible',inChapters);
+  nav.setAttribute('aria-hidden',String(!inChapters));
+  nav.inert=!inChapters;
+  if(inChapters){
+   let active=0;
+   for(let i=0;i<sections.length;i++)if(sections[i].getBoundingClientRect().top<viewportH*.48)active=i;
+   if(active!==lastActive){dots.forEach((d,i)=>{if(i===active)d.setAttribute('aria-current','location');else d.removeAttribute('aria-current')});lastActive=active;}
+  }
+ }
+ function schedule(){if(!queued){queued=true;requestAnimationFrame(refresh)}}
+ window.addEventListener('scroll',schedule,{passive:true});
+ window.addEventListener('resize',schedule,{passive:true});
+ if(calm.addEventListener)calm.addEventListener('change',()=>{document.documentElement.classList.toggle('motion-ready',!calm.matches);sections.forEach(s=>s.classList.toggle('in-viewport',calm.matches||s.getBoundingClientRect().top<window.innerHeight*.93));schedule()});
+ if('IntersectionObserver' in window && !calm.matches){
+  sections.forEach(s=>{if(s.getBoundingClientRect().top<window.innerHeight*.9)s.classList.add('in-viewport')});
+  document.documentElement.classList.add('motion-ready');
+  const reveal=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){e.target.classList.add('in-viewport');reveal.unobserve(e.target)}},{rootMargin:'0px 0px -6% 0px',threshold:0.05});
+  sections.forEach(s=>reveal.observe(s));
+ } else sections.forEach(s=>s.classList.add('in-viewport'));
+ refresh();
+})();
+
+</script>
+</body></html>
