@@ -13,7 +13,7 @@ test('The three post-matrix sections are updated but all other anchors remain',a
  assert.match(html,/<section[^>]*id="discover"[\s\S]*?data-i18n="ilhad1Title"/)
  assert.match(html,/<section[^>]*id="guide"[\s\S]*?data-i18n="practice4Title"/)
  const sourcePart=html.split('id="sources"')[1]?.split('</section>')[0]||''
- assert.ok(sourcePart.includes('href="/Asmaa/updates"'))
+ assert.ok(sourcePart.includes('href="/Asmaa/sources"'))
  assert.doesNotMatch(sourcePart,/class="source-links"|islamweb\.net|islamway\.net/)
  assert.equal((html.match(/data-go-topic=/g)||[]).length,6)
 })
