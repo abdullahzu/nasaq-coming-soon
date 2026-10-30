@@ -95,7 +95,7 @@ Object.assign(messages.en,{
  sourceDetails:"Explore sources and methodology ↗"
 });
 document.querySelectorAll('[data-go-topic]').forEach(b=>{
- b.addEventListener('click',()=>{const p=b.getAttribute('data-go-topic').split(':').map(Number);showTopic(p[0],p[1]);});
+ b.addEventListener('click',()=>{const p=b.getAttribute('data-go-topic').split(':').map(Number);const returnTo='#'+(b.closest('.story-section')?.id||'chapters');showTopic(p[0],p[1]);topicReturnHash=returnTo;});
 });
 
 prevSetLang(state.lang);
