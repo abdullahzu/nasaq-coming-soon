@@ -58,7 +58,7 @@ for(const path of previewPaths){
   const page=await response.text()
   assert.ok(page.toLowerCase().includes('noindex'),path+' must be preview-only')
   if(path==='/Asmaa')assert.ok(page.includes('/Asmaa/experience.html'),'The preview iframe is absent')
-  if(path.endsWith('/updates'))assert.ok(page.includes('سجل تطوير'),'The public change log is absent')
+  if(path.endsWith('/updates'))assert.ok(page.includes('المصادر والمنهج'),'The public source-reference page is absent')
   console.log('ASMAA OK '+path)
 }
 const manifestResponse=await fetch(new URL('/Asmaa/release.json',origin),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(30000)})
