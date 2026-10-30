@@ -1,0 +1,213 @@
+/* Prototype 3, integrated with the original bilingual application.
+   Brand teal/slate and the original logo remain the identity anchors. */
+.nasaq-shell {
+  --ivory: #f6f5ed;
+  --sage: #dce5d9;
+  --sky: #dfebef;
+  --line: #d3dcd5;
+  background: var(--ivory);
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  padding-top: 28px;
+}
+.nasaq-shell .wrap { width: min(1250px, calc(100% - 80px)); }
+.home-shell::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 auto;
+  height: 760px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(246,245,237,.12), rgba(246,245,237,.28) 68%, var(--ivory)), url('/images/prototype3/architecture-md.webp') center top / cover no-repeat;
+}
+/* Keep the quiet wall behind the heading in both reading directions. */
+html[lang=en] .home-shell::before { transform: scaleX(-1); }
+.nasaq-shell main:focus { outline: none; }
+.nasaq-shell .site-header {
+  position: relative;
+  z-index: 30;
+  width: min(1080px, calc(100% - 64px));
+  height: auto;
+  margin: 0 auto;
+  padding: 12px 20px;
+  border: 1px solid rgba(255,255,255,.9);
+  border-radius: 24px;
+  background: #f9f9f4;
+  box-shadow: 0 16px 35px rgba(46,57,48,.09);
+}
+@supports (backdrop-filter: blur(16px)) {
+  .nasaq-shell .site-header { background: rgba(249,249,244,.94); backdrop-filter: blur(16px); }
+}
+.nasaq-shell .header-inner { width: 100%; min-height: 50px; gap: 20px; }
+.nasaq-shell .site-header .brand, .nasaq-shell .site-header .brand img { width: 172px; }
+.nasaq-shell .main-nav { gap: 22px; }
+.nasaq-shell .main-nav a { font-size: 13px; white-space: nowrap; }
+.nasaq-shell .main-nav a[aria-current=page] { text-decoration: underline; text-underline-offset: 8px; }
+.nasaq-shell .header-tools { gap: 12px; }
+.nasaq-shell .header-tools > .button { display: inline-flex; min-height: 44px; font-size: 13px; padding: 10px 16px; }
+.nasaq-shell .button { border-radius: 9px; transition: background .2s, box-shadow .2s; }
+.nasaq-shell .lang-link { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+.nasaq-shell .mobile-nav.open { inset: calc(100% + 10px) 0 auto; padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: #f9f9f4; box-shadow: 0 16px 30px #173b411a; }
+.nasaq-shell .menu-toggle { border: 0; box-shadow: none; background: transparent; font-size: 14px; min-height: 44px; }
+.nasaq-shell .architectural-hero { padding-block: 50px 36px; min-height: 335px; }
+.architectural-hero-copy { max-width: 610px; }
+.nasaq-shell .architectural-hero h1 { color: var(--teal); font-size: clamp(46px,5vw,70px); line-height: 1.2; max-width: 580px; }
+html[lang=ar] .nasaq-shell .architectural-hero h1 { max-width: 470px; line-height: 1.35; }
+.nasaq-shell .architectural-hero .positioning { margin-top: 16px; font-size: 20px; line-height: 1.75; max-width: 580px; color: #475b61; }
+.nasaq-shell .architectural-hero .eyebrow { margin-bottom: 18px; }
+.hero-explore { margin-top: 14px; font-size: 14px; }
+.service-windows { scroll-margin-top: 24px; padding-bottom: 56px; }
+.window-experience { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.27fr); gap: 14px; align-items: stretch; }
+.window-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.service-window {
+  border: 2px solid #fff;
+  outline: 1px solid #ced9d3;
+  border-radius: 15px;
+  padding: 16px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 250px;
+  background: rgba(220,229,217,.88);
+  color: var(--slate);
+  text-align: center;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.window-menu { background: rgba(223,235,239,.9); }
+.window-mep { background: rgba(239,241,233,.92); }
+.window-supplier { background: rgba(239,235,228,.92); }
+.service-window[aria-pressed=true] { outline: 2px solid var(--teal); background: #dce8dc; }
+.window-title { font-size: 17px; font-weight: 700; line-height: 1.6; overflow-wrap: anywhere; }
+.window-translation { color: var(--muted); font-size: 12px; line-height: 1.5; display: block; margin-top: 3px; overflow-wrap: anywhere; }
+.window-image { display: block; position: relative; border-radius: 9px; overflow: hidden; flex: 1; min-height: 130px; margin-top: 13px; background: var(--sage); }
+.window-image img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; transition: transform .35s ease; }
+.window-arrow { position: absolute; inset-inline-end: 9px; bottom: 9px; width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: #fafcf8; color: var(--teal); font-size: 23px; box-shadow: 0 3px 10px #173b411a; }
+@media (hover:hover) and (pointer:fine) {
+  .service-window:hover { transform: translateY(-4px); box-shadow: 0 14px 24px #173b411a; }
+  .service-window:hover .window-image img { transform: scale(1.04); }
+}
+.service-window:focus-visible { outline: 3px solid var(--teal); outline-offset: 5px; }
+.window-detail {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  gap: 22px;
+  direction: ltr;
+  padding: 12px;
+  border-radius: 24px;
+  border: 1px solid #ccd8cf;
+  background: rgba(249,250,244,.94);
+  min-width: 0;
+}
+html[lang=en] .window-detail { direction: rtl; }
+.window-detail[hidden] { display: none; }
+.window-detail-media { position: relative; min-width: 0; overflow: hidden; border-radius: 15px; }
+.window-detail-media > img { width: 100%; height: 100%; object-fit: cover; min-height: 490px; }
+.window-close { position: absolute; top: 12px; inset-inline-start: 12px; width: 44px; height: 44px; display: grid; place-items: center; background: #fafcf8; border: 1px solid var(--line); border-radius: 10px; font-size: 27px; line-height: 1; color: var(--teal); }
+.window-detail-copy { direction: ltr; text-align: start; min-width: 0; padding: 18px 8px 10px 0; display: flex; flex-direction: column; }
+html[lang=ar] .window-detail-copy { direction: rtl; }
+.window-detail-copy .eyebrow { margin-bottom: 16px; font-size: 12px; }
+.nasaq-shell .window-detail-copy h3 { font-size: 25px; line-height: 1.5; }
+.window-detail-copy .window-translation { font-size: 13px; text-align: start; }
+.window-description { margin-top: 16px; font-size: 14px; line-height: 1.8; color: #51636a; }
+.window-detail-copy h4 { font-size: 15px; margin: 20px 0 0; padding-block: 12px; border-top: 1px solid var(--line); }
+.window-outputs { list-style: none; padding: 0; margin: 0 0 20px; }
+.window-outputs li { display: flex; align-items: center; gap: 10px; padding-block: 12px; border-top: 1px solid var(--line); font-size: 12px; line-height: 1.7; }
+.window-outputs li > span { display: grid; place-items: center; width: 28px; height: 28px; flex: 0 0 28px; border-radius: 8px; border: 1px solid #cbd9d2; color: var(--teal); background: #edf0e8; }
+.window-detail-copy .button { margin-top: auto; font-size: 13px; width: 100%; min-height: 44px; padding: 10px; }
+.window-full-link { font-size: 12px; min-height: 44px; padding-block: 12px 4px; text-align: center; text-decoration: underline; text-underline-offset: 4px; }
+.window-experience.is-collapsed { grid-template-columns: 1fr; }
+.is-collapsed .window-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.window-underbar { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; align-items: center; padding-block: 20px; margin-top: 24px; border-top: 1px solid #bccfc8; }
+.window-underbar p { font-size: 13px; color: #51636a; }
+.window-underbar .text-link { font-size: 14px; }
+.nasaq-shell .tinted { background: rgba(226,233,223,.43); }
+.nasaq-shell .section { padding-block: 80px; }
+.nasaq-shell .approach-counter { display: grid; grid-template-columns: 1.1fr 1fr; gap: 50px; align-items: center; margin-top: 50px; }
+.approach-counter img { border-radius: 22px; }
+.approach-counter p { margin-top: 16px; color: var(--muted); font-size: 18px; }
+.nasaq-shell .photo-link img, .nasaq-shell .concept-overview-image img { border-radius: 22px; }
+.nasaq-shell .packages { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 0 40px; }
+.nasaq-shell .packages li { padding: 28px 0; border-top: 1px solid #a7bdb5; }
+.nasaq-shell .packages li:first-child { grid-column: span 1; }
+.nasaq-shell .contact-section { background: #e1e9df; border-top: 1px solid #c5d6ca; }
+.nasaq-shell .contact-form-panel { border-radius: 22px; background: #fcfcf7; border-color: #cddcd2; }
+.nasaq-shell .field input, .nasaq-shell .field select, .nasaq-shell .field textarea { border-radius: 9px; }
+.nasaq-shell .site-footer { background: var(--ivory); }
+.nasaq-shell .site-footer .brand, .nasaq-shell .site-footer .brand img { width: 210px; }
+.nasaq-shell .breadcrumb { padding-top: 36px; font-size: 13px; }
+.nasaq-shell .page-hero { padding-block: 36px 64px; }
+.nasaq-shell .page-hero-grid { gap: 52px; }
+.nasaq-shell .page-hero-copy .lead { font-size: 19px; }
+.nasaq-shell .page-hero-visual { padding: 10px; border: 1px solid #d3ddd5; border-radius: 24px; background: #e7ece3; box-shadow: 0 18px 36px #2f493a0d; }
+.nasaq-shell .page-hero-visual img { border-radius: 16px; }
+.nasaq-shell .side-note { background: #e6ece1; border: 1px solid #d3ded2; border-radius: 20px; }
+.nasaq-shell .scope-note { border-radius: 0 16px 16px 0; background: var(--sky); }
+.nasaq-shell .engagement-list article { padding-block: 36px; }
+.nasaq-shell .concept-card { border-color: #aebfb6; }
+.nasaq-shell .contact-band { background: var(--teal); }
+
+@media (max-width:1100px) {
+  .nasaq-shell .wrap { width: calc(100% - 48px); }
+  .nasaq-shell .site-header { width: calc(100% - 48px); }
+  .nasaq-shell .main-nav { gap: 14px; }
+  .nasaq-shell .site-header .brand, .nasaq-shell .site-header .brand img { width: 145px; }
+  .nasaq-shell .header-tools > .button { font-size: 12px; padding: 10px; }
+  .window-experience { grid-template-columns: minmax(0,1fr) minmax(0,1.2fr); }
+  .window-detail { grid-template-columns: minmax(0,.8fr) minmax(0,1fr); gap: 16px; }
+  .window-title { font-size: 15px; }
+}
+@media (max-width:1000px) {
+  .nasaq-shell .main-nav { display: none; }
+  .nasaq-shell .menu-toggle { display: block; }
+  .window-experience { grid-template-columns: 1fr; }
+  .window-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .window-detail { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .window-detail-media > img { min-height: 460px; max-height: 560px; }
+  .window-detail-copy { padding: 20px; }
+  .nasaq-shell .window-detail-copy h3 { font-size: 30px; }
+  .window-description, .window-outputs li { font-size: 16px; }
+  .window-detail-copy .button, .window-full-link { font-size: 15px; }
+  .nasaq-shell .page-hero-grid { gap: 32px; }
+}
+@media (max-width:700px) {
+  .nasaq-shell { padding-top: 16px; }
+  .nasaq-shell .wrap { width: calc(100% - 32px); }
+  .nasaq-shell .site-header { width: calc(100% - 28px); padding: 8px 12px; border-radius: 18px; }
+  .nasaq-shell .header-inner { gap: 10px; }
+  .nasaq-shell .site-header .brand, .nasaq-shell .site-header .brand img { width: 126px; }
+  .nasaq-shell .site-header .brand-full { display: block; }
+  .nasaq-shell .site-header .brand-mark { display: none; }
+  .nasaq-shell .header-tools > .button { display: none; }
+  .nasaq-shell .header-tools { gap: 10px; }
+  .home-shell::before { height: 540px; background-image: linear-gradient(180deg,rgba(246,245,237,.4),rgba(246,245,237,.6) 65%,var(--ivory)),url('/images/prototype3/architecture-sm.webp'); background-position: 35% top; }
+  .nasaq-shell .architectural-hero { padding: 40px 8px 32px; min-height: 300px; }
+  .nasaq-shell .architectural-hero h1 { font-size: clamp(38px,8.5vw,55px); }
+  html[lang=ar] .nasaq-shell .architectural-hero h1 { max-width: 350px; }
+  .nasaq-shell .architectural-hero .eyebrow { font-size: 12px; line-height: 1.8; }
+  .nasaq-shell .architectural-hero .positioning { font-size: 17px; }
+  .window-grid, .is-collapsed .window-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+  .service-window { min-height: 224px; padding: 12px 9px 9px; }
+  .window-title { font-size: 14px; }
+  .window-translation { font-size: 11px; }
+  .window-detail { display: flex; flex-direction: column; gap: 0; padding: 10px; }
+  .window-detail-media > img { min-height: 0; height: 280px; object-position: center; }
+  .window-detail-copy { padding: 24px 14px 10px; }
+  .window-outputs li { padding-block: 14px; }
+  .window-underbar { align-items: flex-start; flex-direction: column; }
+  .nasaq-shell .section { padding-block: 56px; }
+  .nasaq-shell .approach-counter { grid-template-columns: 1fr; gap: 24px; margin-top: 32px; }
+  .nasaq-shell .packages { grid-template-columns: 1fr; gap: 0; }
+  .nasaq-shell .page-hero-copy .lead { font-size: 18px; }
+  .nasaq-shell .page-hero { padding-top: 28px; }
+  .nasaq-shell .page-hero-visual { padding: 8px; border-radius: 20px; }
+  .nasaq-shell .contact-form-panel { padding: 24px 18px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .nasaq-shell *, .nasaq-shell *::before, .nasaq-shell *::after { transition: none !important; animation: none !important; }
+  .service-window:hover, .service-window:hover .window-image img { transform: none; }
+}
+@media (forced-colors:active) {
+  .service-window[aria-pressed=true] { outline: 3px solid Highlight; }
+  .nasaq-shell .button { border: 1px solid ButtonText; }
+}
