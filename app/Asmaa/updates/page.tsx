@@ -1,12 +1,19 @@
 import type {Metadata} from 'next'
-export const metadata:Metadata={title:'سجل تطوير أسماء الله الحسنى | V8.4',robots:{index:false,follow:false,noarchive:true}}
-export default function Updates(){return <main dir="rtl" lang="ar" style={{maxWidth:850,minHeight:'100svh',margin:'auto',padding:'clamp(20px,5vw,48px)',boxSizing:'border-box',color:'#294a44',fontFamily:'Tahoma,Arial,sans-serif',lineHeight:1.9}}>
-<nav aria-label="التنقل"><a href="/Asmaa" style={{color:'#426a58'}}>↩ العودة إلى تجربة الأسماء</a></nav>
-<p style={{fontSize:12,letterSpacing:2,color:'#6d8e7d',margin:'26px 0 5px'}}>ASMAA / PREVIEW · V8.4</p>
-<h1 style={{fontSize:'clamp(28px,5vw,43px)',lineHeight:1.4,margin:'4px 0 8px'}}>سجل تطوير أسماء الله الحسنى</h1>
-<p style={{color:'#5b766a',fontSize:15,margin:'0 0 25px'}}>هذه صفحة لمتابعة النسخ التجريبية والتحقق من سلامة نشرها. لا تتضمن مواد علمية معتمدة أو قاعدة بيانات التحرير.</p>
-<section style={{padding:24,border:'1px solid #d4e2d7',borderRadius:18,background:'#fffefa'}}><h2 style={{fontSize:21,margin:'0 0 8px'}}>التحقق من الإصدار الحالي</h2><p style={{margin:'0 0 15px',fontSize:14,color:'#58746a'}}>افحص المسارات والملفات المنشورة وقارن بصمة التجربة مع سجل الإصدار. يتم الفحص من متصفحك دون تعديل بيانات CMS.</p><a href="/Asmaa/health.html" style={{display:'inline-block',padding:'10px 18px',background:'#416e5b',color:'#fff',borderRadius:12,textDecoration:'none',fontSize:14}}>فتح فحص سلامة الموقع</a></section>
-<section style={{marginTop:20,padding:24,border:'1px solid #dde7df',borderRadius:18,background:'#fffefa'}}><h2 style={{fontSize:20,margin:'0 0 9px'}}>الإصدارات والتغييرات</h2><ol style={{paddingRight:24,margin:0,fontSize:14}}><li><strong>V8.4:</strong> إضافة مراقبة للمسارات العامة ومطابقة البصمة الرقمية للتجربة، وتحسين سجل المتابعة.</li><li><strong>V8.3:</strong> نشر المسار التجريبي المستقل على نطاق نسق.</li><li><strong>V7.2–V7.4:</strong> التفاعل الورقي والمصفوفة والمعرض الأفقي وتجربة القراءة.</li><li><strong>V7.5–V8.2:</strong> إدارة المحتوى والصلاحيات والمزامنة وDocker، غير منشورة للعامة.</li></ol></section>
-<section style={{marginTop:20,padding:24,border:'1px solid #dde7df',borderRadius:18,background:'#fffefa'}}><h2 style={{fontSize:20,margin:'0 0 9px'}}>ما الذي نختبره؟</h2><p style={{fontSize:14,margin:0}}>السحب والتكبير، التنقل بين الأسماء، تبديل المصفوفة والمعرض والقائمة، قراءة الاسم والمبحث، والعودة وتبديل اللغة، على الكمبيوتر والجوال.</p></section>
-<p style={{fontSize:13,color:'#617b70',marginTop:20}}>تنبيه علمي: أسماء الله الحسنى وتفسيرها وترتيبها ومصادرها في هذه المعاينة ليست مادة علمية معتمدة، ولا تُعتمد للنشر قبل مراجعتها من المختصين.</p>
+export const metadata:Metadata={title:'المصادر والمنهج | أسماء الله الحسنى',description:'المراجع العلمية للمداخل المختصرة في أسماء الله الحسنى.',robots:{index:false,follow:false}}
+const sources=[
+{title:'أسماء الله الحسنى',publisher:'إسلام ويب',url:'https://www.islamweb.net/ar/article/244087',description:'مقدمة في دلالات الأسماء وأهمية معرفتها وضوابط إثباتها.'},
+{title:'الفرق بين الرحمن والرحيم',publisher:'إسلام ويب',url:'https://www.islamweb.net/ar/fatwa/37954',description:'بيان المعاني المذكورة للاسمين في كتب التفسير.'},
+{title:'اسم الله السلام',publisher:'إسلام ويب',url:'https://www.islamweb.net/ar/article/244411',description:'شرح الاسم وموضع وروده ودلالاته.'},
+{title:'أسماء الله الحسنى كما وردت في القرآن والسنة',publisher:'إسلام ويب',url:'https://www.islamweb.net/ar/fatwa/12383',description:'توضيح الاختلاف في تعيين الأسماء وأنها ليست محصورة في عدد بعينه.'},
+{title:'المختصر في معاني أسماء الله الحسنى',publisher:'طريق الإسلام · فهد بن عبد العزيز الشويرخ',url:'https://ar.demo.islamway.net/article/98746',description:'ملخصات لمعاني مجموعة من أسماء الله الحسنى.'},
+{title:'الجنة لمن أحصى أسماء الله الحسنى',publisher:'طريق الإسلام',url:'https://ar.demo.islamway.net/article/92785',description:'عرض معنى الإحصاء وارتباطه بالفهم والعمل والدعاء.'},
+{title:'حكم ترديد الأسماء بأعداد معينة',publisher:'إسلام ويب',url:'https://www.islamweb.net/ar/fatwa/205498',description:'فتوى حول تعيين خصائص أو أعداد للأذكار من غير دليل.'}
+]
+export default function Sources(){return <main dir="rtl" lang="ar" style={{maxWidth:890,minHeight:'100svh',margin:'auto',padding:'clamp(20px,5vw,50px)',boxSizing:'border-box',color:'#294a44',fontFamily:'Tahoma,Arial,sans-serif',lineHeight:1.9}}>
+<nav><a href="/Asmaa" style={{color:'#426a58',textUnderlineOffset:4}}>↩ العودة إلى الأسماء</a></nav>
+<p style={{fontSize:12,letterSpacing:1.5,color:'#789688',margin:'30px 0 5px'}}>ASMAA · SOURCES</p>
+<h1 style={{fontSize:'clamp(29px,5vw,43px)',lineHeight:1.4,margin:'4px 0 8px'}}>المصادر والمنهج</h1>
+<p style={{color:'#5b766a',fontSize:16,maxWidth:740}}>نقدّم مداخل موجزة لمعاني أسماء الله الحسنى، مع روابط لمقالات وفتاوى منشورة. صياغة الملخصات مستقلة وليست نقلاً للمقالات أو تمثيلاً رسمياً للجهات الناشرة.</p>
+<section style={{display:'grid',gap:12,margin:'30px 0'}}>{sources.map(s=><article key={s.url} style={{padding:'18px 22px',border:'1px solid #dce8dd',borderRadius:16,background:'#fffefa'}}><small style={{color:'#71917e'}}>{s.publisher}</small><h2 style={{fontSize:20,margin:'4px 0'}}><a href={s.url} target="_blank" rel="noopener noreferrer" style={{color:'#376e55',textDecoration:'none'}}>{s.title} ↗</a></h2><p style={{fontSize:14,color:'#638173',margin:0}}>{s.description}</p></article>)}</section>
+<section style={{padding:22,border:'1px solid #dce8dd',borderRadius:16,background:'#f0f5ef'}}><h2 style={{fontSize:20,margin:'0 0 9px'}}>كيف نقرأ الأسماء؟</h2><p style={{margin:0,fontSize:14}}>تُثبت أسماء الله تعالى من الكتاب والسنة، وليس كل تعداد مشهور محل اتفاق في التعيين والترتيب. نربط المداخل بمصادرها، ونترك المقالات والفتاوى الأصلية للقراءة في سياقها الكامل. المداخل المختصرة ليست فتوى، وقد يلزم التفصيل العلمي في بعض المسائل.</p></section>
 </main>}

@@ -1,10 +1,10 @@
 {
-  "release": "v8.4-preview-monitoring",
-  "date": "2026-10-29",
-  "source": "v7.4 unchanged",
-  "sha256": "7660cbcda36050c00d7a157a4b4d5e17d0725a184ca44938ac913cf3341633a3",
+  "release": "v8.5-sourced-reading",
+  "date": "2026-10-30",
+  "source": "v7.4 design unchanged; external source-reading script added",
+  "sha256": "fa4b99e1708d358d38c6e00f3189809b20c7dac1d20f2740219d097ddc3ac632",
   "scholarlyApproved": false,
   "containsCMS": false,
-  "previewOnly": true,
-  "monitoring": "client-side-on-demand"
+  "readingEntries": 40,
+  "topicSummaries": 9
 }
