@@ -22,6 +22,7 @@ test('Arabic and English labels, study actions and source links stay functional'
  new Script(s)
  for(const needle of ['guideLabel','sourcesHeading','ilhad1Title','practice4Title','sourceDetails','showTopic(p[0],p[1])','audio.islamweb.net'])assert.ok(s.includes(needle),needle)
  assert.ok(!s.includes("const src=document.getElementById('sources')"))
+ assert.ok(s.includes('topicReturnHash=returnTo'))
  const sources=await read('app/Asmaa/updates/page.tsx')
  assert.match(sources,/الإلحاد في أسماء الله/)
  assert.match(sources,/314593/)
