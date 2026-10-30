@@ -50,7 +50,7 @@ for(const [site,expected] of [['same-origin',401],['cross-site',400]]) {
 // ASMAA v8.4: Public preview is a separate release surface. The NASAQ homepage
 // checks above must not be treated as evidence that /Asmaa itself is deployed.
 const {createHash}=await import('node:crypto')
-const previewPaths=['/Asmaa','/Asmaa/updates','/Asmaa/health.html']
+const previewPaths=['/Asmaa','/Asmaa/updates','/Asmaa/sources','/Asmaa/health.html']
 for(const path of previewPaths){
   const response=await fetch(new URL(path,origin),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(30000)})
   assert.equal(response.status,200,path)
