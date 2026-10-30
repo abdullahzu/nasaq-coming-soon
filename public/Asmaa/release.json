@@ -1,10 +1,15 @@
 {
-  "release": "v8.5-sourced-reading",
+  "release": "v8.6-home-sections",
   "date": "2026-10-30",
-  "source": "v7.4 design unchanged; external source-reading script added",
-  "sha256": "fa4b99e1708d358d38c6e00f3189809b20c7dac1d20f2740219d097ddc3ac632",
+  "source": "v7.4 matrix/gallery unchanged; v8.6 post-matrix editorial sections",
+  "sha256": "e61064a0ae58991fec632a943d4955a5d1c81eae8c5b7336b306293976d95c10",
   "scholarlyApproved": false,
   "containsCMS": false,
   "readingEntries": 40,
-  "topicSummaries": 9
+  "topicSummaries": 9,
+  "sectionChanges": [
+    "02 ilhad in Allah's Names",
+    "03 learning, supplication, dhikr and reflection",
+    "05 references moved to dedicated page"
+  ]
 }

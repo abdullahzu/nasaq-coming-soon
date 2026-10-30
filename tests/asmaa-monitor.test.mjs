@@ -6,7 +6,7 @@ test('Asmaa sourced-reading document matches signed release',async()=>{
  const html=await readFile('public/Asmaa/experience.html','utf8')
  const v=JSON.parse(await readFile('public/Asmaa/release.json','utf8'))
  assert.equal(createHash('sha256').update(html).digest('hex'),v.sha256)
- assert.match(v.source,/v7\.4 design unchanged/)
+ assert.match(v.source,/v7\.4 matrix\/gallery unchanged/)
  assert.equal(v.scholarlyApproved,false)
  assert.equal(v.containsCMS,false)
  assert.match(html,/noindex,nofollow/)

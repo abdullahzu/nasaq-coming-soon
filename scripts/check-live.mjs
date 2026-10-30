@@ -50,7 +50,7 @@ for(const [site,expected] of [['same-origin',401],['cross-site',400]]) {
 // ASMAA v8.4: Public preview is a separate release surface. The NASAQ homepage
 // checks above must not be treated as evidence that /Asmaa itself is deployed.
 const {createHash}=await import('node:crypto')
-const previewPaths=['/Asmaa','/Asmaa/updates','/Asmaa/health.html']
+const previewPaths=['/Asmaa','/Asmaa/updates','/Asmaa/sources','/Asmaa/health.html']
 for(const path of previewPaths){
   const response=await fetch(new URL(path,origin),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(30000)})
   assert.equal(response.status,200,path)
@@ -64,7 +64,7 @@ for(const path of previewPaths){
 const manifestResponse=await fetch(new URL('/Asmaa/release.json',origin),{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(30000)})
 assert.equal(manifestResponse.status,200,'/Asmaa/release.json')
 const release=await manifestResponse.json()
-assert.equal(release.release,'v8.5-sourced-reading','The official site has an outdated /Asmaa release')
+assert.equal(release.release,'v8.6-home-sections','The official site has an outdated /Asmaa release')
 assert.equal(release.scholarlyApproved,false)
 assert.equal(release.containsCMS,false)
 assert.match(release.sha256,/^[a-f0-9]{64}$/)
@@ -84,3 +84,12 @@ assert.ok(sourceText.length>15000,'Incomplete editorial reading asset')
 assert.ok(sourceText.includes('const entries=')&&sourceText.includes('const TOPICS='),'Sourced reading data missing')
 assert.ok(sourceText.includes('islamweb.net')&&sourceText.includes('islamway.net'),'Attribution sources missing')
 console.log('ASMAA sourced-reading assets verified')
+
+const homeResponse=await fetch(new URL('/Asmaa/experience.html',origin),{signal:AbortSignal.timeout(30000),headers:{'Cache-Control':'no-cache'}})
+const homeHTML=await homeResponse.text()
+assert.ok(homeHTML.includes('id="discover"')&&homeHTML.includes('data-i18n="ilhad1Title"'),'02 / 05 section missing the ilhad topic')
+assert.ok(homeHTML.includes('data-i18n="practice2Title"')&&homeHTML.includes('data-i18n="practice4Title"'),'03 / 05 practical topics missing')
+const sourcesSection=homeHTML.split('id="sources"')[1]?.split('</section>')[0] || ''
+assert.ok(sourcesSection.includes('href="/Asmaa/updates"'),'05 / 05 must link to sources page')
+assert.ok(!sourcesSection.includes('class="source-links"'),'05 / 05 must not list detailed references')
+console.log('ASMAA five-section homepage arrangement verified')
