@@ -90,6 +90,6 @@ const homeHTML=await homeResponse.text()
 assert.ok(homeHTML.includes('id="discover"')&&homeHTML.includes('data-i18n="ilhad1Title"'),'02 / 05 section missing the ilhad topic')
 assert.ok(homeHTML.includes('data-i18n="practice2Title"')&&homeHTML.includes('data-i18n="practice4Title"'),'03 / 05 practical topics missing')
 const sourcesSection=homeHTML.split('id="sources"')[1]?.split('</section>')[0] || ''
-assert.ok(sourcesSection.includes('href="/Asmaa/updates"'),'05 / 05 must link to sources page')
+assert.ok(sourcesSection.includes('href="/Asmaa/sources"'),'05 / 05 must link to sources page')
 assert.ok(!sourcesSection.includes('class="source-links"'),'05 / 05 must not list detailed references')
 console.log('ASMAA five-section homepage arrangement verified')
