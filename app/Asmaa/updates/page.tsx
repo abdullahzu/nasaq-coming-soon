@@ -7,6 +7,8 @@ const sources=[
 {title:'أسماء الله الحسنى كما وردت في القرآن والسنة',publisher:'إسلام ويب',url:'https://www.islamweb.net/ar/fatwa/12383',description:'توضيح الاختلاف في تعيين الأسماء وأنها ليست محصورة في عدد بعينه.'},
 {title:'المختصر في معاني أسماء الله الحسنى',publisher:'طريق الإسلام · فهد بن عبد العزيز الشويرخ',url:'https://ar.demo.islamway.net/article/98746',description:'ملخصات لمعاني مجموعة من أسماء الله الحسنى.'},
 {title:'الجنة لمن أحصى أسماء الله الحسنى',publisher:'طريق الإسلام',url:'https://ar.demo.islamway.net/article/92785',description:'عرض معنى الإحصاء وارتباطه بالفهم والعمل والدعاء.'},
+{title:'الإلحاد في أسماء الله: شرح القواعد المثلى',publisher:'إسلام ويب · مادة صوتية مفرغة',url:'https://audio.islamweb.net/audio/Fulltxt.php?audioid=210817',description:'مدخل لمعنى الإلحاد في الأسماء وحدوده.'},
+{title:'تسمية الله بما لم يسمِّ به من الإلحاد',publisher:'إسلام ويب · فتوى',url:'https://www.islamweb.net/ar/fatwa/314593',description:'حكم التسمية بغير ما ثبت في الكتاب والسنة.'},
 {title:'حكم ترديد الأسماء بأعداد معينة',publisher:'إسلام ويب',url:'https://www.islamweb.net/ar/fatwa/205498',description:'فتوى حول تعيين خصائص أو أعداد للأذكار من غير دليل.'}
 ]
 export default function Sources(){return <main dir="rtl" lang="ar" style={{maxWidth:890,minHeight:'100svh',margin:'auto',padding:'clamp(20px,5vw,50px)',boxSizing:'border-box',color:'#294a44',fontFamily:'Tahoma,Arial,sans-serif',lineHeight:1.9}}>
