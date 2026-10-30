@@ -725,6 +725,20 @@ html{overflow-x:clip}
 @media(max-width:620px){.dialog .dialog-content{padding:10px 13px 16px}.dialog .detail-ar{font-size:clamp(56px,12vw,73px)}.reader-tabs{gap:1px;padding:4px}.reader-tab{padding:9px 3px;font-size:10px}.reader-panel{padding:15px;min-height:255px}.reader-two-cols,.reader-source-fields{grid-template-columns:1fr}.reader-slot{min-height:66px}.topic-sheet-content{padding:19px 16px}.topic-panel{padding:14px}.topic-sheet h2{font-size:30px}.topic-tab{padding:9px 10px}}
 @media(prefers-reduced-motion:reduce){.reader-tab{transition:none}}
 
+
+/* V8.6: homepage editorial sections only; do not modify the name matrix/gallery. */
+.explore-section .study-card{min-height:310px;justify-content:flex-start;gap:7px}
+.study-card .study-glyph{font:normal 44px var(--display);line-height:1;color:#80a18d;text-align:start;margin:18px 0 4px}
+.study-card h3{font:normal clamp(21px,2vw,29px) var(--display);margin:0;color:#315d4d;line-height:1.6}
+.study-card p{font-size:clamp(12px,1.2vw,14px);line-height:2;color:#617c6f;margin:0 0 21px}
+.study-read{align-self:start;border:0;border-bottom:1px solid rgba(48,112,83,.45);color:#2d7155;background:transparent;text-decoration:none;font:inherit;font-size:12px;line-height:2;padding:3px 0;margin-top:auto;cursor:pointer}
+.study-read:focus-visible,.source-page-link:focus-visible{outline:2px solid #366f55;outline-offset:6px}
+.practice-grid .guide-item{display:flex;flex-direction:column;align-items:start}
+.practice-grid .guide-item p{margin:0 0 20px;flex:1}
+.practice-grid .guide-item .study-read{margin:6px 0 0}
+.principles-section .source-page-link{margin:30px auto 0;text-decoration:none;background:#fffefaad;padding:12px 20px;border:1px solid #e5eee5;border-radius:50px;box-shadow:0 5px 20px #315e4a0b}
+.principles-section .source-page-link:hover{background:#fffefa}
+@media(max-width:500px){.study-card h3{font-size:25px}.explore-section .study-card{min-height:210px;padding:21px}.study-card .study-glyph{margin:7px 0 0;font-size:35px}.practice-grid .guide-item{padding:18px 9px 19px}}
 </style>
 </head>
 <body>
@@ -803,22 +817,22 @@ html{overflow-x:clip}
     <div class="about-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="about-art-card c-one"><span>01</span><b>الرَّحْمَن</b></div><div class="about-art-card c-two"><span>33</span><b>الْعَظِيم</b></div><div class="about-art-card c-three"><span>99</span><b>الصَّبُور</b></div><div class="art-center">٩٩</div></div>
   </section>
   <section class="story-section explore-section" id="discover" aria-labelledby="discoverTitle">
-    <div class="section-eyebrow"><span>02 / 05</span><span data-i18n="discoverLabel">من الفضاء إلى المعنى</span></div>
-    <div class="split-head"><h2 class="section-headline" id="discoverTitle" data-i18n="discoverHeading">ابدأ من أيّ اسم.</h2><p class="section-lead" data-i18n="discoverBody">هذه ثلاث نقاط دخول سريعة إلى النوافذ. يمكنك فتح أي نافذة هنا، ثم الانتقال إلى السابقة أو التالية داخل تجربة القراءة.</p></div>
-    <div class="featured-grid">
-      <button type="button" class="featured-card" data-open-index="0"><span class="featured-meta">01 <span>THE NAMES</span></span><strong lang="ar" dir="rtl">الرَّحْمَن</strong><span class="featured-en">Ar-Rahman</span><span class="featured-open" data-i18n="openWindow">افتح النافذة ↗</span></button>
-      <button type="button" class="featured-card" data-open-index="32"><span class="featured-meta">33 <span>THE NAMES</span></span><strong lang="ar" dir="rtl">الْعَظِيم</strong><span class="featured-en">Al-Azim</span><span class="featured-open" data-i18n="openWindow">افتح النافذة ↗</span></button>
-      <button type="button" class="featured-card" data-open-index="98"><span class="featured-meta">99 <span>THE NAMES</span></span><strong lang="ar" dir="rtl">الصَّبُور</strong><span class="featured-en">As-Sabur</span><span class="featured-open" data-i18n="openWindow">افتح النافذة ↗</span></button>
+    <div class="section-eyebrow"><span>02 / 05</span><span data-i18n="discoverLabel">الإلحاد في أسماء الله</span></div>
+    <div class="split-head"><h2 class="section-headline" id="discoverTitle" data-i18n="discoverHeading">ما معنى الإلحاد في أسماء الله؟</h2><p class="section-lead" data-i18n="discoverBody">الإلحاد هنا هو الميل بأسماء الله أو معانيها عن الحق الثابت لها، ولا يقتصر هذا المصطلح على إنكار وجود الله.</p></div>
+    <div class="featured-grid ilhad-grid">
+      <article class="featured-card study-card"><span class="featured-meta">01 <span>THE MEANING</span></span><span class="study-glyph" aria-hidden="true">۞</span><h3 data-i18n="ilhad1Title">المعنى والحدود</h3><p data-i18n="ilhad1Body">العدول بأسماء الله أو دلالاتها عن المعنى الحق الذي جاءت به النصوص.</p><button type="button" class="study-read" data-go-topic="3:0" data-i18n="readStudy">اقرأ المبحث ↗</button></article>
+      <article class="featured-card study-card"><span class="featured-meta">02 <span>THE FORMS</span></span><span class="study-glyph" aria-hidden="true">✥</span><h3 data-i18n="ilhad2Title">من صور الإلحاد</h3><p data-i18n="ilhad2Body">تسمية الله بما لم يسمِّ به نفسه، أو العدول بمعاني أسمائه عمّا تدل عليه.</p><button type="button" class="study-read" data-go-topic="3:1" data-i18n="readStudy">اقرأ المبحث ↗</button></article>
+      <article class="featured-card study-card"><span class="featured-meta">03 <span>THE VERSE</span></span><span class="study-glyph" aria-hidden="true">﴿</span><h3 data-i18n="ilhad3Title">الآية الجامعة</h3><p data-i18n="ilhad3Body">﴿وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا وَذَرُوا الَّذِينَ يُلْحِدُونَ فِي أَسْمَائِهِ﴾ [الأعراف: 180].</p><a class="study-read" href="https://www.islamweb.net/ar/fatwa/314593" target="_blank" rel="noopener noreferrer" data-i18n="readOriginal">اقرأ المصدر الأصلي ↗</a></article>
     </div>
   </section>
   <section class="story-section guide-section" id="guide" aria-labelledby="guideTitle">
-    <div class="section-eyebrow"><span>03 / 05</span><span data-i18n="guideLabel">كيف تستكشف؟</span></div>
-    <div class="split-head"><h2 class="section-headline" id="guideTitle" data-i18n="guideHeading">حركة بسيطة. تركيز أكبر.</h2><p class="section-lead" data-i18n="guideBody">أبقينا النوافذ في مواضعها، كي تصبح التجربة مريحة في التصفح والقراءة.</p></div>
-    <div class="guide-grid">
-      <div class="guide-item"><span class="guide-icon">✥</span><span class="guide-num">01</span><h3 data-i18n="guide1Title">حرّك الفضاء</h3><p data-i18n="guide1Body">اسحب أي مساحة من اللوحة لتحريك المجموعة كاملة، دون فصل النوافذ عن بعضها.</p></div>
-      <div class="guide-item"><span class="guide-icon">＋</span><span class="guide-num">02</span><h3 data-i18n="guide2Title">اقترب من الأسماء</h3><p data-i18n="guide2Body">استخدم عجلة الفأرة فوق المصفوفة للتكبير حول المؤشر، أو أزرار التكبير و«عرض الكل»، أو تحكم بحجم الأسماء.</p></div>
-      <div class="guide-item"><span class="guide-icon">⌕</span><span class="guide-num">03</span><h3 data-i18n="guide3Title">انتقل فوراً</h3><p data-i18n="guide3Body">ابحث عن الاسم أو اكتب رقمه لتصل مباشرة إلى النافذة المطلوبة.</p></div>
-      <div class="guide-item"><span class="guide-icon">↗</span><span class="guide-num">04</span><h3 data-i18n="guide4Title">اقرأ بتأنٍ</h3><p data-i18n="guide4Body">اضغط على الاسم لفتح نافذة مستقلة، ثم تنقّل إلى الاسم السابق أو التالي.</p></div>
+    <div class="section-eyebrow"><span>03 / 05</span><span data-i18n="guideLabel">من المعرفة إلى العمل</span></div>
+    <div class="split-head"><h2 class="section-headline" id="guideTitle" data-i18n="guideHeading">معرفة الاسم بداية التأمل.</h2><p class="section-lead" data-i18n="guideBody">تتصل معرفة الأسماء الحسنى بفهم معانيها والدعاء بها والتفكر في آثارها. وهذه مسارات مختارة من باب الجانب العملي والروحي.</p></div>
+    <div class="guide-grid practice-grid">
+      <article class="guide-item"><span class="guide-icon" aria-hidden="true">✥</span><span class="guide-num">01</span><h3 data-i18n="practice1Title">الحفظ والفهم</h3><p data-i18n="practice1Body">تعلّم الأسماء وتأمل دلالاتها، مع الرجوع إلى الآيات والمراجع المرتبطة بها.</p><button type="button" class="study-read" data-go-topic="4:0" data-i18n="readStudy">اقرأ المبحث ↗</button></article>
+      <article class="guide-item"><span class="guide-icon" aria-hidden="true">۞</span><span class="guide-num">02</span><h3 data-i18n="practice2Title">الدعاء بالأسماء</h3><p data-i18n="practice2Body">الدعاء بها امتثالًا لقوله تعالى: ﴿وَلِلَّهِ الْأَسْمَاءُ الْحُسْنَىٰ فَادْعُوهُ بِهَا﴾.</p><button type="button" class="study-read" data-go-topic="4:1" data-i18n="readStudy">اقرأ المبحث ↗</button></article>
+      <article class="guide-item"><span class="guide-icon" aria-hidden="true">✧</span><span class="guide-num">03</span><h3 data-i18n="practice3Title">الذكر</h3><p data-i18n="practice3Body">استحضار أسماء الله في الذكر المشروع دون تخصيص أعداد أو فضائل بلا دليل.</p><button type="button" class="study-read" data-go-topic="4:2" data-i18n="readStudy">اقرأ المبحث ↗</button></article>
+      <article class="guide-item"><span class="guide-icon" aria-hidden="true">◌</span><span class="guide-num">04</span><h3 data-i18n="practice4Title">التفكر والتأمل</h3><p data-i18n="practice4Body">التدبر في معاني الأسماء وعلاقتها بالإيمان والعبادة والسلوك.</p><button type="button" class="study-read" data-go-topic="4:3" data-i18n="readStudy">اقرأ المبحث ↗</button></article>
     </div>
   </section>
   <section id="chapters" class="story-section chapters-section" aria-labelledby="chaptersTitle">
@@ -832,30 +846,19 @@ html{overflow-x:clip}
     <details class="chapter chapter-fold"><summary><span class="chapter-index">05</span><h3 data-i18n="chapter5">مباحث عامة</h3><span class="chapter-meta"><small data-i18n="chapterPending">قسم قيد الإعداد والمراجعة</small><span class="chapter-chevron" aria-hidden="true">+</span></span></summary><div class="chapter-body"><p data-i18n="chapter5Description">عناوين المباحث كما وردت في الوثيقة الرئيسية، والمادة قيد الإعداد.</p><ul><li data-i18n="chapter5a">أسماء الله تعالى توقيفية</li><li data-i18n="chapter5b">أركان الإيمان بالأسماء الحُسنى</li><li data-i18n="chapter5c">دلالة الأسماء الحُسنى ثلاثة أنواع</li><li data-i18n="chapter5d">مراتب إحصاء الأسماء الحُسنى</li></ul><span class="chapter-availability" data-i18n="chapterNoPublished">خريطة محتوى تجريبية، لا توجد مادة علمية منشورة هنا بعد.</span></div></details>
   </div>
 </section>
-<section class="story-section principles-section" id="sources" aria-labelledby="sourcesTitle">
-    <div class="source-panel"><div class="section-eyebrow"><span>05 / 05</span><span data-i18n="sourcesLabel">المنهج والمصادر</span></div>
-      <h2 class="section-headline" id="sourcesTitle" data-i18n="sourcesHeading">التصميم أولاً، والمحتوى العلمي يُراجع قبل النشر.</h2>
-      <p class="section-lead" data-i18n="sourcesBody">النصوص التفسيرية والأدلة والتوثيق المعرفي لا تزال مساحات مخصصة للمراجعة. اختيار هذه القائمة لا يعني أن أسماء الله تعالى محصورة في تسعة وتسعين اسماً أو أن ترتيبها محل اتفاق.</p>
-
-      <div class="editorial-path" aria-label="خارطة إعداد المحتوى">
-        <h3 data-i18n="editorialPathTitle">المعرفة تُنشر بعد التوثيق والمراجعة</h3>
-        <p class="path-caption" data-i18n="editorialPathIntro">مراحل تحريرية مستقبلية، لا تعني أن المحتوى الحالي قد اجتاز أي مرحلة اعتماد.</p>
-        <div class="editorial-steps">
-          <div class="editorial-step"><span>01</span><strong data-i18n="editorialStage1">جمع النص ومصدره</strong></div>
-          <div class="editorial-step"><span>02</span><strong data-i18n="editorialStage2">التحقق من الإحالة</strong></div>
-          <div class="editorial-step"><span>03</span><strong data-i18n="editorialStage3">المراجعة العلمية واللغوية</strong></div>
-          <div class="editorial-step"><span>04</span><strong data-i18n="editorialStage4">اعتماد الإصدار ونشره</strong></div>
-        </div>
-      </div>
-      <div class="source-links"><a href="https://sunnah.com/bukhari:2736" target="_blank" rel="noopener noreferrer">Sahih al-Bukhari 2736 ↗</a><a href="https://www.islamweb.net/ar/article/238009/" target="_blank" rel="noopener noreferrer">إسلام ويب ↗</a></div>
+ <section class="story-section principles-section" id="sources" aria-labelledby="sourcesTitle">
+    <div class="source-panel"><div class="section-eyebrow"><span>05 / 05</span><span data-i18n="sourcesLabel">المصادر والمنهج</span></div>
+      <h2 class="section-headline" id="sourcesTitle" data-i18n="sourcesHeading">اقرأ المعنى، ثم ارجع إلى أصله.</h2>
+      <p class="section-lead" data-i18n="sourcesBody">هذه مداخل مختصرة للتعرّف على الأسماء الحسنى، وتجد المصادر الأصلية وتفاصيل المنهج في صفحة مستقلة.</p>
+      <a class="section-action source-page-link" href="/Asmaa/updates" data-i18n="sourceDetails">تعرّف على المصادر والمنهج ↗</a>
     </div>
     <div class="source-sigil" aria-hidden="true"><span>۞</span></div>
   </section>
 </div>
 <nav class="chapter-journey-nav" id="chapterJourneyNav" aria-label="التنقل بين أقسام الموقع">
   <a href="#about" aria-label="01: عن التجربة" title="01 · عن التجربة">01</a>
-  <a href="#discover" aria-label="02: استكشاف الأسماء" title="02 · استكشاف الأسماء">02</a>
-  <a href="#guide" aria-label="03: دليل التصفح" title="03 · دليل التصفح">03</a>
+  <a href="#discover" aria-label="02: الإلحاد في أسماء الله" title="02 · الإلحاد في الأسماء">02</a>
+  <a href="#guide" aria-label="03: الجانب العملي والروحي" title="03 · التأمل والعمل">03</a>
   <a href="#chapters" aria-label="04: أبواب المحتوى" title="04 · أبواب المحتوى">04</a>
   <a href="#sources" aria-label="05: المنهج والمصادر" title="05 · المنهج والمصادر">05</a>
 </nav>
