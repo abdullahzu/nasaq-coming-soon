@@ -1,0 +1,46 @@
+{
+  "commit": "64ba81611cd8244cf0ddf74584928b74cf0bddf2",
+  "run": 41770117989,
+  "stats": {
+    "startTime": "2026-11-04T03:57:41.285Z",
+    "duration": 180561.67899999997,
+    "expected": 128,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": [
+    {
+      "id": "chromium",
+      "name": "chromium"
+    },
+    {
+      "id": "firefox",
+      "name": "firefox"
+    },
+    {
+      "id": "webkit",
+      "name": "webkit"
+    },
+    {
+      "id": "chrome",
+      "name": "chrome"
+    },
+    {
+      "id": "edge",
+      "name": "edge"
+    },
+    {
+      "id": "mobile-chrome",
+      "name": "mobile-chrome"
+    },
+    {
+      "id": "mobile-webkit",
+      "name": "mobile-webkit"
+    },
+    {
+      "id": "tablet-webkit",
+      "name": "tablet-webkit"
+    }
+  ]
+}
