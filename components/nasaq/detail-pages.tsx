@@ -1,14 +1,60 @@
-import {services,concepts,t,href,contactHref,type Language} from '@/content/site'
+import {services, concepts, t, type Language} from '@/content/site'
 import {serviceDetails} from '@/content/service-details'
 import conceptDetails from '@/content/concept-details.json'
-import {PageHero,Related,ContactBand,Flow,TextLink} from './common'
-import {serviceVisuals,conceptVisuals} from '@/content/visuals'
+import {PageHero, Related, TextLink} from './common'
+import {serviceVisuals, conceptVisuals} from '@/content/visuals'
+import {DetailExplorer, EditorialList, InputNote, ScopeBand} from './detail-explorer'
 import FAQ from './faq'
-export function ServicePage({lang,id}:{lang:Language;id:string}){
- const service=services.find(s=>s.id===id)!,d=serviceDetails[id]
- return <><PageHero lang={lang} kicker={t(lang,'الخدمات الاستشارية','Advisory services')} title={service.name[lang]} lead={d.intro[lang]} visual={serviceVisuals[id]} cta query={'?service='+service.id}/><div className="wrap detail-grid section" style={{paddingTop:0}}><div className="detail-main"><section><h2>{t(lang,'متى تساعدك هذه الخدمة؟','When this helps')}</h2><ul className="plain-list">{d.when.map((x,i)=><li key={i}>{x[lang]}</li>)}</ul></section><section><h2>{t(lang,'ما الذي نوضحه؟','What we clarify')}</h2><ul className="output-list">{service.outputs.map((x,i)=><li key={i}>{x[lang]}</li>)}</ul></section><section><h2>{t(lang,'كيف نتقدم في العمل؟','How the work proceeds')}</h2><ol className="steps">{d.steps.map((x,i)=><li key={i}><div>{x[lang]}</div></li>)}</ol></section><section className="scope-note"><h3>{t(lang,'حدود النطاق','Scope boundaries')}</h3><p>{d.scope[lang]}</p></section><section><h2>{t(lang,'أسئلة شائعة','Common questions')}</h2><FAQ lang={lang} items={d.faq}/></section></div><aside className="side-note"><span className="eyebrow">{t(lang,'نقطة البداية','The starting point')}</span><h3>{t(lang,'ما المعلومات المفيدة؟','What is useful to share?')}</h3><ul className="plain-list">{d.inputs.map((x,i)=><li key={i}>{x[lang]}</li>)}</ul><p className="caption">{t(lang,'شارك المتاح الآن. نحدد معك ما يلزم لاستكمال الدراسة.','Share what is available. We will identify what is needed to complete the review.')}</p><a className="button" href={contactHref(lang,'service='+service.id)}>{t(lang,'ناقش هذه الخدمة','Discuss this service')}</a><h3 style={{marginTop:40}}>{t(lang,'خدمات مرتبطة','Related services')}</h3><Related lang={lang} ids={d.related}/></aside></div><ContactBand lang={lang}/></>
+
+function RelatedSection({lang, ids, all}: {lang: Language; ids: string[]; all: 'services' | 'concepts'}) {
+  return <section className="related-section wrap"><div>
+    <span className="eyebrow">{t(lang, 'الخطوة التالية', 'The next connection')}</span>
+    <h2>{t(lang, 'خدمات مرتبطة', 'Related services')}</h2>
+    <p>{t(lang, 'يحدد نطاق المشروع الخدمات المناسبة.', 'The project scope determines which services apply.')}</p>
+    <TextLink lang={lang} path={all}>{all === 'services' ? t(lang, 'جميع الخدمات', 'All services') : t(lang, 'جميع مفاهيم المشاريع', 'All project concepts')}</TextLink>
+  </div><Related lang={lang} ids={ids}/></section>
 }
-export function ConceptPage({lang,id}:{lang:Language;id:string}){
- const concept=concepts.find(c=>c.id===id)!,d=conceptDetails[id as keyof typeof conceptDetails]
- return <><PageHero lang={lang} kicker={t(lang,'مفاهيم المشاريع','Project concepts')} title={concept.name[lang]} lead={d.intro[lang]} visual={conceptVisuals[id]} cta query={'?concept='+concept.id+(id==='C11'?'&type=private':'')}/><section className="section tinted"><div className="wrap two-col"><div><span className="eyebrow">{t(lang,'نطاق التخطيط','Planning scope')}</span><h2>{t(lang,'نربط تجربة الخدمة باحتياجات التشغيل.','Connect the service experience with operating needs.')}</h2></div><ul className="plain-list">{d.scope.map((x,i)=><li key={i}>{x[lang]}</li>)}</ul></div><div className="wrap"><Flow lang={lang} items={d.sequence}/><p className="caption">{t(lang,'تسلسل مفاهيمي. تُراجع العلاقات والمسارات وفق المنيو والموقع ومتطلبات المشروع.','Conceptual sequence. Relationships and routes are reviewed against the menu, site and project requirements.')}</p></div></section><section className="section wrap detail-grid"><div className="detail-main"><section><h2>{t(lang,'أسئلة تحدد اتجاه التخطيط','Questions that shape the plan')}</h2><ul className="output-list">{d.questions.map((x,i)=><li key={i}>{x[lang]}</li>)}</ul></section><section><h2>{t(lang,'قبل تثبيت المساحة والمعدات','Before fixing space and equipment')}</h2><p>{t(lang,'نبدأ بالمدخلات المتاحة ونوضح الافتراضات. نراجع الوظائف المطلوبة وعلاقات محطات العمل، ثم نربطها بالمعدات والمرافق وحدود النطاق. لا توجد قائمة واحدة مناسبة لكل مشروع، لأن المنيو والسعة وطريقة الخدمة تختلف.','We start with the available inputs and make assumptions explicit. Required functions and workstation relationships are reviewed, then connected to equipment, utilities and scope boundaries. There is no single equipment list for every project: menu, capacity and service model vary.')}</p><p>{t(lang,'تُحدد المخرجات وجولات المراجعة ومسؤوليات التنسيق قبل بدء العمل. الصور والتسلسلات هنا توضيحية، ولا تمثل مخططات تنفيذية أو مشاريع منجزة.','Deliverables, review rounds and coordination responsibilities are defined before work begins. The images and sequences shown here are illustrative, not construction drawings or completed-project records.')}</p>{id==='C11'&&<p>{t(lang,'للمشاريع الخاصة، يكفي وصف عام في الرسالة الأولى. نتفق لاحقاً على المعلومات الضرورية وطريقة مشاركتها، مع فصل تشغيل الضيافة عن الاستخدام العائلي.','For private projects, a general description is enough for the first message. Necessary information and its sharing method are agreed later, with hospitality service considered separately from family use.')}</p>}</section><TextLink lang={lang} path="concepts">{t(lang,'جميع مفاهيم المشاريع','All project concepts')}</TextLink></div><aside className="side-note"><h3>{t(lang,'شاركنا نقطة البداية','Share your starting point')}</h3><ul className="plain-list">{d.inputs.map((x,i)=><li key={i}>{x[lang]}</li>)}</ul><a className="button" href={contactHref(lang,'concept='+concept.id+(id==='C11'?'&type=private':''))}>{t(lang,'ناقش هذا المفهوم','Discuss this concept')}</a><h3 style={{marginTop:40}}>{t(lang,'خدمات ذات صلة','Relevant services')}</h3><Related lang={lang} ids={d.related}/><p className="caption">{t(lang,'يحدد نطاق المشروع الخدمات المناسبة.','The project scope determines which services apply.')}</p></aside></section><ContactBand lang={lang}/></>
+
+export function ServicePage({lang, id}: {lang: Language; id: string}) {
+  const service = services.find(s => s.id === id)!, d = serviceDetails[id]
+  const label = t(lang, 'ناقش هذه الخدمة', 'Discuss this service')
+  return <>
+    <PageHero lang={lang} kicker={t(lang, 'الخدمات الاستشارية', 'Advisory services')}
+      title={service.name[lang]} translation={lang === 'ar' ? service.name.en : undefined}
+      lead={d.intro[lang]} visual={serviceVisuals[id]} cta ctaLabel={label}
+      query={'service=' + id} jump={{href:'#service-content', label:t(lang, 'استكشف المخرجات', 'Explore the outputs')}}/>
+    <DetailExplorer lang={lang} id="service-content" initial="outputs"
+      aside={<InputNote lang={lang} items={d.inputs}/>}
+      tabs={[
+        {id:'when', label:t(lang, 'متى تحتاجها', 'When it helps'), content:<><span className="eyebrow">{t(lang, 'هل هذه نقطة البداية المناسبة؟', 'Is this the right starting point?')}</span><h2>{t(lang, 'متى تساعدك هذه الخدمة؟', 'When this helps')}</h2><EditorialList lang={lang} items={d.when}/></>},
+        {id:'outputs', label:t(lang, 'المخرجات', 'Outputs'), content:<><h2>{t(lang, 'ما الذي نوضحه؟', 'What we clarify')}</h2><EditorialList lang={lang} items={service.outputs}/><p className="detail-panel-note">{t(lang, 'تُحدد المخرجات ودرجة تفصيلها في نطاق العمل المتفق عليه.', 'Deliverables and their level of detail are defined in the agreed scope of work.')}</p></>},
+        {id:'inputs', label:t(lang, 'المدخلات', 'Inputs'), content:<><span className="eyebrow">{t(lang, 'من مشروعك إلى نطاق واضح', 'From your project to a clear scope')}</span><h2>{t(lang, 'ما المعلومات المفيدة؟', 'What is useful to share?')}</h2><EditorialList lang={lang} items={d.inputs} variant="inputs"/><p className="detail-panel-note">{t(lang, 'البداية الجيدة لا تحتاج إلى اكتمال جميع المعلومات.', 'You do not need every detail in place to start the conversation.')}</p></>},
+        {id:'steps', label:t(lang, 'خطوات العمل', 'How we work'), content:<><span className="eyebrow">{t(lang, 'منهج مترابط', 'A connected approach')}</span><h2>{t(lang, 'كيف نتقدم في العمل؟', 'How the work proceeds')}</h2><ol className="editorial-steps">{d.steps.map((step, i) => <li key={i}><span className="step-order" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span><p>{step[lang]}</p></li>)}</ol></>},
+        {id:'faq', label:t(lang, 'أسئلة شائعة', 'Common questions'), content:<><span className="eyebrow">{t(lang, 'قبل بدء العمل', 'Before we begin')}</span><h2>{t(lang, 'أسئلة شائعة', 'Common questions')}</h2><FAQ lang={lang} items={d.faq}/></>},
+      ]}/>
+    <ScopeBand lang={lang}><p>{d.scope[lang]}</p></ScopeBand>
+    <RelatedSection lang={lang} ids={d.related} all="services"/>
+  </>
+}
+
+export function ConceptPage({lang, id}: {lang: Language; id: string}) {
+  const concept = concepts.find(c => c.id === id)!, d = conceptDetails[id as keyof typeof conceptDetails]
+  const query = 'concept=' + id + (id === 'C11' ? '&type=private' : '')
+  const label = t(lang, 'ناقش هذا المفهوم', 'Discuss this concept')
+  return <>
+    <PageHero lang={lang} kicker={t(lang, 'مفاهيم المشاريع', 'Project concepts')}
+      title={concept.name[lang]} translation={lang === 'ar' ? concept.name.en : undefined}
+      lead={d.intro[lang]} visual={conceptVisuals[id]} cta ctaLabel={label} query={query}
+      jump={{href:'#concept-content', label:t(lang, 'اكتشف نطاق التخطيط', 'Explore the planning scope')}}/>
+    <DetailExplorer lang={lang} id="concept-content" initial="scope"
+      aside={<InputNote lang={lang} items={d.inputs}/>}
+      tabs={[
+        {id:'scope', label:t(lang, 'نطاق التخطيط', 'Planning scope'), content:<><span className="eyebrow">{t(lang, 'تجربة ضيافة، ومنظومة تشغيل', 'Hospitality meets operations')}</span><h2>{t(lang, 'نربط الخدمة بالتشغيل.', 'Connect service with operations.')}</h2><EditorialList lang={lang} items={d.scope}/></>},
+        {id:'flow', label:t(lang, 'تسلسل التشغيل', 'Operating sequence'), content:<><span className="eyebrow">{t(lang, 'العلاقات قبل التفاصيل', 'Relationships before details')}</span><h2>{t(lang, 'لكل خطوة، علاقة بما يليها.', 'Every step connects to the next.')}</h2><ol className="concept-sequence">{d.sequence.map((step, i) => <li key={i}><span className="step-order" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span><span>{step[lang]}</span></li>)}</ol><p className="detail-panel-note">{t(lang, 'تُراجع العلاقات والمسارات وفق المنيو والموقع ومتطلبات المشروع.', 'Relationships and routes are reviewed against the menu, site and project requirements.')}</p></>},
+        {id:'questions', label:t(lang, 'أسئلة القرار', 'Decision questions'), content:<><span className="eyebrow">{t(lang, 'قبل تثبيت المساحة والمعدات', 'Before fixing space and equipment')}</span><h2>{t(lang, 'أسئلة تحدد اتجاه التخطيط', 'Questions that shape the plan')}</h2><EditorialList lang={lang} items={d.questions} variant="questions"/></>},
+        {id:'starting', label:t(lang, 'نقطة البداية', 'The starting point'), content:<><span className="eyebrow">{t(lang, 'مدخلات واضحة', 'Clear inputs')}</span><h2>{t(lang, 'نبدأ بما يتوفر لديك.', 'Start with what you have.')}</h2><EditorialList lang={lang} items={d.inputs} variant="inputs"/><p className="detail-panel-note">{t(lang, 'نبدأ بالمدخلات المتاحة ونوضح الافتراضات. نراجع الوظائف المطلوبة وعلاقات محطات العمل، ثم نربطها بالمعدات والمرافق وحدود النطاق.', 'We start with the available inputs and make assumptions explicit. Required functions and workstation relationships are reviewed, then connected to equipment, utilities and scope boundaries.')}</p>{id === 'C11' && <p className="detail-panel-note">{t(lang, 'للمشاريع الخاصة، يكفي وصف عام في الرسالة الأولى. نتفق لاحقاً على المعلومات الضرورية وطريقة مشاركتها، مع فصل تشغيل الضيافة عن الاستخدام العائلي.', 'For private projects, a general description is enough for the first message. Necessary information and its sharing method are agreed later, with hospitality service considered separately from family use.')}</p>}</>},
+      ]}/>
+    <ScopeBand lang={lang}><p>{t(lang, 'تُحدد المخرجات وجولات المراجعة ومسؤوليات التنسيق قبل بدء العمل. يتطور التخطيط وفق المنيو والسعة وطريقة الخدمة وبيانات الموقع.', 'Deliverables, review rounds and coordination responsibilities are defined before work begins. Planning develops around the menu, capacity, service model and site information.')}</p></ScopeBand>
+    <RelatedSection lang={lang} ids={d.related} all="concepts"/>
+  </>
 }
